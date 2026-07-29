@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="intersection.net.xml"/>
+        <!-- маршруты добавит routeSampler: <route-files value="demand.rou.xml"/> -->
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="1500"/>
+    </time>
+</configuration>

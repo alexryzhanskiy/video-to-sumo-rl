@@ -1,0 +1,18 @@
+<connections>
+  <connection from="nN_nC" to="nC_nW" fromLane="0" toLane="0" tl="nC" linkIndex="0"/>
+  <connection from="nN_nC" to="nC_nS" fromLane="0" toLane="0" tl="nC" linkIndex="1"/>
+  <connection from="nN_nC" to="nC_nS" fromLane="1" toLane="1" tl="nC" linkIndex="2"/>
+  <connection from="nN_nC" to="nC_nE" fromLane="2" toLane="2" tl="nC" linkIndex="3"/>
+  <connection from="nE_nC" to="nC_nN" fromLane="0" toLane="0" tl="nC" linkIndex="4"/>
+  <connection from="nE_nC" to="nC_nW" fromLane="0" toLane="0" tl="nC" linkIndex="5"/>
+  <connection from="nE_nC" to="nC_nW" fromLane="1" toLane="1" tl="nC" linkIndex="6"/>
+  <connection from="nE_nC" to="nC_nS" fromLane="2" toLane="2" tl="nC" linkIndex="7"/>
+  <connection from="nS_nC" to="nC_nE" fromLane="0" toLane="0" tl="nC" linkIndex="8"/>
+  <connection from="nS_nC" to="nC_nN" fromLane="0" toLane="0" tl="nC" linkIndex="9"/>
+  <connection from="nS_nC" to="nC_nN" fromLane="1" toLane="1" tl="nC" linkIndex="10"/>
+  <connection from="nS_nC" to="nC_nW" fromLane="2" toLane="2" tl="nC" linkIndex="11"/>
+  <connection from="nW_nC" to="nC_nS" fromLane="0" toLane="0" tl="nC" linkIndex="12"/>
+  <connection from="nW_nC" to="nC_nE" fromLane="0" toLane="0" tl="nC" linkIndex="13"/>
+  <connection from="nW_nC" to="nC_nE" fromLane="1" toLane="1" tl="nC" linkIndex="14"/>
+  <connection from="nW_nC" to="nC_nN" fromLane="2" toLane="2" tl="nC" linkIndex="15"/>
+</connections>

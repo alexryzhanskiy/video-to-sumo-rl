@@ -1,0 +1,54 @@
+# Конфигурация пайплайна Прибузька — Свободи.
+# Пути к видео и весам — абсолютные, на исходную папку RL (не копируем 0.5 ГБ ролики).
+
+paths:
+  videos_dir: "C:/Work/TrafficVideos_RL"
+  weights_dir: "C:/Work/TrafficVideos_RL"
+  out_dir: "C:/Work/TrafficVideos_RL2/data"
+
+# Детектор + трекер (Этап 1)
+detector:
+  model: "yolo11x.pt"        # лежит в weights_dir; для мелких ТС вдаль — крупная модель
+  conf: 0.20                 # низкий порог: машины вдали мелкие
+  iou: 0.50
+  imgsz: 1280                # апскейлим вход для мелких объектов на 2688px кадре
+  tracker_cfg: "bytetrack.yaml"
+  # Классы COCO, которые считаем спросом. person(0)/bicycle(1) исключены намеренно.
+  vehicle_classes:
+    car: 2
+    motorcycle: 3
+    bus: 5
+    truck: 7
+
+tracking:
+  frame_stride: 3            # обрабатываем каждый 3-й кадр (25fps → ~8.3 Гц), экономит часы
+  min_track_len: 5          # короче — шум, отбрасываем при экспорте
+
+# Камеры. owns_approaches заполним на Этапе 3, когда разметим стоп-линии.
+cameras:
+  - id: center
+    video: "Pryb_Svob_Center.mp4"
+    owns_approaches: [SVB_N, PRB_E]   # Свободи-Север, Прибузька-Восток
+    sync_offset_sec: 19      # OSD-часы center на 19с позже zarich -> сдвиг к общему времени
+  - id: zarich
+    video: "Pryb_Svob_Zarich.mp4"
+    owns_approaches: [SVB_S, PRB_W]   # Свободи-Юг, Прибузька-Запад
+    sync_offset_sec: 0       # общий ноль = старт zarich (08:24:13)
+
+# Агрегация (Этап 5)
+aggregation:
+  interval_sec: 300         # 5-мин интервалы
+  cycle_sec: 120            # цикл светофора, для warm-up и привязки интервалов
+
+# Сигнальный план — для справки и будущего экспорта в SUMO tlLogic.
+signal:
+  cycle_sec: 120
+  phases:
+    - {t: 0,   dur: 46, svoboda: green,        prybuzka: red}
+    - {t: 46,  dur: 3,  svoboda: yellow,       prybuzka: red}
+    - {t: 49,  dur: 15, svoboda: red_arrow,    prybuzka: red}
+    - {t: 64,  dur: 4,  svoboda: all_red,      prybuzka: all_red}
+    - {t: 68,  dur: 30, svoboda: red,          prybuzka: green}
+    - {t: 98,  dur: 3,  svoboda: red,          prybuzka: yellow}
+    - {t: 101, dur: 15, svoboda: red,          prybuzka: red_arrow}
+    - {t: 116, dur: 4,  svoboda: all_red,      prybuzka: all_red}
