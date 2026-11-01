@@ -1,0 +1,32 @@
+MIT License
+
+Copyright (c) 2026 <AUTHORS — fill in before publishing>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------
+
+The MIT terms above cover everything in this repository.
+
+RESCO, the RL framework used for the experiments, is NOT part of this
+repository: it is distributed by its own authors under Creative Commons
+BY-NC-SA 4.0 and must be obtained from its original repository
+(https://github.com/Pi-Star-Lab/RESCO). `resco_integration/` contains only the
+code written for this work — the map and signal entries, the reward, the agent
+entry and the script that applies them to a RESCO checkout.

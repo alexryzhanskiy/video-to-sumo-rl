@@ -47,6 +47,10 @@ def main() -> None:
     ap.add_argument("--config", default=str(ROOT / "config.yaml"))
     ap.add_argument("--video", default=None,
                     help="переопределить путь к видео (напр. перекодированный клип)")
+    ap.add_argument("--out", default=None,
+                    help="переопределить путь к CSV с треками; по умолчанию "
+                         "data/tracks/tracks_<camera>.csv. Нужен, когда обсчитываем "
+                         "вторую запись той же камеры, чтобы не перезатереть первую")
     ap.add_argument("--model", default=None, help="переопределить веса (быстрый QA на лёгкой модели)")
     ap.add_argument("--imgsz", type=int, default=None, help="переопределить imgsz")
     ap.add_argument("--stride", type=int, default=None, help="переопределить frame_stride")
@@ -117,7 +121,8 @@ def main() -> None:
         verbose=False,
     )
 
-    out_csv = out_dir / f"tracks_{args.camera}.csv"
+    out_csv = Path(args.out) if args.out else out_dir / f"tracks_{args.camera}.csv"
+    out_csv.parent.mkdir(parents=True, exist_ok=True)
     writer = None
     fcsv = open(out_csv, "w", newline="", encoding="utf-8")
     writer = csv.writer(fcsv)

@@ -42,18 +42,47 @@ def clean_path(out_dir: Path, cam_id: str) -> Path:
     return out_dir / "video" / f"{cam_id}_clean.mp4"
 
 
-def transcode(src: Path, dst: Path, crf: int = 20) -> None:
-    dst.parent.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        "ffmpeg", "-v", "error", "-y",
+PACK_START = b"\x00\x00\x01\xba"   # заголовок pack MPEG-PS
+
+
+def ps_payload_offset(src: Path, search_bytes: int = 4 << 20) -> int | None:
+    """Смещение первого pack-заголовка MPEG-PS.
+
+    Ролики выгружаются с фирменным заголовком IMKH впереди. У части файлов
+    (выгрузка 30.10) мусор перед первым pack ломает PS-демуксер ffmpeg:
+    'Error during demuxing: Invalid data found' на первом же пакете, 0 кадров.
+    Пропуск этих байт полностью чинит чтение — поток внутри целый.
+    """
+    with open(src, "rb") as f:
+        head = f.read(search_bytes)
+    i = head.find(PACK_START)
+    return i if i > 0 else None
+
+
+def _ffmpeg_cmd(src: Path, dst: Path, crf: int, skip: int | None) -> list[str]:
+    cmd = ["ffmpeg", "-v", "error", "-y"]
+    if skip:
+        cmd += ["-skip_initial_bytes", str(skip)]
+    cmd += [
         "-i", str(src),
         "-c:v", "libx264", "-preset", "veryfast", "-crf", str(crf),
         "-pix_fmt", "yuv420p", "-an",
         str(dst),
     ]
+    return cmd
+
+
+def transcode(src: Path, dst: Path, crf: int = 20) -> None:
+    dst.parent.mkdir(parents=True, exist_ok=True)
     print(f"[preprocess] {src.name} -> {dst.name} (libx264 crf{crf}) ...")
     # ffmpeg сыплет варнингами битого HEVC в stderr — гасим, оставляем только фатальное
-    proc = subprocess.run(cmd, capture_output=True, text=True)
+    proc = subprocess.run(_ffmpeg_cmd(src, dst, crf, None), capture_output=True, text=True)
+    if proc.returncode != 0:
+        skip = ps_payload_offset(src)
+        if skip:
+            print(f"[preprocess] демуксер споткнулся, пробую с -skip_initial_bytes {skip}")
+            proc = subprocess.run(_ffmpeg_cmd(src, dst, crf, skip),
+                                  capture_output=True, text=True)
     if proc.returncode != 0:
         tail = "\n".join(proc.stderr.strip().splitlines()[-5:])
         raise SystemExit(f"ffmpeg упал на {src.name}:\n{tail}")

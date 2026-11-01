@@ -9,6 +9,7 @@
 from __future__ import annotations
 
 import glob
+import os
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -20,8 +21,8 @@ try:
 except Exception:
     pass
 
-RESULTS = Path("C:/Work/RESCO/results")
-RL2 = Path("C:/Work/TrafficVideos_RL2")
+ROOT = Path(__file__).resolve().parents[1]
+RESULTS = Path(os.environ.get("RESCO_RESULTS", ROOT / "RESCO" / "results"))
 
 
 def latest_dir(pattern):
@@ -49,7 +50,7 @@ def trip_metrics(path: Path):
 
 
 def main():
-    sources = {"Фикс (видео)": RL2 / "sumo" / "fixed_tripinfo.xml"}
+    sources = {"Фикс (видео)": ROOT / "sumo" / "fixed_tripinfo.xml"}
     for name, pat in [("IDQN", "IDQN-*prybuzka*"),
                       ("MAXPRESSURE", "MAXPRESSURE-*prybuzka*"),
                       ("STOCHASTIC", "STOCHASTIC-*prybuzka*")]:

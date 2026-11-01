@@ -10,6 +10,7 @@
 
 Запуск:
     python src/classify.py --camera center
+    python src/classify.py --camera center --in A.csv --out B.csv   # другая запись
 """
 from __future__ import annotations
 
@@ -25,6 +26,7 @@ import json
 ROOT = Path(__file__).resolve().parent.parent
 try:
     sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")   # SystemExit печатается в stderr
 except Exception:
     pass
 
@@ -55,7 +57,7 @@ def movement_of(entry_label, exit_label):
     dot = float(np.dot(heading, e))
     cross = heading[0] * e[1] - heading[1] * e[0]
     if dot > 0.7:
-        return "пряمо"
+        return "прямо"
     if dot < -0.7:
         return "разворот"
     return "налево" if cross > 0 else "направо"
@@ -64,13 +66,23 @@ def movement_of(entry_label, exit_label):
 def main() -> None:
     ap = argparse.ArgumentParser(description="Классификация движений по гейтам")
     ap.add_argument("--camera", required=True)
+    ap.add_argument("--in", dest="inp", default=None,
+                    help="входной CSV спрямлённых треков (по умолч. tracks_<cam>_undist.csv)")
+    ap.add_argument("--out", default=None,
+                    help="переопределить выходной CSV; по умолчанию "
+                         "data/tracks/movements_<camera>.csv. Нужен для второй записи той же "
+                         "камеры, чтобы не перезатереть опорный прогон")
     args = ap.parse_args()
 
     import yaml
     cfg = yaml.safe_load(open(ROOT / "config.yaml", encoding="utf-8"))
     tracks_dir = Path(cfg["paths"]["out_dir"]) / "tracks"
     gates = json.load(open(ROOT / "calib" / f"gates_{args.camera}.json", encoding="utf-8"))["gates"]
-    df = pd.read_csv(tracks_dir / f"tracks_{args.camera}_undist.csv")
+    inp = Path(args.inp) if args.inp else tracks_dir / f"tracks_{args.camera}_undist.csv"
+    if not inp.exists():
+        raise SystemExit(f"Нет спрямлённых треков: {inp}. Сначала: python src/undistort.py "
+                         f"--camera {args.camera}")
+    df = pd.read_csv(inp)
     xcol, ycol = ("cx_u", "cy_u") if "cx_u" in df.columns else ("cx", "cy")
 
     # центр коробки = центроид концов всех гейтов
@@ -135,7 +147,8 @@ def main() -> None:
                          k=int(g["k"].iloc[entry[0]]), t_sec=float(g["t_sec"].iloc[entry[0]])))
 
     res = pd.DataFrame(rows)
-    out = tracks_dir / f"movements_{args.camera}.csv"
+    out = Path(args.out) if args.out else tracks_dir / f"movements_{args.camera}.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
     res.to_csv(out, index=False)
 
     print(f"[classify] камера={args.camera}  треков всего={df.track_id.nunique()}  "

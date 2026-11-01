@@ -5,11 +5,12 @@
 средняя/пиковая суммарная очередь и средний reward. Строит кривую обучения IDQN
 и сравнивает с эвристиками (MAXPRESSURE/STOCHASTIC).
 
-Запуск:  python src/rl_compare.py [--results C:/Work/RESCO/results]
+Запуск:  python src/rl_compare.py [--results RESCO/results]
 """
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 from pathlib import Path
@@ -43,7 +44,7 @@ def agent_of(dirname):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--results", default="C:/Work/RESCO/results")
+    ap.add_argument("--results", default=os.environ.get("RESCO_RESULTS", "RESCO/results"))
     args = ap.parse_args()
     root = Path(args.results)
 
@@ -110,7 +111,7 @@ def main():
         plt.xlabel("эпизод"); plt.ylabel("средняя суммарная очередь (маш.)")
         plt.title("Обучение IDQN vs baseline — перекрёсток Прибузька-Свободи")
         plt.legend(); plt.grid(alpha=0.3)
-        out = Path("C:/Work/TrafficVideos_RL2/data") / "rl_learning_curve.png"
+        out = Path(__file__).resolve().parents[1] / "data" / "rl_learning_curve.png"
         out.parent.mkdir(parents=True, exist_ok=True)
         plt.savefig(out, dpi=120, bbox_inches="tight")
         print(f"\n[plot] кривая обучения -> {out}")

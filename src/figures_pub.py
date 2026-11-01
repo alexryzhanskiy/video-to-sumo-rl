@@ -41,8 +41,9 @@ mpl.rcParams.update({
     "axes.axisbelow": True, "savefig.bbox": "tight", "savefig.pad_inches": 0.08,
 })
 
-OUT = Path("C:/Work/TrafficVideos_RL2/figures"); OUT.mkdir(exist_ok=True)
-R = Path("C:/Work/RESCO/results")
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "figures"; OUT.mkdir(exist_ok=True)
+R = Path(os.environ.get("RESCO_RESULTS", ROOT / "RESCO" / "results"))
 COL = {"fix": "#7f7f7f", "act": "#e8820c", "mp": "#d62728",
        "ml": "#9467bd", "wait": "#2ca02c", "press": "#1f77b4"}
 Q = re.compile(r"'nC':\s*([-\d.]+)")
@@ -103,7 +104,6 @@ def save(fig, base, lang):
 
 # ===================== мережа SUMO =====================
 def fig_network(lang="ua"):
-    os.environ.setdefault("SUMO_HOME", r"C:/Program Files (x86)/Eclipse/Sumo")
     sys.path.append(os.path.join(os.environ["SUMO_HOME"], "tools"))
     import sumolib
     from matplotlib.patches import Rectangle, FancyBboxPatch, Circle, FancyArrowPatch
@@ -117,7 +117,7 @@ def fig_network(lang="ua"):
            "en": {"N": "Svobody St. – north", "S": "Svobody St. – south",
                   "E": "Prybuzka St. – east", "W": "Prybuzka St. – west",
                   "leg": ["inbound direction", "centre line", "lane borders"]}}[lang]
-    net = sumolib.net.readNet("C:/Work/TrafficVideos_RL2/sumo/intersection.net.xml")
+    net = sumolib.net.readNet(str(ROOT / "sumo" / "intersection.net.xml"))
     fig, ax = plt.subplots(figsize=(7.2, 6.4))
     legs = {"N": dict(v=True, near=NPOS, far=NPOS + LEG_LEN),
             "S": dict(v=True, near=NNEG, far=NNEG - LEG_LEN),
@@ -267,7 +267,7 @@ def fig_queue_dynamics(lang="ua"):
 
     def smooth(y, k=5):
         return np.convolve(y, np.ones(k) / k, mode="same") if len(y) >= k else y
-    npz = np.load("C:/Work/TrafficVideos_RL2/data/queue_fixed_act_x15.npz")
+    npz = np.load(ROOT / "data" / "queue_fixed_act_x15.npz")
     tm = npz["t"]; fixed = npz["fixed"].mean(0); TMAX = 1440
     mask = tm <= TMAX
     wait = ep_series("prybuzka_15", "wait_norm", 1, 100)

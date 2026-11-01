@@ -4,7 +4,7 @@
 # Ті самі параметри, що й фікс-база: end=1500, пристрій емісій (CO2), tripinfo.
 set -e
 cd "$(dirname "$0")/../sumo"
-SUMO="C:/Program Files (x86)/Eclipse/Sumo/bin/sumo.exe"
+SUMO="${SUMO_HOME:+$SUMO_HOME/bin/}sumo"
 declare -A ROU=( [10]=demand.rou.xml [12]=demand_12.rou.xml [15]=demand_15.rou.xml )
 for ld in 10 12 15; do
   for s in 1 2 3 4 5; do

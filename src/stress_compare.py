@@ -8,6 +8,7 @@ throughput, ожидание, время в пути, CO2 (из tripinfo пос�
 from __future__ import annotations
 
 import glob
+import os
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -19,8 +20,9 @@ try:
 except Exception:
     pass
 
-RESULTS = Path("C:/Work/RESCO/results")
-SUMO = Path("C:/Work/TrafficVideos_RL2/sumo")
+ROOT = Path(__file__).resolve().parents[1]
+RESULTS = Path(os.environ.get("RESCO_RESULTS", ROOT / "RESCO" / "results"))
+SUMO = ROOT / "sumo"
 
 # нагрузка -> (glob IDQN-папки, фикс-tripinfo, спрос)
 SCALES = {
@@ -94,7 +96,7 @@ def main():
             ax[1].legend(); ax[1].grid(alpha=.3)
             fig.suptitle("Stress-тест: IDQN vs фикс-сигнал при росте спроса")
             plt.tight_layout()
-            out = Path("C:/Work/TrafficVideos_RL2/data/stress_compare.png")
+            out = ROOT / "data" / "stress_compare.png"
             plt.savefig(out, dpi=120, bbox_inches="tight")
             print(f"\n[plot] -> {out}")
         except Exception as e:

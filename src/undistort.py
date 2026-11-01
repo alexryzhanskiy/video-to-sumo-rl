@@ -6,6 +6,7 @@ Undistort точек контакта (cx,cy) из CSV Этапа 1. Делае�
 
 Запуск:
     python src/undistort.py --camera center
+    python src/undistort.py --camera center --in A.csv --out B.csv   # другая запись
 """
 from __future__ import annotations
 
@@ -42,6 +43,10 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Undistort координат треков")
     ap.add_argument("--camera", required=True)
     ap.add_argument("--in", dest="inp", default=None, help="входной CSV (по умолч. tracks_<cam>.csv)")
+    ap.add_argument("--out", default=None,
+                    help="переопределить выходной CSV; по умолчанию "
+                         "data/tracks/tracks_<camera>_undist.csv. Нужен для второй записи той "
+                         "же камеры, чтобы не перезатереть опорный прогон")
     args = ap.parse_args()
 
     import yaml
@@ -60,7 +65,8 @@ def main() -> None:
     df["cx_u"] = np.round(uv[:, 0], 1)
     df["cy_u"] = np.round(uv[:, 1], 1)
 
-    out = tracks_dir / f"tracks_{args.camera}_undist.csv"
+    out = Path(args.out) if args.out else tracks_dir / f"tracks_{args.camera}_undist.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
     print(f"[undistort] {len(df)} точек спрямлено -> {out}")
 

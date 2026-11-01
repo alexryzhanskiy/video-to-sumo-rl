@@ -1,10 +1,10 @@
 # Конфигурация пайплайна Прибузька — Свободи.
-# Пути к видео и весам — абсолютные, на исходную папку RL (не копируем 0.5 ГБ ролики).
+# Пути — от корня репозитория, скрипты запускаются из него.
 
 paths:
-  videos_dir: "C:/Work/TrafficVideos_RL"
-  weights_dir: "C:/Work/TrafficVideos_RL"
-  out_dir: "C:/Work/TrafficVideos_RL2/data"
+  videos_dir: "videos"
+  weights_dir: "weights"
+  out_dir: "data"
 
 # Детектор + трекер (Этап 1)
 detector:

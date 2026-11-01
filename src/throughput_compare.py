@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import glob
+import os
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -19,8 +20,9 @@ try:
 except Exception:
     pass
 
-RESULTS = Path("C:/Work/RESCO/results")
-SUMO = Path("C:/Work/TrafficVideos_RL2/sumo")
+ROOT = Path(__file__).resolve().parents[1]
+RESULTS = Path(os.environ.get("RESCO_RESULTS", ROOT / "RESCO" / "results"))
+SUMO = ROOT / "sumo"
 
 # нагрузка -> (тег карты в имени папки, фикс-tripinfo, спрос)
 LOADS = {
@@ -89,7 +91,7 @@ def main():
             plt.xlabel("навантаження")
             plt.title("Пропускна здатність за зростання навантаження:\nвинагорода pressure проти wait")
             plt.legend(); plt.grid(alpha=.3)
-            out = Path("C:/Work/TrafficVideos_RL2/data/throughput_compare.png")
+            out = ROOT / "data" / "throughput_compare.png"
             plt.savefig(out, dpi=120, bbox_inches="tight")
             print(f"\n[plot] -> {out}")
         except Exception as e:

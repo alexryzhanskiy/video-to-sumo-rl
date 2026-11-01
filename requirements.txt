@@ -1,10 +1,11 @@
-# Уже установлено в C:\Work\TrafficVideos_RL\.venv — этот файл фиксирует версии.
+# Версии окружения конвейера.
 ultralytics==8.4.75
 torch==2.12.1
 torchvision==0.27.1
 opencv-python==4.13.0.92
-numpy
-pandas
-scipy
+numpy==2.5.0
+pandas==3.0.3
+scipy==1.18.0
 lap==0.5.13
-PyYAML
+PyYAML==6.0.3
+matplotlib==3.11.0

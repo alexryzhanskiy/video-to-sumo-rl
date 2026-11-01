@@ -8,7 +8,7 @@ RL: для кожного (винагорода × навантаження) б�
 Запуск:  python src/seed_stats.py
 """
 from __future__ import annotations
-import glob, re, sys
+import glob, os, re, sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 import numpy as np
@@ -18,9 +18,10 @@ try:
 except Exception:
     pass
 
-R = Path("C:/Work/RESCO/results")
-S = Path("C:/Work/TrafficVideos_RL2/sumo")
-DATA = Path("C:/Work/TrafficVideos_RL2/data")
+ROOT = Path(__file__).resolve().parents[1]
+R = Path(os.environ.get("RESCO_RESULTS", ROOT / "RESCO" / "results"))
+S = ROOT / "sumo"
+DATA = ROOT / "data"
 LOADS = {"prybuzka": ("×1.0", "10"), "prybuzka_12": ("×1.2", "12"), "prybuzka_15": ("×1.5", "15")}
 VAL = re.compile(r"nC':\s*([-\d.]+)")
 

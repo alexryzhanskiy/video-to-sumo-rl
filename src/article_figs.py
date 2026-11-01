@@ -6,7 +6,7 @@
 Запуск:  python src/article_figs.py
 """
 from __future__ import annotations
-import re, sys
+import os, re, sys
 from pathlib import Path
 import numpy as np
 import matplotlib
@@ -18,8 +18,9 @@ try:
 except Exception:
     pass
 
-DATA = Path("C:/Work/TrafficVideos_RL2/data")
-RESULTS = Path("C:/Work/RESCO/results")
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+RESULTS = Path(os.environ.get("RESCO_RESULTS", ROOT / "RESCO" / "results"))
 VAL = re.compile(r"nC':\s*([-\d.]+)")
 
 # Показники за навантаження ×1.0, однакове вікно оцінювання (з прогонів RESCO/SUMO)

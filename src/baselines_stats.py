@@ -11,7 +11,7 @@ MaxPressure: аналітичний агент RESCO -> results/MAXPRESSURE-tr{1
 Запуск:  python src/baselines_stats.py
 """
 from __future__ import annotations
-import glob, sys
+import glob, os, sys
 from pathlib import Path
 import numpy as np
 
@@ -23,9 +23,10 @@ try:
 except Exception:
     pass
 
-R = Path("C:/Work/RESCO/results")
-SU = Path("C:/Work/TrafficVideos_RL2/sumo")
-DATA = Path("C:/Work/TrafficVideos_RL2/data")
+ROOT = Path(__file__).resolve().parents[1]
+R = Path(os.environ.get("RESCO_RESULTS", ROOT / "RESCO" / "results"))
+SU = ROOT / "sumo"
+DATA = ROOT / "data"
 LOADS = [("×1.0", "10", "prybuzka"), ("×1.2", "12", "prybuzka_12"), ("×1.5", "15", "prybuzka_15")]
 
 

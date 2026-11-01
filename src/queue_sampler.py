@@ -1,12 +1,13 @@
 import os,sys
-os.environ.setdefault("SUMO_HOME",r"C:/Program Files (x86)/Eclipse/Sumo")
-sys.path.append(r"C:/Program Files (x86)/Eclipse/Sumo/tools")
+from pathlib import Path
+sys.path.append(os.path.join(os.environ["SUMO_HOME"],"tools"))
 import traci
 import numpy as np
 sys.stdout.reconfigure(encoding="utf-8")
 
-SUMO=r"C:/Program Files (x86)/Eclipse/Sumo/bin/sumo.exe"
-SU=r"C:/Work/TrafficVideos_RL2/sumo"
+ROOT=Path(__file__).resolve().parents[1]
+SUMO=os.path.join(os.environ["SUMO_HOME"],"bin","sumo")
+SU=(ROOT/"sumo").as_posix()
 LANES=[f"{a}_nC_{i}" for a in ("nN","nE","nS","nW") for i in range(3)]
 END=1800; SAMPLE=5
 
@@ -34,6 +35,6 @@ for tag,net in [("fixed","intersection.net.xml"),("actuated","intersection_act.n
     A=avg(net,"demand_15.rou.xml")
     out[tag]=A
     print(f"{tag}: steps={A.shape[1]} final={A[:,-1].mean():.0f} max={A.max():.0f} mean={A.mean():.1f}")
-np.savez(r"C:/Work/TrafficVideos_RL2/data/queue_fixed_act_x15.npz",
+np.savez(ROOT/"data"/"queue_fixed_act_x15.npz",
          t=np.arange(SAMPLE,END+1,SAMPLE), fixed=out["fixed"], actuated=out["actuated"])
 print("saved npz")
