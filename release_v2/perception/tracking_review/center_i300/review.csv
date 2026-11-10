@@ -1,0 +1,101 @@
+annotator,cand_id,type,answer,seconds
+A1,1,movement,right,44.2
+A1,2,movement,left,5.3
+A1,3,movement,through,6.7
+A1,4,movement,through,5.5
+A1,5,movement,through,6.1
+A1,6,movement,right,10.1
+A1,7,movement,through,7.9
+A1,8,movement,through,7.8
+A1,9,movement,cannot tell,14.0
+A1,10,movement,through,3.4
+A1,11,movement,through,10.9
+A1,12,movement,right,3.6
+A1,13,movement,through,12.9
+A1,14,movement,left,4.3
+A1,15,movement,right,5.6
+A1,16,movement,left,4.3
+A1,17,movement,through,32.4
+A1,18,movement,through,4.7
+A1,19,movement,through,4.5
+A1,20,movement,right,4.9
+A1,21,movement,through,4.3
+A1,22,movement,through,2.9
+A1,23,movement,left,5.2
+A1,24,movement,through,6.9
+A1,25,movement,through,8.0
+A1,26,movement,through,6.6
+A1,27,movement,through,7.4
+A1,28,movement,through,7.0
+A1,29,movement,through,4.6
+A1,30,movement,through,3.9
+A1,31,movement,left,17.8
+A1,32,movement,through,7.7
+A1,33,movement,through,12.2
+A1,34,movement,through,10.3
+A1,35,movement,through,5.6
+A1,36,manual_only,cannot tell,102.6
+A1,37,manual_only,pipeline missed it,376.8
+A1,38,break,cannot tell,49.9
+A1,39,break_double,yes,13.9
+A1,40,break,cannot tell,8.6
+A1,41,break,no,5.1
+A1,42,break,cannot tell,3.9
+A1,43,uncounted,missed (never counted),57.5
+A1,44,break,yes,12.7
+A1,45,pipeline_only,real vehicle,34.6
+A1,46,jump,no,21.2
+A1,47,pipeline_only,real vehicle,23.1
+A1,48,pipeline_only,real vehicle,27.5
+A1,49,jump,no,16.3
+A1,50,break,yes,12.8
+A1,51,manual_only,cannot tell,22.1
+A1,52,break,yes,14.3
+A1,53,uncounted,missed (never counted),44.4
+A1,54,break_double,cannot tell,10.9
+A1,55,break,no,11.4
+A1,56,break,yes,9.6
+A1,57,break,yes,9.1
+A1,58,uncounted,counted under another ID,19.0
+A1,59,manual_only,cannot tell,15.1
+A1,60,uncounted,missed (never counted),16.2
+A1,61,break,no,8.7
+A1,62,break,no,5.1
+A1,63,break,no,5.7
+A1,64,uncounted,missed (never counted),19.9
+A1,65,uncounted,counted under another ID,9.7
+A1,66,break,no,4.9
+A1,67,pipeline_only,real vehicle,20.5
+A1,68,uncounted,cannot tell,16.0
+A1,69,break,no,10.1
+A1,70,uncounted,cannot tell,13.9
+A1,71,break,no,14.5
+A1,72,uncounted,counted under another ID,12.5
+A1,73,break,no,5.7
+A1,74,break,yes,3.6
+A1,75,break,yes,3.8
+A1,76,break,no,7.6
+A1,77,manual_only,cannot tell,18.4
+A1,78,uncounted,missed (never counted),14.5
+A1,79,break,no,7.4
+A1,80,pipeline_only,double count (same camera),11.3
+A1,81,uncounted,counted under another ID,7.0
+A1,82,break,no,6.0
+A1,83,manual_only,pipeline counted it (time off),12.7
+A1,84,manual_only,pipeline counted it (time off),2.5
+A1,85,break,no,8.7
+A1,86,uncounted,counted under another ID,14.5
+A1,87,break,no,3.6
+A1,88,break,no,5.0
+A1,89,uncounted,counted under another ID,21.3
+A1,90,break,yes,7.3
+A1,91,break,no,4.6
+A1,92,break,no,2.5
+A1,93,vehicle,no problem,39.2
+A1,94,vehicle,no problem,18.0
+A1,95,vehicle,no problem,25.4
+A1,96,vehicle,no problem,12.3
+A1,97,vehicle,no problem,15.4
+A1,98,vehicle,no problem,9.7
+A1,99,vehicle,no problem,9.0
+A1,100,vehicle,no problem,42.6

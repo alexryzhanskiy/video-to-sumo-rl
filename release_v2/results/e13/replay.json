@@ -1,0 +1,110 @@
+{
+  "written": "2026-10-29 20:58:02",
+  "twin": "original (SUMO default vehicle)",
+  "episodes": [
+    {
+      "policy": "IDQN-wait",
+      "training_run": 3,
+      "episode": 1,
+      "route_file": "gen_1.rou.xml",
+      "sumo_seed": 1046,
+      "seconds_csv": "runs/replay/IDQN-wait_x1.0_run3/seconds_e1.csv",
+      "decisions_csv": "runs/replay/IDQN-wait_x1.0_run3/decisions_e1.csv",
+      "tripinfo": "runs/replay/IDQN-wait_x1.0_run3/resco/IDQN-tr1003-prybuzka_ho10-1-drq_norm1-wait_norm==8f95d25bf01349aba127dfeedcede4c4/tripinfo_1.xml",
+      "checkpoint": "../runs/train/IDQN-wait_x1.0_run3/IDQN-tr3-prybuzka_tr10-1-drq_norm1-wait_norm==f4ac50a7593f45bfa9c19bf5b4c18d49/agent_nC.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    },
+    {
+      "policy": "IDQN-wait",
+      "training_run": 3,
+      "episode": 2,
+      "route_file": "gen_1_r02_s1002.rou.xml",
+      "sumo_seed": 1047,
+      "seconds_csv": "runs/replay/IDQN-wait_x1.0_run3/seconds_e2.csv",
+      "decisions_csv": "runs/replay/IDQN-wait_x1.0_run3/decisions_e2.csv",
+      "tripinfo": "runs/replay/IDQN-wait_x1.0_run3/resco/IDQN-tr1003-prybuzka_ho10-1-drq_norm1-wait_norm==8f95d25bf01349aba127dfeedcede4c4/tripinfo_2.xml",
+      "checkpoint": "../runs/train/IDQN-wait_x1.0_run3/IDQN-tr3-prybuzka_tr10-1-drq_norm1-wait_norm==f4ac50a7593f45bfa9c19bf5b4c18d49/agent_nC.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    },
+    {
+      "policy": "MPLight",
+      "training_run": 2,
+      "episode": 1,
+      "route_file": "gen_1.rou.xml",
+      "sumo_seed": 1045,
+      "seconds_csv": "runs/replay/MPLight_x1.0_run2/seconds_e1.csv",
+      "decisions_csv": "runs/replay/MPLight_x1.0_run2/decisions_e1.csv",
+      "tripinfo": "runs/replay/MPLight_x1.0_run2/resco/MPLight-tr1002-prybuzka_ho10-1-mplight-pressure==4c97e77627db461f93197b3bd8f2d9b5/tripinfo_1.xml",
+      "checkpoint": "../runs/train/MPLight_x1.0_run2/MPLight-tr2-prybuzka_tr10-1-mplight-pressure==4889bea1dc7a42c1bec9f5492f343277agent.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    },
+    {
+      "policy": "MPLight",
+      "training_run": 2,
+      "episode": 2,
+      "route_file": "gen_1_r02_s1002.rou.xml",
+      "sumo_seed": 1046,
+      "seconds_csv": "runs/replay/MPLight_x1.0_run2/seconds_e2.csv",
+      "decisions_csv": "runs/replay/MPLight_x1.0_run2/decisions_e2.csv",
+      "tripinfo": "runs/replay/MPLight_x1.0_run2/resco/MPLight-tr1002-prybuzka_ho10-1-mplight-pressure==4c97e77627db461f93197b3bd8f2d9b5/tripinfo_2.xml",
+      "checkpoint": "../runs/train/MPLight_x1.0_run2/MPLight-tr2-prybuzka_tr10-1-mplight-pressure==4889bea1dc7a42c1bec9f5492f343277agent.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    },
+    {
+      "policy": "IDQN-pressure",
+      "training_run": 1,
+      "episode": 4,
+      "route_file": "gen_1_r04_s1004.rou.xml",
+      "sumo_seed": 1047,
+      "seconds_csv": "runs/replay/IDQN-pressure_x1.0_run1/seconds_e4.csv",
+      "decisions_csv": "runs/replay/IDQN-pressure_x1.0_run1/decisions_e4.csv",
+      "tripinfo": "runs/replay/IDQN-pressure_x1.0_run1/resco/IDQN-tr1001-prybuzka_ho10-1-drq_norm1-pressure_inout==cf365565e7454e289dba912486e56c93/tripinfo_4.xml",
+      "checkpoint": "../runs/train/IDQN-pressure_x1.0_run1/IDQN-tr1-prybuzka_tr10-1-drq_norm1-pressure_inout==6ae2927fc3c34f2d8732cad9614e7196/agent_nC.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    },
+    {
+      "policy": "IDQN-pressure",
+      "training_run": 1,
+      "episode": 5,
+      "route_file": "gen_1_r05_s1005.rou.xml",
+      "sumo_seed": 1048,
+      "seconds_csv": "runs/replay/IDQN-pressure_x1.0_run1/seconds_e5.csv",
+      "decisions_csv": "runs/replay/IDQN-pressure_x1.0_run1/decisions_e5.csv",
+      "tripinfo": "runs/replay/IDQN-pressure_x1.0_run1/resco/IDQN-tr1001-prybuzka_ho10-1-drq_norm1-pressure_inout==cf365565e7454e289dba912486e56c93/tripinfo_5.xml",
+      "checkpoint": "../runs/train/IDQN-pressure_x1.0_run1/IDQN-tr1-prybuzka_tr10-1-drq_norm1-pressure_inout==6ae2927fc3c34f2d8732cad9614e7196/agent_nC.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    },
+    {
+      "policy": "IDQN-queue",
+      "training_run": 4,
+      "episode": 6,
+      "route_file": "gen_1_r06_s1006.rou.xml",
+      "sumo_seed": 1052,
+      "seconds_csv": "runs/replay/IDQN-queue_x1.0_run4/seconds_e6.csv",
+      "decisions_csv": "runs/replay/IDQN-queue_x1.0_run4/decisions_e6.csv",
+      "tripinfo": "runs/replay/IDQN-queue_x1.0_run4/resco/IDQN-tr1004-prybuzka_ho10-1-drq_norm1-pressure_norm==0699391c980a4a9ca7f72e1158588353/tripinfo_6.xml",
+      "checkpoint": "../runs/train/IDQN-queue_x1.0_run4/IDQN-tr4-prybuzka_tr10-1-drq_norm1-pressure_norm==45ac18badfdc4236a71c0262d3072828/agent_nC.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    },
+    {
+      "policy": "IDQN-queue",
+      "training_run": 4,
+      "episode": 10,
+      "route_file": "gen_1_r10_s1010.rou.xml",
+      "sumo_seed": 1056,
+      "seconds_csv": "runs/replay/IDQN-queue_x1.0_run4/seconds_e10.csv",
+      "decisions_csv": "runs/replay/IDQN-queue_x1.0_run4/decisions_e10.csv",
+      "tripinfo": "runs/replay/IDQN-queue_x1.0_run4/resco/IDQN-tr1004-prybuzka_ho10-1-drq_norm1-pressure_norm==0699391c980a4a9ca7f72e1158588353/tripinfo_10.xml",
+      "checkpoint": "../runs/train/IDQN-queue_x1.0_run4/IDQN-tr4-prybuzka_tr10-1-drq_norm1-pressure_norm==45ac18badfdc4236a71c0262d3072828/agent_nC.pt",
+      "flags": "--mode e12 --allred_mode every --mplight_phase legacy --allred 4",
+      "identical_to_e12": true
+    }
+  ]
+}

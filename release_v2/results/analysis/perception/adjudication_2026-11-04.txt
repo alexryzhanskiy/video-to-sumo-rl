@@ -1,0 +1,32 @@
+== answers by type
+  movement       {'right': 12, 'left': 7, 'through': 65, 'cannot tell': 5}
+  manual_only    {'cannot tell': 6, 'pipeline missed it': 11, 'pipeline counted it (time off)': 3}
+  break          {'cannot tell': 13, 'no': 34, 'yes': 23}
+  break_double   {'yes': 1, 'cannot tell': 2}
+  uncounted      {'missed (never counted)': 18, 'counted under another ID': 13, 'cannot tell': 7, 'not a vehicle of this approach': 5}
+  pipeline_only  {'real vehicle': 6, 'double count (same camera)': 3, 'false count': 1}
+  jump           {'no': 2}
+  vehicle        {'no problem': 15, 'ID changed or fragment': 1}
+
+== per approach (no U-turns in hand/pipeline totals; unmatched answers include all movements)
+  SVB_N: {'hand': 64, 'pipeline': 58, 'hand_false_press': 0, 'hand_missed': 3, 'pipeline_missed': 1, 'time_off': 1, 'manual_only_cannot': 2, 'pipeline_double': 0, 'pipeline_false': 0, 'pipeline_only_cannot': 0, 'adjudicated': 67}  pipeline vs adjudicated -9
+  PRB_E: {'hand': 53, 'pipeline': 52, 'hand_false_press': 0, 'hand_missed': 1, 'pipeline_missed': 0, 'time_off': 1, 'manual_only_cannot': 2, 'pipeline_double': 1, 'pipeline_false': 0, 'pipeline_only_cannot': 0, 'adjudicated': 54}  pipeline vs adjudicated -2
+  SVB_S: {'hand': 75, 'pipeline': 73, 'hand_false_press': 0, 'hand_missed': 1, 'pipeline_missed': 0, 'time_off': 0, 'manual_only_cannot': 0, 'pipeline_double': 0, 'pipeline_false': 1, 'pipeline_only_cannot': 0, 'adjudicated': 76}  pipeline vs adjudicated -3
+  PRB_W: {'hand': 81, 'pipeline': 66, 'hand_false_press': 0, 'hand_missed': 1, 'pipeline_missed': 10, 'time_off': 1, 'manual_only_cannot': 2, 'pipeline_double': 2, 'pipeline_false': 0, 'pipeline_only_cannot': 0, 'adjudicated': 82}  pipeline vs adjudicated -16
+  ALL: {'hand': 273, 'pipeline': 249, 'hand_false_press': 0, 'hand_missed': 6, 'pipeline_missed': 11, 'time_off': 3, 'manual_only_cannot': 6, 'pipeline_double': 3, 'pipeline_false': 1, 'pipeline_only_cannot': 0, 'adjudicated': 279}  pipeline vs adjudicated -30 (-10.8%); hand vs adjudicated -6 (-2.2%)
+
+== second counter (A2, blind, closed 2026-11-04T13:03:03) on the unmatched events
+  manual_only    cannot tell                      {'second counter also counted': 5, 'second counter did not': 1}
+  manual_only    pipeline counted it (time off)   {'second counter also counted': 3}
+  manual_only    pipeline missed it               {'second counter also counted': 9, 'second counter did not': 2}
+  pipeline_only  double count (same camera)       {'second counter did not': 3}
+  pipeline_only  false count                      {'second counter also counted': 1}
+  pipeline_only  real vehicle                     {'second counter also counted': 3, 'second counter did not': 3}
+  not in line with the review answer:
+    center_i300 pipeline_only SVB_N t_common 407.0 s: review 'real vehicle', second counter did not count
+    center_i300 pipeline_only SVB_N t_common 408.6 s: review 'real vehicle', second counter did not count
+    center_i300 pipeline_only PRB_E t_common 458.6 s: review 'real vehicle', second counter did not count
+    center_i300 manual_only PRB_E t_common 488.4 s: review 'cannot tell', second counter did not count
+    zarich_i300 pipeline_only SVB_S t_common 402.6 s: review 'false count', second counter counted
+    zarich_i300 manual_only PRB_W t_common 418.1 s: review 'pipeline missed it', second counter did not count
+    zarich_i300 manual_only PRB_W t_common 560.1 s: review 'pipeline missed it', second counter did not count

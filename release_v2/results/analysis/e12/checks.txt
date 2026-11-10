@@ -1,0 +1,5 @@
+E12 evaluation: 1400 episodes recomputed from the pack's tripinfo files with a separate parser; differences per field: entries 0, arrived_1500 0, arrived_1800 0, unfinished 0, demand 0, eval_runs n_entries 0, eval_runs n_arrived_1800 0, mean wait 0, longest no arrival 0, route file / seed vs eval_runs 0
+Pairing: 350/350 (set, run, map, episode) cells have one route file and one SUMO seed across the 4 E12 policies
+Training: 60 runs, 60 with exit 0; checkpoint SHA-256 mismatches 0; 6000 episodes, 60 runs with 100; tripinfo_ok 6000; route-file cycle deviations 0
+Pairing with E6 and E3: 1450/1450 baseline/E3 episodes have the same route file and SUMO seed as the matching E12 episodes
+Episodes per controller: E12 IDQN-pressure 350; E12 IDQN-queue 350; E12 IDQN-wait 350; E12 MPLight 350; E3 IDQN-queue 250; E3 IDQN-wait 250; E3 MPLight 250; E6 Actuated 350; E6 Fixed plan 350

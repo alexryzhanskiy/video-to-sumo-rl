@@ -1,0 +1,16 @@
+{
+  "started": "2026-10-30 06:33:29",
+  "twin": "default",
+  "final_design": {
+    "rung": "L2",
+    "policy": "MPLight",
+    "score": 0.2134,
+    "deadlock": 0,
+    "delay": 60.77
+  },
+  "files_checked": 50,
+  "selection_final_sha256": "7d3b671749c8f7e810de68ba7cd2cea1349e84c5a3dbe16620df7e8a5423411a",
+  "reruns": [],
+  "finished": "2026-10-30 07:17:33",
+  "complete": true
+}

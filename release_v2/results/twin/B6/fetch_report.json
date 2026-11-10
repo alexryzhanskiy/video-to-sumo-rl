@@ -1,0 +1,18 @@
+{
+ "src": "I:\\My Drive\\B6_grid",
+ "listed": 858,
+ "missing_from_list": [],
+ "not_on_grid": [],
+ "hash_mismatch": [],
+ "parse_errors": [],
+ "meta_issues": [],
+ "default_equal_to_laptop": true,
+ "hosts": [
+  "a4f0c7803f27"
+ ],
+ "platforms": [
+  "Linux-6.6.159+-x86_64-with-glibc2.39"
+ ],
+ "seconds_per_point_median": 27.9,
+ "passed": true
+}

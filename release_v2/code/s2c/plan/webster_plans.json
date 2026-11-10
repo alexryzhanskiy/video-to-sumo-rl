@@ -1,0 +1,316 @@
+{
+ "written": "2026-10-29 23:37:28",
+ "inputs": {
+  "counts": "sumo/turn_counts_edges.xml",
+  "counts_sha256": "88e45d3cde64139ec4bc3ba99d03c963935b32e38aa760e59fdadb814089271e",
+  "counted_period_s": 1500.0,
+  "satflow": "plan/satflow.json",
+  "satflow_sha256": "068bb4d2a6431458e602f37255d878d84c0bf0a4eb4eb6507858981e052ac597",
+  "rules": "C0 = (1.5 L + 5) / (1 - Y), L = 20 s, bounded 60-150 s (Y >= 1: 150 s); greens = (C - L) y_i / Y bounded 12-60 s, whole seconds by largest remainder (sum kept); yellow 3 s, all-red 4 s at the two street changes (states of the field program)"
+ },
+ "plans": {
+  "x1.0": {
+   "programID": "webster_x10",
+   "L": 20.0,
+   "Y": 0.7348,
+   "C0": 132.0,
+   "C0_note": "",
+   "C_bounded": 132.0,
+   "greens_raw": [
+    48.01,
+    12.73,
+    36.78,
+    14.46
+   ],
+   "greens": [
+    48,
+    13,
+    37,
+    14
+   ],
+   "cycle": 132.0,
+   "critical": [
+    {
+     "phase": 0,
+     "group": "SVB_N_through+right",
+     "y": 0.315
+    },
+    {
+     "phase": 1,
+     "group": "SVB_N_left",
+     "y": 0.0835
+    },
+    {
+     "phase": 2,
+     "group": "PRB_W_through+right",
+     "y": 0.2413
+    },
+    {
+     "phase": 3,
+     "group": "PRB_W_left",
+     "y": 0.0949
+    }
+   ],
+   "groups": {
+    "SVB_N_through+right": {
+     "phase": 0,
+     "count_1500s_x1.0": 361,
+     "flow_vph": 866.4,
+     "sat_flow_vph": 2750.2,
+     "y": 0.315
+    },
+    "SVB_S_through+right": {
+     "phase": 0,
+     "count_1500s_x1.0": 328,
+     "flow_vph": 787.2,
+     "sat_flow_vph": 2700.7,
+     "y": 0.2915
+    },
+    "SVB_N_left": {
+     "phase": 1,
+     "count_1500s_x1.0": 59,
+     "flow_vph": 141.6,
+     "sat_flow_vph": 1694.9,
+     "y": 0.0835
+    },
+    "SVB_S_left": {
+     "phase": 1,
+     "count_1500s_x1.0": 46,
+     "flow_vph": 110.4,
+     "sat_flow_vph": 1683.0,
+     "y": 0.0656
+    },
+    "PRB_E_through+right": {
+     "phase": 2,
+     "count_1500s_x1.0": 174,
+     "flow_vph": 417.6,
+     "sat_flow_vph": 2110.2,
+     "y": 0.1979
+    },
+    "PRB_W_through+right": {
+     "phase": 2,
+     "count_1500s_x1.0": 261,
+     "flow_vph": 626.4,
+     "sat_flow_vph": 2595.5,
+     "y": 0.2413
+    },
+    "PRB_E_left": {
+     "phase": 3,
+     "count_1500s_x1.0": 60,
+     "flow_vph": 144.0,
+     "sat_flow_vph": 1693.3,
+     "y": 0.085
+    },
+    "PRB_W_left": {
+     "phase": 3,
+     "count_1500s_x1.0": 66,
+     "flow_vph": 158.4,
+     "sat_flow_vph": 1669.0,
+     "y": 0.0949
+    }
+   }
+  },
+  "x1.2": {
+   "programID": "webster_x12",
+   "L": 20.0,
+   "Y": 0.8818,
+   "C0": 296.1,
+   "C0_note": "",
+   "C_bounded": 150.0,
+   "greens_raw": [
+    55.73,
+    14.78,
+    42.7,
+    16.79
+   ],
+   "greens": [
+    56,
+    15,
+    42,
+    17
+   ],
+   "cycle": 150.0,
+   "critical": [
+    {
+     "phase": 0,
+     "group": "SVB_N_through+right",
+     "y": 0.378
+    },
+    {
+     "phase": 1,
+     "group": "SVB_N_left",
+     "y": 0.1003
+    },
+    {
+     "phase": 2,
+     "group": "PRB_W_through+right",
+     "y": 0.2896
+    },
+    {
+     "phase": 3,
+     "group": "PRB_W_left",
+     "y": 0.1139
+    }
+   ],
+   "groups": {
+    "SVB_N_through+right": {
+     "phase": 0,
+     "count_1500s_x1.0": 361,
+     "flow_vph": 1039.7,
+     "sat_flow_vph": 2750.2,
+     "y": 0.378
+    },
+    "SVB_S_through+right": {
+     "phase": 0,
+     "count_1500s_x1.0": 328,
+     "flow_vph": 944.6,
+     "sat_flow_vph": 2700.7,
+     "y": 0.3498
+    },
+    "SVB_N_left": {
+     "phase": 1,
+     "count_1500s_x1.0": 59,
+     "flow_vph": 169.9,
+     "sat_flow_vph": 1694.9,
+     "y": 0.1003
+    },
+    "SVB_S_left": {
+     "phase": 1,
+     "count_1500s_x1.0": 46,
+     "flow_vph": 132.5,
+     "sat_flow_vph": 1683.0,
+     "y": 0.0787
+    },
+    "PRB_E_through+right": {
+     "phase": 2,
+     "count_1500s_x1.0": 174,
+     "flow_vph": 501.1,
+     "sat_flow_vph": 2110.2,
+     "y": 0.2375
+    },
+    "PRB_W_through+right": {
+     "phase": 2,
+     "count_1500s_x1.0": 261,
+     "flow_vph": 751.7,
+     "sat_flow_vph": 2595.5,
+     "y": 0.2896
+    },
+    "PRB_E_left": {
+     "phase": 3,
+     "count_1500s_x1.0": 60,
+     "flow_vph": 172.8,
+     "sat_flow_vph": 1693.3,
+     "y": 0.102
+    },
+    "PRB_W_left": {
+     "phase": 3,
+     "count_1500s_x1.0": 66,
+     "flow_vph": 190.1,
+     "sat_flow_vph": 1669.0,
+     "y": 0.1139
+    }
+   }
+  },
+  "x1.5": {
+   "programID": "webster_x15",
+   "L": 20.0,
+   "Y": 1.1022,
+   "C0": null,
+   "C0_note": "Y >= 1: formula undefined, upper bound used",
+   "C_bounded": 150.0,
+   "greens_raw": [
+    55.73,
+    14.78,
+    42.7,
+    16.79
+   ],
+   "greens": [
+    56,
+    15,
+    42,
+    17
+   ],
+   "cycle": 150.0,
+   "critical": [
+    {
+     "phase": 0,
+     "group": "SVB_N_through+right",
+     "y": 0.4725
+    },
+    {
+     "phase": 1,
+     "group": "SVB_N_left",
+     "y": 0.1253
+    },
+    {
+     "phase": 2,
+     "group": "PRB_W_through+right",
+     "y": 0.362
+    },
+    {
+     "phase": 3,
+     "group": "PRB_W_left",
+     "y": 0.1424
+    }
+   ],
+   "groups": {
+    "SVB_N_through+right": {
+     "phase": 0,
+     "count_1500s_x1.0": 361,
+     "flow_vph": 1299.6,
+     "sat_flow_vph": 2750.2,
+     "y": 0.4725
+    },
+    "SVB_S_through+right": {
+     "phase": 0,
+     "count_1500s_x1.0": 328,
+     "flow_vph": 1180.8,
+     "sat_flow_vph": 2700.7,
+     "y": 0.4372
+    },
+    "SVB_N_left": {
+     "phase": 1,
+     "count_1500s_x1.0": 59,
+     "flow_vph": 212.4,
+     "sat_flow_vph": 1694.9,
+     "y": 0.1253
+    },
+    "SVB_S_left": {
+     "phase": 1,
+     "count_1500s_x1.0": 46,
+     "flow_vph": 165.6,
+     "sat_flow_vph": 1683.0,
+     "y": 0.0984
+    },
+    "PRB_E_through+right": {
+     "phase": 2,
+     "count_1500s_x1.0": 174,
+     "flow_vph": 626.4,
+     "sat_flow_vph": 2110.2,
+     "y": 0.2968
+    },
+    "PRB_W_through+right": {
+     "phase": 2,
+     "count_1500s_x1.0": 261,
+     "flow_vph": 939.6,
+     "sat_flow_vph": 2595.5,
+     "y": 0.362
+    },
+    "PRB_E_left": {
+     "phase": 3,
+     "count_1500s_x1.0": 60,
+     "flow_vph": 216.0,
+     "sat_flow_vph": 1693.3,
+     "y": 0.1276
+    },
+    "PRB_W_left": {
+     "phase": 3,
+     "count_1500s_x1.0": 66,
+     "flow_vph": 237.6,
+     "sat_flow_vph": 1669.0,
+     "y": 0.1424
+    }
+   }
+  }
+ }
+}

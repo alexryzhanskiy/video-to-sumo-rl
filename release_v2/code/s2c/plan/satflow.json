@@ -1,0 +1,166 @@
+{
+ "written": "2026-10-29 23:30:29",
+ "twin": "default (SUMO default vehicle type)",
+ "plan": "field plan, offset 16 (E8)",
+ "runs": [
+  {
+   "route": "sumo/demand.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "sumo/demand.rou.xml",
+   "seed": 2
+  },
+  {
+   "route": "sumo/demand.rou.xml",
+   "seed": 3
+  },
+  {
+   "route": "sumo/demand.rou.xml",
+   "seed": 4
+  },
+  {
+   "route": "sumo/demand.rou.xml",
+   "seed": 5
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1001.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1002.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1003.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1004.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1005.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1006.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1007.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1008.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1009.rou.xml",
+   "seed": 1
+  },
+  {
+   "route": "revision/demand/heldout/x10/heldout_x10_s1010.rou.xml",
+   "seed": 1
+  }
+ ],
+ "end_s": 1500,
+ "rules": {
+  "lead_s": 1.0,
+  "sat_from_position": 4,
+  "gap_split_s": 8.0,
+  "first_max_s": 8.0,
+  "cycles": [
+   2,
+   12
+  ],
+  "windows_s": {
+   "SVB_through": 49.0,
+   "PRB_through": 33.0,
+   "SVB_left": 15.0,
+   "PRB_left": 15.0
+  }
+ },
+ "e8_files": {
+  "sim_discharge_headways.csv": "3c0913682bd4f97c1ca2e8c92e2e9a4317422e91a737beb01c59882cd0846275",
+  "run_meta.json": "fa890453bfe668734d69ad7cd8fcdec120c8c052253fb2c1f9aa07cecd8d247d"
+ },
+ "groups": {
+  "SVB_N_through+right": {
+   "n_saturated_headways": 3990,
+   "median_headway_s": 1.309,
+   "mean_headway_s": 1.4522,
+   "sat_flow_measured_vph": 2750.2,
+   "e8_n": 3990,
+   "e8_median_headway_s": 1.309,
+   "sat_flow_vph": 2750.2,
+   "source": "revision/runs/e8_validation/sim_discharge_headways.csv (approach SVB_N)",
+   "equal_to_e8": true
+  },
+  "SVB_S_through+right": {
+   "n_saturated_headways": 3679,
+   "median_headway_s": 1.333,
+   "mean_headway_s": 1.5086,
+   "sat_flow_measured_vph": 2700.7,
+   "e8_n": 3679,
+   "e8_median_headway_s": 1.333,
+   "sat_flow_vph": 2700.7,
+   "source": "revision/runs/e8_validation/sim_discharge_headways.csv (approach SVB_S)",
+   "equal_to_e8": true
+  },
+  "SVB_N_left": {
+   "n_saturated_headways": 321,
+   "median_headway_s": 2.124,
+   "mean_headway_s": 2.1729,
+   "sat_flow_measured_vph": 1694.9,
+   "source": "measured here (E8 extraction and rules, left-turn window 15 s)",
+   "sat_flow_vph": 1694.9
+  },
+  "SVB_S_left": {
+   "n_saturated_headways": 175,
+   "median_headway_s": 2.139,
+   "mean_headway_s": 2.2511,
+   "sat_flow_measured_vph": 1683.0,
+   "source": "measured here (E8 extraction and rules, left-turn window 15 s)",
+   "sat_flow_vph": 1683.0
+  },
+  "PRB_E_through+right": {
+   "n_saturated_headways": 1561,
+   "median_headway_s": 1.706,
+   "mean_headway_s": 1.7181,
+   "sat_flow_measured_vph": 2110.2,
+   "e8_n": 1561,
+   "e8_median_headway_s": 1.706,
+   "sat_flow_vph": 2110.2,
+   "source": "revision/runs/e8_validation/sim_discharge_headways.csv (approach PRB_E)",
+   "equal_to_e8": true
+  },
+  "PRB_W_through+right": {
+   "n_saturated_headways": 2702,
+   "median_headway_s": 1.387,
+   "mean_headway_s": 1.4577,
+   "sat_flow_measured_vph": 2595.5,
+   "e8_n": 2702,
+   "e8_median_headway_s": 1.387,
+   "sat_flow_vph": 2595.5,
+   "source": "revision/runs/e8_validation/sim_discharge_headways.csv (approach PRB_W)",
+   "equal_to_e8": true
+  },
+  "PRB_E_left": {
+   "n_saturated_headways": 306,
+   "median_headway_s": 2.126,
+   "mean_headway_s": 2.2345,
+   "sat_flow_measured_vph": 1693.3,
+   "source": "measured here (E8 extraction and rules, left-turn window 15 s)",
+   "sat_flow_vph": 1693.3
+  },
+  "PRB_W_left": {
+   "n_saturated_headways": 340,
+   "median_headway_s": 2.157,
+   "mean_headway_s": 2.1903,
+   "sat_flow_measured_vph": 1669.0,
+   "source": "measured here (E8 extraction and rules, left-turn window 15 s)",
+   "sat_flow_vph": 1669.0
+  }
+ }
+}

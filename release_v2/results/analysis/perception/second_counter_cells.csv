@@ -1,0 +1,17 @@
+clip,approach,movement,manual,second,difference
+center_i300,SVB_N,L,19,18,-1
+center_i300,SVB_N,T,42,44,2
+center_i300,SVB_N,R,3,3,0
+center_i300,SVB_N,U,0,0,0
+center_i300,PRB_E,L,10,9,-1
+center_i300,PRB_E,T,29,27,-2
+center_i300,PRB_E,R,14,14,0
+center_i300,PRB_E,U,0,0,0
+zarich_i300,SVB_S,L,13,13,0
+zarich_i300,SVB_S,T,49,49,0
+zarich_i300,SVB_S,R,13,14,1
+zarich_i300,SVB_S,U,0,1,1
+zarich_i300,PRB_W,L,8,7,-1
+zarich_i300,PRB_W,T,41,44,3
+zarich_i300,PRB_W,R,32,30,-2
+zarich_i300,PRB_W,U,0,0,0

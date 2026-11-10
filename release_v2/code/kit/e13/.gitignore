@@ -1,0 +1,5 @@
+runs/
+runs_smoke/
+runs_test*/
+__pycache__/
+*.pyc

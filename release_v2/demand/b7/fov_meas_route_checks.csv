@@ -1,0 +1,11 @@
+file,vehicles,expected,cells_differing
+revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7001.rou.xml,1355,1355,0
+revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7002.rou.xml,1355,1355,0
+revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7003.rou.xml,1355,1355,0
+revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7004.rou.xml,1355,1355,0
+revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7005.rou.xml,1355,1355,0
+revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7001.rou.xml,1626,1626,0
+revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7002.rou.xml,1626,1626,0
+revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7003.rou.xml,1626,1626,0
+revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7004.rou.xml,1626,1626,0
+revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7005.rou.xml,1626,1626,0

@@ -1,0 +1,53 @@
+{
+  "versions": {
+    "python": "3.13.15",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD",
+    "logical_cpus": 16,
+    "host": "MyPC",
+    "eclipse-sumo": "1.26.0",
+    "libsumo": "1.26.0",
+    "sumo-data": "1.26.0",
+    "torch": "2.14.1",
+    "pfrl": "0.4.0",
+    "gym": "0.22.0",
+    "numpy": "2.5.4"
+  },
+  "hashes": {
+    "fixed_plan": "e1263d37463b23fef1fe3d270ca903676fde6113f73c21ef4fee5a53d8a91baa",
+    "policy_ep1": "4b3211e4740e23ed6eaff8125b200325f8038cfd009359b65798175b9059307d",
+    "policy_ep2": "f7a063116001d0bc6a3a2811452e245c566e142c119c1ffe95af6723116434cf",
+    "trainA_ep1": "e43fe33931a40505a3779a0bba3cb2a416a5611a9b1b14cc2b76915b3013eb8d",
+    "trainA_ep2": "3c891e47144f5e6031ecf40bebffd1abb2c99f9bfb5bf35bd286e2acccd339a6",
+    "trainB_ep1": "e43fe33931a40505a3779a0bba3cb2a416a5611a9b1b14cc2b76915b3013eb8d",
+    "trainB_ep2": "3c891e47144f5e6031ecf40bebffd1abb2c99f9bfb5bf35bd286e2acccd339a6"
+  },
+  "reference": {
+    "fixed_plan": "e1263d37463b23fef1fe3d270ca903676fde6113f73c21ef4fee5a53d8a91baa",
+    "policy_ep1": "4b3211e4740e23ed6eaff8125b200325f8038cfd009359b65798175b9059307d",
+    "policy_ep2": "f7a063116001d0bc6a3a2811452e245c566e142c119c1ffe95af6723116434cf",
+    "trainA_ep1": "e43fe33931a40505a3779a0bba3cb2a416a5611a9b1b14cc2b76915b3013eb8d",
+    "trainA_ep2": "3c891e47144f5e6031ecf40bebffd1abb2c99f9bfb5bf35bd286e2acccd339a6",
+    "trainB_ep1": "e43fe33931a40505a3779a0bba3cb2a416a5611a9b1b14cc2b76915b3013eb8d",
+    "trainB_ep2": "3c891e47144f5e6031ecf40bebffd1abb2c99f9bfb5bf35bd286e2acccd339a6"
+  },
+  "checks": [
+    [
+      "SUMO fixed plan identical to the reference PC",
+      true
+    ],
+    [
+      "original policy, 2 frozen episodes identical to the reference PC",
+      true
+    ],
+    [
+      "training repeatable on this PC (same seed twice)",
+      true
+    ],
+    [
+      "training identical to the reference PC (information only)",
+      true
+    ]
+  ]
+}

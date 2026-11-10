@@ -1,0 +1,17 @@
+clip,approach,movement,manual,pipeline,unsure,error,error_pct
+center_i300,SVB_N,L,19,17,0,-2,-10.5
+center_i300,SVB_N,T,42,37,0,-5,-11.9
+center_i300,SVB_N,R,3,4,0,1,33.3
+center_i300,SVB_N,U,0,5,0,5,
+center_i300,PRB_E,L,10,9,0,-1,-10.0
+center_i300,PRB_E,T,29,29,0,0,0.0
+center_i300,PRB_E,R,14,14,0,0,0.0
+center_i300,PRB_E,U,0,0,0,0,
+zarich_i300,SVB_S,L,13,12,0,-1,-7.7
+zarich_i300,SVB_S,T,49,48,0,-1,-2.0
+zarich_i300,SVB_S,R,13,13,0,0,0.0
+zarich_i300,SVB_S,U,0,4,0,4,
+zarich_i300,PRB_W,L,8,8,0,0,0.0
+zarich_i300,PRB_W,T,41,36,0,-5,-12.2
+zarich_i300,PRB_W,R,32,22,0,-10,-31.2
+zarich_i300,PRB_W,U,0,5,0,5,

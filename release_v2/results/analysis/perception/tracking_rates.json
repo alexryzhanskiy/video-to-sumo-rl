@@ -1,0 +1,89 @@
+{
+ "clips": [
+  "center_i300",
+  "zarich_i300"
+ ],
+ "method": "per 100 pipeline-counted vehicles: (census + unflagged x sample share) / counted; 95% CI = Garwood bounds of the census + Clopper-Pearson bounds of the sample share x unflagged, 'cannot tell' and unanswered candidates added to the upper bound (conservative)",
+ "id_switches": {
+  "census": 24,
+  "unclear_or_unanswered": 15,
+  "sample_events": 1,
+  "sample_answered": 16,
+  "unflagged": 188,
+  "counted": 263,
+  "estimated_events": 35.75,
+  "per_100": 13.59,
+  "census_only_per_100": 9.13,
+  "ci95_per_100": [
+   5.96,
+   40.89
+  ]
+ },
+ "double_counts": {
+  "census": 4,
+  "unclear_or_unanswered": 2,
+  "sample_events": 0,
+  "sample_answered": 16,
+  "unflagged": 188,
+  "counted": 263,
+  "estimated_events": 4.0,
+  "per_100": 1.52,
+  "census_only_per_100": 1.52,
+  "ci95_per_100": [
+   0.41,
+   19.37
+  ]
+ },
+ "per_clip": [
+  {
+   "clip": "center_i300",
+   "counted": 115,
+   "unflagged": 83,
+   "id_break": 8,
+   "id_break_double": 1,
+   "id_jump": 0,
+   "id_unclear": 4,
+   "dc_break_double": 1,
+   "dc_pipeline_only_same": 1,
+   "dc_other_camera": 0,
+   "dc_unclear": 1,
+   "false_counts": 0,
+   "missed_hand_count_unmatched": 1,
+   "missed_uncounted_track": 5,
+   "sample_answered": 8,
+   "sample_cannot_tell": 0,
+   "sample_id_changed": 0,
+   "sample_counted_twice": 0,
+   "sample_unanswered": 0,
+   "candidates": 100,
+   "answered": 100,
+   "id_census": 9,
+   "dc_census": 2
+  },
+  {
+   "clip": "zarich_i300",
+   "counted": 148,
+   "unflagged": 105,
+   "id_break": 15,
+   "id_break_double": 0,
+   "id_jump": 0,
+   "id_unclear": 11,
+   "dc_break_double": 0,
+   "dc_pipeline_only_same": 2,
+   "dc_other_camera": 0,
+   "dc_unclear": 1,
+   "false_counts": 1,
+   "missed_hand_count_unmatched": 10,
+   "missed_uncounted_track": 13,
+   "sample_answered": 8,
+   "sample_cannot_tell": 0,
+   "sample_id_changed": 1,
+   "sample_counted_twice": 0,
+   "sample_unanswered": 0,
+   "candidates": 153,
+   "answered": 153,
+   "id_census": 15,
+   "dc_census": 2
+  }
+ ]
+}

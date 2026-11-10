@@ -1,0 +1,9 @@
+# B7 new variants (4 Nov 2026): fixed, actuated, tuned MaxPressure (k = 1) on ce_bias, ce_rand, fov_meas.
+# Kit 4af92b13 = the 30 Oct kit + 40 B7 route files (s2c.py differs only by the E14 command). Runs on local disk,
+# then copies everything to MyDrive/S2c/out_b7_20261104 (the laptop reads it via Google Drive for desktop).
+import hashlib
+WANT = '4af92b132b8d6e8feb997ac9088d4428e2d56dd883d751e825048ad921f22f43'
+got = hashlib.sha256(open('/content/drive/MyDrive/S2c/s2c_kit.zip', 'rb').read()).hexdigest()
+print('kit sha256', got, 'OK' if got == WANT else 'MISMATCH (Drive not synced yet?)')
+assert got == WANT
+!pip -q install eclipse-sumo==1.26.0 libsumo==1.26.0 && rm -rf /content/s2c_kit /content/s2c_b7new && unzip -q -o /content/drive/MyDrive/S2c/s2c_kit.zip -d /content/ && cd /content/s2c_kit && python s2c.py verify-kit && mkdir -p /content/s2c_b7new/tune && cp /content/drive/MyDrive/S2c/out/tune/tuned.json /content/s2c_b7new/tune/ && python s2c.py b7 --out /content/s2c_b7new --jobs 8 --b7-only x10/ce_bias x10/ce_rand x10/fov_meas x12/ce_bias x12/ce_rand x12/fov_meas && python s2c.py status --out /content/s2c_b7new && mkdir -p /content/drive/MyDrive/S2c/out_b7_20261104 && cp -r /content/s2c_b7new/. /content/drive/MyDrive/S2c/out_b7_20261104/ && echo B7NEW_DONE

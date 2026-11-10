@@ -1,0 +1,46 @@
+<routes>
+    <vehicle id="arrived" depart="0" departLane="1" departSpeed="max"><route edges="nN_nC nC_nS"/></vehicle>
+    <vehicle id="backlog_00" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_01" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_02" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_03" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_04" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_05" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_06" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_07" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_08" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_09" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_10" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_11" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_12" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_13" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_14" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_15" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_16" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_17" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_18" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_19" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_20" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_21" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_22" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_23" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_24" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_25" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_26" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_27" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_28" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_29" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_30" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_31" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_32" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_33" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_34" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_35" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_36" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_37" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_38" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="backlog_39" depart="30" departLane="0" departPos="base" departSpeed="0"><route edges="nE_nC nC_nW"/></vehicle>
+    <vehicle id="running" depart="55" departLane="2"><route edges="nS_nC nC_nN"/></vehicle>
+    <vehicle id="future_120" depart="120"><route edges="nW_nC nC_nE"/></vehicle>
+    <vehicle id="future_1000" depart="1000"><route edges="nW_nC nC_nE"/></vehicle>
+</routes>

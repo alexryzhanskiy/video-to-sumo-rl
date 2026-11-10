@@ -1,0 +1,154 @@
+annotator,cand_id,type,answer,seconds
+A1,1,movement,left,13.9
+A1,2,movement,through,9.1
+A1,3,movement,through,8.7
+A1,4,movement,through,7.6
+A1,5,movement,through,9.5
+A1,6,movement,through,7.6
+A1,7,movement,cannot tell,13.3
+A1,8,movement,through,6.7
+A1,9,movement,through,6.9
+A1,10,movement,through,6.7
+A1,11,movement,through,6.4
+A1,12,movement,through,7.3
+A1,13,movement,through,7.0
+A1,14,movement,through,7.3
+A1,15,movement,through,6.3
+A1,16,movement,right,8.4
+A1,17,movement,through,7.6
+A1,18,movement,through,6.3
+A1,19,movement,right,5.4
+A1,20,movement,through,6.5
+A1,21,movement,through,5.6
+A1,22,movement,cannot tell,7.5
+A1,23,movement,through,9.1
+A1,24,movement,cannot tell,21.7
+A1,25,movement,through,9.0
+A1,26,movement,through,9.1
+A1,27,movement,through,6.9
+A1,28,movement,through,12.0
+A1,29,movement,through,6.9
+A1,30,movement,through,5.8
+A1,31,movement,through,6.9
+A1,32,movement,through,5.9
+A1,33,movement,through,5.3
+A1,34,movement,through,5.4
+A1,35,movement,through,5.6
+A1,36,movement,right,8.8
+A1,37,movement,cannot tell,7.3
+A1,38,movement,through,7.0
+A1,39,movement,right,4.9
+A1,40,movement,through,6.4
+A1,41,movement,right,5.1
+A1,42,movement,left,8.3
+A1,43,movement,through,9.7
+A1,44,movement,right,21.9
+A1,45,movement,through,6.8
+A1,46,movement,right,9.9
+A1,47,movement,through,7.1
+A1,48,movement,through,7.2
+A1,49,movement,through,7.6
+A1,50,movement,through,6.0
+A1,51,movement,through,6.4
+A1,52,movement,through,14.2
+A1,53,movement,through,6.3
+A1,54,movement,through,6.0
+A1,55,uncounted,cannot tell,16.6
+A1,56,uncounted,not a vehicle of this approach,8.3
+A1,57,break,no,7.9
+A1,58,manual_only,pipeline missed it,8.0
+A1,59,uncounted,missed (never counted),3.8
+A1,60,manual_only,pipeline missed it,7.2
+A1,61,break,no,4.8
+A1,62,break,yes,5.7
+A1,63,break,no,8.9
+A1,64,uncounted,missed (never counted),20.9
+A1,65,break,no,7.3
+A1,66,manual_only,pipeline missed it,5.8
+A1,67,uncounted,counted under another ID,6.9
+A1,68,manual_only,pipeline missed it,2.7
+A1,69,uncounted,missed (never counted),7.5
+A1,70,break,no,6.9
+A1,71,uncounted,counted under another ID,11.0
+A1,72,break,no,3.9
+A1,73,manual_only,pipeline missed it,3.7
+A1,74,break,no,8.0
+A1,75,uncounted,missed (never counted),6.9
+A1,76,break,cannot tell,5.8
+A1,77,break,yes,10.5
+A1,78,uncounted,counted under another ID,9.3
+A1,79,manual_only,pipeline missed it,2.2
+A1,80,break,no,6.7
+A1,81,break,no,4.3
+A1,82,break_double,cannot tell,2.1
+A1,83,break,cannot tell,2.3
+A1,84,uncounted,missed (never counted),7.0
+A1,85,pipeline_only,false count,13.8
+A1,86,break,yes,6.5
+A1,87,pipeline_only,real vehicle,9.8
+A1,88,break,no,8.3
+A1,89,break,yes,3.8
+A1,90,uncounted,cannot tell,8.5
+A1,91,break,cannot tell,7.9
+A1,92,manual_only,pipeline missed it,14.8
+A1,93,uncounted,missed (never counted),5.5
+A1,94,break,yes,5.1
+A1,95,pipeline_only,real vehicle,9.5
+A1,96,manual_only,pipeline missed it,6.9
+A1,97,break,cannot tell,7.3
+A1,98,break,yes,4.3
+A1,99,uncounted,cannot tell,4.8
+A1,100,uncounted,missed (never counted),13.5
+A1,101,break,yes,8.2
+A1,102,manual_only,pipeline counted it (time off),13.6
+A1,103,uncounted,not a vehicle of this approach,8.1
+A1,104,break,yes,7.5
+A1,105,manual_only,cannot tell,7.3
+A1,106,manual_only,cannot tell,5.2
+A1,107,uncounted,missed (never counted),5.3
+A1,108,break,cannot tell,7.7
+A1,109,uncounted,counted under another ID,11.7
+A1,110,break,yes,3.9
+A1,111,uncounted,counted under another ID,6.7
+A1,112,break,yes,5.4
+A1,113,uncounted,cannot tell,7.0
+A1,114,uncounted,counted under another ID,4.9
+A1,115,break,cannot tell,4.5
+A1,116,break,cannot tell,4.7
+A1,117,break,yes,11.2
+A1,118,break,cannot tell,5.5
+A1,119,break,yes,4.2
+A1,120,pipeline_only,double count (same camera),29.2
+A1,121,break,cannot tell,4.5
+A1,122,break,no,6.1
+A1,123,break,no,6.0
+A1,124,break,cannot tell,5.3
+A1,125,break,no,5.0
+A1,126,break,no,5.0
+A1,127,pipeline_only,double count (same camera),3.8
+A1,128,break,no,8.4
+A1,129,break,no,4.9
+A1,130,uncounted,missed (never counted),4.2
+A1,131,uncounted,missed (never counted),4.0
+A1,132,break,yes,2.5
+A1,133,uncounted,cannot tell,7.3
+A1,134,break,no,7.5
+A1,135,uncounted,counted under another ID,15.9
+A1,136,break,yes,5.6
+A1,137,uncounted,not a vehicle of this approach,7.2
+A1,138,manual_only,pipeline missed it,5.3
+A1,139,uncounted,missed (never counted),7.9
+A1,140,uncounted,not a vehicle of this approach,3.8
+A1,141,uncounted,missed (never counted),8.3
+A1,142,uncounted,not a vehicle of this approach,7.2
+A1,143,uncounted,missed (never counted),7.0
+A1,144,manual_only,pipeline missed it,5.9
+A1,145,break,yes,5.7
+A1,146,vehicle,no problem,23.6
+A1,147,vehicle,no problem,9.9
+A1,148,vehicle,no problem,12.6
+A1,149,vehicle,ID changed or fragment,6.1
+A1,150,vehicle,no problem,6.5
+A1,151,vehicle,no problem,12.9
+A1,152,vehicle,no problem,12.2
+A1,153,vehicle,no problem,6.3

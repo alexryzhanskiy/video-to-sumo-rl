@@ -1,0 +1,101 @@
+cand_id,clip,type,t_clip,t_end,t_common,track_a,track_b,approach,detail,question,pipeline_movement,method
+1,center_i300,movement,7.6,25.36,307.6,4079,,SVB_N,exit by gate,Which way did the vehicle in box A (from SVB_N) go?,right,gate
+2,center_i300,movement,19.84,36.52,319.84,4364,,SVB_N,exit by gate,Which way did the vehicle in box A (from SVB_N) go?,left,gate
+3,center_i300,movement,78.64,90.64,378.64,4244,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+4,center_i300,movement,81.16,93.4,381.16,5166,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+5,center_i300,movement,85.96,123.16,385.96,5225,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+6,center_i300,movement,88.84,125.8,388.84,5229,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+7,center_i300,movement,91.6,129.28,391.6,5297,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+8,center_i300,movement,93.76,130.96,393.76,5367,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+9,center_i300,movement,99.04,133.96,399.04,5412,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+10,center_i300,movement,100.48,133.72,400.48,5418,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+11,center_i300,movement,103.36,154.96,403.36,5544,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,U-turn,heading
+12,center_i300,movement,107.92,136.96,407.92,5457,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+13,center_i300,movement,109.6,164.2,409.6,5516,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,U-turn,heading
+14,center_i300,movement,129.04,135.28,429.04,4440,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,U-turn,heading
+15,center_i300,movement,135.04,157.0,435.04,5863,,PRB_E,exit by gate,Which way did the vehicle in box A (from PRB_E) go?,right,gate
+16,center_i300,movement,139.36,157.36,439.36,5911,,SVB_N,exit by gate,Which way did the vehicle in box A (from SVB_N) go?,left,gate
+17,center_i300,movement,148.6,157.36,448.6,6046,,PRB_E,exit by gate,Which way did the vehicle in box A (from PRB_E) go?,through,gate
+18,center_i300,movement,150.76,161.44,450.76,4894,,PRB_E,exit by gate,Which way did the vehicle in box A (from PRB_E) go?,through,gate
+19,center_i300,movement,153.16,161.8,453.16,6057,,PRB_E,exit by heading,Which way did the vehicle in box A (from PRB_E) go?,through,heading
+20,center_i300,movement,159.4,170.2,459.4,6034,,PRB_E,exit by heading,Which way did the vehicle in box A (from PRB_E) go?,right,heading
+21,center_i300,movement,159.52,169.12,459.52,6190,,PRB_E,exit by gate,Which way did the vehicle in box A (from PRB_E) go?,through,gate
+22,center_i300,movement,178.48,184.72,478.48,6424,,PRB_E,exit by gate,Which way did the vehicle in box A (from PRB_E) go?,through,gate
+23,center_i300,movement,189.4,199.12,489.4,6494,,PRB_E,exit by gate,Which way did the vehicle in box A (from PRB_E) go?,left,gate
+24,center_i300,movement,201.52,213.16,501.52,6231,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+25,center_i300,movement,204.04,214.12,504.04,6703,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+26,center_i300,movement,206.68,217.48,506.68,5755,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+27,center_i300,movement,213.04,223.72,513.04,6769,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+28,center_i300,movement,215.68,223.24,515.68,6798,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,right,heading
+29,center_i300,movement,215.68,220.36,515.68,6850,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,U-turn,heading
+30,center_i300,movement,219.76,236.56,519.76,6857,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+31,center_i300,movement,221.92,229.0,521.92,6890,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,right,heading
+32,center_i300,movement,229.12,252.4,529.12,6967,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+33,center_i300,movement,232.12,260.68,532.12,7024,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+34,center_i300,movement,235.6,264.4,535.6,7142,,SVB_N,exit by heading,Which way did the vehicle in box A (from SVB_N) go?,through,heading
+35,center_i300,movement,269.44,278.68,569.44,6490,,PRB_E,exit by gate,Which way did the vehicle in box A (from PRB_E) go?,through,gate
+36,center_i300,manual_only,6.0,12.72,306.0,,,SVB_N,hand count SVB_N R at 10.8 s (press time),Your hand count here has no pipeline count nearby. Did the pipeline miss this vehicle?,,
+37,center_i300,manual_only,6.72,13.44,306.72,,,SVB_N,hand count SVB_N L at 11.5 s (press time),Your hand count here has no pipeline count nearby. Did the pipeline miss this vehicle?,,
+38,center_i300,break,11.8,14.44,311.8,4011,4330,,"gap 6 frames, 10 px; 4330: SVB_N->SVB_S",Are A and B the same vehicle (a new ID for one vehicle)?,,
+39,center_i300,break_double,17.2,19.72,317.2,3921,4419,,"gap 5 frames, 36 px; 3921: PRB_E->SVB_N; 4419: SVB_N->PRB_E",Are A and B the same vehicle? Both were counted (double count?),,
+40,center_i300,break,20.68,22.84,320.68,3516,4461,,"gap 2 frames, 10 px; 3516: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+41,center_i300,break,29.92,33.04,329.92,4361,4561,,"gap 10 frames, 31 px; 4561: SVB_N->SVB_S",Are A and B the same vehicle (a new ID for one vehicle)?,,
+42,center_i300,break,31.48,33.76,331.48,4323,4572,,"gap 3 frames, 7 px; 4323: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+43,center_i300,uncounted,88.84,95.56,388.84,5342,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+44,center_i300,break,90.16,93.04,390.16,5294,5371,,"gap 8 frames, 11 px; 5371: SVB_N->SVB_S",Are A and B the same vehicle (a new ID for one vehicle)?,,
+45,center_i300,pipeline_only,99.52,104.32,399.52,5418,,SVB_N,pipeline SVB_N->SVB_S (heading),"Pipeline count (box A) with no hand count: double count, false count, or a real vehicle?",,
+46,center_i300,jump,102.04,104.92,402.04,5538,,,"step 147 px, area x0.58",Does track A jump from one vehicle to another here (ID switch)?,,
+47,center_i300,pipeline_only,106.96,111.76,406.96,5457,,SVB_N,pipeline SVB_N->SVB_S (heading),"Pipeline count (box A) with no hand count: double count, false count, or a real vehicle?",,
+48,center_i300,pipeline_only,108.64,113.44,408.64,5516,,SVB_N,pipeline SVB_N->SVB_N (heading),"Pipeline count (box A) with no hand count: double count, false count, or a real vehicle?",,
+49,center_i300,jump,109.6,112.48,409.6,5601,,,"step 190 px, area x0.58",Does track A jump from one vehicle to another here (ID switch)?,,
+50,center_i300,break,127.0,129.64,427.0,5727,5805,,"gap 6 frames, 20 px; 5727: SVB_N->PRB_W",Are A and B the same vehicle (a new ID for one vehicle)?,,
+51,center_i300,manual_only,127.08,133.8,427.08,,,SVB_N,hand count SVB_N L at 131.9 s (press time),Your hand count here has no pipeline count nearby. Did the pipeline miss this vehicle?,,
+52,center_i300,break,129.64,132.88,429.64,5820,5851,,"gap 11 frames, 8 px; 5851: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+53,center_i300,uncounted,129.88,136.6,429.88,5848,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+54,center_i300,break_double,133.84,136.6,433.84,5165,5888,,"gap 7 frames, 29 px; 5165: PRB_E->SVB_N; 5888: SVB_N->PRB_E",Are A and B the same vehicle? Both were counted (double count?),,
+55,center_i300,break,134.44,137.56,434.44,5277,5909,,"gap 10 frames, 5 px; 5277: PRB_E->SVB_N",Are A and B the same vehicle (a new ID for one vehicle)?,,
+56,center_i300,break,138.52,140.92,438.52,4419,5970,,"gap 4 frames, 16 px; 4419: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+57,center_i300,break,143.68,146.08,443.68,5724,6034,,"gap 4 frames, 9 px; 6034: PRB_E->SVB_N",Are A and B the same vehicle (a new ID for one vehicle)?,,
+58,center_i300,uncounted,149.8,156.52,449.8,6109,,,entered through an owned stop gate but ended inside the junction,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+59,center_i300,manual_only,149.92,156.64,449.92,,,PRB_E,hand count PRB_E T at 154.7 s (press time),Your hand count here has no pipeline count nearby. Did the pipeline miss this vehicle?,,
+60,center_i300,uncounted,152.08,158.8,452.08,6130,,,entered through an owned stop gate but ended inside the junction,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+61,center_i300,break,153.04,155.44,453.04,4999,6137,,"gap 4 frames, 21 px; 6137: PRB_E->PRB_W",Are A and B the same vehicle (a new ID for one vehicle)?,,
+62,center_i300,break,153.04,156.4,453.04,5863,6150,,"gap 12 frames, 25 px; 5863: PRB_E->SVB_N",Are A and B the same vehicle (a new ID for one vehicle)?,,
+63,center_i300,break,153.4,156.04,453.4,5911,6144,,"gap 6 frames, 23 px; 5911: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+64,center_i300,uncounted,157.12,163.84,457.12,6188,,,first seen just past the PRB_E stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+65,center_i300,uncounted,157.12,163.84,457.12,6189,,,first seen just past the PRB_E stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+66,center_i300,break,157.72,160.0,457.72,5894,6194,,"gap 3 frames, 1 px; 5894: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+67,center_i300,pipeline_only,158.56,163.36,458.56,6190,,PRB_E,pipeline PRB_E->PRB_W (gate),"Pipeline count (box A) with no hand count: double count, false count, or a real vehicle?",,
+68,center_i300,uncounted,160.24,166.96,460.24,6236,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+69,center_i300,break,162.76,165.04,462.76,6137,6252,,"gap 3 frames, 162 px; 6137: PRB_E->PRB_W",Are A and B the same vehicle (a new ID for one vehicle)?,,
+70,center_i300,uncounted,163.36,170.08,463.36,6278,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+71,center_i300,break,164.8,167.68,464.8,6283,6297,,"gap 8 frames, 25 px; 6297: PRB_E->PRB_W",Are A and B the same vehicle (a new ID for one vehicle)?,,
+72,center_i300,uncounted,165.64,172.36,465.64,6309,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+73,center_i300,break,167.68,169.84,467.68,6324,6327,,"gap 2 frames, 21 px; 6327: PRB_E->PRB_W",Are A and B the same vehicle (a new ID for one vehicle)?,,
+74,center_i300,break,172.72,175.24,472.72,5241,6366,,"gap 5 frames, 19 px; 6366: PRB_E->SVB_S",Are A and B the same vehicle (a new ID for one vehicle)?,,
+75,center_i300,break,174.16,176.32,474.16,6369,6382,,"gap 2 frames, 22 px; 6382: SVB_N->SVB_N",Are A and B the same vehicle (a new ID for one vehicle)?,,
+76,center_i300,break,183.04,185.56,483.04,6449,6494,,"gap 5 frames, 30 px; 6494: PRB_E->SVB_S",Are A and B the same vehicle (a new ID for one vehicle)?,,
+77,center_i300,manual_only,188.36,195.08,488.36,,,PRB_E,hand count PRB_E L at 193.2 s (press time),Your hand count here has no pipeline count nearby. Did the pipeline miss this vehicle?,,
+78,center_i300,uncounted,191.8,197.44,491.8,6603,,,first seen just past the PRB_E stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+79,center_i300,break,193.6,195.76,493.6,6595,6628,,"gap 2 frames, 37 px; 6628: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+80,center_i300,pipeline_only,209.32,214.12,509.32,6745,,PRB_E,pipeline PRB_E->SVB_N (gate),"Pipeline count (box A) with no hand count: double count, false count, or a real vehicle?",,
+81,center_i300,uncounted,211.96,218.68,511.96,6824,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+82,center_i300,break,216.4,218.68,516.4,6850,6862,,"gap 3 frames, 6 px; 6850: SVB_N->SVB_N",Are A and B the same vehicle (a new ID for one vehicle)?,,
+83,center_i300,manual_only,216.52,223.24,516.52,,,PRB_E,hand count PRB_E R at 221.3 s (press time),Your hand count here has no pipeline count nearby. Did the pipeline miss this vehicle?,,
+84,center_i300,manual_only,223.52,230.24,523.52,,,SVB_N,hand count SVB_N T at 228.3 s (press time),Your hand count here has no pipeline count nearby. Did the pipeline miss this vehicle?,,
+85,center_i300,break,227.92,230.08,527.92,6999,7024,,"gap 2 frames, 12 px; 7024: SVB_N->SVB_S",Are A and B the same vehicle (a new ID for one vehicle)?,,
+86,center_i300,uncounted,228.04,233.08,528.04,7046,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+87,center_i300,break,228.4,230.92,528.4,6745,7046,,"gap 5 frames, 17 px; 6745: PRB_E->SVB_N",Are A and B the same vehicle (a new ID for one vehicle)?,,
+88,center_i300,break,228.76,231.76,528.76,6562,7061,,"gap 9 frames, 27 px; 7061: PRB_E->PRB_W",Are A and B the same vehicle (a new ID for one vehicle)?,,
+89,center_i300,uncounted,243.88,250.6,543.88,7294,,,first seen just past the SVB_N stop line,"Box A was not counted. Was this vehicle counted under another ID (coloured label), or missed?",,
+90,center_i300,break,264.52,267.64,564.52,6628,7434,,"gap 10 frames, 33 px; 6628: SVB_N->PRB_E",Are A and B the same vehicle (a new ID for one vehicle)?,,
+91,center_i300,break,285.4,287.92,585.4,7693,7717,,"gap 5 frames, 4 px; 7717: PRB_E->PRB_W",Are A and B the same vehicle (a new ID for one vehicle)?,,
+92,center_i300,break,293.8,295.96,593.8,7409,7851,,"gap 2 frames, 31 px; 7409: PRB_E->SVB_N",Are A and B the same vehicle (a new ID for one vehicle)?,,
+93,center_i300,vehicle,5.8,18.76,305.8,4119,,PRB_E,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,
+94,center_i300,vehicle,8.32,17.92,308.32,4241,,SVB_N,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,
+95,center_i300,vehicle,196.48,209.44,496.48,6231,,SVB_N,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,
+96,center_i300,vehicle,212.56,221.2,512.56,6798,,SVB_N,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,
+97,center_i300,vehicle,229.6,242.56,529.6,6995,,SVB_N,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,
+98,center_i300,vehicle,231.04,240.28,531.04,7063,,SVB_N,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,
+99,center_i300,vehicle,235.36,243.52,535.36,7142,,SVB_N,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,
+100,center_i300,vehicle,283.6,291.88,583.6,7647,,PRB_E,sampled counted vehicle (83 unflagged of 115),"Follow vehicle A. Did its ID change, or was it counted twice?",,

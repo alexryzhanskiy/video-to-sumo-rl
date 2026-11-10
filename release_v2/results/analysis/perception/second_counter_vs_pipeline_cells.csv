@@ -1,0 +1,17 @@
+clip,approach,movement,second,pipeline,unsure,error
+center_i300,SVB_N,L,18,17,0,-1
+center_i300,SVB_N,T,44,37,0,-7
+center_i300,SVB_N,R,3,4,0,1
+center_i300,SVB_N,U,0,5,0,5
+center_i300,PRB_E,L,9,9,0,0
+center_i300,PRB_E,T,27,29,0,2
+center_i300,PRB_E,R,14,14,0,0
+center_i300,PRB_E,U,0,0,0,0
+zarich_i300,SVB_S,L,13,12,0,-1
+zarich_i300,SVB_S,T,49,48,0,-1
+zarich_i300,SVB_S,R,14,13,0,-1
+zarich_i300,SVB_S,U,1,4,0,3
+zarich_i300,PRB_W,L,7,8,0,1
+zarich_i300,PRB_W,T,44,36,0,-8
+zarich_i300,PRB_W,R,30,22,0,-8
+zarich_i300,PRB_W,U,0,5,0,5

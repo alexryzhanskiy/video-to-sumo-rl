@@ -1,0 +1,1743 @@
+diff --git a/resco_benchmark/__init__.py b/resco_benchmark/__init__.py
+--- a/resco_benchmark/__init__.py
++++ b/resco_benchmark/__init__.py
+@@ -1,5 +1,16 @@
+ import os
+ import sys
++import random
++import numpy as np
++
++# Global seed for reproducibility
++GLOBAL_SEED:int = 42
++
++def set_random_seeds(seed=GLOBAL_SEED):
++    """Set random seeds for reproducibility."""
++    random.seed(seed)
++    np.random.seed(seed)
++
+ if 'SUMO_HOME' in os.environ:
+     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
+     sys.path.append(tools)
+diff --git a/resco_benchmark/agents/mplight.py b/resco_benchmark/agents/mplight.py
+--- a/resco_benchmark/agents/mplight.py
++++ b/resco_benchmark/agents/mplight.py
+@@ -1,3 +1,4 @@
++import os
+ import numpy as np
+ 
+ import torch
+@@ -36,7 +37,10 @@
+         self.agent = DQNAgent(config, num_actions, model, num_agents=config['num_lights'])
+         if self.config['load']:
+             print('LOADING SAVED MODEL FOR EVALUATION')
+-            self.agent.load(self.config['log_dir'] + 'agent.pt')
++            # eval kit: explicit checkpoint (K19); the old default path never exists
++            ckpt = self.config.get('ckpt') or os.path.join(self.config['log_dir'], 'agent.pt')
++            print('checkpoint:', ckpt)
++            self.agent.load(ckpt)
+             self.agent.agent.training = False
+ 
+ 
+@@ -81,7 +85,7 @@
+         extended_acts = []
+         for i in range(batch_size):
+             act_idx = acts[i]
+-            pair = self.phase_pairs[act_idx]
++            pair = self.phase_pairs[act_idx.item()]
+             zeros = torch.zeros(num_movements, dtype=torch.int64, device=self.device)
+             zeros[pair[0]] = 1
+             zeros[pair[1]] = 1
+diff --git a/resco_benchmark/agents/pfrl_dqn.py b/resco_benchmark/agents/pfrl_dqn.py
+--- a/resco_benchmark/agents/pfrl_dqn.py
++++ b/resco_benchmark/agents/pfrl_dqn.py
+@@ -1,5 +1,6 @@
+ from typing import Any, Sequence
+ import numpy as np
++import os
+ 
+ import torch
+ import torch.nn as nn
+@@ -26,9 +27,10 @@
+ 
+             h = conv2d_size_out(obs_space[1])
+             w = conv2d_size_out(obs_space[2])
+-
++            k_h = min(2, h)
++            k_w = min(2, w)
+             model = nn.Sequential(
+-                nn.Conv2d(obs_space[0], 64, kernel_size=(2, 2)),
++                nn.Conv2d(obs_space[0], 64, kernel_size=(k_h, k_w)),
+                 nn.ReLU(),
+                 nn.Flatten(),
+                 nn.Linear(h * w * 64, 64),
+@@ -42,8 +44,18 @@
+             self.agents[key] = DQNAgent(config, act_space, model)
+             if self.config['load']:
+                 print('LOADING SAVED MODEL FOR EVALUATION')
+-                self.agents[key].load(self.config['log_dir']+'agent_'+key+'.pt')
++                # eval kit: explicit checkpoint (K19); the old default path never exists
++                ckpt = self.config.get('ckpt') or os.path.join(self.config['log_dir'], 'agent_' + key + '.pt')
++                print('checkpoint:', ckpt)
++                self.agents[key].load(ckpt)
+                 self.agents[key].agent.training = False
++
++    def save(self):
++        if not self.config['log_dir'].endswith(os.sep):
++            self.config['log_dir'] += os.sep
++        for key in self.agents:
++            path = self.config['log_dir'] + 'agent_' + key + '.pt'
++            self.agents[key].save(path)
+ 
+ 
+ class DQNAgent(Agent):
+@@ -96,14 +108,19 @@
+             self.agent.observe(observation, reward, done, False)
+ 
+     def save(self, path):
++        if not path.endswith('.pt'):
++            path += '.pt'
+         torch.save({
+             'model_state_dict': self.model.state_dict(),
+             'optimizer_state_dict': self.optimizer.state_dict(),
+-        }, path+'.pt')
++        }, path)
+ 
+     def load(self, path):
+-        self.model.load_state_dict(torch.load(path)['model_state_dict'])
+-        self.optimizer.load_state_dict(torch.load(path)['optimizer_state_dict'])
++        if not path.endswith('.pt'):
++            path += '.pt'
++        checkpoint = torch.load(path, map_location=self.device)    # eval kit: also loads GPU checkpoints on CPU
++        self.model.load_state_dict(checkpoint['model_state_dict'])
++        self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+ 
+ 
+ class SharedDQN(DQN):
+diff --git a/resco_benchmark/config/agent_config.py b/resco_benchmark/config/agent_config.py
+--- a/resco_benchmark/config/agent_config.py
++++ b/resco_benchmark/config/agent_config.py
+@@ -82,14 +82,38 @@
+     },
+     'IDQN': {
+         'agent': IDQN,
+-        'state': states.drq_norm,
++        'state': states.drq_norm1,
+         'reward': rewards.wait_norm,
+         'max_distance': 200,
+-        'BATCH_SIZE': 32,
+-        'GAMMA': 0.99,
+-        'EPS_START': 1.0,
+-        'EPS_END': 0.0,
+-        'EPS_DECAY': 220,
++        'BATCH_SIZE': 64,
++        'GAMMA': 0.99,
++        'EPS_START': 1.0,
++        'EPS_END': 0.0,
++        'EPS_DECAY': 640,
++        'TARGET_UPDATE': 500
++    },
++    'IDQN_pressure': {                      # throughput-aware: тот же IDQN, награда = max-pressure
++        'agent': IDQN,
++        'state': states.drq_norm1,
++        'reward': rewards.pressure_norm,
++        'max_distance': 200,
++        'BATCH_SIZE': 64,
++        'GAMMA': 0.99,
++        'EPS_START': 1.0,
++        'EPS_END': 0.0,
++        'EPS_DECAY': 640,
++        'TARGET_UPDATE': 500
++    },
++    'IDQN_pressure_inout': {                # E12: same IDQN, genuine pressure reward
++        'agent': IDQN,
++        'state': states.drq_norm1,
++        'reward': rewards.pressure_inout,
++        'max_distance': 200,
++        'BATCH_SIZE': 64,
++        'GAMMA': 0.99,
++        'EPS_START': 1.0,
++        'EPS_END': 0.0,
++        'EPS_DECAY': 640,
+         'TARGET_UPDATE': 500
+     },
+     'IPPO': {
+@@ -111,6 +135,94 @@
+         'TARGET_UPDATE': 500,
+         'demand_shape': 1
+     },
++    'gg': {
++        'agent': MPLight,
++        'state': states.mplightCO2,
++        'reward': rewards.pressureCO2,
++        'max_distance': 200,
++        'BATCH_SIZE': 32,
++        'GAMMA': 0.99,
++        'EPS_START': 1.0,
++        'EPS_END': 0.0,
++        'EPS_DECAY': 220,
++        'TARGET_UPDATE': 500,
++        'demand_shape': 1
++    },
++    'MPLightCO2Multiple': {
++        'agent': MPLight,
++        'state': states.mplight_Co2Multiple,
++        'reward': rewards.pressure_CO2Multiple,
++        'max_distance': 200,
++        'BATCH_SIZE': 32,       # Reduced batch size for quicker training
++        'GAMMA': 0.99,          # Keep gamma unchanged
++        'EPS_START': 1.0,       # Keep epsilon start
++        'EPS_END': 0.1,         # Increase final epsilon for less exploration during testing
++        'EPS_DECAY': 220,        # Faster decay for testing
++        'TARGET_UPDATE': 500,   # Update target network more frequently
++        'demand_shape': 1,
++        #'steps': 1000,          # Fewer training steps for faster testing
++        #'episodes': 10          # Reduced episodes
++    },
++    'IDQNCO2Multiple': {
++        'agent': IDQN,
++        'state': states.idqn_Co2Multiple,
++        'reward': rewards.pressure_CO2MultipleNorm,
++        'max_distance': 150,
++        'BATCH_SIZE': 64,       # Reduced batch size for quicker training
++        'GAMMA': 0.99,          # Keep gamma unchanged
++        'EPS_START': 1.0,       # Keep epsilon start
++        'EPS_END': 0.0,         # Increase final epsilon for less exploration during testing
++        'EPS_DECAY': 640,        # Faster decay for testing
++        'TARGET_UPDATE': 500,   # Update target network more frequently
++        'demand_shape': 1,
++        #'steps': 1000,          # Fewer training steps for faster testing
++        #'episodes': 10          # Reduced episodes
++    }, 
++    'IDQNCO2': {
++        'agent': IDQN,
++        'state': states.drq_norm1,
++        'reward': rewards.pressureCO2,
++        'max_distance': 150,
++        'BATCH_SIZE': 64,       # Reduced batch size for quicker training
++        'GAMMA': 0.99,          # Keep gamma unchanged
++        'EPS_START': 1.0,       # Keep epsilon start
++        'EPS_END': 0.0,         # Increase final epsilon for less exploration during testing
++        'EPS_DECAY': 640,        # Faster decay for testing
++        'TARGET_UPDATE': 500,   # Update target network more frequently
++        'demand_shape': 1,
++        #'steps': 1000,          # Fewer training steps for faster testing
++        #'episodes': 10          # Reduced episodes
++    },   
++    'IDQNCO2_Occupancy': {
++        'agent': IDQN,
++        'state': states.drq_norm_with_occupancy,
++        'reward': rewards.pressure_CO2MultipleNorm,
++        'max_distance': 200,
++        'BATCH_SIZE': 64,       # Reduced batch size for quicker training
++        'GAMMA': 0.99,          # Keep gamma unchanged
++        'EPS_START': 1.0,       # Keep epsilon start
++        'EPS_END': 0.0,         # Increase final epsilon for less exploration during testing
++        'EPS_DECAY': 640,        # Faster decay for testing
++        'TARGET_UPDATE': 500,   # Update target network more frequently
++        'demand_shape': 1,
++        #'steps': 1000,          # Fewer training steps for faster testing
++        #'episodes': 10          # Reduced episodes
++    },    
++    'IDQN_start_stop': {
++        'agent': IDQN,
++        'state': states.drq_norm_start_stop,
++        'reward': rewards.pressure_CO2StartStop,
++        'max_distance': 150,
++        'BATCH_SIZE': 64,       # Reduced batch size for quicker training
++        'GAMMA': 0.99,          # Keep gamma unchanged
++        'EPS_START': 1.0,       # Keep epsilon start
++        'EPS_END': 0.0,         # Increase final epsilon for less exploration during testing
++        'EPS_DECAY': 640,        # Faster decay for testing
++        'TARGET_UPDATE': 500,   # Update target network more frequently
++        'demand_shape': 1,
++        #'steps': 1000,          # Fewer training steps for faster testing
++        #'episodes': 10          # Reduced episodes
++    },     
+     'FMA2C': {
+         'agent': FMA2C,
+         'state': states.fma2c,
+diff --git a/resco_benchmark/config/map_config.py b/resco_benchmark/config/map_config.py
+--- a/resco_benchmark/config/map_config.py
++++ b/resco_benchmark/config/map_config.py
+@@ -31,6 +31,42 @@
+         'start_time': 0,
+         'end_time': 3600,
+         'warmup': 0
++    },
++    '2way_single':{
++        'lights': [],
++        'net': 'environments/2way_single/single-intersection.net.xml',        
++        'route': 'environments/2way_single/routes/gen',
++        'step_length': 5,
++        'yellow_length': 2,
++        'step_ratio': 1,
++        'start_time': 0,
++        'end_time': 3600,
++        'warmup': 0
++    },
++     '1way_single':{
++        'lights': [],
++        'net': 'environments/1way_single/single-intersection.net.xml',        
++        'route': 'environments/1way_single/routes/single-intersection-gen',
++        'step_length': 5,
++        'yellow_length': 2,
++        'step_ratio': 1,
++        'start_time': 0,
++        'end_time': 3600,
++        'warmup': 60
++    },
++    '1way_single_uphill':{
++        'lights': [],
++        'net': 'environments/1way_single_uphill/single-intersection.net.xml',
++        'route': 'environments/1way_single_uphill/routes/single-intersection-gen',
++        'step_length': 5,
++        'yellow_length': 2,
++        'step_ratio': 1,
++        'start_time': 0,
++        'end_time': 3600,
++        'warmup': 60,
++        'enable_grade': True,
++        'uphill_enabled_directions': ['N'],
++        'grade_sample_length_m': 50, 
+     },
+     'ingolstadt1': {
+         'lights': [],
+@@ -113,4 +149,101 @@
+         'end_time': 69000,
+         'warmup': 0
+     },
++    'prybuzka': {                         # перекрёсток Прибузька-Свободи (из видео)
++        'lights': ['nC'],
++        'net': 'environments/prybuzka/intersection.net.xml',
++        'route': 'environments/prybuzka/routes/gen',
++        'step_length': 5,
++        'yellow_length': 3,
++        'step_ratio': 1,
++        'start_time': 0,
++        'end_time': 1500,                 # ~24.4 мин восстановленного спроса
++        'warmup': 0
++    },
++    'prybuzka_12': {                      # stress ×1.2
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_12/intersection.net.xml',
++        'route': 'environments/prybuzka_12/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_15': {                      # stress ×1.5
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_15/intersection.net.xml',
++        'route': 'environments/prybuzka_15/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    # eval kit: held-out (Comment 1.5) and scenario (Comment 1.9) maps; all run to 1800 s
++    'prybuzka_ho10': {                    # held-out x1.0, 10 route files
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_ho10/intersection.net.xml',
++        'route': 'environments/prybuzka_ho10/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_ho12': {                    # held-out x1.2, 10 route files
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_ho12/intersection.net.xml',
++        'route': 'environments/prybuzka_ho12/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_ho15': {                    # held-out x1.5, 10 route files
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_ho15/intersection.net.xml',
++        'route': 'environments/prybuzka_ho15/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_s1': {                      # S1 directional imbalance, 5 route files
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_s1/intersection.net.xml',
++        'route': 'environments/prybuzka_s1/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_s2': {                      # S2 platooned arrivals
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_s2/intersection.net.xml',
++        'route': 'environments/prybuzka_s2/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_s3': {                      # S3 peak formation
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_s3/intersection.net.xml',
++        'route': 'environments/prybuzka_s3/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_s4': {                      # S4 turning-proportion shift
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_s4/intersection.net.xml',
++        'route': 'environments/prybuzka_s4/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    # E12: training maps
++    'prybuzka_tr10': {                   # E12 training x10, 20 route files (seeds 3001-3020)
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_tr10/intersection.net.xml',
++        'route': 'environments/prybuzka_tr10/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1500, 'warmup': 0
++    },
++    'prybuzka_tr12': {                   # E12 training x12, 20 route files (seeds 3001-3020)
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_tr12/intersection.net.xml',
++        'route': 'environments/prybuzka_tr12/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
++    'prybuzka_tr15': {                   # E12 training x15, 20 route files (seeds 3001-3020)
++        'lights': ['nC'],
++        'net': 'environments/prybuzka_tr15/intersection.net.xml',
++        'route': 'environments/prybuzka_tr15/routes/gen',
++        'step_length': 5, 'yellow_length': 3, 'step_ratio': 1,
++        'start_time': 0, 'end_time': 1800, 'warmup': 0
++    },
+ }
+diff --git a/resco_benchmark/config/signal_config.py b/resco_benchmark/config/signal_config.py
+--- a/resco_benchmark/config/signal_config.py
++++ b/resco_benchmark/config/signal_config.py
+@@ -8,6 +8,86 @@
+ 
+ 
+ signal_configs = {
++    'prybuzka': {                                  # Прибузька-Свободи, сигнал nC
++        # фазы-действия = наши 4 зелёные (берутся из tlLogic сети):
++        #   [1,7]=Своб.прямо(S-S+N-N) [0,6]=Своб.лево(S-W+N-E)
++        #   [4,10]=Приб.прямо(W-W+E-E) [3,9]=Приб.лево(W-N+E-S)
++        'phase_pairs': [[1, 7], [0, 6], [4, 10], [3, 9]],
++        'valid_acts': None,
++        'nC': {
++            'lane_sets': {
++                'S-W': ['nS_nC_2'], 'S-S': ['nS_nC_0', 'nS_nC_1'], 'S-E': ['nS_nC_0'],
++                'W-N': ['nW_nC_2'], 'W-W': ['nW_nC_0', 'nW_nC_1'], 'W-S': ['nW_nC_0'],
++                'N-E': ['nN_nC_2'], 'N-N': ['nN_nC_0', 'nN_nC_1'], 'N-W': ['nN_nC_0'],
++                'E-S': ['nE_nC_2'], 'E-E': ['nE_nC_0', 'nE_nC_1'], 'E-N': ['nE_nC_0'],
++            },
++            'downstream': {'N': None, 'S': None, 'W': None, 'E': None}
++        }
++    },
++    '2way_single': {
++        'phase_pairs': [[1, 7], [4, 10]],
++        'valid_acts': None,
++        't': {
++			'lane_sets': {
++                'S-W': ['s_t_1'],
++                'S-S': [],
++                'S-E': [ 's_t_0' ],
++                'W-N': [ 'w_t_1' ],
++                'W-W': [],
++                'W-S': [  'w_t_0' ],
++                'N-E': [ 'n_t_1' ],
++                'N-N': [],
++                'N-W': [ 'n_t_0' ],
++                'E-S': [ 'e_t_1' ],
++                'E-E': [],
++                'E-N': [ 'e_t_0' ]
++            },
++			'downstream': {'N': None, 'S': None, 'W': None, 'E': None}
++		}
++	},
++    '1way_single': {
++        'valid_acts': None,
++        'phase_pairs': [[1, 7], [4, 10]],
++        't': {
++            'lane_sets': {
++                'S-W': ['s_t_0'],    # South to West (left turn)
++                'S-S': ['s_t_0'],    # South straight (to North)
++                'S-E': ['s_t_0'],    # South to East (right turn)
++                'W-N': ['w_t_0'],    # West to North (left turn)
++                'W-W': ['w_t_0'],    # West straight (to East)  
++                'W-S': ['w_t_0'],    # West to South (right turn)
++                'N-E': ['n_t_0'],    # North to East (left turn)
++                'N-N': ['n_t_0'],    # North straight (to South)
++                'N-W': ['n_t_0'],    # North to West (right turn)
++                'E-S': ['e_t_0'],    # East to South (left turn)
++                'E-E': ['e_t_0'],    # East straight (to West)
++                'E-N': ['e_t_0']     # East to North (right turn)
++			},
++            'downstream': {'N': None, 'S': None, 'W': None, 'E': None}
++		}
++    },
++     '1way_single_uphill': {
++        'valid_acts': None,
++        'phase_pairs': [[1, 7], [4, 10]],
++        't': {
++            'lane_sets': {
++                'S-W': ['s_t_0'],    # South to West (left turn)
++                'S-S': ['s_t_0'],    # South straight (to North)
++                'S-E': ['s_t_0'],    # South to East (right turn)
++                'W-N': ['w_t_0'],    # West to North (left turn)
++                'W-W': ['w_t_0'],    # West straight (to East)  
++                'W-S': ['w_t_0'],    # West to South (right turn)
++                'N-E': ['n_t_0'],    # North to East (left turn)
++                'N-N': ['n_t_0'],    # North straight (to South)
++                'N-W': ['n_t_0'],    # North to West (right turn)
++                'E-S': ['e_t_0'],    # East to South (left turn)
++                'E-E': ['e_t_0'],    # East straight (to West)
++                'E-N': ['e_t_0']     # East to North (right turn)
++            },
++            'downstream': {'N': None, 'S': None, 'W': None, 'E': None}
++        }
++    },
++    
+ 	'grid4x4': {
+ 		'phase_pairs': [[1, 7], [2, 8], [1, 2], [7, 8], [4, 10], [5, 11], [10, 11], [4, 5]],
+ 		'valid_acts': None,
+@@ -1327,4 +1407,12 @@
+ 			}
+ 		}
+ 	},
+-}
+\ No newline at end of file
++}
++# stress-карты используют ту же сеть/сигнал, что и prybuzka (те же lane id)
++signal_configs['prybuzka_12'] = signal_configs['prybuzka']
++signal_configs['prybuzka_15'] = signal_configs['prybuzka']
++# eval kit: held-out and scenario maps use the same network and signal
++for _m in ['prybuzka_ho10', 'prybuzka_ho12', 'prybuzka_ho15',
++           'prybuzka_s1', 'prybuzka_s2', 'prybuzka_s3', 'prybuzka_s4',
++           'prybuzka_tr10', 'prybuzka_tr12', 'prybuzka_tr15']:    # E12 training maps
++    signal_configs[_m] = signal_configs['prybuzka']
+diff --git a/resco_benchmark/main.py b/resco_benchmark/main.py
+--- a/resco_benchmark/main.py
++++ b/resco_benchmark/main.py
+@@ -1,50 +1,105 @@
++import sys
++if r"c:\clinical\resco" in sys.path:
++    sys.path.remove(r"c:\clinical\resco")
++
+ import pathlib
+ import os
+ import multiprocessing as mp
+ 
+-
++from datetime import datetime
+ from multi_signal import MultiSignal
+ import argparse
++
++import resco_benchmark
++from resco_benchmark import set_random_seeds, GLOBAL_SEED
+ from resco_benchmark.config.agent_config import agent_configs
+ from resco_benchmark.config.map_config import map_configs
+ from resco_benchmark.config.mdp_config import mdp_configs
++try:
++    import winsound
++except ImportError:    # eval kit: not on Windows
++    winsound = None
+ 
++import sys
++print(sys.path)
++from resco_benchmark.config import map_config
++print(map_config.__file__)
++
++def pretty_beep_sequence():
++    try:
++        frequencies = [500, 440, 660, 990]   
++        durations = [750, 250, 250, 500]  
++        # Sequence of 3 beeps
++        for freq, dur in zip(frequencies, durations):
++            winsound.Beep(freq, dur)
++    except Exception as e:
++        print(f"An error occurred: {e}")
++
++max_trials = 1   # было 5: main() гонял весь эксперимент 5x с ОДНИМ сидом (дубли). 1 = один прогон.
+ 
+ def main():
+-    ap = argparse.ArgumentParser()
+-    ap.add_argument("--agent", type=str, default='STOCHASTIC',
+-                    choices=['STOCHASTIC', 'MAXWAVE', 'MAXPRESSURE', 'IDQN', 'IPPO', 'MPLight', 'MA2C', 'FMA2C',
+-                             'MPLightFULL', 'FMA2CFull', 'FMA2CVAL'])
+-    ap.add_argument("--trials", type=int, default=1)
+-    ap.add_argument("--eps", type=int, default=100)
+-    ap.add_argument("--procs", type=int, default=1)
+-    ap.add_argument("--map", type=str, default='ingolstadt1',
+-                    choices=['grid4x4', 'arterial4x4', 'ingolstadt1', 'ingolstadt7', 'ingolstadt21',
+-                             'cologne1', 'cologne3', 'cologne8',
+-                             ])
+-    ap.add_argument("--pwd", type=str, default=os.path.dirname(__file__))
+-    ap.add_argument("--log_dir", type=str, default=os.path.join(os.path.dirname(os.getcwd()), 'results' + os.sep))
+-    ap.add_argument("--gui", type=bool, default=False)
+-    ap.add_argument("--libsumo", type=bool, default=False)
+-    ap.add_argument("--tr", type=int, default=0)  # Can't multi-thread with libsumo, provide a trial number
+-    ap.add_argument("--save_freq", type=int, default=100)
+-    ap.add_argument("--load", type=bool, default=False)
+-    args = ap.parse_args()
++    for i in range(1, max_trials + 1):
++        # Initialize global random seeds for reproducibility
++        set_random_seeds()
++        
++        ap = argparse.ArgumentParser()
++        ap.add_argument("--agent", type=str, default='STOCHASTIC',
++                        choices=['STOCHASTIC', 'MAXWAVE', 'MAXPRESSURE', 'IDQN', 'IDQN_pressure', 'IDQNCO2', 'IDQNCO2Multiple', 'IDQNCO2_Occupancy',
++                                'IDQN_start_stop', 'IDQN_pressure_inout',
++                                'IPPO', 'MPLight', 'MPLightCO2', 'MPLightCO2Multiple', 'MA2C', 'FMA2C',
++                                'MPLightFULL', 'FMA2CFull', 'FMA2CVAL'])
++        ap.add_argument("--trials", type=int, default=1)
++        ap.add_argument("--eps", type=int, default=100)
++        ap.add_argument("--procs", type=int, default=1)
++        ap.add_argument("--map", type=str, default='ingolstadt1',
++                        choices=['grid4x4', 'arterial4x4', 'ingolstadt1', 'ingolstadt7', 'ingolstadt21',
++                                'cologne1', 'cologne3', 'cologne8', '2way_single', '1way_single', '1way_single_uphill',
++                                'prybuzka', 'prybuzka_12', 'prybuzka_15',
++                                'prybuzka_ho10', 'prybuzka_ho12', 'prybuzka_ho15',
++                                'prybuzka_s1', 'prybuzka_s2', 'prybuzka_s3', 'prybuzka_s4',
++                                'prybuzka_tr10', 'prybuzka_tr12', 'prybuzka_tr15'    # E12
++                                ])
++        ap.add_argument("--pwd", type=str, default=os.path.dirname(__file__))
++        ap.add_argument("--log_dir", type=str, default=os.path.join(os.path.dirname(os.getcwd()), 'results' + os.sep))
++        ap.add_argument("--gui", type=bool, default=False)
++        ap.add_argument("--libsumo", type=bool, default=False)
++        ap.add_argument("--tr", type=int, default=0)  # Can't multi-thread with libsumo, provide a trial number
++        ap.add_argument("--save_freq", type=int, default=100)
++        ap.add_argument("--load", type=bool, default=False)
++        # eval kit: explicit checkpoint for frozen evaluation (K19); implies --load
++        ap.add_argument("--ckpt", type=str, default=None)
++        # eval kit: all-red seconds after each yellow (field plan: 4); 0 = original RESCO clearance
++        ap.add_argument("--allred", type=int, default=0)
++        # E12: seed random, numpy and torch for this run; None = original behaviour
++        ap.add_argument("--seed", type=int, default=None)
++        args = ap.parse_args()
++        if args.ckpt:
++            if not os.path.isfile(args.ckpt):
++                raise FileNotFoundError(args.ckpt)
++            args.load = True
+ 
+-    if args.libsumo and 'LIBSUMO_AS_TRACI' not in os.environ:
+-        raise EnvironmentError("Set LIBSUMO_AS_TRACI to nonempty value to enable libsumo")
++        if not args.log_dir.endswith(os.sep):
++            args.log_dir += os.sep
+ 
+-    if args.procs == 1 or args.libsumo:
+-        run_trial(args, args.tr)
+-    else:
+-        pool = mp.Pool(processes=args.procs)
+-        for trial in range(1, args.trials+1):
+-            pool.apply_async(run_trial, args=(args, trial))
+-        pool.close()
+-        pool.join()
++        if args.libsumo and 'LIBSUMO_AS_TRACI' not in os.environ:
++            raise EnvironmentError("Set LIBSUMO_AS_TRACI to nonempty value to enable libsumo")
++
++        print('Running', args.agent, 'on', args.map, 'with', args.trials, 'trials and', args.eps, 'episodes each')
++        if args.procs == 1 or args.libsumo:
++            run_trial(args, args.tr)
++        else:
++            pool = mp.Pool(processes=args.procs)
++            for trial in range(1, args.trials+1):
++                pool.apply_async(run_trial, args=(args, trial))
++            pool.close()
++            pool.join()
+ 
+ 
+ def run_trial(args, trial):
++    if args.seed is not None:    # E12
++        import torch
++        set_random_seeds(args.seed)
++        torch.manual_seed(args.seed)
+     mdp_config = mdp_configs.get(args.agent)
+     if mdp_config is not None:
+         mdp_map_config = mdp_config.get(args.map)
+@@ -55,6 +110,7 @@
+     agt_config = agent_configs[args.agent]
+     agt_config['save_freq'] = args.save_freq
+     agt_config['load'] = args.load
++    agt_config['ckpt'] = args.ckpt
+     agt_map_config = agt_config.get(args.map)
+     if agt_map_config is not None:
+         agt_config = agt_map_config
+@@ -71,6 +127,7 @@
+                     supervisors[worker] = manager
+             mdp_config['supervisors'] = supervisors
+ 
++    
+     map_config = map_configs[args.map]
+     num_steps_eps = int((map_config['end_time'] - map_config['start_time']) / map_config['step_length'])
+     route = map_config['route']
+@@ -86,7 +143,8 @@
+                       route=route, step_length=map_config['step_length'], yellow_length=map_config['yellow_length'],
+                       step_ratio=map_config['step_ratio'], end_time=map_config['end_time'],
+                       max_distance=agt_config['max_distance'], lights=map_config['lights'], gui=args.gui,
+-                      log_dir=args.log_dir, libsumo=args.libsumo, warmup=map_config['warmup'])
++                      log_dir=args.log_dir, libsumo=args.libsumo, warmup=map_config['warmup'],
++                      seed=GLOBAL_SEED + trial, allred_length=args.allred)
+ 
+     agt_config['episodes'] = int(args.eps * 0.8)    # schedulers decay over 80% of steps
+     agt_config['steps'] = agt_config['episodes'] * num_steps_eps
+@@ -99,6 +157,8 @@
+         obs_act[key] = [env.obs_shape[key], len(env.phases[key]) if key in env.phases else None]
+     agent = alg(agt_config, obs_act, args.map, trial)
+ 
++    start_time = datetime.now()
++    print(f'started: {start_time.strftime("%H:%M:%S")}')
+     for _ in range(args.eps):
+         obs = env.reset()
+         done = False
+@@ -106,7 +166,14 @@
+             act = agent.act(obs)
+             obs, rew, done, info = env.step(act)
+             agent.observe(obs, rew, done, info)
++        if hasattr(agent, 'save'):
++            agent.save()
+     env.close()
++    end_time = datetime.now()
++    duration = (end_time - start_time).total_seconds() / 60
++    print(f'finished: {end_time.strftime("%H:%M:%S")}, total duration: {duration:.1f} min')
++    if not os.environ.get('RESCO_NO_BEEP'):    # E12: parallel runs
++        pretty_beep_sequence()
+ 
+ 
+ if __name__ == '__main__':
+diff --git a/resco_benchmark/multi_signal.py b/resco_benchmark/multi_signal.py
+--- a/resco_benchmark/multi_signal.py
++++ b/resco_benchmark/multi_signal.py
+@@ -3,16 +3,25 @@
+ import traci
+ import sumolib
+ import gym
++import glob
++import uuid
++
++from datetime import datetime
++
+ from resco_benchmark.traffic_signal import Signal
++from resco_benchmark import GLOBAL_SEED
+ 
+ 
+ class MultiSignal(gym.Env):
+     def __init__(self, run_name, map_name, net, state_fn, reward_fn, route=None, gui=False, end_time=3600,
+                  step_length=10, yellow_length=4, step_ratio=1, max_distance=200, lights=(), log_dir='/', libsumo=False,
+-                 warmup=0, gymma=False):
++                 warmup=0, gymma=False, seed:int=GLOBAL_SEED, allred_length=0):
++        self.allred_length = allred_length    # eval kit: all-red seconds after each yellow (0 = original RESCO)
+         self.libsumo = libsumo
+         self.gymma = gymma  # gymma expects sequential list of states/rewards instead of dict
++        self.seed_value = seed
+         print(map_name, net, state_fn.__name__, reward_fn.__name__)
++        self.client_uuid =  '==' + uuid.uuid4().hex 
+         self.log_dir = log_dir
+         self.net = net
+         self.route = route
+@@ -26,19 +35,14 @@
+         self.step_length = step_length
+         self.yellow_length = yellow_length
+         self.step_ratio = step_ratio
+-        self.connection_name = run_name + '-' + map_name + '---' + state_fn.__name__ + '-' + reward_fn.__name__
++        self.connection_name = run_name + '-' + map_name + '---' + state_fn.__name__ + '-' + reward_fn.__name__ + self.client_uuid
+         self.map_name = map_name
+-
++        
+         # Run some steps in the simulation with default light configurations to detect phases
+         if self.route is not None:
+-            if 'grid4x4' in self.route:
+-                self.route += '/grid4x4'
+-            elif 'arterial4x4' in self.route:
+-                self.route += '/arterial4x4'
+-            sumo_cmd = [sumolib.checkBinary('sumo'), '-n', net, '-r', self.route + '_1.rou.xml', '--no-warnings', 'True']
+-        else:
+-            sumo_cmd = [sumolib.checkBinary('sumo'), '-c', net, '--no-warnings', 'True']
+-        print('[DEBUG]:', sumo_cmd)
++            sumo_cmd = [sumolib.checkBinary('sumo'), '-n', net, '-r', self.route + '_1.rou.xml', '--no-warnings', 'True', '--seed', str(self.seed_value)]
++        else:
++            sumo_cmd = [sumolib.checkBinary('sumo'), '-c', net, '--no-warnings', 'True', '--seed', str(self.seed_value)]
+         if self.libsumo:
+             traci.start(sumo_cmd)
+             self.sumo = traci
+@@ -46,7 +50,7 @@
+             traci.start(sumo_cmd, label = self.connection_name)
+             self.sumo = traci.getConnection(self.connection_name)
+         self.signal_ids = self.sumo.trafficlight.getIDList()
+-        print("lights", len(self.signal_ids), self.signal_ids)
++        print("lights:", len(self.signal_ids), self.signal_ids)
+ 
+         # this should work on all SUMO versions
+         self.phases = {
+@@ -57,6 +61,15 @@
+             ]
+             for lightID in self.signal_ids
+         }
++        # eval kit: all-red state of the original program (no G/g/y/Y), e.g. srrrsrrrsrrrsrrr for prybuzka
++        self.allred_states = {
++            lightID: next((p.state for p in self.sumo.trafficlight.getAllProgramLogics(lightID)[0].getPhases()
++                           if not any(c in p.state for c in 'GgYy')), None)
++            for lightID in self.signal_ids
++        }
++        if self.allred_length > 0:
++            missing = [lightID for lightID in self.signal_ids if self.allred_states[lightID] is None]
++            if missing: raise Exception('No all-red phase in the original program of ' + str(missing))
+ 
+ 
+         self.signals = dict()
+@@ -70,7 +83,8 @@
+         self.observation_space = list()
+         self.action_space = list()
+         for ts in self.all_ts_ids:
+-            self.signals[ts] = Signal(self.map_name, self.sumo, ts, self.yellow_length, self.phases[ts])
++            self.signals[ts] = Signal(self.map_name, self.sumo, ts, self.yellow_length, self.phases[ts],
++                                      self.allred_states[ts], self.allred_length)
+         for ts in self.all_ts_ids:
+             self.signals[ts].signals = self.signals
+             self.signals[ts].observe(self.step_length, self.max_distance)
+@@ -93,7 +107,7 @@
+ 
+         if not self.libsumo: traci.switch(self.connection_name)
+         traci.close()
+-        self.connection_name = run_name + '-' + map_name + '-' + str(len(lights)) + '-' + state_fn.__name__ + '-' + reward_fn.__name__
++        self.connection_name = run_name + '-' + map_name + '-' + str(len(lights)) + '-' + state_fn.__name__ + '-' + reward_fn.__name__ + self.client_uuid
+         if not os.path.exists(log_dir+self.connection_name):
+             os.makedirs(log_dir+self.connection_name)
+         self.sumo_cmd = None
+@@ -120,13 +134,23 @@
+             self.sumo_cmd.append('--start')
+         else:
+             self.sumo_cmd.append(sumolib.checkBinary('sumo'))
+-        if self.route is not None:
+-            self.sumo_cmd += ['-n', self.net, '-r', self.route + '_'+str(self.run)+'.rou.xml']
++        if self.route is not None:            
++            # Get the directory from self.route
++            route_dir = os.path.dirname(self.route)
++            # Get all .rou.xml files in the directory (sorted for consistency)
++            route_files = sorted(glob.glob(os.path.join(route_dir, '*.rou.xml')))
++            if not route_files:
++                raise Exception("No route files found in directory: {}".format(route_dir))
++            # Select file based on current run using modulo wrap-around
++            file_index = (self.run - 1) % len(route_files)
++            route_file = route_files[file_index]
++            self.sumo_cmd += ['-n', self.net, '-r', route_file]
+         else:
+             self.sumo_cmd += ['-c', self.net]
+-        self.sumo_cmd += ['--random', '--time-to-teleport', '-1', '--tripinfo-output',
++        self.sumo_cmd += ['--seed', str(self.seed_value + self.run), '--time-to-teleport', '-1', '--tripinfo-output',
+                           os.path.join(self.log_dir, self.connection_name, 'tripinfo_' + str(self.run) + '.xml'),
+                           '--tripinfo-output.write-unfinished',
++                          '--device.emissions.probability', '1.0',
+                           '--no-step-log', 'True',
+                           '--no-warnings', 'True']
+         if self.libsumo:
+@@ -138,7 +162,7 @@
+ 
+         for _ in range(self.warmup):
+             self.step_sim()
+-
++        
+         # 'Start' only signals set for control, rest run fixed controllers
+         if self.run % 30 == 0 and self.ts_starter < len(self.all_ts_ids): self.ts_starter += 1
+         self.signal_ids = []
+@@ -146,7 +170,8 @@
+             self.signal_ids.append(self.all_ts_ids[i])
+ 
+         for ts in self.signal_ids:
+-            self.signals[ts] = Signal(self.map_name, self.sumo, ts, self.yellow_length, self.phases[ts])
++            self.signals[ts] = Signal(self.map_name, self.sumo, ts, self.yellow_length, self.phases[ts],
++                                      self.allred_states[ts], self.allred_length)
+             self.wait_metric[ts] = 0.0
+         for ts in self.signal_ids:
+             self.signals[ts].signals = self.signals
+@@ -174,6 +199,13 @@
+ 
+         for step in range(self.yellow_length):
+             self.step_sim()
++        if self.allred_length > 0:    # eval kit: field clearance, all-red after the yellow of a changing signal
++            changing = [signal for signal in self.signal_ids if self.signals[signal].changing]
++            if changing:
++                for signal in changing:
++                    self.signals[signal].set_allred()
++                for step in range(self.allred_length):
++                    self.step_sim()
+         for signal in self.signal_ids:
+             self.signals[signal].set_phase()
+         for step in range(self.step_length - self.yellow_length):
+@@ -217,7 +249,7 @@
+ 
+     def save_metrics(self):
+         log = os.path.join(self.log_dir, self.connection_name+ os.sep + 'metrics_' + str(self.run) + '.csv')
+-        print('saving', log)
++        print(f'{datetime.now().strftime("%H:%M:%S")} saving {log}')
+         with open(log, 'w+') as output_file:
+             for line in self.metrics:
+                 csv_line = ''
+diff --git a/resco_benchmark/rewards.py b/resco_benchmark/rewards.py
+--- a/resco_benchmark/rewards.py
++++ b/resco_benchmark/rewards.py
+@@ -39,7 +39,161 @@
+ 
+         rewards[signal_id] = -queue_length
+     return rewards
+-
++    
++def pressureCO2(signals):
++    rewards = dict()
++    for signal_id in signals:
++        total_co2 = 0
++        for lane in signals[signal_id].lanes:
++            total_co2 += signals[signal_id].full_observation[lane]['total_co2']
++
++        for lane in signals[signal_id].outbound_lanes:
++            dwn_signal = signals[signal_id].out_lane_to_signalid[lane]
++            if dwn_signal in signals[signal_id].signals:
++                total_co2 -= signals[signal_id].signals[dwn_signal].full_observation[lane]['total_co2']
++
++        #rewards[signal_id] = round(-total_co2/10e4, 1) #normalize CO2 emissions
++        num_lanes = len(signals[signal_id].lanes)
++        rvalue = -total_co2/num_lanes/10e3
++        rewards[signal_id] =  rvalue 
++        if rewards[signal_id] > 10 or rewards[signal_id] < -10:
++            print(f"CO2 reward is out of range: {rewards[signal_id]:.2f}")
++    return rewards
++
++def pressure_CO2MultipleNorm(signals):
++    rewards = dict()
++    for signal_id in signals:
++        total_co2 = 0
++        queue_length = 0
++        total_wait = 0         
++        total_awg_speed = 0
++        
++        for lane in signals[signal_id].lanes:
++            total_wait += signals[signal_id].full_observation[lane]['total_wait']
++            queue_length += signals[signal_id].full_observation[lane]['queue']    
++            total_awg_speed += signals[signal_id].full_observation[lane]['awg_speed']
++            total_co2 += signals[signal_id].full_observation[lane]['total_co2']
++
++        for lane in signals[signal_id].outbound_lanes:
++            dwn_signal = signals[signal_id].out_lane_to_signalid[lane]
++            if dwn_signal in signals[signal_id].signals:
++                total_co2 -= signals[signal_id].signals[dwn_signal].full_observation[lane]['total_co2']
++                total_wait -= signals[signal_id].signals[dwn_signal].full_observation[lane]['total_wait']
++                queue_length -= signals[signal_id].signals[dwn_signal].full_observation[lane]['queue']
++                total_awg_speed -= signals[signal_id].signals[dwn_signal].full_observation[lane]['awg_speed']
++
++        #rewards[signal_id] = round(-total_co2/10e4, 1) #normalize CO2 emissions
++        num_lanes = len(signals[signal_id].lanes)
++        rvalue = (
++            -0.5 * total_co2/num_lanes/10e4
++            -0.1 * total_wait/num_lanes/10e2
++        )
++
++        rewards[signal_id] =  rvalue 
++
++        if rewards[signal_id] > 10 or rewards[signal_id] < -10:
++            print(f"CO2 reward is out of range: {rewards[signal_id]:.2f}")
++
++    return rewards
++
++def pressure_CO2Multiple(signals):
++    rewards = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        reward = 0
++        for direction in signal.lane_sets:
++            # Initialize variables for inbound metrics
++            queue_length = 0
++            total_wait = 0
++            total_co2 = 0
++            total_awg_speed = 0
++            num_lanes = len(signal.lane_sets[direction])
++
++            for lane in signal.lane_sets[direction]:
++                queue_length += signal.full_observation[lane]['queue']
++                total_wait += signal.full_observation[lane]['total_wait']
++                total_co2 += signal.full_observation[lane]['total_co2']
++                total_awg_speed += signal.full_observation[lane]['awg_speed']
++
++            # Average speed adjustment
++            avg_awg_speed = total_awg_speed / num_lanes if num_lanes else 0
++
++            # Subtract downstream metrics
++            for lane in signal.lane_sets_outbound[direction]:
++                dwn_signal = signal.out_lane_to_signalid[lane]
++                if dwn_signal in signal.signals:
++                    queue_length -= signal.signals[dwn_signal].full_observation[lane]['queue']
++                    total_co2 -= signal.signals[dwn_signal].full_observation[lane]['total_co2']
++
++            # Combine into a reward formula
++            reward += (
++                -0.5 * queue_length  # Penalize queue length
++                -0.3 * total_wait    # Penalize waiting time
++                -0.2 * total_co2     # Penalize CO2 emissions
++                + 0.4 * avg_awg_speed  # Reward higher average speed
++            )
++
++        rewards[signal_id] = reward
++    return rewards
++
++
++def pressure_CO2StartStop(signals):
++    rewards = dict()
++    for signal_id in signals:
++        total_co2 = 0
++        queue_length = 0
++        total_wait = 0         
++        total_awg_speed = 0
++        uphill_started_count = 0
++        uphill_stopped_count = 0
++        
++        for lane in signals[signal_id].lanes:
++            fulll_obs = signals[signal_id].full_observation[lane]
++            total_wait += fulll_obs['total_wait']
++            queue_length += fulll_obs['queue']    
++            total_awg_speed += fulll_obs['awg_speed']
++            total_co2 += fulll_obs['total_co2']
++            uphill_started_count += fulll_obs['uphill_started_count']
++            uphill_stopped_count += fulll_obs['uphill_stopped_count']
++
++        for lane in signals[signal_id].outbound_lanes:
++            dwn_signal = signals[signal_id].out_lane_to_signalid[lane]
++            if dwn_signal in signals[signal_id].signals:
++                total_co2 -= signals[signal_id].signals[dwn_signal].full_observation[lane]['total_co2']
++                total_wait -= signals[signal_id].signals[dwn_signal].full_observation[lane]['total_wait']
++                queue_length -= signals[signal_id].signals[dwn_signal].full_observation[lane]['queue']
++                total_awg_speed -= signals[signal_id].signals[dwn_signal].full_observation[lane]['awg_speed']
++
++        #rewards[signal_id] = round(-total_co2/10e4, 1) #normalize CO2 emissions
++        num_lanes = len(signals[signal_id].lanes)
++        rvalue = (
++            #-0.01 * total_co2/num_lanes/10e3 * 0
++            -0.5 * queue_length/num_lanes/10e1 
++            -1.5 * total_wait/num_lanes/10e1 
++            #+0.1 * total_awg_speed/num_lanes/10e1 *0
++            -0.7 * uphill_started_count/num_lanes 
++            -0.7 * uphill_stopped_count/num_lanes 
++        )
++
++        rewards[signal_id] =  rvalue 
++
++        if rewards[signal_id] > 5 or rewards[signal_id] < -5:
++            print(f"CO2 reward is out of range: {rewards[signal_id]:.2f}")
++        if rewards[signal_id] > -0.1 and rewards[signal_id] < 0.1:
++            print(f"CO2 reward is out of range and too small: {rewards[signal_id]:.2f}")
++
++        rewards[signal_id] = np.clip(rewards[signal_id], -5, 5).astype(np.float32)
++    return rewards
++
++# def wait_norm(signals):
++#     rewards = dict()
++#     for signal_id in signals:
++#         total_wait = 0
++#         for lane in signals[signal_id].lanes:
++#             total_wait += signals[signal_id].full_observation[lane]['total_wait']
++
++#         rewards[signal_id] = np.clip(-total_wait/224, -4, 4).astype(np.float32)
++#     return rewards    
+ 
+ def queue_maxwait(signals):
+     rewards = dict()
+@@ -200,4 +354,30 @@
+         neighborhood_rewards[signal_id] = sum_reward
+ 
+     neighborhood_rewards.update(management_neighborhood)
+-    return neighborhood_rewards
+\ No newline at end of file
++    return neighborhood_rewards
++
++def pressure_norm(signals):
++    # Нормированная max-pressure награда (throughput-aware): -очередь/число полос.
++    # Для изолированного перекрёстка (без downstream) = минимизация суммарной очереди,
++    # что по теории max-pressure максимизирует пропускную под насыщением.
++    rewards = dict()
++    for signal_id in signals:
++        q = 0
++        for lane in signals[signal_id].lanes:
++            q += signals[signal_id].full_observation[lane]['queue']
++        rewards[signal_id] = -q / max(1, len(signals[signal_id].lanes))
++    return rewards
++
++
++def pressure_inout(signals):
++    # E12: genuine pressure for an isolated junction (as in sumo-rl): vehicles on the outgoing lanes minus
++    # vehicles on the incoming lanes, divided by the number of incoming lanes like pressure_norm. `pressure`
++    # subtracts outgoing queues only where a downstream signal exists, so on one junction it is the inbound queue.
++    rewards = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        out_lanes = {link[0][1] for link in signal.links if link}
++        n_in = sum(signal.sumo.lane.getLastStepVehicleNumber(lane) for lane in signal.lanes)
++        n_out = sum(signal.sumo.lane.getLastStepVehicleNumber(lane) for lane in out_lanes)
++        rewards[signal_id] = (n_out - n_in) / max(1, len(signal.lanes))
++    return rewards
+diff --git a/resco_benchmark/states.py b/resco_benchmark/states.py
+--- a/resco_benchmark/states.py
++++ b/resco_benchmark/states.py
+@@ -37,12 +37,14 @@
+         signal = signals[signal_id]
+         obs = []
+         act_index = signal.phase
++
+         for i, lane in enumerate(signal.lanes):
+             lane_obs = []
+             if i == act_index:
+                 lane_obs.append(1)
+             else:
+                 lane_obs.append(0)
++           
+ 
+             lane_obs.append(signal.full_observation[lane]['approach'] / 28)
+             lane_obs.append(signal.full_observation[lane]['total_wait'] / 28)
+@@ -58,12 +60,153 @@
+         observations[signal_id] = np.expand_dims(np.asarray(obs), axis=0)
+     return observations
+ 
++def get_inbound_lane_colors(signal):
++    """
++    Returns a dict mapping each inbound lane -> color code
++    using SUMO's current RYG (red-yellow-green) state.
++    """
++   # Retrieve the current red-yellow-green state string 
++    ryg_state_str = signal.phases[signal.phase].state
++    # Controlled links are in the same order as characters in ryg_state
++    controlled_links = signal.links
++
++    # Convert the string to a NumPy array of single-character entries
++    ryg_array = np.fromiter(ryg_state_str, dtype='U1')  # shape (N,)
++
++    # Define a mapping from character to integer color code
++    # Adjust as needed (e.g. 0=red, 1=yellow, 2=green)
++    color_map = {
++        'r': -1, 'R': -1,
++        'y': 0, 'Y': 0,
++        'g': 1, 'G': 1,
++        # 's': 3, 'S': 3, etc. if you have special states
++    }
++
++    # Vectorized conversion: each char → integer code (default to 0 if unknown)
++    color_codes = np.array([color_map.get(c, 0) for c in ryg_array])
++
++    lane_colors = {}
++    # Loop over each controlled link index, which lines up with color_codes
++    for i, link_list in enumerate(controlled_links):
++        color_val = color_codes[i]
++        # Each link_list can have multiple (inbound, outbound, via) tuples
++        for (inbound_lane, outbound_lane, via_lane) in link_list:
++            lane_colors[inbound_lane] = color_val
++
++    return lane_colors
++
++def drq_norm1(signals):
++    observations = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        obs = []
++
++        #pass the current lane state based on signal phase
++        lane_colors = get_inbound_lane_colors(signal)
++
++        for i, lane in enumerate(signal.lanes):
++            lane_obs = []
++            
++            lane_obs.append(0) #added static value to reduce influence in convolutional operation
++
++            lane_obs.append(signal.full_observation[lane]['approach'] / 28)
++            lane_obs.append(signal.full_observation[lane]['total_wait'] / 28)
++            lane_obs.append(signal.full_observation[lane]['queue'] / 28)
++            lane_obs.append(lane_colors[lane])
++            lane_obs.append(signal.full_observation[lane]['awg_speed'] / 28)  
++            # total_speed = 0
++            # vehicles = signal.full_observation[lane]['vehicles']
++            # for vehicle in vehicles:
++            #     total_speed += (vehicle['speed'] / 20 / 28)
++            # lane_obs.append(total_speed)
++
++            lane_obs.append(0)
++            obs.append(lane_obs)
++        observations[signal_id] = np.expand_dims(np.asarray(obs), axis=0)
++    
++    return observations
++
++def drq_norm_with_occupancy(signals, num_bins=10):
++    observations = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        obs = []
++
++        lane_colors = get_inbound_lane_colors(signal)
++
++        for lane in signal.lanes:
++            lane_obs = []
++            lane_obs.append(0)  # static marker
++            lane_obs.append(0)  # static marker
++            lane_obs.append(signal.full_observation[lane]['approach'] / 28)
++            lane_obs.append(signal.full_observation[lane]['total_wait'] / 28)
++            lane_obs.append(signal.full_observation[lane]['queue'] / 28)
++            lane_obs.append(lane_colors[lane])
++            lane_obs.append(signal.full_observation[lane]['total_co2'] / 10e6)  # normalize CO2
++            lane_obs.append(signal.full_observation[lane]['awg_speed'] / 100)  # normalize speed            
++            lane_obs.append(signal.full_observation[lane]['total_mass'] / 1000)  # normalize mass
++            # Add speed feature
++            total_speed = sum(vehicle['speed'] / (20 * 28) for vehicle in signal.full_observation[lane]['vehicles'])
++            lane_obs.append(total_speed)
++
++            # Use already calculated relative positions for occupancy
++            occupancy_bins = np.zeros(num_bins)
++            for vehicle in signal.full_observation[lane]['vehicles']:
++                relative_idx = vehicle['relative_position']
++                relative_idx = min(relative_idx, num_bins - 1)  # clamp
++                occupancy_bins[relative_idx] = 1
++            
++            lane_obs.extend(occupancy_bins.tolist())
++            lane_obs.append(0)  # static marker
++            lane_obs.append(0)  # static marker
++            obs.append(lane_obs)
++
++        observations[signal_id] = np.expand_dims(np.asarray(obs), axis=0)
++
++    return observations
++
++def drq_norm_start_stop(signals):
++    observations = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        obs = []
++
++        #pass the current lane state based on signal phase
++        lane_colors = get_inbound_lane_colors(signal)
++
++        for i, lane in enumerate(signal.lanes):
++            lane_obs = []
++            
++            lane_obs.append(0) #added static value to reduce influence in convolutional operation
++            full_lane_obs = signal.full_observation[lane]
++            lane_obs.append(full_lane_obs['approach'] / 28)
++            lane_obs.append(full_lane_obs['total_wait'] / 28)
++            lane_obs.append(full_lane_obs['queue'] / 28)
++            lane_obs.append(full_lane_obs['total_co2'] / 10e4)
++            lane_obs.append(lane_colors[lane]) 
++            lane_obs.append(full_lane_obs['vehicles_started'] / 28)
++            lane_obs.append(full_lane_obs['vehicles_stopped'] / 28)
++            lane_obs.append(full_lane_obs['uphill_started_count'] / 28)
++            lane_obs.append(full_lane_obs['uphill_stopped_count'] / 28)
++            lane_obs.append(full_lane_obs['total_mass'] / 1000)
++            lane_obs.append(full_lane_obs['awg_speed'] / 100)
++                        
++
++            lane_obs.append(0)
++            obs.append(lane_obs)
++        observations[signal_id] = np.expand_dims(np.asarray(obs), axis=0)
++    
++    return observations
+ 
+ def mplight(signals):
+     observations = dict()
+     for signal_id in signals:
+         signal = signals[signal_id]
+-        obs = [signal.phase]
++        raw_phase = signal.phase          # 0,1,2,3 from SUMO
++        # For program G,y,G,y: 0,1 -> 0; 2,3 -> 1
++        mplight_phase = raw_phase // 2    # 0 or 1
++
++        obs = [mplight_phase]
+         for direction in signal.lane_sets:
+             # Add inbound
+             queue_length = 0
+@@ -78,7 +221,188 @@
+             obs.append(queue_length)
+         observations[signal_id] = np.asarray(obs)
+     return observations
+-
++    
++def mplightCO2(signals):
++    observations = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        raw_phase = signal.phase          # 0,1,2,3 from SUMO
++        # For program G,y,G,y: 0,1 -> 0; 2,3 -> 1
++        mplight_phase = raw_phase // 2    # 0 or 1
++
++        obs = [mplight_phase]
++        for direction in signal.lane_sets:
++            # Add inbound
++            total_co2 = 0
++            for lane in signal.lane_sets[direction]:
++                total_co2 += signal.full_observation[lane]['total_co2']
++
++            # Subtract downstream
++            for lane in signal.lane_sets_outbound[direction]:
++                dwn_signal = signal.out_lane_to_signalid[lane]
++                if dwn_signal in signal.signals:
++                    total_co2 -= signal.signals[dwn_signal].full_observation[lane]['total_co2']
++            obs.append(total_co2)
++        observations[signal_id] = np.asarray(obs)
++    return observations
++
++def mplight_Co2Multiple(signals):
++    observations = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        raw_phase = signal.phase          # 0,1,2,3 from SUMO
++        # For program G,y,G,y: 0,1 -> 0; 2,3 -> 1
++        mplight_phase = raw_phase // 2    # 0 or 1
++
++        obs = [mplight_phase]
++        for direction in signal.lane_sets:
++            # Add inbound
++            queue_length = 0
++            total_wait = 0            
++            tot_approach = 0
++            total_co2 = 0
++            awg_speed = 0
++            awg_speed_out = 0
++            alpha_angle = 0
++            total_mass =0
++            total_mass_out = 0
++            num_lanes = len(signal.lane_sets[direction])
++            for lane in signal.lane_sets[direction]:
++                queue_length += signal.full_observation[lane]['queue']
++                total_wait += (signal.full_observation[lane]['total_wait'] / 28)
++                
++                #vehicles = signal.full_observation[lane]['vehicles']
++                # for vehicle in vehicles:
++                #     total_speed += vehicle['speed']
++                tot_approach += (signal.full_observation[lane]['approach'] / 28)
++                total_co2 += signal.full_observation[lane]['total_co2']
++                awg_speed += signal.full_observation[lane]['awg_speed']
++                alpha_angle = max(alpha_angle, signal.full_observation[lane]['alpha'])
++                total_mass += signal.full_observation[lane]['total_mass']
++
++            # Subtract downstream
++            num_lanes_out = len(signal.lane_sets_outbound[direction])
++            for lane in signal.lane_sets_outbound[direction]:
++                dwn_signal = signal.out_lane_to_signalid[lane]
++                if dwn_signal in signal.signals:
++                    queue_length -= signal.signals[dwn_signal].full_observation[lane]['queue']
++                    total_co2 -= signal.signals[dwn_signal].full_observation[lane]['total_co2']
++                    awg_speed_out -= signal.signals[dwn_signal].full_observation[lane]['awg_speed']                    
++                    total_mass_out += signal.signals[dwn_signal].full_observation[lane]['total_mass']
++                    
++            obs.append(queue_length)
++            obs.append(total_wait)            
++            obs.append(tot_approach)
++            obs.append(awg_speed/num_lanes if num_lanes else 0)
++            obs.append(awg_speed_out/num_lanes_out if num_lanes_out else 0)
++            obs.append(total_co2)       
++            obs.append(alpha_angle)     
++            obs.append(total_mass)
++            obs.append(total_mass_out)
++        observations[signal_id] = np.asarray(obs)
++    return observations
++
++
++def idqn_Co2Multiple(signals):
++    observations = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        obs = []
++
++        lane_colors = get_inbound_lane_colors(signal)
++        for i, lane in enumerate(signal.lanes):
++            lane_obs = []
++
++            lane_obs.append(0) #added static value to reduce influence in convolutional operation
++
++            lane_obs.append(signal.full_observation[lane]['approach'] / 28)
++            lane_obs.append(signal.full_observation[lane]['total_wait'] / 28)
++            lane_obs.append(signal.full_observation[lane]['queue'] / 28) 
++            lane_obs.append(signal.full_observation[lane]['total_co2'] / 10e3)            
++
++            lane_obs.append(lane_colors[lane])
++
++            total_speed = 0
++            vehicles = signal.full_observation[lane]['vehicles']
++            for vehicle in vehicles:
++                total_speed += (vehicle['speed'] / 20 / 28)
++            lane_obs.append(total_speed)
++            
++            lane_obs.append(0) 
++
++            obs.append(lane_obs)
++        obs_shaped = np.expand_dims(np.asarray(obs), axis=0)
++        observations[signal_id] = obs_shaped
++    return observations
++
++def idqn_Co2MultipleLineSets(signals):
++    observations = dict()
++    for signal_id in signals:
++        signal = signals[signal_id]
++        # Initialize an array for normalized observations
++        obs=[]
++
++        for i, direction in enumerate(signal.lane_sets):
++            dir_obs = []
++            queue_length = 0
++            total_wait = 0
++            tot_approach = 0
++            total_co2 = 0
++            awg_speed = 0
++            awg_speed_out = 0
++            alpha_angle = 0
++            total_mass = 0
++            total_mass_out = 0
++            total_co2_out = 0
++            queue_length_out = 0
++
++            num_lanes = len(signal.lane_sets[direction])
++            for lane in signal.lane_sets[direction]:
++
++                lane_index = signal.lanes.index(lane)
++                if lane_index == signal.phase:
++                    dir_obs.append(1)
++                else:
++                    dir_obs.append(0)
++
++                queue_length += signal.full_observation[lane]['queue']
++                total_wait += signal.full_observation[lane]['total_wait']  
++                tot_approach += signal.full_observation[lane]['approach']  
++                total_co2 += signal.full_observation[lane]['total_co2']
++                awg_speed += signal.full_observation[lane]['awg_speed']
++                alpha_angle = max(alpha_angle, signal.full_observation[lane]['alpha'])
++                total_mass += signal.full_observation[lane]['total_mass']
++
++            num_lanes_out = len(signal.lane_sets_outbound[direction])
++            for lane in signal.lane_sets_outbound[direction]:
++                dwn_signal = signal.out_lane_to_signalid[lane]
++                if dwn_signal in signal.signals:
++                    queue_length_out += signal.signals[dwn_signal].full_observation[lane]['queue']
++                    total_co2_out += signal.signals[dwn_signal].full_observation[lane]['total_co2']
++                    awg_speed_out += signal.signals[dwn_signal].full_observation[lane]['awg_speed']
++                    total_mass_out += signal.signals[dwn_signal].full_observation[lane]['total_mass']
++
++            #normalize values             
++            dir_obs.append(queue_length /28)
++            dir_obs.append(queue_length_out /28)
++            dir_obs.append(total_wait / 224)
++            dir_obs.append(tot_approach / 28)
++            dir_obs.append((awg_speed / num_lanes if num_lanes else 0) / 100)
++            dir_obs.append((awg_speed_out / num_lanes_out if num_lanes_out else 0) / 100)
++            dir_obs.append( total_co2 / 10e4)
++            dir_obs.append( total_co2_out / 10e4)
++            dir_obs.append( alpha_angle)
++            dir_obs.append( total_mass / 1000)
++            dir_obs.append( total_mass_out / 1000)
++
++            obs.append(dir_obs)  
++
++        obs_shaped = np.expand_dims(np.asarray(obs), axis=0)
++        observations[signal_id] = obs_shaped
++
++    return observations
++
++ 
+ 
+ def mplight_full(signals):
+     observations = dict()
+diff --git a/resco_benchmark/traffic_signal.py b/resco_benchmark/traffic_signal.py
+--- a/resco_benchmark/traffic_signal.py
++++ b/resco_benchmark/traffic_signal.py
+@@ -2,7 +2,12 @@
+ import copy
+ import re
+ from resco_benchmark.config.signal_config import signal_configs
+-
++from resco_benchmark.config.map_config import map_configs
++import logging
++# Module logger for hill/grade diagnostics
++_logger = logging.getLogger(__name__)
++
++_STOP_SPEED_EPS = 0.1                  # m/s threshold to consider a vehicle as 'stopped'
+ 
+ def create_yellows(phases, yellow_length):
+     new_phases = copy.copy(phases)
+@@ -25,13 +30,17 @@
+ 
+ 
+ class Signal:
+-    def __init__(self, map_name, sumo, id, yellow_length, phases):
++    def __init__(self, map_name, sumo, id, yellow_length, phases, allred_state=None, allred_length=0):
+         self.sumo = sumo
+         self.id = id
+         self.yellow_time = yellow_length
+         self.next_phase = 0
+-
+-        links = self.sumo.trafficlight.getControlledLinks(self.id)
++        self.changing = False    # eval kit: True after prep_phase() switched to a yellow
++
++        self.map_config = map_configs.get(map_name, None) or {}
++        self.lane_grade = {}
++       
++        self.links = self.sumo.trafficlight.getControlledLinks(self.id)
+         lanes = []
+ 
+         #for i, link in enumerate(links):
+@@ -91,6 +100,10 @@
+         self.waiting_times = dict()     # SUMO's WaitingTime and AccumulatedWaiting are both wrong for multiple signals
+ 
+         self.phases, self.yellow_dict = create_yellows(phases, yellow_length)
++        self.allred_idx = None    # eval kit: one all-red phase appended after the yellows
++        if allred_state is not None and allred_length > 0:
++            self.phases.append(traci.trafficlight.Phase(allred_length, allred_state))
++            self.allred_idx = len(self.phases) - 1
+ 
+         # logic = self.sumo.trafficlight.Logic(id, 0, 0, phases=self.phases) # not compatible with libsumo
+         programs = self.sumo.trafficlight.getAllProgramLogics(self.id)
+@@ -102,6 +115,19 @@
+         self.signals = None     # Used to allow signal sharing
+         self.full_observation = None
+         self.last_step_vehicles = None
++
++        # Track per-vehicle stopped state for start/stop transition detection
++        self.prev_vehicle_stopped = dict()   # vehicle_id -> bool (was stopped last step?)
++
++        # Hill-aware maps and precomputed grades
++        
++        self.lane_direction_map = {}
++        if hasattr(self, 'inbounds_fr_direction'):
++            for dir_letter, lanes in self.inbounds_fr_direction.items():
++                for lane in lanes:
++                    self.lane_direction_map[lane] = dir_letter
++        if self.map_config.get('enable_grade', False) == True:
++            self._compute_lane_grades()
+ 
+     def generate_config(self):
+         print('GENERATING CONFIG')
+@@ -174,6 +200,7 @@
+         return self.sumo.trafficlight.getPhase(self.id)
+ 
+     def prep_phase(self, new_phase):
++        self.changing = False
+         if self.phase == new_phase:
+             self.next_phase = self.phase
+         else:
+@@ -182,6 +209,10 @@
+             if key in self.yellow_dict:
+                 yel_idx = self.yellow_dict[key]
+                 self.sumo.trafficlight.setPhase(self.id, yel_idx)  # turns yellow
++                self.changing = True
++
++    def set_allred(self):    # eval kit: used by MultiSignal.step() when allred_length > 0
++        self.sumo.trafficlight.setPhase(self.id, self.allred_idx)
+ 
+     def set_phase(self):
+         self.sumo.trafficlight.setPhase(self.id, int(self.next_phase))
+@@ -191,8 +222,26 @@
+         all_vehicles = set()
+         for lane in self.lanes:
+             vehicles = []
+-            lane_measures = {'queue': 0, 'approach': 0, 'total_wait': 0, 'max_wait': 0}
++            lane_measures = {'queue': 0, 'approach': 0, 'total_wait': 0, 'max_wait': 0, 'total_co2': 0, 'alpha': 0, 
++                             "awg_speed": 0, "total_mass":0,
++                             "vehicles": [], "grade": 0, 
++                             "vehicles_started": 0, "vehicles_stopped": 0,"uphill_started_count": 0, "uphill_stopped_count": 0}
+             lane_vehicles = self.get_vehicles(lane, distance)
++            
++            lane_length = self.sumo.lane.getLength(lane)
++            
++            total_speed = 0
++            total_mass = 0
++            alpha = 0
++            grade_percent = 0.0
++            dir_letter=None
++            if self.map_config.get('enable_grade', False):
++                base_grade = self.lane_grade.get(lane, 0.0)
++                dir_letter = self.lane_direction_map.get(lane)
++                if dir_letter in self.map_config.get('uphill_enabled_directions', ['N']):
++                    grade_percent = base_grade #if base_grade > 0 else 0.0
++                else:
++                    grade_percent = 0.0
+             for vehicle in lane_vehicles:
+                 all_vehicles.add(vehicle)
+                 # Update waiting time
+@@ -208,15 +257,56 @@
+                 vehicle_measures['acceleration'] = self.sumo.vehicle.getAcceleration(vehicle)
+                 vehicle_measures['position'] = self.sumo.vehicle.getLanePosition(vehicle)
+                 vehicle_measures['type'] = self.sumo.vehicle.getTypeID(vehicle)
+-                vehicles.append(vehicle_measures)
++                vehicle_measures['co2'] = self.sumo.vehicle.getCO2Emission(vehicle)
++                vehicle_measures['alpha'] = self.sumo.vehicle.getAngle(vehicle)
++                vehicle_measures['mass'] = self.sumo.vehicle.getMass(vehicle)
++                vehicle_measures['relative_position'] = self.get_vehicle_relative_index(lane_length, vehicle_measures, distance)
++                
++                # Calculate start/stop transitions for this vehicle (for ALL lanes, not just uphill)
++                current_stopped = (vehicle_measures['speed'] <= _STOP_SPEED_EPS)
++                prev_stopped = self.prev_vehicle_stopped.get(vehicle, current_stopped)  # Default to current state if new vehicle
++                
++                # Track transitions: stopped->moving = start, moving->stopped = stop
++                if prev_stopped and not current_stopped:
++                    lane_measures['vehicles_started'] += 1
++                    vehicle_measures['transition'] = 'started'
++                elif (not prev_stopped) and current_stopped:
++                    lane_measures['vehicles_stopped'] += 1
++                    vehicle_measures['transition'] = 'stopped'
++                else:
++                    vehicle_measures['transition'] = 'no_change'
++                
++                self.prev_vehicle_stopped[vehicle] = current_stopped
++
++                if dir_letter != None:
++                    lane_measures['uphill_started_count']  = lane_measures['vehicles_started']
++                    lane_measures['uphill_stopped_count'] = lane_measures['vehicles_stopped']                    
++                
++                total_speed += vehicle_measures['speed']
++                total_mass += vehicle_measures['mass'] / 1000
++                alpha += vehicle_measures['alpha']
++
++                if vehicle_measures['co2'] > 0:
++                    lane_measures['total_co2'] = lane_measures['total_co2'] + vehicle_measures['co2']
+                 if vehicle_measures['wait'] > 0:
+                     lane_measures['total_wait'] = lane_measures['total_wait'] + vehicle_measures['wait']
+                     lane_measures['queue'] = lane_measures['queue'] + 1
+                     if vehicle_measures['wait'] > lane_measures['max_wait']:
+                         lane_measures['max_wait'] = vehicle_measures['wait']
+                 else:
+-                    lane_measures['approach'] = lane_measures['approach'] + 1
++                    lane_measures['approach'] = lane_measures['approach'] + 1  
++                    
++                vehicles.append(vehicle_measures)
++
++
+             lane_measures['vehicles'] = vehicles
++            lane_measures['total_co2'] = round(lane_measures['total_co2'], 1)
++
++            lane_measures['awg_speed'] = total_speed / len(lane_vehicles) if lane_vehicles else 0
++            lane_measures['total_mass'] = total_mass
++            lane_measures['alpha'] = alpha / len(lane_vehicles) if lane_vehicles else 0
++            lane_measures['grade'] = grade_percent
++
+             full_observation[lane] = lane_measures
+ 
+         full_observation['num_vehicles'] = all_vehicles
+@@ -229,7 +319,10 @@
+             full_observation['departures'] = departs
+             # Clear departures from waiting times
+             for vehicle in departs:
+-                if vehicle in self.waiting_times: self.waiting_times.pop(vehicle)
++                if vehicle in self.waiting_times: 
++                    self.waiting_times.pop(vehicle)
++                if vehicle in self.prev_vehicle_stopped: 
++                    self.prev_vehicle_stopped.pop(vehicle)
+ 
+         self.last_step_vehicles = all_vehicles
+         self.full_observation = full_observation
+@@ -245,3 +338,124 @@
+                 if distance <= max_distance:  # Detectors have a max range
+                     detectable.append(vehicle)
+         return detectable
++
++    def get_vehicle_distance_to_signal(self, vehicle_id):
++        lane_id = traci.vehicle.getLaneID(vehicle_id)
++        vehicle_pos = traci.vehicle.getLanePosition(vehicle_id)
++        lane_length = traci.lane.getLength(lane_id)
++        distance = lane_length - vehicle_pos  # distance from vehicle to the stop line
++        return distance
++    
++    def get_vehicle_relative_index(self, lane_length, vehicle_obj, max_distance=100):         
++        vehicle_pos = vehicle_obj['position']
++        #lane_length = self.sumo.lane.getLength(lane_id)
++        distance_to_stop = lane_length - vehicle_pos
++
++        # Clamp distance to not exceed max_length
++        clamped_distance = min(distance_to_stop, max_distance)
++
++        # Calculate bucket index from 0 to 10
++        relative_index = int((clamped_distance / max_distance) * 10)
++
++        return relative_index
++
++    def _compute_lane_grades(self):
++        sample_len = float(self.map_config.get('grade_sample_length_m', 50.0))
++        
++
++        # Guard: if convert3D is missing, warn once and disable grades
++        if not hasattr(self.sumo.simulation, 'convert3D'):
++            
++            _logger.warning("simulation.convert3D not available; setting all lane grades to 0.")
++            
++            for lane in self.lanes:
++                self.lane_grade[lane] = 0.0
++            return
++
++        for lane in self.lanes:
++            try:
++                # Use 2D shape plus convert3D to get Z values
++                shape2d = self.sumo.lane.getShape(lane)
++                if not shape2d or len(shape2d) < 2:
++                    self.lane_grade[lane] = 0.0
++                    continue
++                # cumulative distances along shape
++                dists = [0.0]
++                for i in range(1, len(shape2d)):
++                    x0, y0 = shape2d[i-1]
++                    x1, y1 = shape2d[i]
++                    seg = ((x1 - x0)**2 + (y1 - y0)**2) ** 0.5
++                    dists.append(dists[-1] + seg)
++                total_len = dists[-1]
++                target_from_end = max(total_len - sample_len, 0.0)
++                # endpoint at stop line
++                xA, yA = shape2d[-1]
++                # point at target_from_end
++                xB, yB = shape2d[0]
++                for i in range(len(shape2d)-1, 0, -1):
++                    if dists[i-1] <= target_from_end <= dists[i]:
++                        x0, y0 = shape2d[i-1]
++                        x1, y1 = shape2d[i]
++                        seg_len = max(dists[i] - dists[i-1], 1e-6)
++                        t = (target_from_end - dists[i-1]) / seg_len
++                        xB = x0 + t * (x1 - x0)
++                        yB = y0 + t * (y1 - y0)
++                        break
++                # convert to 3D robustly: prefer road-position signature (edgeID, pos, laneIndex)
++                lane_len = self.sumo.lane.getLength(lane)
++                # positions along lane from start
++                posA = max(lane_len - 1e-3, 0.0)
++                posB = max(lane_len - sample_len, 0.0)
++
++                # parse edgeID and laneIndex from lane id (edgeID is lane id without last _index)
++                try:
++                    us = lane.rfind('_')
++                    edge_id = lane[:us]
++                    lane_idx = int(lane[us+1:])
++                except Exception:
++                    edge_id = lane
++                    lane_idx = 0
++
++                # First try road-position form
++                try:
++                    xA3, yA3, zA = self.sumo.simulation.convert3D(edge_id, float(posA), int(lane_idx))
++                    xB3, yB3, zB = self.sumo.simulation.convert3D(edge_id, float(posB), int(lane_idx))
++                except Exception:
++                    # Fallback: try numeric XY forms
++                    def _pt3(x, y):
++                        last_exc = None
++                        x_f, y_f = float(x), float(y)
++                        calls = [
++                            lambda: self.sumo.simulation.convert3D(x_f, y_f),
++                            lambda: self.sumo.simulation.convert3D((x_f, y_f)),
++                            lambda: self.sumo.simulation.convert3D((x_f, y_f, 0.0)),
++                            lambda: self.sumo.simulation.convert3D(x_f, y_f, 0.0),
++                        ]
++                        for c in calls:
++                            try:
++                                return c()
++                            except Exception as ee:
++                                last_exc = ee
++                                continue
++                        raise last_exc if last_exc else RuntimeError('convert3D failed')
++
++                    xA3, yA3, zA = _pt3(xA, yA)
++                    xB3, yB3, zB = _pt3(xB, yB)
++                # horizontal distance of sampled segment
++                horiz = max(((xA3 - xB3)**2 + (yA3 - yB3)**2) ** 0.5, 1e-6)
++                grade_percent = (zA - zB) / horiz * 100.0
++                self.lane_grade[lane] = grade_percent
++            except Exception as e:
++                # Log once per lane to avoid spamming
++                if lane not in _grade_error_lanes:
++                    _grade_error_lanes.add(lane)
++                    _logger.exception(
++                        "convert3D/grade failed for lane=%s (sample_len=%.1fm, xA=%.2f, yA=%.2f, xB=%.2f, yB=%.2f). Fallback grade=0.",
++                        lane,
++                        sample_len,
++                        xA if 'xA' in locals() else float('nan'),
++                        yA if 'yA' in locals() else float('nan'),
++                        xB if 'xB' in locals() else float('nan'),
++                        yB if 'yB' in locals() else float('nan'),
++                    )
++                self.lane_grade[lane] = 0.0
+\ No newline at end of file

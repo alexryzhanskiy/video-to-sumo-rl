@@ -1,0 +1,13 @@
+figure,panel,fold,check_cycles,quantity,unit,source,estimate,criterion_limit,passes
+SI_twin_calibration,d,A,odd,start-up error,s,simulated_default,2.367,1.183,
+SI_twin_calibration,d,A,odd,start-up error,s,simulated_theta_star,0.705,1.183,True
+SI_twin_calibration,d,A,odd,headway error,percentage points,simulated_default,12.651,10.651,
+SI_twin_calibration,d,A,odd,headway error,percentage points,simulated_theta_star,16.913,10.651,False
+SI_twin_calibration,d,A,odd,queue error,veh,simulated_default,2.0,2.5,
+SI_twin_calibration,d,A,odd,queue error,veh,simulated_theta_star,2.323,2.5,True
+SI_twin_calibration,d,B,even,start-up error,s,simulated_default,2.284,1.142,
+SI_twin_calibration,d,B,even,start-up error,s,simulated_theta_star,0.563,1.142,True
+SI_twin_calibration,d,B,even,headway error,percentage points,simulated_default,7.52,5.52,
+SI_twin_calibration,d,B,even,headway error,percentage points,simulated_theta_star,22.429,5.52,False
+SI_twin_calibration,d,B,even,queue error,veh,simulated_default,2.131,2.631,
+SI_twin_calibration,d,B,even,queue error,veh,simulated_theta_star,2.356,2.631,True

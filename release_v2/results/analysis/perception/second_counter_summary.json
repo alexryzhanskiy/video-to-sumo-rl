@@ -1,0 +1,94 @@
+{
+ "counter": "A2",
+ "finalized": "2026-11-04T13:03:03",
+ "warnings": [],
+ "vs_pipeline": {
+  "clips": [
+   {
+    "clip": "center_i300",
+    "approaches": "SVB_N PRB_E",
+    "second": 115,
+    "pipeline": 115,
+    "matched": 107,
+    "second_only": 8,
+    "pipeline_only": 8,
+    "minutes_in_app": 14.4
+   },
+   {
+    "clip": "zarich_i300",
+    "approaches": "SVB_S PRB_W",
+    "second": 158,
+    "pipeline": 148,
+    "matched": 142,
+    "second_only": 16,
+    "pipeline_only": 6,
+    "minutes_in_app": 32.7
+   }
+  ],
+  "without_uturns": {
+   "cells": 12,
+   "reference_total": 272,
+   "other_total": 249,
+   "total_error": -23,
+   "total_error_pct": -8.46,
+   "mae_per_cell": 2.583,
+   "wape_pct": 11.4
+  },
+  "all_movements": {
+   "cells": 16,
+   "reference_total": 273,
+   "other_total": 263,
+   "total_error": -10,
+   "total_error_pct": -3.66,
+   "mae_per_cell": 2.75,
+   "wape_pct": 16.12
+  },
+  "second_only_per_100": 8.79,
+  "pipeline_only_per_100": 5.13,
+  "movement_agreement": {
+   "gate": {
+    "agree": 161,
+    "matched": 186,
+    "pct": 86.6
+   },
+   "heading": {
+    "agree": 47,
+    "matched": 63,
+    "pct": 74.6
+   }
+  }
+ },
+ "vs_a1": {
+  "clips": [
+   {
+    "clip": "center_i300",
+    "approaches": "SVB_N PRB_E",
+    "a1": 117,
+    "second": 115,
+    "matched": 112,
+    "same_movement": 103,
+    "a1_only": 5,
+    "second_only": 3
+   },
+   {
+    "clip": "zarich_i300",
+    "approaches": "SVB_S PRB_W",
+    "a1": 156,
+    "second": 158,
+    "matched": 151,
+    "same_movement": 141,
+    "a1_only": 5,
+    "second_only": 7
+   }
+  ],
+  "without_uturns": {
+   "cells": 12,
+   "reference_total": 273,
+   "other_total": 272,
+   "total_error": -1,
+   "total_error_pct": -0.37,
+   "mae_per_cell": 1.083,
+   "wape_pct": 4.76
+  }
+ }
+}

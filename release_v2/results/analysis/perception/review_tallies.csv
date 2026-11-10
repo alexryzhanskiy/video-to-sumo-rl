@@ -1,0 +1,40 @@
+clip,type,answer,n,candidates,pipeline_vehicles
+center_i300,break,cannot tell,3,28,115
+center_i300,break,no,17,28,115
+center_i300,break,yes,8,28,115
+center_i300,break_double,cannot tell,1,2,115
+center_i300,break_double,yes,1,2,115
+center_i300,jump,no,2,2,115
+center_i300,manual_only,cannot tell,4,7,115
+center_i300,manual_only,pipeline counted it (time off),2,7,115
+center_i300,manual_only,pipeline missed it,1,7,115
+center_i300,movement,cannot tell,1,35,115
+center_i300,movement,left,5,35,115
+center_i300,movement,right,5,35,115
+center_i300,movement,through,24,35,115
+center_i300,pipeline_only,double count (same camera),1,5,115
+center_i300,pipeline_only,real vehicle,4,5,115
+center_i300,uncounted,cannot tell,2,13,115
+center_i300,uncounted,counted under another ID,6,13,115
+center_i300,uncounted,missed (never counted),5,13,115
+center_i300,vehicle,no problem,8,8,115
+zarich_i300,break,cannot tell,10,42,148
+zarich_i300,break,no,17,42,148
+zarich_i300,break,yes,15,42,148
+zarich_i300,break_double,cannot tell,1,1,148
+zarich_i300,manual_only,cannot tell,2,13,148
+zarich_i300,manual_only,pipeline counted it (time off),1,13,148
+zarich_i300,manual_only,pipeline missed it,10,13,148
+zarich_i300,movement,cannot tell,4,54,148
+zarich_i300,movement,left,2,54,148
+zarich_i300,movement,right,7,54,148
+zarich_i300,movement,through,41,54,148
+zarich_i300,pipeline_only,double count (same camera),2,5,148
+zarich_i300,pipeline_only,false count,1,5,148
+zarich_i300,pipeline_only,real vehicle,2,5,148
+zarich_i300,uncounted,cannot tell,5,30,148
+zarich_i300,uncounted,counted under another ID,7,30,148
+zarich_i300,uncounted,missed (never counted),13,30,148
+zarich_i300,uncounted,not a vehicle of this approach,5,30,148
+zarich_i300,vehicle,ID changed or fragment,1,8,148
+zarich_i300,vehicle,no problem,7,8,148

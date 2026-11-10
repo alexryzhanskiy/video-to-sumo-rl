@@ -1,0 +1,43 @@
+<data>
+  <!-- mix seed 6040: S2 prybuzka approaches of the base-load counts (counts unchanged) -->
+  <interval id="i0" begin="0" end="300">
+    <edgeRelation from="nE_nC" to="nC_nN" count="28"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="17"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="12"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="48"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="24"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="16"/>
+  </interval>
+  <interval id="i300" begin="300" end="600">
+    <edgeRelation from="nE_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="12"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="39"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="48"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="11"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="29"/>
+  </interval>
+  <interval id="i600" begin="600" end="900">
+    <edgeRelation from="nE_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="21"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="19"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="23"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="29"/>
+  </interval>
+  <interval id="i900" begin="900" end="1200">
+    <edgeRelation from="nE_nC" to="nC_nN" count="17"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="16"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="32"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="60"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="16"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="34"/>
+  </interval>
+  <interval id="i1200" begin="1200" end="1500">
+    <edgeRelation from="nE_nC" to="nC_nN" count="24"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="13"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="24"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="31"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="31"/>
+  </interval>
+</data>

@@ -1,0 +1,16 @@
+label,set,route,seed,demand,arrived_1500,arrived_1800,in_network_1800,never_inserted,unserved_1800,mean_time_loss_arrived
+default,original,demand.rou.xml,1,1355,1292,1355,0,0,0,46.436
+default,original,demand.rou.xml,2,1355,1292,1355,0,0,0,45.991
+default,original,demand.rou.xml,3,1355,1295,1355,0,0,0,45.949
+default,original,demand.rou.xml,4,1355,1292,1355,0,0,0,45.655
+default,original,demand.rou.xml,5,1355,1293,1355,0,0,0,47.031
+default,train,train_x10_s3001.rou.xml,1,1355,1300,1355,0,0,0,44.141
+default,train,train_x10_s3002.rou.xml,1,1355,1301,1355,0,0,0,46.367
+default,train,train_x10_s3003.rou.xml,1,1355,1294,1355,0,0,0,47.436
+default,train,train_x10_s3004.rou.xml,1,1355,1297,1355,0,0,0,49.02
+default,train,train_x10_s3005.rou.xml,1,1355,1303,1355,0,0,0,48.295
+default,train,train_x10_s3006.rou.xml,1,1355,1311,1355,0,0,0,45.869
+default,train,train_x10_s3007.rou.xml,1,1355,1283,1355,0,0,0,49.556
+default,train,train_x10_s3008.rou.xml,1,1355,1310,1355,0,0,0,47.672
+default,train,train_x10_s3009.rou.xml,1,1355,1312,1355,0,0,0,49.18
+default,train,train_x10_s3010.rou.xml,1,1355,1306,1355,0,0,0,47.206

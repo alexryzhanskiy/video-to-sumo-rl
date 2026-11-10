@@ -1,0 +1,124 @@
+{
+ "all_movements": {
+  "cells": 16,
+  "reference_total": 273,
+  "other_total": 263,
+  "total_error": -10,
+  "total_error_pct": -3.66,
+  "mae_per_cell": 2.5,
+  "wape_pct": 14.65
+ },
+ "without_uturns": {
+  "cells": 12,
+  "reference_total": 273,
+  "other_total": 249,
+  "total_error": -24,
+  "total_error_pct": -8.79,
+  "mae_per_cell": 2.167,
+  "wape_pct": 9.52
+ },
+ "by_movement": {
+  "L": {
+   "cells": 4,
+   "reference_total": 50,
+   "other_total": 46,
+   "total_error": -4,
+   "total_error_pct": -8.0,
+   "mae_per_cell": 1.0,
+   "wape_pct": 8.0
+  },
+  "T": {
+   "cells": 4,
+   "reference_total": 161,
+   "other_total": 150,
+   "total_error": -11,
+   "total_error_pct": -6.83,
+   "mae_per_cell": 2.75,
+   "wape_pct": 6.83
+  },
+  "R": {
+   "cells": 4,
+   "reference_total": 62,
+   "other_total": 53,
+   "total_error": -9,
+   "total_error_pct": -14.52,
+   "mae_per_cell": 2.75,
+   "wape_pct": 17.74
+  },
+  "U": {
+   "cells": 4,
+   "reference_total": 0,
+   "other_total": 14,
+   "total_error": 14,
+   "total_error_pct": null,
+   "mae_per_cell": 3.5,
+   "wape_pct": null
+  }
+ },
+ "by_approach": {
+  "PRB_E": {
+   "cells": 3,
+   "reference_total": 53,
+   "other_total": 52,
+   "total_error": -1,
+   "total_error_pct": -1.89,
+   "mae_per_cell": 0.333,
+   "wape_pct": 1.89
+  },
+  "PRB_W": {
+   "cells": 3,
+   "reference_total": 81,
+   "other_total": 66,
+   "total_error": -15,
+   "total_error_pct": -18.52,
+   "mae_per_cell": 5.0,
+   "wape_pct": 18.52
+  },
+  "SVB_N": {
+   "cells": 3,
+   "reference_total": 64,
+   "other_total": 58,
+   "total_error": -6,
+   "total_error_pct": -9.38,
+   "mae_per_cell": 2.667,
+   "wape_pct": 12.5
+  },
+  "SVB_S": {
+   "cells": 3,
+   "reference_total": 75,
+   "other_total": 73,
+   "total_error": -2,
+   "total_error_pct": -2.67,
+   "mae_per_cell": 0.667,
+   "wape_pct": 2.67
+  }
+ },
+ "events": {
+  "manual": 273,
+  "pipeline": 263,
+  "matched": 253,
+  "manual_only_per_100": 7.33,
+  "pipeline_only_per_100": 3.66,
+  "movement_agreement": {
+   "gate": {
+    "agree": 165,
+    "matched": 189,
+    "pct": 87.3
+   },
+   "heading": {
+    "agree": 47,
+    "matched": 64,
+    "pct": 73.4
+   }
+  },
+  "minutes_in_app": 24.0
+ },
+ "blind_phase": {
+  "finalized": "2026-11-03T23:01:06",
+  "clips": [
+   "center_i300",
+   "zarich_i300"
+  ],
+  "warnings": []
+ }
+}

@@ -1,0 +1,802 @@
+{
+ "what": "queue series of the E13 final design L2 MPLight (x1.5 model) on the locked x1.5 files",
+ "selection": {
+  "eval_set": "locked",
+  "rung": "L2",
+  "policy": "MPLight",
+  "train_load": "x1.5",
+  "map": "prybuzka_lt15"
+ },
+ "source_fields": [
+  "step",
+  "reward",
+  "max_queues",
+  "queue_lengths",
+  "green"
+ ],
+ "queue_field": "queue_lengths",
+ "grid": "q_t for t = 5, 10, ..., 1800 s: queue at the most recent logged decision with time <= t; empty before the first decision",
+ "host": "MyPC",
+ "created": "2026-10-30 13:51:06",
+ "rows": {
+  "queue_final_lt15_locked.csv": 50,
+  "queue_final_lt15_locked_raw.csv": 16435
+ },
+ "decision_spacing_s": {
+  "min": 5.0,
+  "median": 5.0,
+  "max": 9.0,
+  "counts": {
+   "5.0": 14400,
+   "9.0": 1985
+  }
+ },
+ "decisions_per_episode": {
+  "min": 328,
+  "max": 332
+ },
+ "check_eval_episodes": {
+  "eval_episodes_rows": 50,
+  "source_episodes": 50,
+  "match": true,
+  "only_in_eval_episodes": [],
+  "only_in_source": []
+ },
+ "missing_or_gaps": [],
+ "outputs_sha256": {
+  "queue_final_lt15_locked.csv": "1dfbe69f3cff000a9aaeef7fc122366aea4142353db99f8138acaecdde6df744",
+  "queue_final_lt15_locked_raw.csv": "57073f315a273f6013ead60f430ebcea653afaeb20bbd9ef001c9151e705bfb2"
+ },
+ "episodes": [
+  {
+   "training_run": 1,
+   "episode": 1,
+   "route_file": "gen_1.rou.xml",
+   "sumo_seed": 1044,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_1.csv",
+   "sha256": "5d4cff8478f2673695423498e661953f1bfe6d929dc8d399bde4e34f202bdd45",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 2,
+   "route_file": "gen_1_r02_s5002.rou.xml",
+   "sumo_seed": 1045,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_2.csv",
+   "sha256": "4852a2a9917efa223834849865899f90c502a2969f4d8686ca07e7e43a707561",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 3,
+   "route_file": "gen_1_r03_s5003.rou.xml",
+   "sumo_seed": 1046,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_3.csv",
+   "sha256": "78c4d80d06319eb9ca3eaf4a92faa75f9d9a538f9053c569cabaceed88d43783",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 4,
+   "route_file": "gen_1_r04_s5004.rou.xml",
+   "sumo_seed": 1047,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_4.csv",
+   "sha256": "c618fb5bfa0d6329fe1cef799e4b3231b3a7e2979bae3b8195e71b30102fc764",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1808.0,
+   "spacing_s": {
+    "5.0": 285,
+    "9.0": 42
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 5,
+   "route_file": "gen_1_r05_s5005.rou.xml",
+   "sumo_seed": 1048,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_5.csv",
+   "sha256": "13e029b158ef2a35a8eeaa9b07bec244d66f0445c1c67b913cdc3625b1801911",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 6,
+   "route_file": "gen_1_r06_s5006.rou.xml",
+   "sumo_seed": 1049,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_6.csv",
+   "sha256": "79d2c4fcf03ffaf83b532ac0f305ae99ca641c3425aa815f722d3a0fe9ba2125",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 7,
+   "route_file": "gen_1_r07_s5007.rou.xml",
+   "sumo_seed": 1050,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_7.csv",
+   "sha256": "5e47bc3ea3f99499dc5404d6317ef8b461d54074be52674244251a1029ff3404",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 8,
+   "route_file": "gen_1_r08_s5008.rou.xml",
+   "sumo_seed": 1051,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_8.csv",
+   "sha256": "1ec837114f6f7b2643d6d582b08e55916f0c1472937cd90ec1962728abb9b342",
+   "decisions": 329,
+   "first_s": 5.0,
+   "last_s": 1805.0,
+   "spacing_s": {
+    "5.0": 288,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 9,
+   "route_file": "gen_1_r09_s5009.rou.xml",
+   "sumo_seed": 1052,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_9.csv",
+   "sha256": "2b044f2be378e98d3df4fd2da4a11f2c8760ab0dd83c1778fb87fc0cdcf5ceaf",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 1,
+   "episode": 10,
+   "route_file": "gen_1_r10_s5010.rou.xml",
+   "sumo_seed": 1053,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run1/prybuzka_lt15/MPLight-tr1001-prybuzka_lt15-1-mplight-pressure==ae7f86958c6a4207ad53c52c62cf32ce/metrics_10.csv",
+   "sha256": "286dd1ec0dae193f037d458eb5261bac4708fffd41b8d71d073fee4f16f21047",
+   "decisions": 329,
+   "first_s": 5.0,
+   "last_s": 1801.0,
+   "spacing_s": {
+    "5.0": 289,
+    "9.0": 39
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 1,
+   "route_file": "gen_1.rou.xml",
+   "sumo_seed": 1045,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_1.csv",
+   "sha256": "8136418fd17dfacbb19cc013c9784dd4853a324c5479e099e46d47ab41fe2376",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 2,
+   "route_file": "gen_1_r02_s5002.rou.xml",
+   "sumo_seed": 1046,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_2.csv",
+   "sha256": "a03ae6958087164dd0591a0b34ed1816077d8794dd272913e49eb5e412dfe27b",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 3,
+   "route_file": "gen_1_r03_s5003.rou.xml",
+   "sumo_seed": 1047,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_3.csv",
+   "sha256": "937ada2089889b038fd09e35501a599bacabcd141a6c7dde3c656158d6d93a45",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 4,
+   "route_file": "gen_1_r04_s5004.rou.xml",
+   "sumo_seed": 1048,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_4.csv",
+   "sha256": "f2c26f8feeada288efc90c43b5140680ed3cd1528d1f22d49e9db37a4310c305",
+   "decisions": 329,
+   "first_s": 5.0,
+   "last_s": 1805.0,
+   "spacing_s": {
+    "5.0": 288,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 5,
+   "route_file": "gen_1_r05_s5005.rou.xml",
+   "sumo_seed": 1049,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_5.csv",
+   "sha256": "36b5f2e26251320ce9761a2908480133f8d47069f7221937a19c925ca7cfec5a",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 6,
+   "route_file": "gen_1_r06_s5006.rou.xml",
+   "sumo_seed": 1050,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_6.csv",
+   "sha256": "d4366adb717a350e22478f5f9397083a76c770cd871890fc57e78d20dcb2fc18",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 7,
+   "route_file": "gen_1_r07_s5007.rou.xml",
+   "sumo_seed": 1051,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_7.csv",
+   "sha256": "97e90024eccecdbd8a95dc324d447f8cae0608fe7f1a8d45935aff05817161f8",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 8,
+   "route_file": "gen_1_r08_s5008.rou.xml",
+   "sumo_seed": 1052,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_8.csv",
+   "sha256": "21e1b89d0d021fd8c3d7b951246ef030b99fa3026eaf28282f42fddfecfa3b32",
+   "decisions": 329,
+   "first_s": 5.0,
+   "last_s": 1805.0,
+   "spacing_s": {
+    "5.0": 288,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 9,
+   "route_file": "gen_1_r09_s5009.rou.xml",
+   "sumo_seed": 1053,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_9.csv",
+   "sha256": "9332d808f006155147560149790335a0d7ffea6ae4e7b90cc413a45dcdd26e56",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 2,
+   "episode": 10,
+   "route_file": "gen_1_r10_s5010.rou.xml",
+   "sumo_seed": 1054,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run2/prybuzka_lt15/MPLight-tr1002-prybuzka_lt15-1-mplight-pressure==7cc088b732b3466ab65e1196c013af0b/metrics_10.csv",
+   "sha256": "9da0ff28e1a7e4d5df5ef8e96d337517c727e93a01352879553f977e7d4f860c",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 1,
+   "route_file": "gen_1.rou.xml",
+   "sumo_seed": 1046,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_1.csv",
+   "sha256": "2fbef4288286a5b88f721ea07f9761a5f1db236a2109913a23f6ed7768326ea5",
+   "decisions": 332,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 295,
+    "9.0": 36
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 2,
+   "route_file": "gen_1_r02_s5002.rou.xml",
+   "sumo_seed": 1047,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_2.csv",
+   "sha256": "f6d52f9124275735924d8d6b3c53a774e51a2ef1e81ce60f4dc35202eeca7244",
+   "decisions": 332,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 295,
+    "9.0": 36
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 3,
+   "route_file": "gen_1_r03_s5003.rou.xml",
+   "sumo_seed": 1048,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_3.csv",
+   "sha256": "882d80278436ce0b14b16ece2aa5708e3d56c2cfd670ffe7d2e68b9c07765eb3",
+   "decisions": 330,
+   "first_s": 5.0,
+   "last_s": 1802.0,
+   "spacing_s": {
+    "5.0": 291,
+    "9.0": 38
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 4,
+   "route_file": "gen_1_r04_s5004.rou.xml",
+   "sumo_seed": 1049,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_4.csv",
+   "sha256": "5c9f51c0fe04eca50a389d793eeca63e6d8187f0fddc2845dc40fc6997960318",
+   "decisions": 331,
+   "first_s": 5.0,
+   "last_s": 1803.0,
+   "spacing_s": {
+    "5.0": 293,
+    "9.0": 37
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 5,
+   "route_file": "gen_1_r05_s5005.rou.xml",
+   "sumo_seed": 1050,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_5.csv",
+   "sha256": "43877928f84dab61567b6f3cbfbc41c94159d6d7eeba9ab9af94bb879f9cd461",
+   "decisions": 331,
+   "first_s": 5.0,
+   "last_s": 1803.0,
+   "spacing_s": {
+    "5.0": 293,
+    "9.0": 37
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 6,
+   "route_file": "gen_1_r06_s5006.rou.xml",
+   "sumo_seed": 1051,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_6.csv",
+   "sha256": "20a0776c250b03fd0b37d0fca082d7ce235ee93f3c55c3060dd38421fdfa6222",
+   "decisions": 330,
+   "first_s": 5.0,
+   "last_s": 1802.0,
+   "spacing_s": {
+    "5.0": 291,
+    "9.0": 38
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 7,
+   "route_file": "gen_1_r07_s5007.rou.xml",
+   "sumo_seed": 1052,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_7.csv",
+   "sha256": "c9677416c677555b69232b8b86de203bcbf95ef0d6a04f2231616d6f3de861d4",
+   "decisions": 331,
+   "first_s": 5.0,
+   "last_s": 1803.0,
+   "spacing_s": {
+    "5.0": 293,
+    "9.0": 37
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 8,
+   "route_file": "gen_1_r08_s5008.rou.xml",
+   "sumo_seed": 1053,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_8.csv",
+   "sha256": "cbcd5c9b86c1098247999be1325512c84b0dc330e902f16ac4b1bcec22e38eb7",
+   "decisions": 330,
+   "first_s": 5.0,
+   "last_s": 1806.0,
+   "spacing_s": {
+    "5.0": 290,
+    "9.0": 39
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 9,
+   "route_file": "gen_1_r09_s5009.rou.xml",
+   "sumo_seed": 1054,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_9.csv",
+   "sha256": "4ec893b5ebbaefca35ed97cb90e20028c9c87f5551f51bff0f11659767cb9e33",
+   "decisions": 331,
+   "first_s": 5.0,
+   "last_s": 1803.0,
+   "spacing_s": {
+    "5.0": 293,
+    "9.0": 37
+   }
+  },
+  {
+   "training_run": 3,
+   "episode": 10,
+   "route_file": "gen_1_r10_s5010.rou.xml",
+   "sumo_seed": 1055,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run3/prybuzka_lt15/MPLight-tr1003-prybuzka_lt15-1-mplight-pressure==24e2f65ac710448395cf972d2be265b4/metrics_10.csv",
+   "sha256": "7862c1fc28a02dcd309ce3ce61c05907f10078baed6656b2edebc66347c84dfd",
+   "decisions": 332,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 296,
+    "9.0": 35
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 1,
+   "route_file": "gen_1.rou.xml",
+   "sumo_seed": 1047,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_1.csv",
+   "sha256": "20b1d7247b2635296a7f536a3461ba4b2cc9fa3daef3064d69315f6f922f19c4",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 2,
+   "route_file": "gen_1_r02_s5002.rou.xml",
+   "sumo_seed": 1048,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_2.csv",
+   "sha256": "d7b8f6fef6e3f9ce40a445b2203d60d9e240182e4bb293f46253fca5d5aa140a",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 3,
+   "route_file": "gen_1_r03_s5003.rou.xml",
+   "sumo_seed": 1049,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_3.csv",
+   "sha256": "f85f30677ebee1ccf011a6bc5c360eba3fe0d7aa67fc330a8a8c4975ad6b2d85",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 4,
+   "route_file": "gen_1_r04_s5004.rou.xml",
+   "sumo_seed": 1050,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_4.csv",
+   "sha256": "357c79ce8371278524f525bf0aa8a37e3dd5f3485fb54632c2446f1d71faf34c",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 5,
+   "route_file": "gen_1_r05_s5005.rou.xml",
+   "sumo_seed": 1051,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_5.csv",
+   "sha256": "cbf00c5d601f4912251ae46d2a3a1070e31220cbf206905c07c4fc8f835a69f7",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 6,
+   "route_file": "gen_1_r06_s5006.rou.xml",
+   "sumo_seed": 1052,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_6.csv",
+   "sha256": "2f8e69fe3ff3525556e33ebb66dbfbbcdb265ddad9034ad529c9c6194f5bb218",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 7,
+   "route_file": "gen_1_r07_s5007.rou.xml",
+   "sumo_seed": 1053,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_7.csv",
+   "sha256": "6dd0be07cdffeb17189ef0054fffe87f4d7557302bf89f511350944b611adfa2",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 8,
+   "route_file": "gen_1_r08_s5008.rou.xml",
+   "sumo_seed": 1054,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_8.csv",
+   "sha256": "28e63a3d5bcced8cf7a296acf483e984951b24183d01c6801bf281ae95205440",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 9,
+   "route_file": "gen_1_r09_s5009.rou.xml",
+   "sumo_seed": 1055,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_9.csv",
+   "sha256": "ce3fca146dbb4f79c60ca15a4b32f4cfac9698d362c3f466a814e2c54543948b",
+   "decisions": 329,
+   "first_s": 5.0,
+   "last_s": 1805.0,
+   "spacing_s": {
+    "5.0": 288,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 4,
+   "episode": 10,
+   "route_file": "gen_1_r10_s5010.rou.xml",
+   "sumo_seed": 1056,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run4/prybuzka_lt15/MPLight-tr1004-prybuzka_lt15-1-mplight-pressure==630bb846d13842d9a0815940b573463a/metrics_10.csv",
+   "sha256": "256238b4ef7c0264debc265b1bfacd0bcbc6efae7cc49fda307b7da5bb0f0181",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 1,
+   "route_file": "gen_1.rou.xml",
+   "sumo_seed": 1048,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_1.csv",
+   "sha256": "723c433d21ef6cadd4ed5b9864e2d89e83b309cab773ce901c39ad289803709d",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 2,
+   "route_file": "gen_1_r02_s5002.rou.xml",
+   "sumo_seed": 1049,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_2.csv",
+   "sha256": "6a3035b95a7cb0b445bdf21af94974c3485c6c5a181fc34cf0b2f0543dca193d",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 3,
+   "route_file": "gen_1_r03_s5003.rou.xml",
+   "sumo_seed": 1050,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_3.csv",
+   "sha256": "8f2a89356c2915992be465402e588643f6b0a310ec925100189651c66f9b349a",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 4,
+   "route_file": "gen_1_r04_s5004.rou.xml",
+   "sumo_seed": 1051,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_4.csv",
+   "sha256": "776dcd4adb17fac71c3755be8dfc39f9afec12bc86541c76e9348f4608abcb01",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 5,
+   "route_file": "gen_1_r05_s5005.rou.xml",
+   "sumo_seed": 1052,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_5.csv",
+   "sha256": "97b1be129d8a752ac50082e0fca837109b1ea2b71ada61feb323ac6d3e224046",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 6,
+   "route_file": "gen_1_r06_s5006.rou.xml",
+   "sumo_seed": 1053,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_6.csv",
+   "sha256": "7511d5ae5bb697f9eada485c4b27b634c4ff428e61e9741a5a18480ebebc6763",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 7,
+   "route_file": "gen_1_r07_s5007.rou.xml",
+   "sumo_seed": 1054,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_7.csv",
+   "sha256": "04fd87aff23af6fcad46207e9aadab53ab93a33455ddde49c9445c68701d2d25",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1804.0,
+   "spacing_s": {
+    "5.0": 286,
+    "9.0": 41
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 8,
+   "route_file": "gen_1_r08_s5008.rou.xml",
+   "sumo_seed": 1055,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_8.csv",
+   "sha256": "768393be6f6ad702288e69bf9d96ce2747a8897f0dc3bcc8da19578fefbbae13",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 9,
+   "route_file": "gen_1_r09_s5009.rou.xml",
+   "sumo_seed": 1056,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_9.csv",
+   "sha256": "c3fae44a29eead3a97bd18f73aff7f14f1dc2d549cd0187ae2d22eea748051ed",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  },
+  {
+   "training_run": 5,
+   "episode": 10,
+   "route_file": "gen_1_r10_s5010.rou.xml",
+   "sumo_seed": 1057,
+   "metrics_file": "runs/eval/L2_MPLight_x1.5_run5/prybuzka_lt15/MPLight-tr1005-prybuzka_lt15-1-mplight-pressure==142a5a2682994e51b85af5168d7d6134/metrics_10.csv",
+   "sha256": "1e387d90cd802c0e5f3d843d003235483593e267a360b97f66182d5f3435b8d5",
+   "decisions": 328,
+   "first_s": 5.0,
+   "last_s": 1800.0,
+   "spacing_s": {
+    "5.0": 287,
+    "9.0": 40
+   }
+  }
+ ]
+}

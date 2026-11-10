@@ -1,0 +1,20 @@
+{
+ "label": "default",
+ "vtype": null,
+ "sumo": "Eclipse SUMO sumo 1.26.0",
+ "end": 1800,
+ "original_seeds_1_5": {
+  "unserved_share_mean": 0.0,
+  "unserved_mean": 0,
+  "arrived_1500_mean": 1292.8,
+  "arrived_1800_mean": 1355,
+  "never_inserted_mean": 0
+ },
+ "all_15": {
+  "arrived_1500_mean": 1298.7333333333333,
+  "arrived_1800_mean": 1355,
+  "unserved_mean": 0,
+  "never_inserted_mean": 0
+ },
+ "plausibility_flag": false
+}

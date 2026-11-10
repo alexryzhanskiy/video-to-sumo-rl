@@ -1,0 +1,252 @@
+{
+ "pre_registered": {
+  "0": [
+   [
+    [
+     "nN_nC_0",
+     "nN_nC_1"
+    ],
+    [
+     "nC_nS_0",
+     "nC_nS_1"
+    ]
+   ],
+   [
+    [
+     "nS_nC_0",
+     "nS_nC_1"
+    ],
+    [
+     "nC_nN_0",
+     "nC_nN_1"
+    ]
+   ]
+  ],
+  "1": [
+   [
+    [
+     "nN_nC_2"
+    ],
+    [
+     "nC_nE_2"
+    ]
+   ],
+   [
+    [
+     "nS_nC_2"
+    ],
+    [
+     "nC_nW_2"
+    ]
+   ]
+  ],
+  "2": [
+   [
+    [
+     "nE_nC_0",
+     "nE_nC_1"
+    ],
+    [
+     "nC_nW_0",
+     "nC_nW_1"
+    ]
+   ],
+   [
+    [
+     "nW_nC_0",
+     "nW_nC_1"
+    ],
+    [
+     "nC_nE_0",
+     "nC_nE_1"
+    ]
+   ]
+  ],
+  "3": [
+   [
+    [
+     "nE_nC_2"
+    ],
+    [
+     "nC_nS_2"
+    ]
+   ],
+   [
+    [
+     "nW_nC_2"
+    ],
+    [
+     "nC_nN_2"
+    ]
+   ]
+  ]
+ },
+ "pre_registered_sha256": "380f0ca148edaae9aaf080e0c5e665079c13b207b25f54a84ff6cf9726a57951",
+ "right_turn": {
+  "0": [
+   [
+    [
+     "nN_nC_0",
+     "nN_nC_1"
+    ],
+    [
+     "nC_nS_0",
+     "nC_nS_1"
+    ]
+   ],
+   [
+    [
+     "nN_nC_0"
+    ],
+    [
+     "nC_nW_0"
+    ]
+   ],
+   [
+    [
+     "nS_nC_0"
+    ],
+    [
+     "nC_nE_0"
+    ]
+   ],
+   [
+    [
+     "nS_nC_0",
+     "nS_nC_1"
+    ],
+    [
+     "nC_nN_0",
+     "nC_nN_1"
+    ]
+   ]
+  ],
+  "1": [
+   [
+    [
+     "nN_nC_2"
+    ],
+    [
+     "nC_nE_2"
+    ]
+   ],
+   [
+    [
+     "nS_nC_2"
+    ],
+    [
+     "nC_nW_2"
+    ]
+   ]
+  ],
+  "2": [
+   [
+    [
+     "nE_nC_0"
+    ],
+    [
+     "nC_nN_0"
+    ]
+   ],
+   [
+    [
+     "nE_nC_0",
+     "nE_nC_1"
+    ],
+    [
+     "nC_nW_0",
+     "nC_nW_1"
+    ]
+   ],
+   [
+    [
+     "nW_nC_0",
+     "nW_nC_1"
+    ],
+    [
+     "nC_nE_0",
+     "nC_nE_1"
+    ]
+   ],
+   [
+    [
+     "nW_nC_0"
+    ],
+    [
+     "nC_nS_0"
+    ]
+   ]
+  ],
+  "3": [
+   [
+    [
+     "nE_nC_2"
+    ],
+    [
+     "nC_nS_2"
+    ]
+   ],
+   [
+    [
+     "nW_nC_2"
+    ],
+    [
+     "nC_nN_2"
+    ]
+   ]
+  ]
+ },
+ "right_turn_sha256": "22d0b4abdf05b107165d0ddd4d1c463d6583acd8fc4665328dfe1f7acd6c164e",
+ "right_turn_links": [
+  {
+   "linkIndex": 0,
+   "from_lane": "nN_nC_0",
+   "to_lane": "nC_nW_0",
+   "states_phase0_3": "Gsss",
+   "allred_state": "s",
+   "green_in_phases": [
+    0
+   ]
+  },
+  {
+   "linkIndex": 4,
+   "from_lane": "nE_nC_0",
+   "to_lane": "nC_nN_0",
+   "states_phase0_3": "ssGs",
+   "allred_state": "s",
+   "green_in_phases": [
+    2
+   ]
+  },
+  {
+   "linkIndex": 8,
+   "from_lane": "nS_nC_0",
+   "to_lane": "nC_nE_0",
+   "states_phase0_3": "Gsss",
+   "allred_state": "s",
+   "green_in_phases": [
+    0
+   ]
+  },
+  {
+   "linkIndex": 12,
+   "from_lane": "nW_nC_0",
+   "to_lane": "nC_nS_0",
+   "states_phase0_3": "ssGs",
+   "allred_state": "s",
+   "green_in_phases": [
+    2
+   ]
+  }
+ ],
+ "green_states": [
+  "GGGrsrrrGGGrsrrr",
+  "srrGsrrrsrrGsrrr",
+  "srrrGGGrsrrrGGGr",
+  "srrrsrrGsrrrsrrG"
+ ],
+ "allred_state": "srrrsrrrsrrrsrrr",
+ "net": "revision\\e12_kit\\e13\\resco\\resco_benchmark\\environments\\prybuzka\\intersection.net.xml",
+ "net_sha256": "f7b8f73503cb96505e72d09c86c9f6e386e32c067aad91d4049900c48569e66f",
+ "reading": "a right turn counts in a phase where its link is G or g in that phase's green state; 's' (stop, then turn) is not green. Shared lane 0 of each approach is then an incoming lane of both the through and the right-turn movement of the phase and counts in both terms."
+}

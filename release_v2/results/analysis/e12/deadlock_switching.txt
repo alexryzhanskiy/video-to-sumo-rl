@@ -1,0 +1,4 @@
+IDQN-pressure  deadlocked episodes 131 | window s (median)   525 | switches in window: median    1, zero in 63 | rate per 1800 s (median)   1.6
+IDQN-queue     deadlocked episodes  55 | window s (median)   589 | switches in window: median    0, zero in 44 | rate per 1800 s (median)   0.0
+IDQN-wait      deadlocked episodes 177 | window s (median)   826 | switches in window: median    0, zero in 101 | rate per 1800 s (median)   0.0
+MPLight        deadlocked episodes 138 | window s (median)  1087 | switches in window: median    0, zero in 138 | rate per 1800 s (median)   0.0

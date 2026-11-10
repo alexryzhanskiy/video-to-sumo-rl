@@ -1,0 +1,73 @@
+<data>
+  <!-- mix seed 6040: base load x1.3408 of sumo/turn_counts_edges.xml (count x load, rounded half to even), before the S-type transform -->
+  <interval id="i0" begin="0" end="300">
+    <edgeRelation from="nE_nC" to="nC_nN" count="28"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="17"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="12"/>
+    <edgeRelation from="nN_nC" to="nC_nE" count="9"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="107"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="8"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="25"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="70"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="9"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="48"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="24"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="16"/>
+  </interval>
+  <interval id="i300" begin="300" end="600">
+    <edgeRelation from="nE_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="12"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="39"/>
+    <edgeRelation from="nN_nC" to="nC_nE" count="23"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="50"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="5"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="17"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="64"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="16"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="48"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="11"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="29"/>
+  </interval>
+  <interval id="i600" begin="600" end="900">
+    <edgeRelation from="nE_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="21"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="19"/>
+    <edgeRelation from="nN_nC" to="nC_nE" count="16"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="110"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="12"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="19"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="87"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="17"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="23"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="29"/>
+  </interval>
+  <interval id="i900" begin="900" end="1200">
+    <edgeRelation from="nE_nC" to="nC_nN" count="17"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="16"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="32"/>
+    <edgeRelation from="nN_nC" to="nC_nE" count="20"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="64"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="9"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="17"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="62"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="9"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="60"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="16"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="34"/>
+  </interval>
+  <interval id="i1200" begin="1200" end="1500">
+    <edgeRelation from="nE_nC" to="nC_nN" count="24"/>
+    <edgeRelation from="nE_nC" to="nC_nS" count="13"/>
+    <edgeRelation from="nE_nC" to="nC_nW" count="24"/>
+    <edgeRelation from="nN_nC" to="nC_nE" count="11"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="110"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="8"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="11"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="67"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="9"/>
+    <edgeRelation from="nW_nC" to="nC_nE" count="31"/>
+    <edgeRelation from="nW_nC" to="nC_nN" count="19"/>
+    <edgeRelation from="nW_nC" to="nC_nS" count="31"/>
+  </interval>
+</data>

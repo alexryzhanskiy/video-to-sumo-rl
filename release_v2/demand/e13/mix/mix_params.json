@@ -1,0 +1,690 @@
+{
+ "_comment": "E13 L4 training mix (prereg section 3). Written by revision/tools/make_mix_e13.py draw before any mix file was generated. Do not edit; regenerate the files from this plan.",
+ "_method": {
+  "rng": "numpy.random.default_rng(6000) (numpy 2.5.4); for each perturbed file in seed order: base_load = uniform(1.0, 1.4), then the type's parameters in the order listed in bounds; values rounded (base_load, factors and peak_share to 4 decimals, S2 times to 0.1 s)",
+  "assignment": "perturbed seeds 6031-6060 cycle through S1, S2, S3, S4 (seed 6031 + i -> type i mod 4): S1 and S2 8 files, S3 and S4 7 files",
+  "base_load": "x1.0 counts (sumo/turn_counts_edges.xml) x base_load per (interval, relation), rounded half to even, total not adjusted (the rule of sumo/turn_counts_12.xml and turn_counts_15.xml); the S-type transform is then applied to these scaled counts",
+  "bounds": {
+   "base_load": [
+    1.0,
+    1.4
+   ],
+   "S1": {
+    "factor": [
+     1.1,
+     1.4
+    ]
+   },
+   "S2": {
+    "window": [
+     30.0,
+     50.0
+    ],
+    "offset_shift": [
+     -20.0,
+     20.0
+    ]
+   },
+   "S3": {
+    "peak_share": [
+     0.4,
+     0.6
+    ]
+   },
+   "S4": {
+    "left_factor": [
+     1.2,
+     1.6
+    ]
+   }
+  },
+  "S2_offsets": "offset_svobody = (0 + offset_shift) mod 120, offset_prybuzka = (60 + offset_shift) mod 120: both platoon windows move together, the 60-s separation of the test scenario is kept",
+  "fixed_from_test": "all other scenario parameters are those of revision/demand/scenarios/scenario_params.json (S1 approaches/movements, S2 cycle/background/bin/prefixes/seed offset, S3 peak window)",
+  "exclusion": "a draw is repeated if base_load == 1.0 or the randomised parameters equal the test scenario's values (S1 factor 1.3; S2 window 40, offsets 0/60; S3 peak_share 0.5; S4 left_factor 1.4)",
+  "redraws": 0,
+  "test_params": "revision/demand/scenarios/scenario_params.json",
+  "test_params_sha256": "ec3b9277afeae19ce7c5adff888b453b4f4c01c4bcc496c4aa198a31350d9f24"
+ },
+ "proportional": [
+  {
+   "seed": 6001,
+   "load": "x08",
+   "factor": 0.8
+  },
+  {
+   "seed": 6002,
+   "load": "x08",
+   "factor": 0.8
+  },
+  {
+   "seed": 6003,
+   "load": "x08",
+   "factor": 0.8
+  },
+  {
+   "seed": 6004,
+   "load": "x08",
+   "factor": 0.8
+  },
+  {
+   "seed": 6005,
+   "load": "x08",
+   "factor": 0.8
+  },
+  {
+   "seed": 6006,
+   "load": "x08",
+   "factor": 0.8
+  },
+  {
+   "seed": 6007,
+   "load": "x10",
+   "factor": 1.0
+  },
+  {
+   "seed": 6008,
+   "load": "x10",
+   "factor": 1.0
+  },
+  {
+   "seed": 6009,
+   "load": "x10",
+   "factor": 1.0
+  },
+  {
+   "seed": 6010,
+   "load": "x10",
+   "factor": 1.0
+  },
+  {
+   "seed": 6011,
+   "load": "x10",
+   "factor": 1.0
+  },
+  {
+   "seed": 6012,
+   "load": "x10",
+   "factor": 1.0
+  },
+  {
+   "seed": 6013,
+   "load": "x12",
+   "factor": 1.2
+  },
+  {
+   "seed": 6014,
+   "load": "x12",
+   "factor": 1.2
+  },
+  {
+   "seed": 6015,
+   "load": "x12",
+   "factor": 1.2
+  },
+  {
+   "seed": 6016,
+   "load": "x12",
+   "factor": 1.2
+  },
+  {
+   "seed": 6017,
+   "load": "x12",
+   "factor": 1.2
+  },
+  {
+   "seed": 6018,
+   "load": "x12",
+   "factor": 1.2
+  },
+  {
+   "seed": 6019,
+   "load": "x14",
+   "factor": 1.4
+  },
+  {
+   "seed": 6020,
+   "load": "x14",
+   "factor": 1.4
+  },
+  {
+   "seed": 6021,
+   "load": "x14",
+   "factor": 1.4
+  },
+  {
+   "seed": 6022,
+   "load": "x14",
+   "factor": 1.4
+  },
+  {
+   "seed": 6023,
+   "load": "x14",
+   "factor": 1.4
+  },
+  {
+   "seed": 6024,
+   "load": "x14",
+   "factor": 1.4
+  },
+  {
+   "seed": 6025,
+   "load": "x16",
+   "factor": 1.6
+  },
+  {
+   "seed": 6026,
+   "load": "x16",
+   "factor": 1.6
+  },
+  {
+   "seed": 6027,
+   "load": "x16",
+   "factor": 1.6
+  },
+  {
+   "seed": 6028,
+   "load": "x16",
+   "factor": 1.6
+  },
+  {
+   "seed": 6029,
+   "load": "x16",
+   "factor": 1.6
+  },
+  {
+   "seed": 6030,
+   "load": "x16",
+   "factor": 1.6
+  }
+ ],
+ "perturbed": [
+  {
+   "seed": 6031,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.2471,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.3947,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6032,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.1915,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 35.4,
+    "offset_svobody": 112.4,
+    "offset_prybuzka": 52.4,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": -7.6
+   }
+  },
+  {
+   "seed": 6033,
+   "type": "S3",
+   "name": "peak formation",
+   "base_load": 1.1242,
+   "params": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.5443,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+   }
+  },
+  {
+   "seed": 6034,
+   "type": "S4",
+   "name": "turning-proportion shift",
+   "base_load": 1.1419,
+   "params": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.4748,
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+   }
+  },
+  {
+   "seed": 6035,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.0012,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.1989,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6036,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.0342,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 36.4,
+    "offset_svobody": 106.5,
+    "offset_prybuzka": 46.5,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": -13.5
+   }
+  },
+  {
+   "seed": 6037,
+   "type": "S3",
+   "name": "peak formation",
+   "base_load": 1.0693,
+   "params": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.5278,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+   }
+  },
+  {
+   "seed": 6038,
+   "type": "S4",
+   "name": "turning-proportion shift",
+   "base_load": 1.0649,
+   "params": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.3292,
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+   }
+  },
+  {
+   "seed": 6039,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.0588,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.1737,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6040,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.3408,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 43.8,
+    "offset_svobody": 4.9,
+    "offset_prybuzka": 64.9,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": 4.9
+   }
+  },
+  {
+   "seed": 6041,
+   "type": "S3",
+   "name": "peak formation",
+   "base_load": 1.3612,
+   "params": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.4476,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+   }
+  },
+  {
+   "seed": 6042,
+   "type": "S4",
+   "name": "turning-proportion shift",
+   "base_load": 1.1574,
+   "params": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.3833,
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+   }
+  },
+  {
+   "seed": 6043,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.219,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.1486,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6044,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.0492,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 46.0,
+    "offset_svobody": 15.9,
+    "offset_prybuzka": 75.9,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": 15.9
+   }
+  },
+  {
+   "seed": 6045,
+   "type": "S3",
+   "name": "peak formation",
+   "base_load": 1.0169,
+   "params": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.4181,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+   }
+  },
+  {
+   "seed": 6046,
+   "type": "S4",
+   "name": "turning-proportion shift",
+   "base_load": 1.0341,
+   "params": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.2072,
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+   }
+  },
+  {
+   "seed": 6047,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.0425,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.1076,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6048,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.2297,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 38.4,
+    "offset_svobody": 108.6,
+    "offset_prybuzka": 48.6,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": -11.4
+   }
+  },
+  {
+   "seed": 6049,
+   "type": "S3",
+   "name": "peak formation",
+   "base_load": 1.0389,
+   "params": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.5082,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+   }
+  },
+  {
+   "seed": 6050,
+   "type": "S4",
+   "name": "turning-proportion shift",
+   "base_load": 1.1789,
+   "params": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.4493,
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+   }
+  },
+  {
+   "seed": 6051,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.369,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.1673,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6052,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.3183,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 40.4,
+    "offset_svobody": 17.2,
+    "offset_prybuzka": 77.2,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": 17.2
+   }
+  },
+  {
+   "seed": 6053,
+   "type": "S3",
+   "name": "peak formation",
+   "base_load": 1.0747,
+   "params": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.489,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+   }
+  },
+  {
+   "seed": 6054,
+   "type": "S4",
+   "name": "turning-proportion shift",
+   "base_load": 1.2274,
+   "params": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.2282,
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+   }
+  },
+  {
+   "seed": 6055,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.2156,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.2672,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6056,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.2684,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 46.1,
+    "offset_svobody": 19.7,
+    "offset_prybuzka": 79.7,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": 19.7
+   }
+  },
+  {
+   "seed": 6057,
+   "type": "S3",
+   "name": "peak formation",
+   "base_load": 1.1793,
+   "params": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.4989,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+   }
+  },
+  {
+   "seed": 6058,
+   "type": "S4",
+   "name": "turning-proportion shift",
+   "base_load": 1.2835,
+   "params": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.5143,
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+   }
+  },
+  {
+   "seed": 6059,
+   "type": "S1",
+   "name": "directional imbalance",
+   "base_load": 1.3211,
+   "params": {
+    "name": "directional imbalance",
+    "factor": 1.2972,
+    "approaches": [
+     "nN_nC",
+     "nS_nC"
+    ],
+    "movements": [
+     "through",
+     "left"
+    ],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+   }
+  },
+  {
+   "seed": 6060,
+   "type": "S2",
+   "name": "platooned arrivals",
+   "base_load": 1.1977,
+   "params": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 49.6,
+    "offset_svobody": 13.1,
+    "offset_prybuzka": 73.1,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000,
+    "offset_shift": 13.1
+   }
+  }
+ ]
+}

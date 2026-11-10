@@ -1,0 +1,15 @@
+controller,demand,episodes,left_share_decisions,left_share_time,left_greens_mean,left_greens_min
+MaxPressure (pre-registered),x1.0,50,0.3136,0.3044,26.3,25
+MaxPressure (pre-registered),x1.2,50,0.3677,0.4166,36.02,35
+MaxPressure (pre-registered),x1.5,50,0.352,0.4065,38.54,37
+MaxPressure (pre-registered),S1,25,0.2858,0.2768,26.72,25
+MaxPressure (pre-registered),S2,25,0.3166,0.3091,27.56,25
+MaxPressure (pre-registered),S3,25,0.3134,0.3042,26.04,24
+MaxPressure (pre-registered),S4,25,0.3915,0.39,34.6,33
+MaxPressure-RT (post hoc),x1.0,50,0.299,0.2952,30.2,23
+MaxPressure-RT (post hoc),x1.2,50,0.3849,0.4358,38.6,37
+MaxPressure-RT (post hoc),x1.5,50,0.3495,0.4042,38.46,34
+MaxPressure-RT (post hoc),S1,25,0.2276,0.2199,23.24,12
+MaxPressure-RT (post hoc),S2,25,0.3165,0.3136,32.8,32
+MaxPressure-RT (post hoc),S3,25,0.2243,0.2208,22.52,13
+MaxPressure-RT (post hoc),S4,25,0.3147,0.3118,32.24,16

@@ -1,0 +1,151 @@
+{
+ "written": "2026-11-08 14:49:33",
+ "movement_map": "rt-22d0b4abdf05",
+ "episodes": [
+  {
+   "episode": "x1.0/mp_free_h8/e01_k1.json",
+   "seed": 1044,
+   "seconds": 2.11,
+   "signal_rules": {
+    "greens": 63,
+    "min_green": 12.0,
+    "max_green": 57.0,
+    "violations": [],
+    "n_violations": 0
+   },
+   "demand": 1355,
+   "arrived_1800": 884,
+   "deadlock": 1,
+   "longest_no_arrival_s": 320.0,
+   "mean_delay_s": 244.8,
+   "total_delay_vh": 92.142,
+   "switches": 62,
+   "prereg_arrived_1800": 1355,
+   "prereg_deadlock": 0,
+   "prereg_total_delay_vh": 14.975,
+   "prereg_switches": 89,
+   "records_differ_from_prereg": true
+  },
+  {
+   "episode": "x1.0/mp_field_h0/e02_k2.json",
+   "seed": 1046,
+   "seconds": 1.45,
+   "signal_rules": {
+    "greens": 90,
+    "min_green": 12.0,
+    "max_green": 52.0,
+    "violations": [],
+    "n_violations": 0
+   },
+   "demand": 1355,
+   "arrived_1800": 1355,
+   "deadlock": 0,
+   "longest_no_arrival_s": 23.0,
+   "mean_delay_s": 44.44,
+   "total_delay_vh": 16.727,
+   "switches": 89,
+   "prereg_arrived_1800": 1355,
+   "prereg_deadlock": 0,
+   "prereg_total_delay_vh": 21.074,
+   "prereg_switches": 98,
+   "records_differ_from_prereg": true
+  },
+  {
+   "episode": "x1.2/mp_field_h8/e03_k3.json",
+   "seed": 1048,
+   "seconds": 1.78,
+   "signal_rules": {
+    "greens": 67,
+    "min_green": 12.0,
+    "max_green": 60.0,
+    "violations": [],
+    "n_violations": 0
+   },
+   "demand": 1626,
+   "arrived_1800": 1626,
+   "deadlock": 0,
+   "longest_no_arrival_s": 56.0,
+   "mean_delay_s": 73.42,
+   "total_delay_vh": 33.16,
+   "switches": 66,
+   "prereg_arrived_1800": 1620,
+   "prereg_deadlock": 0,
+   "prereg_total_delay_vh": 35.321,
+   "prereg_switches": 73,
+   "records_differ_from_prereg": true
+  },
+  {
+   "episode": "x1.2/mp_free_h4/e04_k4.json",
+   "seed": 1050,
+   "seconds": 2.56,
+   "signal_rules": {
+    "greens": 79,
+    "min_green": 12.0,
+    "max_green": 57.0,
+    "violations": [],
+    "n_violations": 0
+   },
+   "demand": 1626,
+   "arrived_1800": 1051,
+   "deadlock": 1,
+   "longest_no_arrival_s": 337.0,
+   "mean_delay_s": 259.76,
+   "total_delay_vh": 117.325,
+   "switches": 78,
+   "prereg_arrived_1800": 1599,
+   "prereg_deadlock": 0,
+   "prereg_total_delay_vh": 40.32,
+   "prereg_switches": 99,
+   "records_differ_from_prereg": true
+  },
+  {
+   "episode": "x1.5/mp_field_h8/e05_k5.json",
+   "seed": 1052,
+   "seconds": 2.75,
+   "signal_rules": {
+    "greens": 59,
+    "min_green": 12.0,
+    "max_green": 60.0,
+    "violations": [],
+    "n_violations": 0
+   },
+   "demand": 2036,
+   "arrived_1800": 1734,
+   "deadlock": 0,
+   "longest_no_arrival_s": 26.0,
+   "mean_delay_s": 248.3,
+   "total_delay_vh": 140.427,
+   "switches": 58,
+   "prereg_arrived_1800": 1902,
+   "prereg_deadlock": 0,
+   "prereg_total_delay_vh": 113.957,
+   "prereg_switches": 77,
+   "records_differ_from_prereg": true
+  },
+  {
+   "episode": "x1.5/mp_free_h0/e06_k1.json",
+   "seed": 1049,
+   "seconds": 3.02,
+   "signal_rules": {
+    "greens": 62,
+    "min_green": 12.0,
+    "max_green": 57.0,
+    "violations": [],
+    "n_violations": 0
+   },
+   "demand": 2036,
+   "arrived_1800": 561,
+   "deadlock": 1,
+   "longest_no_arrival_s": 1123.0,
+   "mean_delay_s": 637.5,
+   "total_delay_vh": 360.544,
+   "switches": 61,
+   "prereg_arrived_1800": 689,
+   "prereg_deadlock": 1,
+   "prereg_total_delay_vh": 316.635,
+   "prereg_switches": 66,
+   "records_differ_from_prereg": true
+  }
+ ],
+ "passed": true
+}
