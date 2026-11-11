@@ -1,0 +1,399 @@
+{
+ "revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5101.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml -o revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5101.rou.xml --seed 5101",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "created_utc": "2026-10-29T16:40:27Z",
+  "expected_total": 1564,
+  "group": "scenario_S1",
+  "load_or_scenario": "S1",
+  "purpose": "perturbed scenario S1 (directional imbalance, Comment 1.9)",
+  "seeds": [
+   5101
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5102.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml -o revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5102.rou.xml --seed 5102",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "created_utc": "2026-10-29T16:40:28Z",
+  "expected_total": 1564,
+  "group": "scenario_S1",
+  "load_or_scenario": "S1",
+  "purpose": "perturbed scenario S1 (directional imbalance, Comment 1.9)",
+  "seeds": [
+   5102
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5103.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml -o revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5103.rou.xml --seed 5103",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "created_utc": "2026-10-29T16:40:29Z",
+  "expected_total": 1564,
+  "group": "scenario_S1",
+  "load_or_scenario": "S1",
+  "purpose": "perturbed scenario S1 (directional imbalance, Comment 1.9)",
+  "seeds": [
+   5103
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5104.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml -o revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5104.rou.xml --seed 5104",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "created_utc": "2026-10-29T16:40:30Z",
+  "expected_total": 1564,
+  "group": "scenario_S1",
+  "load_or_scenario": "S1",
+  "purpose": "perturbed scenario S1 (directional imbalance, Comment 1.9)",
+  "seeds": [
+   5104
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5105.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml -o revision/demand/e13/locked_test/scenarios/S1/scenario_S1_s5105.rou.xml --seed 5105",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml",
+  "created_utc": "2026-10-29T16:40:31Z",
+  "expected_total": 1564,
+  "group": "scenario_S1",
+  "load_or_scenario": "S1",
+  "purpose": "perturbed scenario S1 (directional imbalance, Comment 1.9)",
+  "seeds": [
+   5105
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S1/turn_counts_S1.xml": {
+  "command": "python revision/tools/make_scenarios.py (from sumo/turn_counts_edges.xml)",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:26Z",
+  "expected_total": 1564,
+  "group": "counts",
+  "info": {
+   "affected_base_total": 695,
+   "affected_raw_total": "903.5",
+   "affected_target": 904,
+   "bumped_cells": 8
+  },
+  "load_or_scenario": "S1",
+  "purpose": "turn counts of scenario S1 (directional imbalance)",
+  "seeds": [],
+  "sumo_version": ""
+ },
+ "revision/demand/e13/locked_test/scenarios/S2/scenario_S2_s5101.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml -o revision/demand/e13/work/locked_S2_parts/S2_sv_s5101.rou.xml --seed 5101 --prefix sv_ --depart-distribution \"1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml -o revision/demand/e13/work/locked_S2_parts/S2_pr_s55101.rou.xml --seed 55101 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml; revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:44Z",
+  "expected_total": 1355,
+  "group": "scenario_S2",
+  "load_or_scenario": "S2",
+  "purpose": "perturbed scenario S2 (platooned arrivals, Comment 1.9)",
+  "seeds": [
+   5101,
+   55101
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8435424354243543,
+   "in_window": 1143,
+   "n": 1355,
+   "prybuzka": 0.8324420677361853,
+   "svobody": 0.8513853904282116
+  }
+ },
+ "revision/demand/e13/locked_test/scenarios/S2/scenario_S2_s5102.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml -o revision/demand/e13/work/locked_S2_parts/S2_sv_s5102.rou.xml --seed 5102 --prefix sv_ --depart-distribution \"1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml -o revision/demand/e13/work/locked_S2_parts/S2_pr_s55102.rou.xml --seed 55102 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml; revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:47Z",
+  "expected_total": 1355,
+  "group": "scenario_S2",
+  "load_or_scenario": "S2",
+  "purpose": "perturbed scenario S2 (platooned arrivals, Comment 1.9)",
+  "seeds": [
+   5102,
+   55102
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8457564575645756,
+   "in_window": 1146,
+   "n": 1355,
+   "prybuzka": 0.8484848484848485,
+   "svobody": 0.8438287153652393
+  }
+ },
+ "revision/demand/e13/locked_test/scenarios/S2/scenario_S2_s5103.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml -o revision/demand/e13/work/locked_S2_parts/S2_sv_s5103.rou.xml --seed 5103 --prefix sv_ --depart-distribution \"1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml -o revision/demand/e13/work/locked_S2_parts/S2_pr_s55103.rou.xml --seed 55103 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml; revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:48Z",
+  "expected_total": 1355,
+  "group": "scenario_S2",
+  "load_or_scenario": "S2",
+  "purpose": "perturbed scenario S2 (platooned arrivals, Comment 1.9)",
+  "seeds": [
+   5103,
+   55103
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8420664206642067,
+   "in_window": 1141,
+   "n": 1355,
+   "prybuzka": 0.8449197860962567,
+   "svobody": 0.8400503778337531
+  }
+ },
+ "revision/demand/e13/locked_test/scenarios/S2/scenario_S2_s5104.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml -o revision/demand/e13/work/locked_S2_parts/S2_sv_s5104.rou.xml --seed 5104 --prefix sv_ --depart-distribution \"1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml -o revision/demand/e13/work/locked_S2_parts/S2_pr_s55104.rou.xml --seed 55104 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml; revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:51Z",
+  "expected_total": 1355,
+  "group": "scenario_S2",
+  "load_or_scenario": "S2",
+  "purpose": "perturbed scenario S2 (platooned arrivals, Comment 1.9)",
+  "seeds": [
+   5104,
+   55104
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8391143911439114,
+   "in_window": 1137,
+   "n": 1355,
+   "prybuzka": 0.8235294117647058,
+   "svobody": 0.8501259445843828
+  }
+ },
+ "revision/demand/e13/locked_test/scenarios/S2/scenario_S2_s5105.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml -o revision/demand/e13/work/locked_S2_parts/S2_sv_s5105.rou.xml --seed 5105 --prefix sv_ --depart-distribution \"1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml -o revision/demand/e13/work/locked_S2_parts/S2_pr_s55105.rou.xml --seed 55105 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,1,1,1,1,1,1,1,1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml; revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:53Z",
+  "expected_total": 1355,
+  "group": "scenario_S2",
+  "load_or_scenario": "S2",
+  "purpose": "perturbed scenario S2 (platooned arrivals, Comment 1.9)",
+  "seeds": [
+   5105,
+   55105
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8339483394833949,
+   "in_window": 1130,
+   "n": 1355,
+   "prybuzka": 0.8199643493761141,
+   "svobody": 0.8438287153652393
+  }
+ },
+ "revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_prybuzka.xml": {
+  "command": "python revision/tools/make_scenarios.py (axis split)",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:41Z",
+  "expected_total": 561,
+  "group": "counts",
+  "load_or_scenario": "S2",
+  "purpose": "S2 routeSampler input: x1.0 counts of the prybuzka approaches",
+  "seeds": [],
+  "sumo_version": ""
+ },
+ "revision/demand/e13/locked_test/scenarios/S2/turn_counts_S2_svobody.xml": {
+  "command": "python revision/tools/make_scenarios.py (axis split)",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:41Z",
+  "expected_total": 794,
+  "group": "counts",
+  "load_or_scenario": "S2",
+  "purpose": "S2 routeSampler input: x1.0 counts of the svobody approaches",
+  "seeds": [],
+  "sumo_version": ""
+ },
+ "revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5101.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml -o revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5101.rou.xml --seed 5101",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "created_utc": "2026-10-29T16:40:32Z",
+  "expected_total": 1355,
+  "group": "scenario_S3",
+  "load_or_scenario": "S3",
+  "purpose": "perturbed scenario S3 (peak formation, Comment 1.9)",
+  "seeds": [
+   5101
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5102.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml -o revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5102.rou.xml --seed 5102",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "created_utc": "2026-10-29T16:40:33Z",
+  "expected_total": 1355,
+  "group": "scenario_S3",
+  "load_or_scenario": "S3",
+  "purpose": "perturbed scenario S3 (peak formation, Comment 1.9)",
+  "seeds": [
+   5102
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5103.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml -o revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5103.rou.xml --seed 5103",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "created_utc": "2026-10-29T16:40:33Z",
+  "expected_total": 1355,
+  "group": "scenario_S3",
+  "load_or_scenario": "S3",
+  "purpose": "perturbed scenario S3 (peak formation, Comment 1.9)",
+  "seeds": [
+   5103
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5104.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml -o revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5104.rou.xml --seed 5104",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "created_utc": "2026-10-29T16:40:34Z",
+  "expected_total": 1355,
+  "group": "scenario_S3",
+  "load_or_scenario": "S3",
+  "purpose": "perturbed scenario S3 (peak formation, Comment 1.9)",
+  "seeds": [
+   5104
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5105.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml -o revision/demand/e13/locked_test/scenarios/S3/scenario_S3_s5105.rou.xml --seed 5105",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml",
+  "created_utc": "2026-10-29T16:40:35Z",
+  "expected_total": 1355,
+  "group": "scenario_S3",
+  "load_or_scenario": "S3",
+  "purpose": "perturbed scenario S3 (peak formation, Comment 1.9)",
+  "seeds": [
+   5105
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S3/turn_counts_S3.xml": {
+  "command": "python revision/tools/make_scenarios.py (from sumo/turn_counts_edges.xml)",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:31Z",
+  "expected_total": 1355,
+  "group": "counts",
+  "info": {
+   "base_peak_share": "0.412546",
+   "base_peak_total": 559,
+   "new_peak_share": "0.498893",
+   "new_peak_total": 676,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "purpose": "turn counts of scenario S3 (peak formation)",
+  "seeds": [],
+  "sumo_version": ""
+ },
+ "revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5101.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml -o revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5101.rou.xml --seed 5101",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "created_utc": "2026-10-29T16:40:36Z",
+  "expected_total": 1355,
+  "group": "scenario_S4",
+  "load_or_scenario": "S4",
+  "purpose": "perturbed scenario S4 (turning-proportion shift, Comment 1.9)",
+  "seeds": [
+   5101
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5102.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml -o revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5102.rou.xml --seed 5102",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "created_utc": "2026-10-29T16:40:38Z",
+  "expected_total": 1355,
+  "group": "scenario_S4",
+  "load_or_scenario": "S4",
+  "purpose": "perturbed scenario S4 (turning-proportion shift, Comment 1.9)",
+  "seeds": [
+   5102
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5103.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml -o revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5103.rou.xml --seed 5103",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "created_utc": "2026-10-29T16:40:39Z",
+  "expected_total": 1355,
+  "group": "scenario_S4",
+  "load_or_scenario": "S4",
+  "purpose": "perturbed scenario S4 (turning-proportion shift, Comment 1.9)",
+  "seeds": [
+   5103
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5104.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml -o revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5104.rou.xml --seed 5104",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "created_utc": "2026-10-29T16:40:40Z",
+  "expected_total": 1355,
+  "group": "scenario_S4",
+  "load_or_scenario": "S4",
+  "purpose": "perturbed scenario S4 (turning-proportion shift, Comment 1.9)",
+  "seeds": [
+   5104
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5105.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml -o revision/demand/e13/locked_test/scenarios/S4/scenario_S4_s5105.rou.xml --seed 5105",
+  "counts_file": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "counts_ref": "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml",
+  "created_utc": "2026-10-29T16:40:41Z",
+  "expected_total": 1355,
+  "group": "scenario_S4",
+  "load_or_scenario": "S4",
+  "purpose": "perturbed scenario S4 (turning-proportion shift, Comment 1.9)",
+  "seeds": [
+   5105
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/locked_test/scenarios/S4/turn_counts_S4.xml": {
+  "command": "python revision/tools/make_scenarios.py (from sumo/turn_counts_edges.xml)",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:40:36Z",
+  "expected_total": 1355,
+  "group": "counts",
+  "info": {
+   "left_base_total": 231,
+   "left_new_total": 325,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "purpose": "turn counts of scenario S4 (turning-proportion shift)",
+  "seeds": [],
+  "sumo_version": ""
+ }
+}

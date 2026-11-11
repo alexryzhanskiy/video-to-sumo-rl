@@ -1,0 +1,14 @@
+<additional>
+  <tlLogic id="nC" type="static" programID="real" offset="0">
+    <phase duration="46" state="GGGrsrrrGGGrsrrr"/>
+    <phase duration="3" state="GyyrsrrrGyyrsrrr"/>
+    <phase duration="12" state="srrGsrrrsrrGsrrr"/>
+    <phase duration="3" state="srrysrrrsrrysrrr"/>
+    <phase duration="4" state="srrrsrrrsrrrsrrr"/>
+    <phase duration="30" state="srrrGGGrsrrrGGGr"/>
+    <phase duration="3" state="srrrGyyrsrrrGyyr"/>
+    <phase duration="12" state="srrrsrrGsrrrsrrG"/>
+    <phase duration="3" state="srrrsrrysrrrsrry"/>
+    <phase duration="4" state="srrrsrrrsrrrsrrr"/>
+  </tlLogic>
+</additional>

@@ -1,0 +1,39 @@
+{
+  "_comment": "Perturbed demand scenarios S1-S4 (Comment 1.9, kb/07_EXPERIMENT_SPECS.md E2). Base = x1.0 counts (sumo/turn_counts_edges.xml). Edit and rerun make_scenarios.py, check_demand.py and sanity_fixed.py to change a scenario.",
+  "seeds": [4101, 4102],
+  "S1": {
+    "name": "directional imbalance",
+    "factor": 1.3,
+    "_decision": "2026-10-26 (Radiuk): 1.4 -> 1.3 after the fixed-plan sanity runs (x1.4: mean departDelay 73-78 s > 60 s in 5/5 files; x1.3: 41-58 s, no flag)",
+    "approaches": ["nN_nC", "nS_nC"],
+    "movements": ["through", "left"],
+    "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "S2": {
+    "name": "platooned arrivals",
+    "cycle": 120,
+    "window": 40,
+    "offset_svobody": 0,
+    "offset_prybuzka": 60,
+    "background": 0.1,
+    "bin": 5,
+    "begin": 0,
+    "end": 1500,
+    "prefix_svobody": "sv_",
+    "prefix_prybuzka": "pr_",
+    "prybuzka_seed_offset": 50000
+  },
+  "S3": {
+    "name": "peak formation",
+    "peak_begin": 600,
+    "peak_end": 1200,
+    "peak_share": 0.5,
+    "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "S4": {
+    "name": "turning-proportion shift",
+    "left_factor": 1.4,
+    "_decision": "2026-10-26 (Radiuk): 1.5 -> 1.4 after the fixed-plan sanity runs (x1.5: mean departDelay 68 s > 60 s in 1/5 files, T1500 1046-1079; x1.4: no flag)",
+    "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  }
+}

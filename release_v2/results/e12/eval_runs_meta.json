@@ -1,0 +1,17 @@
+{
+  "written": "2026-10-28 22:47:26",
+  "sumo_version": "Eclipse SUMO sumo 1.26.0",
+  "python": "3.13.15",
+  "resco": "E:\\GitHub\\video-to-sumo-rl-e12\\resco",
+  "checkpoints_csv": "E:\\GitHub\\video-to-sumo-rl-e12\\runs\\checkpoints_e12.csv",
+  "sets": [
+    "heldout",
+    "scenarios",
+    "transfer"
+  ],
+  "allred": 4,
+  "trial_offset": 1000,
+  "max_eps": "all route files",
+  "episodes_planned": 1400,
+  "episodes_done": 1400
+}

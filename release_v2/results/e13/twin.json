@@ -1,0 +1,5 @@
+{
+  "twin": "default",
+  "decided": "2026-10-29",
+  "note": "B6 did not meet its success criterion (0 of 858 grid points pass all three conditions in both folds; fit_summary.json SHA-256 0e6d675df34ab8b45a4f8228b53a6373278f5f907218db8004930bf33b053982). By pre-registration section 1, E13 uses SUMO's default vehicle type, as in E3, E6 and E12. Recorded in section 11 of the pre-registration log."
+}

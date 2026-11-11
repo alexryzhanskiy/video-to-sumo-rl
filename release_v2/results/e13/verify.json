@@ -1,0 +1,68 @@
+{
+  "written": "2026-10-29 20:34:03",
+  "versions": {
+    "python": "3.13.15",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD",
+    "logical_cpus": 16,
+    "host": "MyPC",
+    "eclipse-sumo": "1.26.0",
+    "libsumo": "1.26.0",
+    "sumo-data": "1.26.0",
+    "torch": "2.14.1",
+    "pfrl": "0.4.0",
+    "gym": "0.22.0",
+    "numpy": "2.5.4"
+  },
+  "twin": "default",
+  "hashes": {
+    "fixed_plan": "e1263d37463b23fef1fe3d270ca903676fde6113f73c21ef4fee5a53d8a91baa",
+    "policy_ep1": "4b3211e4740e23ed6eaff8125b200325f8038cfd009359b65798175b9059307d",
+    "policy_ep2": "f7a063116001d0bc6a3a2811452e245c566e142c119c1ffe95af6723116434cf",
+    "trainA_ep1": "6a2f0ddf2daec9b05c1faa60bd5ed3f21bc5100ea85af916bb867ca1ff153cff",
+    "trainA_ep2": "ee264acdc39532cf580fac0fc078a17b3ee1dd2f61120f7efc85926aa7db4e4d",
+    "trainB_ep1": "6a2f0ddf2daec9b05c1faa60bd5ed3f21bc5100ea85af916bb867ca1ff153cff",
+    "trainB_ep2": "ee264acdc39532cf580fac0fc078a17b3ee1dd2f61120f7efc85926aa7db4e4d"
+  },
+  "reference": {
+    "fixed_plan": "e1263d37463b23fef1fe3d270ca903676fde6113f73c21ef4fee5a53d8a91baa",
+    "policy_ep1": "4b3211e4740e23ed6eaff8125b200325f8038cfd009359b65798175b9059307d",
+    "policy_ep2": "f7a063116001d0bc6a3a2811452e245c566e142c119c1ffe95af6723116434cf",
+    "trainA_ep1": "e43fe33931a40505a3779a0bba3cb2a416a5611a9b1b14cc2b76915b3013eb8d",
+    "trainA_ep2": "3c891e47144f5e6031ecf40bebffd1abb2c99f9bfb5bf35bd286e2acccd339a6",
+    "trainB_ep1": "e43fe33931a40505a3779a0bba3cb2a416a5611a9b1b14cc2b76915b3013eb8d",
+    "trainB_ep2": "3c891e47144f5e6031ecf40bebffd1abb2c99f9bfb5bf35bd286e2acccd339a6"
+  },
+  "exit_codes": {
+    "policy": 0,
+    "trainA": 0,
+    "trainB": 0,
+    "tls": 0
+  },
+  "signal_rules": {
+    "greens": 44,
+    "min_green": 12.0,
+    "max_green": 57.0,
+    "violations": [],
+    "n_violations": 0
+  },
+  "checks": [
+    [
+      "SUMO fixed plan identical to the reference PC",
+      true
+    ],
+    [
+      "E13 code with E12 settings: original policy, 2 frozen episodes identical to the reference PC",
+      true
+    ],
+    [
+      "E13 training repeatable on this PC (L2 design, same seed twice)",
+      true
+    ],
+    [
+      "E13 signal rules: greens 12-60 s, one 3-s yellow, 4-s all-red only at street changes, field order",
+      true
+    ]
+  ]
+}

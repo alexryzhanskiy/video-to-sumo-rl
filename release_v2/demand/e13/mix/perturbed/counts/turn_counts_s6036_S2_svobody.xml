@@ -1,0 +1,43 @@
+<data>
+  <!-- mix seed 6036: S2 svobody approaches of the base-load counts (counts unchanged) -->
+  <interval id="i0" begin="0" end="300">
+    <edgeRelation from="nN_nC" to="nC_nE" count="7"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="83"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="6"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="20"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="54"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="7"/>
+  </interval>
+  <interval id="i300" begin="300" end="600">
+    <edgeRelation from="nN_nC" to="nC_nE" count="18"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="38"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="4"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="13"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="50"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="12"/>
+  </interval>
+  <interval id="i600" begin="600" end="900">
+    <edgeRelation from="nN_nC" to="nC_nE" count="12"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="85"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="9"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="14"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="67"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="13"/>
+  </interval>
+  <interval id="i900" begin="900" end="1200">
+    <edgeRelation from="nN_nC" to="nC_nE" count="16"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="50"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="7"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="13"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="48"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="7"/>
+  </interval>
+  <interval id="i1200" begin="1200" end="1500">
+    <edgeRelation from="nN_nC" to="nC_nE" count="8"/>
+    <edgeRelation from="nN_nC" to="nC_nS" count="85"/>
+    <edgeRelation from="nN_nC" to="nC_nW" count="6"/>
+    <edgeRelation from="nS_nC" to="nC_nE" count="8"/>
+    <edgeRelation from="nS_nC" to="nC_nN" count="52"/>
+    <edgeRelation from="nS_nC" to="nC_nW" count="7"/>
+  </interval>
+</data>

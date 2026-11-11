@@ -1,0 +1,191 @@
+{
+ "sumo_version": "Eclipse SUMO sumo 1.26.0",
+ "sumo_home": "revision/.venv/Lib/site-packages/sumo",
+ "net": "sumo/intersection.net.xml",
+ "route_test2": "sumo/demand.rou.xml",
+ "test1_tripinfo": {
+  "plain": {
+   "options": [],
+   "entries": 1,
+   "arrived": {
+    "depart": "0.00",
+    "departDelay": "0.00",
+    "arrival": "17.00",
+    "duration": "17.00",
+    "routeLength": "234.90",
+    "waitingTime": "0.00",
+    "timeLoss": "0.78",
+    "vaporized": ""
+   },
+   "running": null,
+   "future_120": null,
+   "future_1000": null,
+   "backlog_written": 0,
+   "backlog_inserted": 0,
+   "backlog_not_inserted": 0,
+   "backlog_examples": {}
+  },
+  "write_unfinished": {
+   "options": [
+    "--tripinfo-output.write-unfinished",
+    "true"
+   ],
+   "entries": 12,
+   "arrived": {
+    "depart": "0.00",
+    "departDelay": "0.00",
+    "arrival": "17.00",
+    "duration": "17.00",
+    "routeLength": "234.90",
+    "waitingTime": "0.00",
+    "timeLoss": "0.78",
+    "vaporized": ""
+   },
+   "running": {
+    "depart": "55.00",
+    "departDelay": "0.00",
+    "arrival": "-1.00",
+    "duration": "5.00",
+    "routeLength": "18.92",
+    "waitingTime": "0.00",
+    "timeLoss": "2.58",
+    "vaporized": "end"
+   },
+   "future_120": null,
+   "future_1000": null,
+   "backlog_written": 10,
+   "backlog_inserted": 10,
+   "backlog_not_inserted": 0,
+   "backlog_examples": {
+    "backlog_00": {
+     "depart": "30.00",
+     "departDelay": "0.00",
+     "arrival": "-1.00",
+     "duration": "30.00",
+     "routeLength": "100.30",
+     "waitingTime": "16.00",
+     "timeLoss": "21.31",
+     "vaporized": "end"
+    },
+    "backlog_09": {
+     "depart": "57.00",
+     "departDelay": "27.00",
+     "arrival": "-1.00",
+     "duration": "3.00",
+     "routeLength": "6.53",
+     "waitingTime": "0.00",
+     "timeLoss": "1.57",
+     "vaporized": "end"
+    }
+   }
+  },
+  "write_unfinished+undeparted": {
+   "options": [
+    "--tripinfo-output.write-unfinished",
+    "true",
+    "--tripinfo-output.write-undeparted",
+    "true"
+   ],
+   "entries": 42,
+   "arrived": {
+    "depart": "0.00",
+    "departDelay": "0.00",
+    "arrival": "17.00",
+    "duration": "17.00",
+    "routeLength": "234.90",
+    "waitingTime": "0.00",
+    "timeLoss": "0.78",
+    "vaporized": ""
+   },
+   "running": {
+    "depart": "55.00",
+    "departDelay": "0.00",
+    "arrival": "-1.00",
+    "duration": "5.00",
+    "routeLength": "18.92",
+    "waitingTime": "0.00",
+    "timeLoss": "2.58",
+    "vaporized": "end"
+   },
+   "future_120": null,
+   "future_1000": null,
+   "backlog_written": 40,
+   "backlog_inserted": 10,
+   "backlog_not_inserted": 30,
+   "backlog_examples": {
+    "backlog_00": {
+     "depart": "30.00",
+     "departDelay": "0.00",
+     "arrival": "-1.00",
+     "duration": "30.00",
+     "routeLength": "100.30",
+     "waitingTime": "16.00",
+     "timeLoss": "21.31",
+     "vaporized": "end"
+    },
+    "backlog_39": {
+     "depart": "-1",
+     "departDelay": "30.00",
+     "arrival": "-1.00",
+     "duration": "0.00",
+     "routeLength": "0.00",
+     "waitingTime": "0.00",
+     "timeLoss": "0.00",
+     "vaporized": "end"
+    }
+   }
+  }
+ },
+ "test2_vtype": {
+  "none": {
+   "vtype": null,
+   "arrived": 1283,
+   "types": [
+    "DEFAULT_VEHTYPE"
+   ],
+   "mean_timeLoss": 45.086,
+   "sha256_body": "80ff0e2b41fa8135177f4c11264dda4475463d7d98edb825e265ed854d1853dc",
+   "identical_to_none": true
+  },
+  "default_values": {
+   "vtype": "<vType id=\"DEFAULT_VEHTYPE\"/>",
+   "arrived": 1283,
+   "types": [
+    "DEFAULT_VEHTYPE"
+   ],
+   "mean_timeLoss": 45.086,
+   "sha256_body": "80ff0e2b41fa8135177f4c11264dda4475463d7d98edb825e265ed854d1853dc",
+   "identical_to_none": true
+  },
+  "startupDelay_0": {
+   "vtype": "<vType id=\"DEFAULT_VEHTYPE\" startupDelay=\"0\"/>",
+   "arrived": 1283,
+   "types": [
+    "DEFAULT_VEHTYPE"
+   ],
+   "mean_timeLoss": 45.086,
+   "sha256_body": "80ff0e2b41fa8135177f4c11264dda4475463d7d98edb825e265ed854d1853dc",
+   "identical_to_none": true
+  },
+  "explicit_defaults": {
+   "vtype": "<vType id=\"DEFAULT_VEHTYPE\" tau=\"1\" accel=\"2.6\" decel=\"4.5\" sigma=\"0.5\" startupDelay=\"0\"/>",
+   "arrived": 1283,
+   "types": [
+    "DEFAULT_VEHTYPE"
+   ],
+   "mean_timeLoss": 45.086,
+   "sha256_body": "80ff0e2b41fa8135177f4c11264dda4475463d7d98edb825e265ed854d1853dc",
+   "identical_to_none": true
+  },
+  "startupDelay_1.5": {
+   "vtype": "<vType id=\"DEFAULT_VEHTYPE\" startupDelay=\"1.5\"/>",
+   "arrived": 1200,
+   "types": [
+    "DEFAULT_VEHTYPE"
+   ],
+   "mean_timeLoss": 72.24,
+   "sha256_body": "20d515e90b62797f5f30bea4bfcfe246141a57e01cbba6a7529c3addca2df054",
+   "identical_to_none": false
+  }
+ }
+}

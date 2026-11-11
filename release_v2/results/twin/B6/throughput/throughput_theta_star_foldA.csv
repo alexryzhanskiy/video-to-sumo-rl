@@ -1,0 +1,16 @@
+label,set,route,seed,demand,arrived_1500,arrived_1800,in_network_1800,never_inserted,unserved_1800,mean_time_loss_arrived
+theta_star_foldA,original,demand.rou.xml,1,1355,1215,1334,21,0,21,81.026
+theta_star_foldA,original,demand.rou.xml,2,1355,1222,1338,17,0,17,77.635
+theta_star_foldA,original,demand.rou.xml,3,1355,1208,1334,21,0,21,81.344
+theta_star_foldA,original,demand.rou.xml,4,1355,1214,1338,17,0,17,80.225
+theta_star_foldA,original,demand.rou.xml,5,1355,1229,1336,19,0,19,76.556
+theta_star_foldA,train,train_x10_s3001.rou.xml,1,1355,1204,1335,20,0,20,74.281
+theta_star_foldA,train,train_x10_s3002.rou.xml,1,1355,1188,1326,29,0,29,82.514
+theta_star_foldA,train,train_x10_s3003.rou.xml,1,1355,1181,1328,27,0,27,83.796
+theta_star_foldA,train,train_x10_s3004.rou.xml,1,1355,1185,1333,22,0,22,82.986
+theta_star_foldA,train,train_x10_s3005.rou.xml,1,1355,1202,1335,20,0,20,81.9
+theta_star_foldA,train,train_x10_s3006.rou.xml,1,1355,1190,1336,19,0,19,85.467
+theta_star_foldA,train,train_x10_s3007.rou.xml,1,1355,1184,1330,25,0,25,78.616
+theta_star_foldA,train,train_x10_s3008.rou.xml,1,1355,1209,1338,17,0,17,80.283
+theta_star_foldA,train,train_x10_s3009.rou.xml,1,1355,1207,1337,18,0,18,80.677
+theta_star_foldA,train,train_x10_s3010.rou.xml,1,1355,1191,1335,20,0,20,80.139

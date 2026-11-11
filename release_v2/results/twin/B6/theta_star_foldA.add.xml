@@ -1,0 +1,5 @@
+<!-- B6 fold A theta* (NOT adopted: success criterion not met, revision/twin/B6/fit_summary.json). For the reported-only
+     quantities of protocol section 6 (throughput, plausibility, E8 per-lane cap). Do not use for new runs. -->
+<additional>
+    <vType id="DEFAULT_VEHTYPE" startupDelay="1.75" tau="1.0" accel="3.0"/>
+</additional>

@@ -1,0 +1,17 @@
+method,approach,pipeline,answered,correct,reviewer_left,reviewer_through,reviewer_right,reviewer_U-turn,cannot_tell,applied
+heading,SVB_N,through,16,14,0,14,2,0,1,True
+heading,SVB_N,right,2,0,1,1,0,0,0,False
+heading,SVB_S,through,1,1,0,1,0,0,0,False
+heading,SVB_S,right,1,0,0,1,0,0,0,False
+heading,PRB_E,through,1,1,0,1,0,0,0,False
+heading,PRB_E,right,1,1,0,0,1,0,0,False
+heading,PRB_W,through,34,33,0,33,1,0,1,True
+gate,SVB_N,left,2,2,2,0,0,0,0,False
+gate,SVB_N,right,1,1,0,0,1,0,0,False
+gate,SVB_S,left,2,2,2,0,0,0,0,False
+gate,SVB_S,through,4,4,0,4,0,0,0,False
+gate,SVB_S,right,2,2,0,0,2,0,0,False
+gate,PRB_E,left,1,1,1,0,0,0,0,False
+gate,PRB_E,through,5,5,0,5,0,0,0,False
+gate,PRB_E,right,1,1,0,0,1,0,0,False
+gate,PRB_W,right,2,2,0,0,2,0,0,False

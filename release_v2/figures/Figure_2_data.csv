@@ -1,0 +1,13 @@
+panel,camera,gate,segment,approach,label_on_figure,x1_px,y1_px,x2_px,y2_px,inside_frame,tracks_drawn_in_panel
+a,center,stop0,entry (stop line),"Svobody St, north",North entry,118.3,636.2,505.3,611.1,True,2571
+a,center,stop1,entry (stop line),"Prybuzka St, east",East entry,1612.8,639.7,1903.1,682.8,True,2571
+a,center,exit0,exit,"Svobody St, north",,498.2,602.1,670.2,589.6,True,2571
+a,center,exit1,exit,"Prybuzka St, east",,1935.4,670.2,2154.0,702.5,True,2571
+a,center,exit2,exit,"Svobody St, south",,2596.6,1195.3,1553.7,1505.3,True,2571
+a,center,exit3,exit,"Prybuzka St, west",,145.2,1050.1,52.0,727.6,True,2571
+b,zarich,stop0,entry (stop line),"Svobody St, south",South entry,652.3,344.1,901.4,333.3,True,3046
+b,zarich,stop1,entry (stop line),"Prybuzka St, west",West entry,1636.1,406.8,1818.9,464.1,True,3046
+b,zarich,exit0,exit,"Svobody St, south",,892.4,324.4,996.4,319.0,True,3046
+b,zarich,exit1,exit,"Prybuzka St, west",,1844.0,458.8,1992.7,500.0,True,3046
+b,zarich,exit2,exit,"Svobody St, north",,1646.8,1505.3,2385.2,1114.6,True,3046
+b,zarich,exit3,exit,"Prybuzka St, east",,14.3,698.9,268.8,480.3,True,3046

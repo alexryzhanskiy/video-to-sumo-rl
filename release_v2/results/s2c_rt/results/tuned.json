@@ -1,0 +1,34 @@
+{
+ "written": "2026-11-08 15:23:16",
+ "rule": "pre-registration 6.2 with the score of 5.1 on the 20 training files per load",
+ "loads": {
+  "x1.0": {
+   "variant": "free",
+   "h": 0,
+   "score": -0.003,
+   "deadlock": 0,
+   "deadlocks": 0,
+   "delay": 43.06,
+   "episodes": 100
+  },
+  "x1.2": {
+   "variant": "field",
+   "h": 2,
+   "score": 0.5289,
+   "deadlock": 0,
+   "deadlocks": 0,
+   "delay": 64.64,
+   "episodes": 100
+  },
+  "x1.5": {
+   "variant": "field",
+   "h": 2,
+   "score": 9.1248,
+   "deadlock": 0,
+   "deadlocks": 0,
+   "delay": 189.12,
+   "episodes": 100
+  }
+ },
+ "incomplete": []
+}

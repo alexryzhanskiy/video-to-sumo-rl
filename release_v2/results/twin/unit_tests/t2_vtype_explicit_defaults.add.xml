@@ -1,0 +1,3 @@
+<additional>
+    <vType id="DEFAULT_VEHTYPE" tau="1" accel="2.6" decel="4.5" sigma="0.5" startupDelay="0"/>
+</additional>

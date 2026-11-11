@@ -1,0 +1,422 @@
+{
+ "revision/demand/heldout/x10/heldout_x10_s1001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1001.rou.xml --seed 1001",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:33Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1002.rou.xml --seed 1002",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:34Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1003.rou.xml --seed 1003",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:35Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1004.rou.xml --seed 1004",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:36Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1005.rou.xml --seed 1005",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:37Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1006.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1006.rou.xml --seed 1006",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:38Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1006
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1007.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1007.rou.xml --seed 1007",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:39Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1007
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1008.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1008.rou.xml --seed 1008",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:40Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1008
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1009.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1009.rou.xml --seed 1009",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:41Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1009
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x10/heldout_x10_s1010.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/heldout/x10/heldout_x10_s1010.rou.xml --seed 1010",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-26T11:42:42Z",
+  "expected_total": 1355,
+  "group": "heldout_x10",
+  "load_or_scenario": "x10",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1010
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1001.rou.xml --seed 1001",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:42Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1002.rou.xml --seed 1002",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:43Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1003.rou.xml --seed 1003",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:44Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1004.rou.xml --seed 1004",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:45Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1005.rou.xml --seed 1005",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:46Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1006.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1006.rou.xml --seed 1006",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:47Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1006
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1007.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1007.rou.xml --seed 1007",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:48Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1007
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1008.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1008.rou.xml --seed 1008",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:49Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1008
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1009.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1009.rou.xml --seed 1009",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:50Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1009
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x12/heldout_x12_s1010.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/heldout/x12/heldout_x12_s1010.rou.xml --seed 1010",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-26T11:42:51Z",
+  "expected_total": 1626,
+  "group": "heldout_x12",
+  "load_or_scenario": "x12",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1010
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1001.rou.xml --seed 1001",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:52Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1002.rou.xml --seed 1002",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:53Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1003.rou.xml --seed 1003",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:54Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1004.rou.xml --seed 1004",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:55Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1005.rou.xml --seed 1005",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:56Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1006.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1006.rou.xml --seed 1006",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:56Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1006
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1007.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1007.rou.xml --seed 1007",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:57Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1007
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1008.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1008.rou.xml --seed 1008",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:58Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1008
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1009.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1009.rou.xml --seed 1009",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:42:59Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1009
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/heldout/x15/heldout_x15_s1010.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_15.xml -o revision/demand/heldout/x15/heldout_x15_s1010.rou.xml --seed 1010",
+  "counts_file": "sumo/turn_counts_15.xml",
+  "counts_ref": "sumo/turn_counts_15.xml",
+  "created_utc": "2026-10-26T11:43:00Z",
+  "expected_total": 2036,
+  "group": "heldout_x15",
+  "load_or_scenario": "x15",
+  "purpose": "held-out demand realization (Comment 1.5)",
+  "seeds": [
+   1010
+  ],
+  "sumo_version": "1.26.0"
+ }
+}

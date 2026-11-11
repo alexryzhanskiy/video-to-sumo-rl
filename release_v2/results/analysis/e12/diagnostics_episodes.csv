@@ -1,0 +1,1401 @@
+policy,set,k,map,e,switches,holds,other_gaps,lost_time_s,unfinished,unfinished_by_approach,top2_share,deadlock
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,1,69,235,0,483,18,nN_nC:15 nW_nC:3,1.0,0
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,2,62,248,0,434,5,nN_nC:4 nW_nC:1,1.0,0
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,3,61,250,0,427,0,,,0
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,4,33,300,0,231,107,nE_nC:26 nN_nC:27 nS_nC:27 nW_nC:27,0.505,1
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,5,22,320,0,154,102,nE_nC:25 nN_nC:27 nS_nC:27 nW_nC:23,0.529,1
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,6,63,246,0,441,15,nN_nC:11 nW_nC:4,1.0,0
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,7,69,235,0,483,3,nW_nC:3,1.0,0
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,8,59,253,0,413,8,nN_nC:6 nS_nC:2,1.0,0
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,9,62,248,0,434,20,nN_nC:15 nW_nC:5,1.0,0
+IDQN-pressure,held-out x1.0,1,prybuzka_ho10,10,61,250,0,427,10,nN_nC:10,1.0,0
+IDQN-pressure,scenario S1,1,prybuzka_s1,1,53,264,0,371,92,nE_nC:22 nN_nC:27 nS_nC:27 nW_nC:16,0.587,0
+IDQN-pressure,scenario S1,1,prybuzka_s1,2,30,305,0,210,108,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:27,0.5,1
+IDQN-pressure,scenario S1,1,prybuzka_s1,3,21,322,0,147,97,nE_nC:21 nN_nC:27 nS_nC:26 nW_nC:23,0.546,1
+IDQN-pressure,scenario S1,1,prybuzka_s1,4,63,246,0,441,54,nN_nC:27 nS_nC:27,1.0,0
+IDQN-pressure,scenario S1,1,prybuzka_s1,5,59,253,0,413,15,nN_nC:13 nS_nC:2,1.0,0
+IDQN-pressure,scenario S2,1,prybuzka_s2,1,65,242,0,455,3,nW_nC:3,1.0,0
+IDQN-pressure,scenario S2,1,prybuzka_s2,2,61,250,0,427,1,nN_nC:1,1.0,0
+IDQN-pressure,scenario S2,1,prybuzka_s2,3,68,237,0,476,5,nN_nC:4 nW_nC:1,1.0,0
+IDQN-pressure,scenario S2,1,prybuzka_s2,4,43,282,0,301,96,nE_nC:17 nN_nC:27 nS_nC:26 nW_nC:26,0.552,0
+IDQN-pressure,scenario S2,1,prybuzka_s2,5,65,242,0,455,11,nN_nC:9 nW_nC:2,1.0,0
+IDQN-pressure,scenario S3,1,prybuzka_s3,1,69,235,0,483,7,nN_nC:7,1.0,0
+IDQN-pressure,scenario S3,1,prybuzka_s3,2,62,248,0,434,17,nN_nC:15 nW_nC:2,1.0,0
+IDQN-pressure,scenario S3,1,prybuzka_s3,3,69,235,0,483,3,nN_nC:2 nW_nC:1,1.0,0
+IDQN-pressure,scenario S3,1,prybuzka_s3,4,70,234,0,490,7,nN_nC:5 nW_nC:2,1.0,0
+IDQN-pressure,scenario S3,1,prybuzka_s3,5,55,260,0,385,0,,,0
+IDQN-pressure,scenario S4,1,prybuzka_s4,1,66,241,0,462,1,nW_nC:1,1.0,0
+IDQN-pressure,scenario S4,1,prybuzka_s4,2,61,250,0,427,13,nN_nC:11 nS_nC:2,1.0,0
+IDQN-pressure,scenario S4,1,prybuzka_s4,3,25,314,0,175,95,nE_nC:20 nN_nC:27 nS_nC:27 nW_nC:21,0.568,1
+IDQN-pressure,scenario S4,1,prybuzka_s4,4,26,313,0,182,101,nE_nC:20 nN_nC:27 nS_nC:27 nW_nC:27,0.535,1
+IDQN-pressure,scenario S4,1,prybuzka_s4,5,25,314,0,175,98,nE_nC:20 nN_nC:27 nS_nC:27 nW_nC:24,0.551,1
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,1,24,316,0,168,96,nE_nC:25 nN_nC:26 nS_nC:25 nW_nC:20,0.531,1
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,2,32,302,0,224,106,nE_nC:26 nN_nC:27 nS_nC:27 nW_nC:26,0.509,1
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,3,33,300,0,231,107,nE_nC:26 nN_nC:27 nS_nC:27 nW_nC:27,0.505,1
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,4,45,278,0,315,103,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:22,0.524,1
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,5,25,314,0,175,106,nE_nC:27 nN_nC:25 nS_nC:27 nW_nC:27,0.509,1
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,6,25,314,0,175,102,nE_nC:21 nN_nC:27 nS_nC:27 nW_nC:27,0.529,1
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,7,70,233,0,490,5,nN_nC:3 nW_nC:2,1.0,0
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,8,70,234,0,490,32,nN_nC:29 nS_nC:2 nW_nC:1,0.969,0
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,9,64,244,0,448,13,nN_nC:13,1.0,0
+IDQN-pressure,transfer x1.2,1,prybuzka_ho12,10,26,313,0,182,93,nE_nC:20 nN_nC:27 nS_nC:26 nW_nC:20,0.57,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,1,26,313,0,182,103,nE_nC:26 nN_nC:27 nS_nC:24 nW_nC:26,0.515,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,2,22,320,0,154,101,nE_nC:26 nN_nC:26 nS_nC:27 nW_nC:22,0.525,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,3,23,318,0,161,102,nE_nC:24 nN_nC:27 nS_nC:27 nW_nC:24,0.529,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,4,40,287,0,280,105,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:24,0.514,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,5,39,289,0,273,105,nE_nC:25 nN_nC:27 nS_nC:26 nW_nC:27,0.514,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,6,20,323,0,140,103,nE_nC:24 nN_nC:27 nS_nC:27 nW_nC:25,0.524,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,7,21,322,0,147,105,nE_nC:25 nN_nC:27 nS_nC:27 nW_nC:26,0.514,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,8,22,320,0,154,105,nE_nC:23 nN_nC:27 nS_nC:28 nW_nC:27,0.524,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,9,21,322,0,147,102,nE_nC:26 nN_nC:27 nS_nC:25 nW_nC:24,0.52,1
+IDQN-pressure,transfer x1.5,1,prybuzka_ho15,10,39,289,0,273,108,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:27,0.5,1
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,1,33,300,0,231,140,nE_nC:34 nN_nC:35 nS_nC:39 nW_nC:32,0.529,1
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,2,36,295,0,252,148,nE_nC:34 nN_nC:40 nS_nC:40 nW_nC:34,0.541,1
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,3,39,289,0,273,130,nE_nC:22 nN_nC:40 nS_nC:38 nW_nC:30,0.6,0
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,4,33,300,0,231,131,nE_nC:22 nN_nC:39 nS_nC:38 nW_nC:32,0.588,0
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,5,41,286,0,287,118,nE_nC:20 nN_nC:33 nS_nC:39 nW_nC:26,0.61,0
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,6,32,302,0,224,149,nE_nC:35 nN_nC:41 nS_nC:40 nW_nC:33,0.544,1
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,7,36,295,0,252,128,nE_nC:26 nN_nC:30 nS_nC:39 nW_nC:33,0.562,0
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,8,39,289,0,273,128,nE_nC:26 nN_nC:32 nS_nC:38 nW_nC:32,0.547,0
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,9,32,302,0,224,144,nE_nC:33 nN_nC:39 nS_nC:39 nW_nC:33,0.542,1
+IDQN-pressure,held-out x1.0,2,prybuzka_ho10,10,29,307,0,203,145,nE_nC:33 nN_nC:40 nS_nC:39 nW_nC:33,0.545,1
+IDQN-pressure,scenario S1,2,prybuzka_s1,1,28,309,0,196,147,nE_nC:33 nN_nC:40 nS_nC:41 nW_nC:33,0.551,1
+IDQN-pressure,scenario S1,2,prybuzka_s1,2,36,295,0,252,131,nE_nC:22 nN_nC:37 nS_nC:39 nW_nC:33,0.58,0
+IDQN-pressure,scenario S1,2,prybuzka_s1,3,30,305,0,210,141,nE_nC:33 nN_nC:37 nS_nC:39 nW_nC:32,0.539,1
+IDQN-pressure,scenario S1,2,prybuzka_s1,4,22,320,0,154,147,nE_nC:33 nN_nC:41 nS_nC:40 nW_nC:33,0.551,1
+IDQN-pressure,scenario S1,2,prybuzka_s1,5,28,309,0,196,145,nE_nC:33 nN_nC:41 nS_nC:38 nW_nC:33,0.545,1
+IDQN-pressure,scenario S2,2,prybuzka_s2,1,36,295,0,252,132,nE_nC:22 nN_nC:40 nS_nC:38 nW_nC:32,0.591,0
+IDQN-pressure,scenario S2,2,prybuzka_s2,2,31,304,0,217,129,nE_nC:23 nN_nC:39 nS_nC:39 nW_nC:28,0.605,1
+IDQN-pressure,scenario S2,2,prybuzka_s2,3,29,307,0,203,131,nE_nC:25 nN_nC:33 nS_nC:39 nW_nC:34,0.557,0
+IDQN-pressure,scenario S2,2,prybuzka_s2,4,33,300,0,231,127,nE_nC:22 nN_nC:40 nS_nC:38 nW_nC:27,0.614,1
+IDQN-pressure,scenario S2,2,prybuzka_s2,5,29,307,0,203,130,nE_nC:24 nN_nC:35 nS_nC:38 nW_nC:33,0.562,0
+IDQN-pressure,scenario S3,2,prybuzka_s3,1,36,295,0,252,145,nE_nC:33 nN_nC:40 nS_nC:39 nW_nC:33,0.545,1
+IDQN-pressure,scenario S3,2,prybuzka_s3,2,39,289,0,273,139,nE_nC:27 nN_nC:39 nS_nC:40 nW_nC:33,0.568,1
+IDQN-pressure,scenario S3,2,prybuzka_s3,3,32,302,0,224,147,nE_nC:34 nN_nC:40 nS_nC:40 nW_nC:33,0.544,1
+IDQN-pressure,scenario S3,2,prybuzka_s3,4,39,289,0,273,140,nE_nC:31 nN_nC:38 nS_nC:38 nW_nC:33,0.543,1
+IDQN-pressure,scenario S3,2,prybuzka_s3,5,28,309,0,196,145,nE_nC:33 nN_nC:40 nS_nC:39 nW_nC:33,0.545,1
+IDQN-pressure,scenario S4,2,prybuzka_s4,1,26,313,0,182,146,nE_nC:34 nN_nC:39 nS_nC:39 nW_nC:34,0.534,1
+IDQN-pressure,scenario S4,2,prybuzka_s4,2,27,311,0,189,148,nE_nC:34 nN_nC:41 nS_nC:40 nW_nC:33,0.547,1
+IDQN-pressure,scenario S4,2,prybuzka_s4,3,21,322,0,147,145,nE_nC:33 nN_nC:39 nS_nC:39 nW_nC:34,0.538,1
+IDQN-pressure,scenario S4,2,prybuzka_s4,4,31,304,0,217,150,nE_nC:34 nN_nC:42 nS_nC:40 nW_nC:34,0.547,1
+IDQN-pressure,scenario S4,2,prybuzka_s4,5,25,314,0,175,148,nE_nC:34 nN_nC:40 nS_nC:40 nW_nC:34,0.541,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,1,32,302,0,224,139,nE_nC:33 nN_nC:33 nS_nC:40 nW_nC:33,0.525,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,2,30,305,0,210,144,nE_nC:33 nN_nC:39 nS_nC:39 nW_nC:33,0.542,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,3,32,302,0,224,148,nE_nC:35 nN_nC:40 nS_nC:40 nW_nC:33,0.541,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,4,36,295,0,252,146,nE_nC:34 nN_nC:40 nS_nC:40 nW_nC:32,0.548,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,5,27,311,0,189,147,nE_nC:34 nN_nC:41 nS_nC:39 nW_nC:33,0.544,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,6,26,313,0,182,148,nE_nC:33 nN_nC:40 nS_nC:41 nW_nC:34,0.547,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,7,40,287,0,280,133,nE_nC:26 nN_nC:36 nS_nC:39 nW_nC:32,0.564,0
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,8,32,302,0,224,146,nE_nC:33 nN_nC:40 nS_nC:40 nW_nC:33,0.548,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,9,31,304,0,217,146,nE_nC:33 nN_nC:41 nS_nC:39 nW_nC:33,0.548,1
+IDQN-pressure,transfer x1.2,2,prybuzka_ho12,10,28,309,0,196,144,nE_nC:32 nN_nC:39 nS_nC:40 nW_nC:33,0.549,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,1,33,300,0,231,146,nE_nC:31 nN_nC:42 nS_nC:40 nW_nC:33,0.562,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,2,37,293,0,259,145,nE_nC:34 nN_nC:41 nS_nC:39 nW_nC:31,0.552,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,3,40,287,0,280,150,nE_nC:33 nN_nC:42 nS_nC:40 nW_nC:35,0.547,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,4,36,295,0,252,145,nE_nC:33 nN_nC:39 nS_nC:39 nW_nC:34,0.538,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,5,31,304,0,217,145,nE_nC:33 nN_nC:41 nS_nC:39 nW_nC:32,0.552,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,6,41,286,0,287,135,nE_nC:24 nN_nC:40 nS_nC:38 nW_nC:33,0.578,0
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,7,38,291,0,266,147,nE_nC:33 nN_nC:41 nS_nC:40 nW_nC:33,0.551,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,8,42,284,0,294,146,nE_nC:32 nN_nC:41 nS_nC:40 nW_nC:33,0.555,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,9,37,293,0,259,146,nE_nC:32 nN_nC:40 nS_nC:41 nW_nC:33,0.555,1
+IDQN-pressure,transfer x1.5,2,prybuzka_ho15,10,34,298,0,238,146,nE_nC:33 nN_nC:40 nS_nC:40 nW_nC:33,0.548,1
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,1,64,244,0,448,52,nE_nC:11 nN_nC:2 nS_nC:2 nW_nC:37,0.923,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,2,30,306,0,210,129,nE_nC:41 nN_nC:23 nS_nC:25 nW_nC:40,0.628,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,3,75,224,0,525,17,nN_nC:11 nW_nC:6,1.0,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,4,16,331,0,112,114,nE_nC:26 nN_nC:33 nS_nC:28 nW_nC:27,0.535,1
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,5,76,223,0,532,0,,,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,6,58,255,0,406,101,nE_nC:32 nN_nC:27 nS_nC:3 nW_nC:39,0.703,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,7,77,221,0,539,21,nN_nC:14 nW_nC:7,1.0,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,8,69,235,0,483,15,nE_nC:1 nN_nC:5 nW_nC:9,0.933,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,9,70,233,0,490,18,nN_nC:10 nW_nC:8,1.0,0
+IDQN-pressure,held-out x1.0,3,prybuzka_ho10,10,77,221,0,539,20,nN_nC:14 nW_nC:6,1.0,0
+IDQN-pressure,scenario S1,3,prybuzka_s1,1,43,282,0,301,106,nE_nC:37 nN_nC:27 nS_nC:2 nW_nC:40,0.726,0
+IDQN-pressure,scenario S1,3,prybuzka_s1,2,48,273,0,336,113,nE_nC:27 nN_nC:28 nS_nC:31 nW_nC:27,0.522,0
+IDQN-pressure,scenario S1,3,prybuzka_s1,3,50,269,0,350,79,nE_nC:40 nW_nC:39,1.0,0
+IDQN-pressure,scenario S1,3,prybuzka_s1,4,28,309,0,196,121,nE_nC:27 nN_nC:39 nS_nC:28 nW_nC:27,0.554,1
+IDQN-pressure,scenario S1,3,prybuzka_s1,5,72,230,0,504,53,nN_nC:27 nS_nC:20 nW_nC:6,0.887,0
+IDQN-pressure,scenario S2,3,prybuzka_s2,1,34,298,0,238,133,nE_nC:40 nN_nC:28 nS_nC:28 nW_nC:37,0.579,0
+IDQN-pressure,scenario S2,3,prybuzka_s2,2,59,253,0,413,96,nE_nC:39 nN_nC:18 nW_nC:39,0.812,0
+IDQN-pressure,scenario S2,3,prybuzka_s2,3,70,233,0,490,9,nN_nC:4 nW_nC:5,1.0,0
+IDQN-pressure,scenario S2,3,prybuzka_s2,4,52,266,0,364,113,nE_nC:27 nN_nC:31 nS_nC:29 nW_nC:26,0.531,1
+IDQN-pressure,scenario S2,3,prybuzka_s2,5,69,235,0,483,17,nN_nC:11 nW_nC:6,1.0,0
+IDQN-pressure,scenario S3,3,prybuzka_s3,1,76,223,0,532,33,nN_nC:27 nW_nC:6,1.0,0
+IDQN-pressure,scenario S3,3,prybuzka_s3,2,71,232,0,497,12,nN_nC:1 nW_nC:11,1.0,0
+IDQN-pressure,scenario S3,3,prybuzka_s3,3,67,239,0,469,67,nE_nC:32 nN_nC:2 nW_nC:33,0.97,0
+IDQN-pressure,scenario S3,3,prybuzka_s3,4,72,230,0,504,75,nE_nC:7 nN_nC:26 nS_nC:26 nW_nC:16,0.693,0
+IDQN-pressure,scenario S3,3,prybuzka_s3,5,70,233,0,490,92,nE_nC:10 nN_nC:26 nS_nC:19 nW_nC:37,0.685,0
+IDQN-pressure,scenario S4,3,prybuzka_s4,1,32,302,0,224,114,nE_nC:41 nN_nC:27 nS_nC:7 nW_nC:39,0.702,0
+IDQN-pressure,scenario S4,3,prybuzka_s4,2,37,293,0,259,92,nE_nC:32 nN_nC:27 nW_nC:33,0.707,0
+IDQN-pressure,scenario S4,3,prybuzka_s4,3,69,235,0,483,65,nE_nC:33 nN_nC:1 nW_nC:31,0.985,0
+IDQN-pressure,scenario S4,3,prybuzka_s4,4,65,242,0,455,71,nE_nC:1 nN_nC:27 nS_nC:27 nW_nC:16,0.761,0
+IDQN-pressure,scenario S4,3,prybuzka_s4,5,78,219,0,546,9,nW_nC:9,1.0,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,1,68,237,0,476,11,nW_nC:11,1.0,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,2,77,221,0,539,60,nN_nC:13 nS_nC:14 nW_nC:33,0.783,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,3,30,305,0,210,109,nE_nC:27 nN_nC:28 nS_nC:27 nW_nC:27,0.505,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,4,31,304,0,217,114,nE_nC:41 nN_nC:17 nS_nC:16 nW_nC:40,0.711,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,5,69,235,0,483,68,nE_nC:12 nN_nC:9 nS_nC:8 nW_nC:39,0.75,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,6,68,237,0,476,91,nE_nC:29 nN_nC:27 nS_nC:4 nW_nC:31,0.659,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,7,66,241,0,462,62,nN_nC:27 nS_nC:27 nW_nC:8,0.871,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,8,72,230,0,504,68,nE_nC:7 nN_nC:18 nS_nC:5 nW_nC:38,0.824,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,9,63,247,0,441,61,nN_nC:27 nS_nC:27 nW_nC:7,0.885,0
+IDQN-pressure,transfer x1.2,3,prybuzka_ho12,10,61,250,0,427,90,nE_nC:42 nN_nC:8 nW_nC:40,0.911,0
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,1,19,325,0,133,118,nE_nC:28 nN_nC:34 nS_nC:31 nW_nC:25,0.551,1
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,2,21,322,0,147,112,nE_nC:28 nN_nC:29 nS_nC:28 nW_nC:27,0.509,1
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,3,45,278,0,315,133,nE_nC:39 nN_nC:28 nS_nC:28 nW_nC:38,0.579,0
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,4,53,264,0,371,82,nE_nC:38 nN_nC:12 nS_nC:2 nW_nC:30,0.829,0
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,5,64,244,0,448,60,nN_nC:27 nS_nC:26 nW_nC:7,0.883,0
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,6,60,251,0,420,63,nN_nC:15 nS_nC:12 nW_nC:36,0.81,0
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,7,25,314,0,175,111,nE_nC:28 nN_nC:27 nS_nC:30 nW_nC:26,0.523,1
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,8,67,239,0,469,102,nE_nC:33 nN_nC:14 nS_nC:15 nW_nC:40,0.716,0
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,9,65,242,0,455,71,nE_nC:3 nN_nC:20 nS_nC:11 nW_nC:37,0.803,0
+IDQN-pressure,transfer x1.5,3,prybuzka_ho15,10,61,250,0,427,65,nE_nC:1 nN_nC:22 nS_nC:12 nW_nC:30,0.8,0
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,1,32,302,0,224,129,nE_nC:40 nN_nC:26 nS_nC:27 nW_nC:36,0.589,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,2,33,300,0,231,119,nE_nC:34 nN_nC:27 nS_nC:25 nW_nC:33,0.563,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,3,27,311,0,189,115,nE_nC:31 nN_nC:26 nS_nC:25 nW_nC:33,0.557,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,4,30,305,0,210,118,nE_nC:31 nN_nC:27 nS_nC:27 nW_nC:33,0.542,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,5,28,309,0,196,132,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:39,0.591,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,6,31,304,0,217,133,nE_nC:40 nN_nC:27 nS_nC:27 nW_nC:39,0.594,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,7,32,302,0,224,127,nE_nC:40 nN_nC:27 nS_nC:27 nW_nC:33,0.575,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,8,41,286,0,287,118,nE_nC:32 nN_nC:27 nS_nC:26 nW_nC:33,0.551,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,9,30,305,0,210,119,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:33,0.546,1
+IDQN-pressure,held-out x1.0,4,prybuzka_ho10,10,39,289,0,273,120,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:34,0.55,1
+IDQN-pressure,scenario S1,4,prybuzka_s1,1,36,295,0,252,131,nE_nC:38 nN_nC:27 nS_nC:27 nW_nC:39,0.588,1
+IDQN-pressure,scenario S1,4,prybuzka_s1,2,36,295,0,252,132,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:39,0.591,1
+IDQN-pressure,scenario S1,4,prybuzka_s1,3,35,296,0,245,118,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:32,0.542,1
+IDQN-pressure,scenario S1,4,prybuzka_s1,4,33,300,0,231,119,nE_nC:34 nN_nC:27 nS_nC:26 nW_nC:32,0.555,1
+IDQN-pressure,scenario S1,4,prybuzka_s1,5,34,298,0,238,125,nE_nC:40 nN_nC:27 nS_nC:27 nW_nC:31,0.568,1
+IDQN-pressure,scenario S2,4,prybuzka_s2,1,45,278,0,315,125,nE_nC:37 nN_nC:27 nS_nC:27 nW_nC:34,0.568,1
+IDQN-pressure,scenario S2,4,prybuzka_s2,2,27,311,0,189,120,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:33,0.55,1
+IDQN-pressure,scenario S2,4,prybuzka_s2,3,29,307,0,203,119,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:33,0.546,1
+IDQN-pressure,scenario S2,4,prybuzka_s2,4,29,307,0,203,119,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:33,0.546,1
+IDQN-pressure,scenario S2,4,prybuzka_s2,5,21,322,0,147,121,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:34,0.554,1
+IDQN-pressure,scenario S3,4,prybuzka_s3,1,33,300,0,231,125,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:39,0.568,1
+IDQN-pressure,scenario S3,4,prybuzka_s3,2,36,295,0,252,126,nE_nC:40 nN_nC:27 nS_nC:27 nW_nC:32,0.571,1
+IDQN-pressure,scenario S3,4,prybuzka_s3,3,32,302,0,224,119,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:32,0.546,1
+IDQN-pressure,scenario S3,4,prybuzka_s3,4,38,291,0,266,128,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:35,0.578,1
+IDQN-pressure,scenario S3,4,prybuzka_s3,5,33,300,0,231,119,nE_nC:35 nN_nC:27 nS_nC:27 nW_nC:30,0.546,1
+IDQN-pressure,scenario S4,4,prybuzka_s4,1,26,313,0,182,119,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:33,0.546,1
+IDQN-pressure,scenario S4,4,prybuzka_s4,2,19,325,0,133,125,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:38,0.568,1
+IDQN-pressure,scenario S4,4,prybuzka_s4,3,23,318,0,161,119,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:33,0.546,1
+IDQN-pressure,scenario S4,4,prybuzka_s4,4,28,309,0,196,119,nE_nC:33 nN_nC:27 nS_nC:26 nW_nC:33,0.555,1
+IDQN-pressure,scenario S4,4,prybuzka_s4,5,28,309,0,196,119,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:33,0.546,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,1,28,309,0,196,120,nE_nC:34 nN_nC:27 nS_nC:26 nW_nC:33,0.558,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,2,30,305,0,210,131,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:38,0.588,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,3,34,298,0,238,120,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:33,0.55,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,4,28,309,0,196,119,nE_nC:32 nN_nC:28 nS_nC:26 nW_nC:33,0.546,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,5,45,278,0,315,122,nE_nC:36 nN_nC:27 nS_nC:27 nW_nC:32,0.557,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,6,22,320,0,154,118,nE_nC:32 nN_nC:27 nS_nC:26 nW_nC:33,0.551,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,7,32,302,0,224,127,nE_nC:40 nN_nC:27 nS_nC:27 nW_nC:33,0.575,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,8,28,309,0,196,128,nE_nC:37 nN_nC:27 nS_nC:27 nW_nC:37,0.578,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,9,27,311,0,189,115,nE_nC:34 nN_nC:25 nS_nC:27 nW_nC:29,0.548,1
+IDQN-pressure,transfer x1.2,4,prybuzka_ho12,10,32,302,0,224,122,nE_nC:35 nN_nC:27 nS_nC:27 nW_nC:33,0.557,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,1,13,336,0,91,126,nE_nC:34 nN_nC:27 nS_nC:28 nW_nC:37,0.563,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,2,58,255,0,406,68,nE_nC:24 nN_nC:15 nW_nC:29,0.779,0
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,3,43,282,0,301,119,nE_nC:33 nN_nC:27 nS_nC:26 nW_nC:33,0.555,0
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,4,18,327,0,126,119,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:32,0.546,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,5,38,291,0,266,125,nE_nC:34 nN_nC:27 nS_nC:26 nW_nC:38,0.576,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,6,38,291,0,266,129,nE_nC:36 nN_nC:27 nS_nC:27 nW_nC:39,0.581,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,7,21,322,0,147,120,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:34,0.55,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,8,22,320,0,154,119,nE_nC:32 nN_nC:27 nS_nC:26 nW_nC:34,0.555,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,9,18,327,0,126,120,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:33,0.55,1
+IDQN-pressure,transfer x1.5,4,prybuzka_ho15,10,21,322,0,147,119,nE_nC:34 nN_nC:27 nS_nC:27 nW_nC:31,0.546,1
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,1,53,264,0,371,65,nE_nC:32 nN_nC:1 nW_nC:32,0.985,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,2,56,259,0,392,81,nE_nC:40 nW_nC:41,1.0,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,3,42,284,0,294,71,nE_nC:34 nN_nC:7 nW_nC:30,0.901,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,4,46,277,0,322,66,nE_nC:32 nW_nC:34,1.0,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,5,48,273,0,336,81,nE_nC:39 nN_nC:3 nW_nC:39,0.963,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,6,54,262,0,378,69,nE_nC:31 nN_nC:2 nW_nC:36,0.971,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,7,58,255,0,406,106,nE_nC:26 nN_nC:33 nS_nC:21 nW_nC:26,0.557,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,8,23,318,0,161,86,nE_nC:41 nN_nC:6 nW_nC:39,0.93,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,9,56,259,0,392,97,nE_nC:41 nN_nC:16 nS_nC:7 nW_nC:33,0.763,0
+IDQN-pressure,held-out x1.0,5,prybuzka_ho10,10,56,259,0,392,76,nE_nC:38 nW_nC:38,1.0,0
+IDQN-pressure,scenario S1,5,prybuzka_s1,1,50,269,0,350,75,nE_nC:34 nN_nC:1 nW_nC:40,0.987,0
+IDQN-pressure,scenario S1,5,prybuzka_s1,2,32,302,0,224,59,nN_nC:30 nS_nC:29,1.0,0
+IDQN-pressure,scenario S1,5,prybuzka_s1,3,54,262,0,378,83,nE_nC:38 nN_nC:6 nW_nC:39,0.928,0
+IDQN-pressure,scenario S1,5,prybuzka_s1,4,52,266,0,364,78,nE_nC:40 nN_nC:1 nW_nC:37,0.987,0
+IDQN-pressure,scenario S1,5,prybuzka_s1,5,50,269,0,350,79,nE_nC:39 nW_nC:40,1.0,0
+IDQN-pressure,scenario S2,5,prybuzka_s2,1,55,260,0,385,78,nE_nC:38 nW_nC:40,1.0,0
+IDQN-pressure,scenario S2,5,prybuzka_s2,2,49,271,0,343,63,nE_nC:32 nW_nC:31,1.0,0
+IDQN-pressure,scenario S2,5,prybuzka_s2,3,45,278,0,315,78,nE_nC:32 nN_nC:4 nS_nC:1 nW_nC:41,0.936,0
+IDQN-pressure,scenario S2,5,prybuzka_s2,4,47,275,0,329,82,nE_nC:40 nN_nC:1 nW_nC:41,0.988,0
+IDQN-pressure,scenario S2,5,prybuzka_s2,5,49,271,0,343,68,nE_nC:31 nW_nC:37,1.0,0
+IDQN-pressure,scenario S3,5,prybuzka_s3,1,57,257,0,399,82,nE_nC:40 nW_nC:42,1.0,0
+IDQN-pressure,scenario S3,5,prybuzka_s3,2,49,271,0,343,72,nE_nC:32 nW_nC:40,1.0,0
+IDQN-pressure,scenario S3,5,prybuzka_s3,3,45,278,0,315,75,nE_nC:34 nN_nC:2 nW_nC:39,0.973,0
+IDQN-pressure,scenario S3,5,prybuzka_s3,4,27,311,0,189,131,nE_nC:33 nN_nC:34 nS_nC:33 nW_nC:31,0.511,0
+IDQN-pressure,scenario S3,5,prybuzka_s3,5,45,278,0,315,70,nE_nC:33 nN_nC:5 nW_nC:32,0.929,0
+IDQN-pressure,scenario S4,5,prybuzka_s4,1,43,282,0,301,117,nE_nC:22 nN_nC:39 nS_nC:26 nW_nC:30,0.59,0
+IDQN-pressure,scenario S4,5,prybuzka_s4,2,37,293,0,259,124,nE_nC:39 nN_nC:34 nS_nC:18 nW_nC:33,0.589,0
+IDQN-pressure,scenario S4,5,prybuzka_s4,3,43,282,0,301,122,nE_nC:33 nN_nC:28 nS_nC:27 nW_nC:34,0.549,1
+IDQN-pressure,scenario S4,5,prybuzka_s4,4,30,306,0,210,132,nE_nC:31 nN_nC:35 nS_nC:27 nW_nC:39,0.561,0
+IDQN-pressure,scenario S4,5,prybuzka_s4,5,51,268,0,357,78,nE_nC:31 nN_nC:13 nW_nC:34,0.833,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,1,49,271,0,343,108,nE_nC:29 nN_nC:32 nS_nC:26 nW_nC:21,0.565,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,2,54,262,0,378,108,nE_nC:28 nN_nC:31 nS_nC:27 nW_nC:22,0.546,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,3,57,257,0,399,68,nE_nC:34 nN_nC:1 nW_nC:33,0.985,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,4,42,285,0,294,105,nE_nC:40 nN_nC:21 nS_nC:12 nW_nC:32,0.686,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,5,54,262,0,378,71,nE_nC:39 nW_nC:32,1.0,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,6,41,286,0,287,73,nE_nC:39 nN_nC:2 nW_nC:32,0.973,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,7,49,271,0,343,55,nE_nC:25 nN_nC:9 nW_nC:21,0.836,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,8,36,295,0,252,107,nE_nC:40 nN_nC:17 nS_nC:10 nW_nC:40,0.748,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,9,34,298,0,238,85,nE_nC:40 nN_nC:4 nW_nC:41,0.953,0
+IDQN-pressure,transfer x1.2,5,prybuzka_ho12,10,47,275,0,329,85,nN_nC:30 nS_nC:32 nW_nC:23,0.729,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,1,44,281,0,308,88,nE_nC:33 nN_nC:21 nW_nC:34,0.761,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,2,44,280,0,308,94,nE_nC:17 nN_nC:33 nS_nC:27 nW_nC:17,0.638,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,3,49,271,0,343,85,nE_nC:32 nN_nC:16 nW_nC:37,0.812,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,4,37,293,0,259,102,nE_nC:40 nN_nC:13 nS_nC:10 nW_nC:39,0.775,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,5,43,283,0,301,109,nE_nC:19 nN_nC:34 nS_nC:27 nW_nC:29,0.578,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,6,44,280,0,308,92,nE_nC:39 nN_nC:18 nW_nC:35,0.804,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,7,51,268,0,357,85,nE_nC:15 nN_nC:32 nS_nC:27 nW_nC:11,0.694,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,8,48,273,0,336,92,nE_nC:37 nN_nC:16 nW_nC:39,0.826,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,9,44,280,0,308,111,nE_nC:41 nN_nC:20 nS_nC:10 nW_nC:40,0.73,0
+IDQN-pressure,transfer x1.5,5,prybuzka_ho15,10,41,286,0,287,104,nE_nC:40 nN_nC:16 nS_nC:10 nW_nC:38,0.75,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,1,33,300,0,231,61,nN_nC:27 nS_nC:28 nW_nC:6,0.902,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,2,35,296,0,245,62,nE_nC:4 nN_nC:27 nS_nC:26 nW_nC:5,0.855,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,3,43,282,0,301,70,nE_nC:4 nN_nC:27 nS_nC:27 nW_nC:12,0.771,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,4,42,284,0,294,66,nE_nC:4 nN_nC:26 nS_nC:27 nW_nC:9,0.803,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,5,44,280,0,308,66,nE_nC:5 nN_nC:27 nS_nC:26 nW_nC:8,0.803,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,6,30,305,0,210,68,nE_nC:5 nN_nC:27 nS_nC:26 nW_nC:10,0.779,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,7,38,291,0,266,67,nE_nC:5 nN_nC:27 nS_nC:26 nW_nC:9,0.791,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,8,38,291,0,266,64,nE_nC:1 nN_nC:28 nS_nC:27 nW_nC:8,0.859,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,9,31,304,0,217,58,nE_nC:1 nN_nC:27 nS_nC:28 nW_nC:2,0.948,0
+IDQN-pressure,held-out x1.2,1,prybuzka_ho12,10,48,273,0,336,73,nE_nC:3 nN_nC:27 nS_nC:27 nW_nC:16,0.74,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,1,71,232,0,497,55,nE_nC:27 nW_nC:28,1.0,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,2,67,239,0,469,63,nE_nC:28 nN_nC:6 nW_nC:29,0.905,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,3,64,245,0,448,64,nE_nC:27 nN_nC:3 nS_nC:1 nW_nC:33,0.938,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,4,56,259,0,392,54,nE_nC:27 nW_nC:27,1.0,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,5,61,250,0,427,106,nE_nC:28 nN_nC:27 nS_nC:25 nW_nC:26,0.519,1
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,6,62,248,0,434,59,nE_nC:31 nW_nC:28,1.0,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,7,79,217,0,553,40,nN_nC:10 nS_nC:2 nW_nC:28,0.95,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,8,61,250,0,427,55,nE_nC:27 nN_nC:1 nW_nC:27,0.982,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,9,66,241,0,462,58,nE_nC:30 nW_nC:28,1.0,0
+IDQN-pressure,held-out x1.2,2,prybuzka_ho12,10,77,221,0,539,44,nN_nC:10 nS_nC:4 nW_nC:30,0.909,0
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,1,47,275,0,329,61,nN_nC:32 nS_nC:28 nW_nC:1,0.984,0
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,2,49,271,0,343,59,nE_nC:3 nN_nC:27 nS_nC:27 nW_nC:2,0.915,0
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,3,47,275,0,329,70,nN_nC:35 nS_nC:27 nW_nC:8,0.886,0
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,4,47,275,0,329,80,nE_nC:11 nN_nC:27 nS_nC:27 nW_nC:15,0.675,0
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,5,44,280,0,308,95,nE_nC:10 nN_nC:35 nS_nC:27 nW_nC:23,0.653,0
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,6,38,291,0,266,88,nE_nC:22 nN_nC:24 nS_nC:20 nW_nC:22,0.523,1
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,7,33,300,0,231,103,nE_nC:25 nN_nC:28 nS_nC:26 nW_nC:24,0.524,1
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,8,47,275,0,329,89,nE_nC:14 nN_nC:30 nS_nC:30 nW_nC:15,0.674,1
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,9,43,282,0,301,114,nE_nC:27 nN_nC:38 nS_nC:25 nW_nC:24,0.57,1
+IDQN-pressure,held-out x1.2,3,prybuzka_ho12,10,51,268,0,357,54,nN_nC:27 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,1,62,248,0,434,29,nN_nC:10 nS_nC:12 nW_nC:7,0.759,0
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,2,56,259,0,392,39,nE_nC:4 nN_nC:21 nS_nC:12 nW_nC:2,0.846,0
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,3,33,300,0,231,121,nE_nC:23 nN_nC:37 nS_nC:39 nW_nC:22,0.628,1
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,4,62,248,0,434,31,nE_nC:2 nN_nC:18 nS_nC:10 nW_nC:1,0.903,0
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,5,38,291,0,266,135,nE_nC:27 nN_nC:40 nS_nC:40 nW_nC:28,0.593,1
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,6,62,248,0,434,50,nN_nC:25 nS_nC:25,1.0,0
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,7,35,296,0,245,122,nE_nC:22 nN_nC:39 nS_nC:37 nW_nC:24,0.623,1
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,8,58,255,0,406,125,nE_nC:22 nN_nC:40 nS_nC:37 nW_nC:26,0.616,0
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,9,62,248,0,434,29,nN_nC:17 nS_nC:11 nW_nC:1,0.966,0
+IDQN-pressure,held-out x1.2,4,prybuzka_ho12,10,37,293,0,259,119,nE_nC:20 nN_nC:39 nS_nC:40 nW_nC:20,0.664,1
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,1,53,264,0,371,93,nE_nC:38 nN_nC:13 nS_nC:4 nW_nC:38,0.817,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,2,67,239,0,469,70,nE_nC:33 nN_nC:4 nW_nC:33,0.943,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,3,58,255,0,406,83,nE_nC:38 nN_nC:5 nS_nC:1 nW_nC:39,0.928,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,4,55,260,0,385,78,nE_nC:36 nN_nC:7 nW_nC:35,0.91,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,5,66,241,0,462,70,nE_nC:34 nN_nC:3 nW_nC:33,0.957,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,6,56,259,0,392,81,nE_nC:40 nN_nC:7 nS_nC:1 nW_nC:33,0.901,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,7,46,277,0,322,95,nE_nC:39 nN_nC:18 nS_nC:5 nW_nC:33,0.758,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,8,77,221,0,539,71,nE_nC:33 nN_nC:5 nW_nC:33,0.93,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,9,55,260,0,385,81,nE_nC:39 nN_nC:2 nS_nC:1 nW_nC:39,0.963,0
+IDQN-pressure,held-out x1.2,5,prybuzka_ho12,10,57,257,0,399,81,nE_nC:40 nN_nC:1 nW_nC:40,0.988,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,1,55,260,0,385,55,nN_nC:27 nS_nC:28,1.0,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,2,58,255,0,406,58,nN_nC:28 nS_nC:29 nW_nC:1,0.983,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,3,60,251,0,420,55,nN_nC:27 nS_nC:28,1.0,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,4,55,260,0,385,58,nN_nC:29 nS_nC:29,1.0,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,5,56,259,0,392,58,nN_nC:26 nS_nC:27 nW_nC:5,0.914,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,6,61,250,0,427,55,nN_nC:28 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,7,58,255,0,406,54,nN_nC:27 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,8,58,255,0,406,54,nN_nC:27 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,9,57,257,0,399,56,nN_nC:29 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.5,1,prybuzka_ho15,10,64,244,0,448,54,nN_nC:27 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,1,52,266,0,364,93,nE_nC:14 nN_nC:27 nS_nC:26 nW_nC:26,0.57,0
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,2,42,284,0,294,103,nE_nC:26 nN_nC:28 nS_nC:27 nW_nC:22,0.534,1
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,3,42,285,0,294,120,nE_nC:30 nN_nC:27 nS_nC:28 nW_nC:35,0.542,0
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,4,53,264,0,371,124,nE_nC:35 nN_nC:27 nS_nC:27 nW_nC:35,0.565,0
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,5,31,304,0,217,121,nE_nC:37 nN_nC:25 nS_nC:25 nW_nC:34,0.587,1
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,6,52,266,0,364,115,nE_nC:35 nN_nC:27 nS_nC:26 nW_nC:27,0.539,0
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,7,35,296,0,245,120,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:27,0.55,1
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,8,67,239,0,469,54,nN_nC:27 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,9,45,278,0,315,96,nE_nC:22 nN_nC:28 nS_nC:27 nW_nC:19,0.573,0
+IDQN-pressure,held-out x1.5,2,prybuzka_ho15,10,46,277,0,322,116,nE_nC:33 nN_nC:26 nS_nC:27 nW_nC:30,0.543,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,1,38,291,0,266,79,nE_nC:3 nN_nC:31 nS_nC:28 nW_nC:17,0.747,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,2,62,248,0,434,67,nN_nC:36 nS_nC:31,1.0,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,3,52,266,0,364,73,nN_nC:39 nS_nC:34,1.0,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,4,53,264,0,371,76,nN_nC:40 nS_nC:35 nW_nC:1,0.987,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,5,50,269,0,350,54,nN_nC:27 nS_nC:27,1.0,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,6,48,273,0,336,78,nN_nC:41 nS_nC:37,1.0,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,7,48,273,0,336,54,nN_nC:9 nS_nC:10 nW_nC:35,0.833,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,8,51,268,0,357,81,nN_nC:40 nS_nC:30 nW_nC:11,0.864,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,9,45,278,0,315,91,nE_nC:21 nN_nC:27 nS_nC:27 nW_nC:16,0.593,0
+IDQN-pressure,held-out x1.5,3,prybuzka_ho15,10,48,273,0,336,74,nN_nC:39 nS_nC:35,1.0,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,1,50,269,0,350,43,nN_nC:13 nS_nC:13 nW_nC:17,0.698,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,2,58,255,0,406,39,nE_nC:1 nN_nC:14 nS_nC:16 nW_nC:8,0.769,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,3,57,257,0,399,32,nN_nC:12 nS_nC:10 nW_nC:10,0.688,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,4,33,300,0,231,73,nE_nC:7 nN_nC:27 nS_nC:27 nW_nC:12,0.74,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,5,57,257,0,399,63,nN_nC:27 nS_nC:25 nW_nC:11,0.825,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,6,50,270,0,350,74,nE_nC:1 nN_nC:28 nS_nC:27 nW_nC:18,0.743,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,7,45,278,0,315,42,nN_nC:13 nS_nC:10 nW_nC:19,0.762,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,8,57,257,0,399,61,nN_nC:25 nS_nC:27 nW_nC:9,0.852,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,9,47,275,0,329,58,nN_nC:18 nS_nC:10 nW_nC:30,0.828,0
+IDQN-pressure,held-out x1.5,4,prybuzka_ho15,10,50,269,0,350,64,nN_nC:27 nS_nC:27 nW_nC:10,0.844,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,1,51,267,0,357,73,nE_nC:28 nN_nC:9 nS_nC:8 nW_nC:28,0.767,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,2,66,240,0,462,70,nE_nC:27 nN_nC:11 nS_nC:4 nW_nC:28,0.786,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,3,66,240,0,462,67,nE_nC:28 nN_nC:11 nW_nC:28,0.836,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,4,56,258,0,392,128,nE_nC:27 nN_nC:39 nS_nC:35 nW_nC:27,0.578,1
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,5,57,256,0,399,126,nE_nC:28 nN_nC:37 nS_nC:35 nW_nC:26,0.571,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,6,41,285,0,287,91,nE_nC:27 nN_nC:22 nS_nC:14 nW_nC:28,0.604,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,7,61,249,0,427,71,nE_nC:27 nN_nC:16 nW_nC:28,0.775,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,8,68,237,0,476,76,nE_nC:27 nN_nC:17 nS_nC:6 nW_nC:26,0.697,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,9,50,269,0,350,70,nE_nC:27 nN_nC:13 nS_nC:2 nW_nC:28,0.786,0
+IDQN-pressure,held-out x1.5,5,prybuzka_ho15,10,61,249,0,427,73,nE_nC:27 nN_nC:19 nW_nC:27,0.74,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,1,74,226,0,518,10,nN_nC:2 nS_nC:2 nW_nC:6,0.8,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,2,74,226,0,518,0,,,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,3,80,215,0,560,0,,,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,4,78,219,0,546,0,,,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,5,82,212,0,574,2,nW_nC:2,1.0,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,6,80,215,0,560,0,,,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,7,75,224,0,525,2,nW_nC:2,1.0,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,8,79,217,0,553,2,nW_nC:2,1.0,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,9,77,221,0,539,0,,,0
+IDQN-queue,held-out x1.0,1,prybuzka_ho10,10,77,221,0,539,2,nW_nC:2,1.0,0
+IDQN-queue,scenario S1,1,prybuzka_s1,1,76,223,0,532,0,,,0
+IDQN-queue,scenario S1,1,prybuzka_s1,2,76,223,0,532,1,nN_nC:1,1.0,0
+IDQN-queue,scenario S1,1,prybuzka_s1,3,72,230,0,504,1,nN_nC:1,1.0,0
+IDQN-queue,scenario S1,1,prybuzka_s1,4,71,232,0,497,1,nN_nC:1,1.0,0
+IDQN-queue,scenario S1,1,prybuzka_s1,5,75,224,0,525,16,nN_nC:13 nW_nC:3,1.0,0
+IDQN-queue,scenario S2,1,prybuzka_s2,1,74,226,0,518,1,nW_nC:1,1.0,0
+IDQN-queue,scenario S2,1,prybuzka_s2,2,73,228,0,511,0,,,0
+IDQN-queue,scenario S2,1,prybuzka_s2,3,74,226,0,518,1,nN_nC:1,1.0,0
+IDQN-queue,scenario S2,1,prybuzka_s2,4,73,228,0,511,0,,,0
+IDQN-queue,scenario S2,1,prybuzka_s2,5,76,223,0,532,0,,,0
+IDQN-queue,scenario S3,1,prybuzka_s3,1,57,257,0,399,75,nE_nC:37 nN_nC:10 nW_nC:28,0.867,0
+IDQN-queue,scenario S3,1,prybuzka_s3,2,75,224,0,525,2,nW_nC:2,1.0,0
+IDQN-queue,scenario S3,1,prybuzka_s3,3,61,250,0,427,73,nE_nC:31 nN_nC:9 nS_nC:6 nW_nC:27,0.795,0
+IDQN-queue,scenario S3,1,prybuzka_s3,4,70,234,0,490,4,nN_nC:1 nW_nC:3,1.0,0
+IDQN-queue,scenario S3,1,prybuzka_s3,5,80,215,0,560,0,,,0
+IDQN-queue,scenario S4,1,prybuzka_s4,1,33,300,0,231,119,nE_nC:31 nN_nC:29 nS_nC:26 nW_nC:33,0.538,1
+IDQN-queue,scenario S4,1,prybuzka_s4,2,58,255,0,406,76,nE_nC:29 nN_nC:10 nS_nC:9 nW_nC:28,0.75,0
+IDQN-queue,scenario S4,1,prybuzka_s4,3,66,241,0,462,24,nE_nC:3 nN_nC:7 nW_nC:14,0.875,0
+IDQN-queue,scenario S4,1,prybuzka_s4,4,73,228,0,511,1,nN_nC:1,1.0,0
+IDQN-queue,scenario S4,1,prybuzka_s4,5,73,228,0,511,18,nN_nC:5 nS_nC:4 nW_nC:9,0.778,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,1,63,246,0,441,36,nE_nC:1 nN_nC:10 nS_nC:8 nW_nC:17,0.75,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,2,65,242,0,455,57,nN_nC:28 nS_nC:28 nW_nC:1,0.982,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,3,71,232,0,497,19,nN_nC:8 nS_nC:2 nW_nC:9,0.895,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,4,69,235,0,483,14,nN_nC:7 nS_nC:2 nW_nC:5,0.857,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,5,45,278,0,315,119,nE_nC:33 nN_nC:28 nS_nC:26 nW_nC:32,0.546,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,6,69,235,0,483,14,nN_nC:13 nW_nC:1,1.0,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,7,74,226,0,518,1,nN_nC:1,1.0,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,8,67,239,0,469,21,nE_nC:1 nN_nC:10 nS_nC:2 nW_nC:8,0.857,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,9,67,239,0,469,1,nN_nC:1,1.0,0
+IDQN-queue,transfer x1.2,1,prybuzka_ho12,10,47,275,0,329,106,nE_nC:19 nN_nC:30 nS_nC:27 nW_nC:30,0.566,0
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,1,37,293,0,259,120,nE_nC:28 nN_nC:31 nS_nC:27 nW_nC:34,0.542,1
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,2,37,293,0,259,122,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:35,0.557,1
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,3,69,235,0,483,67,nN_nC:27 nS_nC:16 nW_nC:24,0.761,0
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,4,54,262,0,378,61,nN_nC:31 nS_nC:30,1.0,0
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,5,31,304,0,217,126,nE_nC:33 nN_nC:34 nS_nC:26 nW_nC:33,0.532,1
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,6,40,287,0,280,105,nE_nC:27 nN_nC:29 nS_nC:28 nW_nC:21,0.543,1
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,7,39,289,0,273,110,nE_nC:32 nN_nC:30 nS_nC:25 nW_nC:23,0.564,0
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,8,39,289,0,273,125,nE_nC:29 nN_nC:29 nS_nC:31 nW_nC:36,0.536,1
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,9,28,309,0,196,122,nE_nC:33 nN_nC:31 nS_nC:27 nW_nC:31,0.525,1
+IDQN-queue,transfer x1.5,1,prybuzka_ho15,10,38,291,0,266,112,nE_nC:23 nN_nC:28 nS_nC:27 nW_nC:34,0.554,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,1,59,253,0,413,7,nN_nC:3 nW_nC:4,1.0,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,2,55,260,0,385,22,nE_nC:3 nN_nC:12 nW_nC:7,0.864,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,3,55,260,0,385,0,,,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,4,52,266,0,364,23,nE_nC:9 nW_nC:14,1.0,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,5,54,262,0,378,0,,,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,6,51,268,0,357,13,nN_nC:2 nS_nC:1 nW_nC:10,0.923,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,7,56,259,0,392,22,nE_nC:8 nN_nC:1 nW_nC:13,0.955,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,8,56,259,0,392,10,nE_nC:2 nW_nC:8,1.0,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,9,57,257,0,399,12,nN_nC:8 nW_nC:4,1.0,0
+IDQN-queue,held-out x1.0,2,prybuzka_ho10,10,58,255,0,406,24,nE_nC:9 nW_nC:15,1.0,0
+IDQN-queue,scenario S1,2,prybuzka_s1,1,58,255,0,406,4,nE_nC:1 nN_nC:3,1.0,0
+IDQN-queue,scenario S1,2,prybuzka_s1,2,58,256,0,406,42,nE_nC:5 nN_nC:27 nW_nC:10,0.881,0
+IDQN-queue,scenario S1,2,prybuzka_s1,3,53,264,0,371,22,nN_nC:16 nW_nC:6,1.0,0
+IDQN-queue,scenario S1,2,prybuzka_s1,4,57,257,0,399,41,nE_nC:3 nN_nC:27 nW_nC:11,0.927,0
+IDQN-queue,scenario S1,2,prybuzka_s1,5,49,271,0,343,30,nN_nC:12 nS_nC:13 nW_nC:5,0.833,0
+IDQN-queue,scenario S2,2,prybuzka_s2,1,55,260,0,385,7,nN_nC:6 nW_nC:1,1.0,0
+IDQN-queue,scenario S2,2,prybuzka_s2,2,51,268,0,357,20,nE_nC:6 nN_nC:2 nW_nC:12,0.9,0
+IDQN-queue,scenario S2,2,prybuzka_s2,3,54,262,0,378,13,nN_nC:12 nW_nC:1,1.0,0
+IDQN-queue,scenario S2,2,prybuzka_s2,4,52,266,0,364,0,,,0
+IDQN-queue,scenario S2,2,prybuzka_s2,5,52,266,0,364,0,,,0
+IDQN-queue,scenario S3,2,prybuzka_s3,1,58,255,0,406,4,nW_nC:4,1.0,0
+IDQN-queue,scenario S3,2,prybuzka_s3,2,54,262,0,378,8,nE_nC:1 nW_nC:7,1.0,0
+IDQN-queue,scenario S3,2,prybuzka_s3,3,54,262,0,378,13,nE_nC:5 nW_nC:8,1.0,0
+IDQN-queue,scenario S3,2,prybuzka_s3,4,51,268,0,357,0,,,0
+IDQN-queue,scenario S3,2,prybuzka_s3,5,54,262,0,378,31,nE_nC:5 nN_nC:19 nW_nC:7,0.839,0
+IDQN-queue,scenario S4,2,prybuzka_s4,1,49,271,0,343,39,nE_nC:6 nN_nC:20 nW_nC:13,0.846,0
+IDQN-queue,scenario S4,2,prybuzka_s4,2,52,266,0,364,19,nE_nC:2 nN_nC:6 nW_nC:11,0.895,0
+IDQN-queue,scenario S4,2,prybuzka_s4,3,55,260,0,385,10,nE_nC:4 nW_nC:6,1.0,0
+IDQN-queue,scenario S4,2,prybuzka_s4,4,56,259,0,392,35,nN_nC:18 nW_nC:17,1.0,0
+IDQN-queue,scenario S4,2,prybuzka_s4,5,55,260,0,385,0,,,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,1,55,260,0,385,44,nN_nC:27 nS_nC:6 nW_nC:11,0.864,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,2,55,260,0,385,28,nE_nC:1 nN_nC:27,1.0,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,3,55,260,0,385,40,nE_nC:5 nN_nC:26 nW_nC:9,0.875,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,4,62,248,0,434,8,nN_nC:8,1.0,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,5,59,253,0,413,45,nE_nC:6 nN_nC:28 nW_nC:11,0.867,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,6,60,251,0,420,30,nN_nC:27 nW_nC:3,1.0,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,7,60,251,0,420,28,nN_nC:28,1.0,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,8,58,255,0,406,19,nN_nC:19,1.0,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,9,58,255,0,406,0,,,0
+IDQN-queue,transfer x1.2,2,prybuzka_ho12,10,57,257,0,399,16,nN_nC:16,1.0,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,1,12,338,0,84,100,nE_nC:24 nN_nC:27 nS_nC:24 nW_nC:25,0.52,1
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,2,58,255,0,406,31,nN_nC:12 nS_nC:15 nW_nC:4,0.871,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,3,60,251,0,420,27,nN_nC:14 nS_nC:12 nW_nC:1,0.963,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,4,60,251,0,420,67,nN_nC:29 nS_nC:26 nW_nC:12,0.821,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,5,56,259,0,392,76,nN_nC:30 nS_nC:28 nW_nC:18,0.763,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,6,55,260,0,385,91,nN_nC:33 nS_nC:32 nW_nC:26,0.714,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,7,56,259,0,392,21,nN_nC:11 nS_nC:10,1.0,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,8,61,250,0,427,31,nN_nC:15 nS_nC:16,1.0,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,9,61,250,0,427,59,nN_nC:24 nS_nC:19 nW_nC:16,0.729,0
+IDQN-queue,transfer x1.5,2,prybuzka_ho15,10,60,251,0,420,33,nN_nC:17 nS_nC:16,1.0,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,1,73,228,0,511,0,,,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,2,67,239,0,469,83,nE_nC:10 nN_nC:27 nS_nC:27 nW_nC:19,0.651,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,3,78,219,0,546,12,nN_nC:10 nW_nC:2,1.0,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,4,72,230,0,504,0,,,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,5,72,230,0,504,26,nE_nC:3 nN_nC:15 nS_nC:5 nW_nC:3,0.769,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,6,73,228,0,511,0,,,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,7,63,246,0,441,4,nN_nC:3 nW_nC:1,1.0,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,8,62,248,0,434,80,nN_nC:27 nS_nC:27 nW_nC:26,0.675,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,9,79,218,0,553,19,nN_nC:17 nS_nC:1 nW_nC:1,0.947,0
+IDQN-queue,held-out x1.0,3,prybuzka_ho10,10,72,230,0,504,17,nN_nC:11 nS_nC:4 nW_nC:2,0.882,0
+IDQN-queue,scenario S1,3,prybuzka_s1,1,79,217,0,553,32,nN_nC:21 nS_nC:11,1.0,0
+IDQN-queue,scenario S1,3,prybuzka_s1,2,66,241,0,462,15,nN_nC:13 nW_nC:2,1.0,0
+IDQN-queue,scenario S1,3,prybuzka_s1,3,71,232,0,497,13,nN_nC:11 nW_nC:2,1.0,0
+IDQN-queue,scenario S1,3,prybuzka_s1,4,68,237,0,476,49,nN_nC:33 nS_nC:16,1.0,0
+IDQN-queue,scenario S1,3,prybuzka_s1,5,73,228,0,511,33,nE_nC:3 nN_nC:23 nW_nC:7,0.909,0
+IDQN-queue,scenario S2,3,prybuzka_s2,1,66,241,0,462,0,,,0
+IDQN-queue,scenario S2,3,prybuzka_s2,2,72,230,0,504,1,nW_nC:1,1.0,0
+IDQN-queue,scenario S2,3,prybuzka_s2,3,72,230,0,504,13,nE_nC:1 nN_nC:12,1.0,0
+IDQN-queue,scenario S2,3,prybuzka_s2,4,66,241,0,462,1,nN_nC:1,1.0,0
+IDQN-queue,scenario S2,3,prybuzka_s2,5,70,233,0,490,0,,,0
+IDQN-queue,scenario S3,3,prybuzka_s3,1,69,235,0,483,24,nE_nC:3 nN_nC:13 nS_nC:1 nW_nC:7,0.833,0
+IDQN-queue,scenario S3,3,prybuzka_s3,2,73,228,0,511,31,nE_nC:4 nN_nC:16 nS_nC:2 nW_nC:9,0.806,0
+IDQN-queue,scenario S3,3,prybuzka_s3,3,78,219,0,546,1,nE_nC:1,1.0,0
+IDQN-queue,scenario S3,3,prybuzka_s3,4,68,237,0,476,63,nN_nC:33 nS_nC:30,1.0,0
+IDQN-queue,scenario S3,3,prybuzka_s3,5,83,210,0,581,1,nW_nC:1,1.0,0
+IDQN-queue,scenario S4,3,prybuzka_s4,1,64,244,0,448,19,nN_nC:16 nW_nC:3,1.0,0
+IDQN-queue,scenario S4,3,prybuzka_s4,2,71,232,0,497,7,nN_nC:4 nW_nC:3,1.0,0
+IDQN-queue,scenario S4,3,prybuzka_s4,3,61,250,0,427,0,,,0
+IDQN-queue,scenario S4,3,prybuzka_s4,4,70,233,0,490,42,nN_nC:37 nS_nC:5,1.0,0
+IDQN-queue,scenario S4,3,prybuzka_s4,5,45,278,0,315,83,nN_nC:32 nS_nC:33 nW_nC:18,0.783,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,1,61,250,0,427,46,nN_nC:25 nS_nC:18 nW_nC:3,0.935,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,2,65,242,0,455,57,nE_nC:2 nN_nC:27 nS_nC:27 nW_nC:1,0.947,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,3,75,225,0,525,25,nN_nC:23 nW_nC:2,1.0,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,4,69,235,0,483,13,nN_nC:11 nW_nC:2,1.0,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,5,71,232,0,497,19,nN_nC:19,1.0,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,6,53,264,0,371,78,nN_nC:26 nS_nC:27 nW_nC:25,0.679,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,7,72,230,0,504,28,nN_nC:24 nW_nC:4,1.0,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,8,68,237,0,476,59,nN_nC:34 nS_nC:25,1.0,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,9,69,235,0,483,8,nN_nC:8,1.0,0
+IDQN-queue,transfer x1.2,3,prybuzka_ho12,10,62,248,0,434,32,nN_nC:14 nS_nC:15 nW_nC:3,0.906,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,1,65,242,0,455,47,nN_nC:28 nS_nC:16 nW_nC:3,0.936,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,2,63,246,0,441,37,nN_nC:23 nS_nC:13 nW_nC:1,0.973,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,3,63,246,0,441,49,nN_nC:30 nS_nC:19,1.0,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,4,69,235,0,483,58,nN_nC:32 nS_nC:26,1.0,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,5,46,277,0,322,79,nN_nC:27 nS_nC:27 nW_nC:25,0.684,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,6,67,239,0,469,38,nN_nC:20 nS_nC:17 nW_nC:1,0.974,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,7,64,244,0,448,64,nN_nC:33 nS_nC:30 nW_nC:1,0.984,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,8,60,251,0,420,48,nN_nC:23 nS_nC:20 nW_nC:5,0.896,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,9,65,243,0,455,61,nN_nC:30 nS_nC:30 nW_nC:1,0.984,0
+IDQN-queue,transfer x1.5,3,prybuzka_ho15,10,49,271,0,343,54,nN_nC:10 nS_nC:14 nW_nC:30,0.815,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,1,44,280,0,308,71,nE_nC:32 nN_nC:4 nS_nC:2 nW_nC:33,0.915,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,2,49,271,0,343,72,nE_nC:34 nW_nC:38,1.0,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,3,52,266,0,364,67,nE_nC:31 nN_nC:2 nW_nC:34,0.97,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,4,52,266,0,364,57,nN_nC:30 nS_nC:27,1.0,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,5,52,266,0,364,78,nE_nC:32 nN_nC:4 nS_nC:2 nW_nC:40,0.923,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,6,30,305,0,210,111,nE_nC:26 nN_nC:27 nS_nC:33 nW_nC:25,0.541,1
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,7,45,278,0,315,55,nN_nC:27 nS_nC:27 nW_nC:1,0.982,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,8,50,269,0,350,11,nW_nC:11,1.0,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,9,56,259,0,392,51,nE_nC:18 nN_nC:12 nW_nC:21,0.765,0
+IDQN-queue,held-out x1.0,4,prybuzka_ho10,10,10,341,0,70,105,nE_nC:25 nN_nC:28 nS_nC:26 nW_nC:26,0.514,1
+IDQN-queue,scenario S1,4,prybuzka_s1,1,64,244,0,448,81,nE_nC:36 nN_nC:5 nW_nC:40,0.938,0
+IDQN-queue,scenario S1,4,prybuzka_s1,2,62,249,0,434,117,nE_nC:31 nN_nC:28 nS_nC:29 nW_nC:29,0.513,0
+IDQN-queue,scenario S1,4,prybuzka_s1,3,48,273,0,336,79,nE_nC:34 nN_nC:11 nS_nC:2 nW_nC:32,0.835,0
+IDQN-queue,scenario S1,4,prybuzka_s1,4,57,257,0,399,47,nE_nC:8 nN_nC:11 nS_nC:14 nW_nC:14,0.596,0
+IDQN-queue,scenario S1,4,prybuzka_s1,5,36,295,0,252,131,nE_nC:30 nN_nC:39 nS_nC:30 nW_nC:32,0.542,0
+IDQN-queue,scenario S2,4,prybuzka_s2,1,55,260,0,385,69,nE_nC:34 nN_nC:2 nW_nC:33,0.971,0
+IDQN-queue,scenario S2,4,prybuzka_s2,2,46,277,0,322,50,nE_nC:27 nN_nC:1 nW_nC:22,0.98,0
+IDQN-queue,scenario S2,4,prybuzka_s2,3,54,262,0,378,78,nE_nC:32 nN_nC:4 nS_nC:2 nW_nC:40,0.923,0
+IDQN-queue,scenario S2,4,prybuzka_s2,4,50,269,0,350,104,nE_nC:30 nN_nC:28 nS_nC:14 nW_nC:32,0.596,0
+IDQN-queue,scenario S2,4,prybuzka_s2,5,52,266,0,364,68,nE_nC:28 nN_nC:22 nW_nC:18,0.735,0
+IDQN-queue,scenario S3,4,prybuzka_s3,1,65,242,0,455,66,nE_nC:17 nN_nC:28 nW_nC:21,0.742,0
+IDQN-queue,scenario S3,4,prybuzka_s3,2,60,251,0,420,55,nN_nC:28 nS_nC:27,1.0,0
+IDQN-queue,scenario S3,4,prybuzka_s3,3,72,230,0,504,45,nE_nC:19 nW_nC:26,1.0,0
+IDQN-queue,scenario S3,4,prybuzka_s3,4,50,269,0,350,71,nE_nC:33 nN_nC:4 nS_nC:2 nW_nC:32,0.915,0
+IDQN-queue,scenario S3,4,prybuzka_s3,5,61,250,0,427,54,nE_nC:20 nN_nC:9 nW_nC:25,0.833,0
+IDQN-queue,scenario S4,4,prybuzka_s4,1,62,248,0,434,40,nE_nC:12 nW_nC:28,1.0,0
+IDQN-queue,scenario S4,4,prybuzka_s4,2,47,275,0,329,86,nE_nC:18 nN_nC:15 nS_nC:14 nW_nC:39,0.663,0
+IDQN-queue,scenario S4,4,prybuzka_s4,3,63,246,0,441,62,nE_nC:28 nN_nC:3 nW_nC:31,0.952,0
+IDQN-queue,scenario S4,4,prybuzka_s4,4,52,266,0,364,85,nE_nC:31 nN_nC:21 nW_nC:33,0.753,0
+IDQN-queue,scenario S4,4,prybuzka_s4,5,53,264,0,371,76,nE_nC:40 nW_nC:36,1.0,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,1,35,296,0,245,117,nE_nC:32 nN_nC:23 nS_nC:23 nW_nC:39,0.607,1
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,2,49,271,0,343,92,nE_nC:40 nN_nC:7 nS_nC:5 nW_nC:40,0.87,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,3,59,253,0,413,103,nE_nC:20 nN_nC:27 nS_nC:28 nW_nC:28,0.544,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,4,44,280,0,308,84,nE_nC:30 nN_nC:11 nS_nC:5 nW_nC:38,0.81,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,5,44,280,0,308,79,nE_nC:5 nN_nC:27 nS_nC:27 nW_nC:20,0.684,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,6,33,300,0,231,101,nE_nC:27 nN_nC:27 nS_nC:28 nW_nC:19,0.545,1
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,7,48,273,0,336,90,nE_nC:34 nN_nC:14 nS_nC:3 nW_nC:39,0.811,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,8,56,259,0,392,80,nE_nC:35 nN_nC:12 nW_nC:33,0.85,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,9,55,260,0,385,85,nE_nC:21 nN_nC:15 nS_nC:16 nW_nC:33,0.635,0
+IDQN-queue,transfer x1.2,4,prybuzka_ho12,10,54,263,0,378,78,nE_nC:24 nN_nC:31 nW_nC:23,0.705,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,1,48,273,0,336,108,nE_nC:31 nN_nC:29 nS_nC:15 nW_nC:33,0.593,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,2,62,248,0,434,89,nE_nC:12 nN_nC:36 nS_nC:27 nW_nC:14,0.708,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,3,66,241,0,462,114,nE_nC:36 nN_nC:20 nS_nC:18 nW_nC:40,0.667,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,4,56,259,0,392,122,nE_nC:30 nN_nC:30 nS_nC:28 nW_nC:34,0.525,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,5,47,275,0,329,55,nN_nC:27 nS_nC:27 nW_nC:1,0.982,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,6,58,255,0,406,103,nE_nC:28 nN_nC:24 nS_nC:18 nW_nC:33,0.592,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,7,56,259,0,392,103,nE_nC:39 nN_nC:18 nS_nC:10 nW_nC:36,0.728,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,8,56,259,0,392,123,nE_nC:34 nN_nC:26 nS_nC:26 nW_nC:37,0.577,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,9,53,265,0,371,124,nE_nC:39 nN_nC:30 nS_nC:27 nW_nC:28,0.556,0
+IDQN-queue,transfer x1.5,4,prybuzka_ho15,10,54,262,0,378,123,nE_nC:24 nN_nC:39 nS_nC:30 nW_nC:30,0.561,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,1,67,239,0,469,0,,,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,2,37,293,0,259,94,nE_nC:22 nN_nC:33 nS_nC:16 nW_nC:23,0.596,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,3,64,244,0,448,10,nN_nC:3 nS_nC:1 nW_nC:6,0.9,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,4,78,220,0,546,108,nE_nC:17 nN_nC:36 nS_nC:29 nW_nC:26,0.602,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,5,27,311,0,189,120,nE_nC:31 nN_nC:32 nS_nC:33 nW_nC:24,0.542,1
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,6,66,241,0,462,0,,,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,7,65,242,0,455,1,nW_nC:1,1.0,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,8,39,289,0,273,121,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:28,0.545,1
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,9,69,235,0,483,24,nN_nC:21 nW_nC:3,1.0,0
+IDQN-queue,held-out x1.0,5,prybuzka_ho10,10,45,278,0,315,84,nE_nC:25 nN_nC:20 nS_nC:12 nW_nC:27,0.619,0
+IDQN-queue,scenario S1,5,prybuzka_s1,1,21,322,0,147,116,nE_nC:24 nN_nC:33 nS_nC:33 nW_nC:26,0.569,1
+IDQN-queue,scenario S1,5,prybuzka_s1,2,44,280,0,308,119,nE_nC:30 nN_nC:32 nS_nC:32 nW_nC:25,0.538,1
+IDQN-queue,scenario S1,5,prybuzka_s1,3,54,262,0,378,63,nN_nC:33 nS_nC:17 nW_nC:13,0.794,0
+IDQN-queue,scenario S1,5,prybuzka_s1,4,26,313,0,182,112,nE_nC:19 nN_nC:33 nS_nC:33 nW_nC:27,0.589,1
+IDQN-queue,scenario S1,5,prybuzka_s1,5,35,296,0,245,117,nE_nC:22 nN_nC:33 nS_nC:34 nW_nC:28,0.573,1
+IDQN-queue,scenario S2,5,prybuzka_s2,1,62,249,0,434,2,nW_nC:2,1.0,0
+IDQN-queue,scenario S2,5,prybuzka_s2,2,59,253,0,413,14,nE_nC:1 nN_nC:12 nW_nC:1,0.929,0
+IDQN-queue,scenario S2,5,prybuzka_s2,3,58,255,0,406,1,nE_nC:1,1.0,0
+IDQN-queue,scenario S2,5,prybuzka_s2,4,27,311,0,189,83,nE_nC:19 nN_nC:20 nS_nC:17 nW_nC:27,0.566,1
+IDQN-queue,scenario S2,5,prybuzka_s2,5,9,343,0,63,121,nE_nC:29 nN_nC:34 nS_nC:32 nW_nC:26,0.545,1
+IDQN-queue,scenario S3,5,prybuzka_s3,1,45,278,0,315,84,nE_nC:29 nN_nC:19 nS_nC:11 nW_nC:25,0.643,0
+IDQN-queue,scenario S3,5,prybuzka_s3,2,46,277,0,322,101,nE_nC:25 nN_nC:30 nS_nC:18 nW_nC:28,0.574,0
+IDQN-queue,scenario S3,5,prybuzka_s3,3,60,252,0,420,15,nN_nC:9 nS_nC:6,1.0,0
+IDQN-queue,scenario S3,5,prybuzka_s3,4,48,273,0,336,93,nE_nC:27 nN_nC:25 nS_nC:15 nW_nC:26,0.57,0
+IDQN-queue,scenario S3,5,prybuzka_s3,5,34,298,0,238,109,nE_nC:24 nN_nC:32 nS_nC:25 nW_nC:28,0.55,0
+IDQN-queue,scenario S4,5,prybuzka_s4,1,55,260,0,385,75,nE_nC:3 nN_nC:33 nS_nC:19 nW_nC:20,0.707,0
+IDQN-queue,scenario S4,5,prybuzka_s4,2,48,273,0,336,106,nE_nC:25 nN_nC:34 nS_nC:18 nW_nC:29,0.594,0
+IDQN-queue,scenario S4,5,prybuzka_s4,3,72,230,0,504,103,nE_nC:15 nN_nC:28 nS_nC:33 nW_nC:27,0.592,1
+IDQN-queue,scenario S4,5,prybuzka_s4,4,31,304,0,217,112,nE_nC:20 nN_nC:33 nS_nC:33 nW_nC:26,0.589,1
+IDQN-queue,scenario S4,5,prybuzka_s4,5,43,282,0,301,125,nE_nC:26 nN_nC:34 nS_nC:32 nW_nC:33,0.536,0
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,1,43,282,0,301,101,nE_nC:8 nN_nC:33 nS_nC:33 nW_nC:27,0.653,0
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,2,44,280,0,308,118,nE_nC:25 nN_nC:32 nS_nC:31 nW_nC:30,0.534,0
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,3,13,336,0,91,119,nE_nC:16 nN_nC:39 nS_nC:39 nW_nC:25,0.655,1
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,4,72,230,0,504,105,nE_nC:17 nN_nC:35 nS_nC:26 nW_nC:27,0.59,0
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,5,24,316,0,168,117,nE_nC:22 nN_nC:34 nS_nC:33 nW_nC:28,0.573,1
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,6,16,331,0,112,123,nE_nC:29 nN_nC:34 nS_nC:33 nW_nC:27,0.545,1
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,7,37,293,0,259,109,nE_nC:25 nN_nC:34 nS_nC:23 nW_nC:27,0.56,0
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,8,28,309,0,196,117,nE_nC:25 nN_nC:34 nS_nC:33 nW_nC:25,0.573,1
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,9,69,235,0,483,108,nE_nC:16 nN_nC:31 nS_nC:34 nW_nC:27,0.602,1
+IDQN-queue,transfer x1.2,5,prybuzka_ho12,10,38,291,0,266,120,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:27,0.55,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,1,81,214,0,567,98,nE_nC:15 nN_nC:29 nS_nC:27 nW_nC:27,0.571,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,2,15,332,0,105,123,nE_nC:28 nN_nC:33 nS_nC:34 nW_nC:28,0.545,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,3,21,322,0,147,126,nE_nC:32 nN_nC:33 nS_nC:34 nW_nC:27,0.532,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,4,27,311,0,189,123,nE_nC:31 nN_nC:32 nS_nC:33 nW_nC:27,0.528,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,5,12,338,0,84,109,nE_nC:18 nN_nC:33 nS_nC:33 nW_nC:25,0.606,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,6,13,336,0,91,121,nE_nC:27 nN_nC:33 nS_nC:32 nW_nC:29,0.537,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,7,13,336,0,91,123,nE_nC:28 nN_nC:33 nS_nC:33 nW_nC:29,0.537,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,8,13,336,0,91,125,nE_nC:29 nN_nC:33 nS_nC:33 nW_nC:30,0.528,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,9,31,304,0,217,128,nE_nC:28 nN_nC:32 nS_nC:33 nW_nC:35,0.531,1
+IDQN-queue,transfer x1.5,5,prybuzka_ho15,10,19,325,0,133,126,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:30,0.524,1
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,1,64,244,0,448,61,nE_nC:23 nN_nC:13 nS_nC:1 nW_nC:24,0.77,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,2,82,212,0,574,75,nE_nC:26 nN_nC:23 nW_nC:26,0.693,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,3,87,203,0,609,21,nN_nC:10 nS_nC:10 nW_nC:1,0.952,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,4,90,198,0,630,23,nN_nC:11 nS_nC:12,1.0,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,5,63,246,0,441,75,nE_nC:26 nN_nC:20 nS_nC:6 nW_nC:23,0.653,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,6,72,230,0,504,42,nN_nC:24 nS_nC:14 nW_nC:4,0.905,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,7,95,188,0,665,26,nN_nC:11 nS_nC:10 nW_nC:5,0.808,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,8,83,210,0,581,29,nN_nC:17 nS_nC:9 nW_nC:3,0.897,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,9,63,246,0,441,63,nE_nC:28 nN_nC:8 nW_nC:27,0.873,0
+IDQN-queue,held-out x1.2,1,prybuzka_ho12,10,76,223,0,532,40,nN_nC:21 nS_nC:14 nW_nC:5,0.875,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,1,68,237,0,476,35,nN_nC:15 nS_nC:16 nW_nC:4,0.886,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,2,66,241,0,462,34,nN_nC:14 nS_nC:16 nW_nC:4,0.882,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,3,65,242,0,455,32,nN_nC:16 nS_nC:14 nW_nC:2,0.938,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,4,66,241,0,462,19,nN_nC:10 nS_nC:8 nW_nC:1,0.947,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,5,75,224,0,525,34,nN_nC:15 nS_nC:14 nW_nC:5,0.853,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,6,72,230,0,504,28,nN_nC:12 nS_nC:13 nW_nC:3,0.893,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,7,61,250,0,427,62,nN_nC:29 nS_nC:28 nW_nC:5,0.919,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,8,87,203,0,609,21,nN_nC:7 nS_nC:12 nW_nC:2,0.905,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,9,70,233,0,490,23,nN_nC:9 nS_nC:11 nW_nC:3,0.87,0
+IDQN-queue,held-out x1.2,2,prybuzka_ho12,10,67,239,0,469,27,nE_nC:1 nN_nC:11 nS_nC:9 nW_nC:6,0.741,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,1,56,259,0,392,118,nE_nC:29 nN_nC:32 nS_nC:33 nW_nC:24,0.551,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,2,54,262,0,378,84,nE_nC:25 nN_nC:14 nS_nC:18 nW_nC:27,0.619,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,3,49,271,0,343,120,nE_nC:28 nN_nC:33 nS_nC:32 nW_nC:27,0.542,1
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,4,65,242,0,455,98,nE_nC:10 nN_nC:33 nS_nC:31 nW_nC:24,0.653,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,5,57,257,0,399,117,nE_nC:27 nN_nC:32 nS_nC:31 nW_nC:27,0.538,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,6,64,244,0,448,114,nE_nC:23 nN_nC:34 nS_nC:30 nW_nC:27,0.561,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,7,57,257,0,399,126,nE_nC:27 nN_nC:34 nS_nC:33 nW_nC:32,0.532,1
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,8,61,250,0,427,109,nE_nC:22 nN_nC:33 nS_nC:33 nW_nC:21,0.606,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,9,49,271,0,343,123,nE_nC:28 nN_nC:34 nS_nC:33 nW_nC:28,0.545,0
+IDQN-queue,held-out x1.2,3,prybuzka_ho12,10,55,260,0,385,123,nE_nC:26 nN_nC:35 nS_nC:35 nW_nC:27,0.569,1
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,1,37,293,0,259,118,nE_nC:27 nN_nC:33 nS_nC:34 nW_nC:24,0.568,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,2,54,262,0,378,90,nE_nC:11 nN_nC:33 nS_nC:33 nW_nC:13,0.733,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,3,64,244,0,448,110,nE_nC:15 nN_nC:32 nS_nC:34 nW_nC:29,0.6,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,4,61,250,0,427,70,nE_nC:4 nN_nC:33 nS_nC:27 nW_nC:6,0.857,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,5,54,262,0,378,85,nE_nC:8 nN_nC:33 nS_nC:29 nW_nC:15,0.729,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,6,46,277,0,322,114,nE_nC:17 nN_nC:29 nS_nC:32 nW_nC:36,0.596,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,7,51,268,0,357,95,nE_nC:8 nN_nC:34 nS_nC:32 nW_nC:21,0.695,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,8,52,266,0,364,74,nE_nC:2 nN_nC:34 nS_nC:29 nW_nC:9,0.851,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,9,54,262,0,378,79,nE_nC:3 nN_nC:32 nS_nC:33 nW_nC:11,0.823,0
+IDQN-queue,held-out x1.2,4,prybuzka_ho12,10,60,252,0,420,76,nE_nC:3 nN_nC:35 nS_nC:27 nW_nC:11,0.816,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,1,68,237,0,476,43,nE_nC:1 nN_nC:23 nS_nC:17 nW_nC:2,0.93,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,2,52,265,0,364,59,nE_nC:1 nN_nC:30 nS_nC:27 nW_nC:1,0.966,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,3,58,255,0,406,60,nE_nC:2 nN_nC:29 nS_nC:28 nW_nC:1,0.95,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,4,66,240,0,462,75,nN_nC:34 nS_nC:39 nW_nC:2,0.973,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,5,69,234,0,483,22,nN_nC:11 nS_nC:9 nW_nC:2,0.909,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,6,64,243,0,448,56,nN_nC:29 nS_nC:27,1.0,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,7,63,245,0,441,61,nN_nC:33 nS_nC:28,1.0,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,8,53,263,0,371,32,nN_nC:18 nS_nC:12 nW_nC:2,0.938,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,9,64,243,0,448,60,nN_nC:32 nS_nC:28,1.0,0
+IDQN-queue,held-out x1.2,5,prybuzka_ho12,10,67,238,0,469,100,nE_nC:23 nN_nC:27 nS_nC:27 nW_nC:23,0.54,0
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,1,20,323,0,140,106,nE_nC:18 nN_nC:33 nS_nC:31 nW_nC:24,0.604,1
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,2,12,337,0,84,105,nE_nC:15 nN_nC:33 nS_nC:30 nW_nC:27,0.6,1
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,3,63,245,0,441,77,nE_nC:24 nN_nC:17 nS_nC:9 nW_nC:27,0.662,0
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,4,27,310,0,189,112,nE_nC:20 nN_nC:35 nS_nC:32 nW_nC:25,0.598,1
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,5,17,328,0,119,112,nE_nC:18 nN_nC:33 nS_nC:34 nW_nC:27,0.598,1
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,6,26,312,0,182,114,nE_nC:21 nN_nC:33 nS_nC:33 nW_nC:27,0.579,1
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,7,20,323,0,140,112,nE_nC:18 nN_nC:33 nS_nC:34 nW_nC:27,0.598,1
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,8,59,253,0,413,126,nE_nC:27 nN_nC:34 nS_nC:35 nW_nC:30,0.548,0
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,9,23,317,0,161,112,nE_nC:19 nN_nC:33 nS_nC:33 nW_nC:27,0.589,1
+IDQN-queue,held-out x1.5,1,prybuzka_ho15,10,9,342,0,63,109,nE_nC:16 nN_nC:34 nS_nC:33 nW_nC:26,0.615,1
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,1,70,233,0,490,35,nN_nC:21 nS_nC:14,1.0,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,2,59,253,0,413,74,nE_nC:1 nN_nC:21 nS_nC:23 nW_nC:29,0.703,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,3,71,232,0,497,59,nN_nC:27 nS_nC:25 nW_nC:7,0.881,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,4,62,248,0,434,17,nN_nC:9 nS_nC:8,1.0,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,5,70,233,0,490,35,nN_nC:15 nS_nC:11 nW_nC:9,0.743,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,6,50,269,0,350,100,nE_nC:29 nN_nC:27 nS_nC:25 nW_nC:19,0.56,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,7,61,250,0,427,56,nN_nC:27 nS_nC:26 nW_nC:3,0.946,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,8,64,244,0,448,76,nE_nC:36 nN_nC:8 nS_nC:4 nW_nC:28,0.842,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,9,70,233,0,490,101,nE_nC:15 nN_nC:28 nS_nC:28 nW_nC:30,0.574,0
+IDQN-queue,held-out x1.5,2,prybuzka_ho15,10,67,239,0,469,91,nE_nC:14 nN_nC:29 nS_nC:26 nW_nC:22,0.604,0
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,1,38,291,0,266,123,nE_nC:33 nN_nC:29 nS_nC:27 nW_nC:34,0.545,1
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,2,67,239,0,469,99,nE_nC:39 nN_nC:12 nS_nC:13 nW_nC:35,0.747,0
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,3,76,223,0,532,99,nE_nC:35 nN_nC:24 nW_nC:40,0.758,0
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,4,62,248,0,434,125,nE_nC:40 nN_nC:33 nS_nC:14 nW_nC:38,0.624,0
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,5,34,298,0,238,135,nE_nC:32 nN_nC:37 nS_nC:37 nW_nC:29,0.548,1
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,6,37,293,0,259,129,nE_nC:33 nN_nC:33 nS_nC:31 nW_nC:32,0.512,1
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,7,44,280,0,308,132,nE_nC:33 nN_nC:34 nS_nC:31 nW_nC:34,0.515,1
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,8,68,237,0,476,126,nE_nC:33 nN_nC:32 nS_nC:30 nW_nC:31,0.516,0
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,9,50,270,0,350,96,nE_nC:32 nN_nC:14 nS_nC:14 nW_nC:36,0.708,0
+IDQN-queue,held-out x1.5,3,prybuzka_ho15,10,59,253,0,413,118,nE_nC:33 nN_nC:29 nS_nC:27 nW_nC:29,0.525,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,1,95,188,0,665,104,nE_nC:27 nN_nC:27 nS_nC:24 nW_nC:26,0.519,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,2,47,275,0,329,59,nN_nC:27 nS_nC:27 nW_nC:5,0.915,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,3,73,229,0,511,95,nE_nC:26 nN_nC:30 nS_nC:15 nW_nC:24,0.589,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,4,33,300,0,231,71,nE_nC:5 nN_nC:27 nS_nC:25 nW_nC:14,0.732,1
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,5,59,253,0,413,114,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:27,0.526,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,6,41,286,0,287,66,nN_nC:27 nS_nC:27 nW_nC:12,0.818,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,7,48,273,0,336,75,nE_nC:1 nN_nC:28 nS_nC:27 nW_nC:19,0.733,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,8,62,248,0,434,72,nE_nC:3 nN_nC:27 nS_nC:27 nW_nC:15,0.75,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,9,92,194,0,644,98,nE_nC:28 nN_nC:26 nS_nC:17 nW_nC:27,0.561,0
+IDQN-queue,held-out x1.5,4,prybuzka_ho15,10,40,287,0,280,79,nE_nC:1 nN_nC:27 nS_nC:27 nW_nC:24,0.684,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,1,47,275,0,329,60,nN_nC:26 nS_nC:31 nW_nC:3,0.95,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,2,52,266,0,364,69,nN_nC:34 nS_nC:31 nW_nC:4,0.942,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,3,56,259,0,392,77,nN_nC:32 nS_nC:33 nW_nC:12,0.844,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,4,50,269,0,350,99,nE_nC:6 nN_nC:40 nS_nC:41 nW_nC:12,0.818,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,5,64,244,0,448,76,nE_nC:3 nN_nC:32 nS_nC:26 nW_nC:15,0.763,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,6,53,264,0,371,91,nE_nC:10 nN_nC:30 nS_nC:36 nW_nC:15,0.725,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,7,65,242,0,455,125,nE_nC:23 nN_nC:33 nS_nC:34 nW_nC:35,0.552,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,8,46,277,0,322,70,nN_nC:30 nS_nC:32 nW_nC:8,0.886,0
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,9,49,271,0,343,129,nE_nC:29 nN_nC:34 nS_nC:33 nW_nC:33,0.519,1
+IDQN-queue,held-out x1.5,5,prybuzka_ho15,10,60,251,0,420,115,nE_nC:27 nN_nC:31 nS_nC:24 nW_nC:33,0.557,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,1,82,213,0,574,114,nE_nC:24 nN_nC:32 nS_nC:31 nW_nC:27,0.553,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,2,89,200,0,623,119,nE_nC:28 nN_nC:31 nS_nC:32 nW_nC:28,0.529,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,3,88,201,0,616,114,nE_nC:23 nN_nC:34 nS_nC:29 nW_nC:28,0.553,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,4,78,219,0,546,119,nE_nC:25 nN_nC:33 nS_nC:34 nW_nC:27,0.563,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,5,114,155,0,798,125,nE_nC:34 nN_nC:32 nS_nC:29 nW_nC:30,0.528,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,6,117,149,0,819,117,nE_nC:23 nN_nC:29 nS_nC:39 nW_nC:26,0.581,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,7,106,169,0,742,118,nE_nC:30 nN_nC:31 nS_nC:31 nW_nC:26,0.525,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,8,95,188,0,665,130,nE_nC:27 nN_nC:40 nS_nC:36 nW_nC:27,0.585,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,9,100,179,0,700,114,nE_nC:21 nN_nC:33 nS_nC:32 nW_nC:28,0.57,0
+IDQN-wait,held-out x1.0,1,prybuzka_ho10,10,95,188,0,665,120,nE_nC:29 nN_nC:33 nS_nC:32 nW_nC:26,0.542,0
+IDQN-wait,scenario S1,1,prybuzka_s1,1,114,155,0,798,131,nE_nC:22 nN_nC:41 nS_nC:41 nW_nC:27,0.626,0
+IDQN-wait,scenario S1,1,prybuzka_s1,2,103,174,0,721,126,nE_nC:25 nN_nC:36 nS_nC:38 nW_nC:27,0.587,0
+IDQN-wait,scenario S1,1,prybuzka_s1,3,108,166,0,756,132,nE_nC:27 nN_nC:41 nS_nC:38 nW_nC:26,0.598,0
+IDQN-wait,scenario S1,1,prybuzka_s1,4,108,166,0,756,127,nE_nC:27 nN_nC:39 nS_nC:37 nW_nC:24,0.598,0
+IDQN-wait,scenario S1,1,prybuzka_s1,5,57,257,0,399,118,nE_nC:28 nN_nC:33 nS_nC:31 nW_nC:26,0.542,0
+IDQN-wait,scenario S2,1,prybuzka_s2,1,113,156,0,791,126,nE_nC:28 nN_nC:34 nS_nC:34 nW_nC:30,0.54,0
+IDQN-wait,scenario S2,1,prybuzka_s2,2,87,203,0,609,116,nE_nC:26 nN_nC:31 nS_nC:31 nW_nC:28,0.534,0
+IDQN-wait,scenario S2,1,prybuzka_s2,3,87,203,0,609,121,nE_nC:26 nN_nC:33 nS_nC:32 nW_nC:30,0.537,0
+IDQN-wait,scenario S2,1,prybuzka_s2,4,94,190,0,658,123,nE_nC:30 nN_nC:33 nS_nC:34 nW_nC:26,0.545,0
+IDQN-wait,scenario S2,1,prybuzka_s2,5,100,179,0,700,125,nE_nC:34 nN_nC:34 nS_nC:30 nW_nC:27,0.544,0
+IDQN-wait,scenario S3,1,prybuzka_s3,1,82,212,0,574,131,nE_nC:33 nN_nC:33 nS_nC:35 nW_nC:30,0.519,0
+IDQN-wait,scenario S3,1,prybuzka_s3,2,114,155,0,798,126,nE_nC:26 nN_nC:36 nS_nC:36 nW_nC:28,0.571,0
+IDQN-wait,scenario S3,1,prybuzka_s3,3,98,183,0,686,112,nE_nC:23 nN_nC:32 nS_nC:30 nW_nC:27,0.554,0
+IDQN-wait,scenario S3,1,prybuzka_s3,4,96,187,0,672,120,nE_nC:29 nN_nC:32 nS_nC:31 nW_nC:28,0.525,0
+IDQN-wait,scenario S3,1,prybuzka_s3,5,94,190,0,658,120,nE_nC:27 nN_nC:30 nS_nC:34 nW_nC:29,0.533,0
+IDQN-wait,scenario S4,1,prybuzka_s4,1,115,153,0,805,131,nE_nC:29 nN_nC:37 nS_nC:38 nW_nC:27,0.573,0
+IDQN-wait,scenario S4,1,prybuzka_s4,2,100,179,0,700,123,nE_nC:32 nN_nC:31 nS_nC:31 nW_nC:29,0.512,0
+IDQN-wait,scenario S4,1,prybuzka_s4,3,118,147,0,826,116,nE_nC:26 nN_nC:32 nS_nC:30 nW_nC:28,0.534,0
+IDQN-wait,scenario S4,1,prybuzka_s4,4,108,165,0,756,120,nE_nC:26 nN_nC:32 nS_nC:32 nW_nC:30,0.533,0
+IDQN-wait,scenario S4,1,prybuzka_s4,5,90,197,0,630,123,nE_nC:32 nN_nC:32 nS_nC:32 nW_nC:27,0.52,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,1,96,187,0,672,121,nE_nC:28 nN_nC:35 nS_nC:31 nW_nC:27,0.545,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,2,97,186,0,679,113,nE_nC:28 nN_nC:31 nS_nC:29 nW_nC:25,0.531,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,3,84,208,0,588,117,nE_nC:28 nN_nC:32 nS_nC:32 nW_nC:25,0.547,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,4,105,170,0,735,131,nE_nC:27 nN_nC:38 nS_nC:39 nW_nC:27,0.588,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,5,110,161,0,770,125,nE_nC:29 nN_nC:34 nS_nC:33 nW_nC:29,0.536,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,6,119,145,0,833,128,nE_nC:23 nN_nC:39 nS_nC:39 nW_nC:27,0.609,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,7,103,174,0,721,113,nE_nC:26 nN_nC:29 nS_nC:31 nW_nC:27,0.531,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,8,90,197,0,630,120,nE_nC:27 nN_nC:32 nS_nC:33 nW_nC:28,0.542,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,9,73,229,0,511,114,nE_nC:31 nN_nC:28 nS_nC:28 nW_nC:27,0.518,0
+IDQN-wait,transfer x1.2,1,prybuzka_ho12,10,84,208,0,588,124,nE_nC:29 nN_nC:32 nS_nC:32 nW_nC:31,0.516,1
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,1,92,194,0,644,135,nE_nC:27 nN_nC:41 nS_nC:40 nW_nC:27,0.6,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,2,90,197,0,630,115,nE_nC:26 nN_nC:31 nS_nC:31 nW_nC:27,0.539,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,3,108,166,0,756,134,nE_nC:29 nN_nC:41 nS_nC:38 nW_nC:26,0.59,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,4,111,160,0,777,126,nE_nC:25 nN_nC:41 nS_nC:35 nW_nC:25,0.603,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,5,122,141,0,854,140,nE_nC:35 nN_nC:39 nS_nC:40 nW_nC:26,0.564,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,6,103,174,0,721,119,nE_nC:28 nN_nC:34 nS_nC:36 nW_nC:21,0.588,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,7,96,187,0,672,130,nE_nC:28 nN_nC:37 nS_nC:39 nW_nC:26,0.585,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,8,99,182,0,693,138,nE_nC:37 nN_nC:36 nS_nC:38 nW_nC:27,0.543,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,9,127,131,0,889,125,nE_nC:25 nN_nC:32 nS_nC:41 nW_nC:27,0.584,0
+IDQN-wait,transfer x1.5,1,prybuzka_ho15,10,95,188,0,665,131,nE_nC:28 nN_nC:40 nS_nC:36 nW_nC:27,0.58,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,1,104,173,0,728,45,nN_nC:37 nS_nC:8,1.0,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,2,99,181,0,693,52,nE_nC:1 nN_nC:39 nS_nC:8 nW_nC:4,0.904,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,3,77,221,0,539,58,nN_nC:34 nS_nC:24,1.0,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,4,93,192,0,651,76,nN_nC:33 nS_nC:31 nW_nC:12,0.842,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,5,50,269,0,350,114,nE_nC:26 nN_nC:29 nS_nC:32 nW_nC:27,0.535,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,6,89,199,0,623,86,nN_nC:41 nS_nC:38 nW_nC:7,0.919,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,7,99,181,0,693,50,nN_nC:39 nS_nC:9 nW_nC:2,0.96,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,8,94,190,0,658,77,nN_nC:39 nS_nC:11 nW_nC:27,0.857,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,9,81,214,0,567,34,nN_nC:27 nS_nC:7,1.0,0
+IDQN-wait,held-out x1.0,2,prybuzka_ho10,10,83,210,0,581,71,nN_nC:40 nS_nC:31,1.0,0
+IDQN-wait,scenario S1,2,prybuzka_s1,1,40,287,0,280,120,nE_nC:27 nN_nC:32 nS_nC:34 nW_nC:27,0.55,0
+IDQN-wait,scenario S1,2,prybuzka_s1,2,36,295,0,252,118,nE_nC:27 nN_nC:33 nS_nC:32 nW_nC:26,0.551,1
+IDQN-wait,scenario S1,2,prybuzka_s1,3,42,284,0,294,132,nE_nC:40 nN_nC:34 nS_nC:33 nW_nC:25,0.561,1
+IDQN-wait,scenario S1,2,prybuzka_s1,4,89,199,0,623,90,nN_nC:29 nS_nC:28 nW_nC:33,0.689,0
+IDQN-wait,scenario S1,2,prybuzka_s1,5,44,280,0,308,117,nE_nC:24 nN_nC:35 nS_nC:33 nW_nC:25,0.581,1
+IDQN-wait,scenario S2,2,prybuzka_s2,1,87,203,0,609,51,nN_nC:35 nS_nC:11 nW_nC:5,0.902,0
+IDQN-wait,scenario S2,2,prybuzka_s2,2,45,278,0,315,118,nE_nC:27 nN_nC:33 nS_nC:31 nW_nC:27,0.542,0
+IDQN-wait,scenario S2,2,prybuzka_s2,3,83,210,0,581,84,nN_nC:32 nS_nC:23 nW_nC:29,0.726,0
+IDQN-wait,scenario S2,2,prybuzka_s2,4,44,280,0,308,131,nE_nC:37 nN_nC:32 nS_nC:33 nW_nC:29,0.534,0
+IDQN-wait,scenario S2,2,prybuzka_s2,5,88,201,0,616,74,nN_nC:38 nS_nC:9 nW_nC:27,0.878,0
+IDQN-wait,scenario S3,2,prybuzka_s3,1,48,273,0,336,116,nE_nC:28 nN_nC:32 nS_nC:29 nW_nC:27,0.526,1
+IDQN-wait,scenario S3,2,prybuzka_s3,2,79,217,0,553,55,nN_nC:39 nS_nC:7 nW_nC:9,0.873,0
+IDQN-wait,scenario S3,2,prybuzka_s3,3,59,253,0,413,118,nE_nC:26 nN_nC:30 nS_nC:34 nW_nC:28,0.542,0
+IDQN-wait,scenario S3,2,prybuzka_s3,4,65,242,0,455,124,nE_nC:37 nN_nC:29 nS_nC:32 nW_nC:26,0.556,0
+IDQN-wait,scenario S3,2,prybuzka_s3,5,87,203,0,609,70,nE_nC:1 nN_nC:33 nS_nC:31 nW_nC:5,0.914,0
+IDQN-wait,scenario S4,2,prybuzka_s4,1,41,286,0,287,118,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:25,0.559,1
+IDQN-wait,scenario S4,2,prybuzka_s4,2,46,277,0,322,115,nE_nC:24 nN_nC:32 nS_nC:32 nW_nC:27,0.557,1
+IDQN-wait,scenario S4,2,prybuzka_s4,3,49,271,0,343,132,nE_nC:37 nN_nC:34 nS_nC:33 nW_nC:28,0.538,0
+IDQN-wait,scenario S4,2,prybuzka_s4,4,56,259,0,392,117,nE_nC:25 nN_nC:31 nS_nC:34 nW_nC:27,0.556,0
+IDQN-wait,scenario S4,2,prybuzka_s4,5,53,264,0,371,115,nE_nC:27 nN_nC:33 nS_nC:30 nW_nC:25,0.548,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,1,49,271,0,343,117,nE_nC:28 nN_nC:32 nS_nC:30 nW_nC:27,0.53,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,2,80,215,0,560,105,nE_nC:14 nN_nC:33 nS_nC:36 nW_nC:22,0.657,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,3,93,193,0,651,76,nN_nC:34 nS_nC:36 nW_nC:6,0.921,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,4,50,269,0,350,132,nE_nC:37 nN_nC:30 nS_nC:31 nW_nC:34,0.538,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,5,53,264,0,371,116,nE_nC:29 nN_nC:33 nS_nC:32 nW_nC:22,0.56,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,6,87,203,0,609,96,nE_nC:3 nN_nC:37 nS_nC:29 nW_nC:27,0.688,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,7,47,275,0,329,120,nE_nC:28 nN_nC:31 nS_nC:34 nW_nC:27,0.542,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,8,80,215,0,560,50,nN_nC:11 nS_nC:15 nW_nC:24,0.78,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,9,86,205,0,602,102,nN_nC:36 nS_nC:36 nW_nC:30,0.706,0
+IDQN-wait,transfer x1.2,2,prybuzka_ho12,10,86,205,0,602,99,nE_nC:2 nN_nC:33 nS_nC:40 nW_nC:24,0.737,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,1,98,184,0,686,95,nE_nC:27 nN_nC:20 nS_nC:18 nW_nC:30,0.6,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,2,89,199,0,623,96,nE_nC:1 nN_nC:39 nS_nC:35 nW_nC:21,0.771,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,3,92,194,0,644,95,nN_nC:36 nS_nC:33 nW_nC:26,0.726,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,4,59,253,0,413,132,nE_nC:38 nN_nC:33 nS_nC:33 nW_nC:28,0.538,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,5,46,277,0,322,119,nE_nC:27 nN_nC:35 nS_nC:31 nW_nC:26,0.555,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,6,92,194,0,644,124,nE_nC:29 nN_nC:34 nS_nC:30 nW_nC:31,0.524,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,7,53,264,0,371,122,nE_nC:28 nN_nC:34 nS_nC:33 nW_nC:27,0.549,1
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,8,88,202,0,616,112,nE_nC:14 nN_nC:39 nS_nC:39 nW_nC:20,0.696,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,9,103,174,0,721,110,nE_nC:24 nN_nC:30 nS_nC:32 nW_nC:24,0.564,0
+IDQN-wait,transfer x1.5,2,prybuzka_ho15,10,55,260,0,385,115,nE_nC:27 nN_nC:31 nS_nC:31 nW_nC:26,0.539,0
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,1,24,316,0,168,117,nE_nC:27 nN_nC:31 nS_nC:31 nW_nC:28,0.53,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,2,22,320,0,154,117,nE_nC:26 nN_nC:31 nS_nC:34 nW_nC:26,0.556,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,3,37,293,0,259,134,nE_nC:26 nN_nC:41 nS_nC:40 nW_nC:27,0.604,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,4,28,309,0,196,130,nE_nC:27 nN_nC:40 nS_nC:37 nW_nC:26,0.592,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,5,26,313,0,182,119,nE_nC:26 nN_nC:33 nS_nC:33 nW_nC:27,0.555,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,6,28,309,0,196,118,nE_nC:25 nN_nC:34 nS_nC:31 nW_nC:28,0.551,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,7,23,318,0,161,116,nE_nC:27 nN_nC:32 nS_nC:30 nW_nC:27,0.534,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,8,17,329,0,119,119,nE_nC:27 nN_nC:32 nS_nC:33 nW_nC:27,0.546,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,9,23,318,0,161,116,nE_nC:26 nN_nC:33 nS_nC:33 nW_nC:24,0.569,1
+IDQN-wait,held-out x1.0,3,prybuzka_ho10,10,31,304,0,217,119,nE_nC:28 nN_nC:33 nS_nC:30 nW_nC:28,0.529,1
+IDQN-wait,scenario S1,3,prybuzka_s1,1,23,318,0,161,118,nE_nC:26 nN_nC:33 nS_nC:32 nW_nC:27,0.551,1
+IDQN-wait,scenario S1,3,prybuzka_s1,2,17,329,0,119,118,nE_nC:27 nN_nC:30 nS_nC:34 nW_nC:27,0.542,1
+IDQN-wait,scenario S1,3,prybuzka_s1,3,21,322,0,147,122,nE_nC:27 nN_nC:34 nS_nC:34 nW_nC:27,0.557,1
+IDQN-wait,scenario S1,3,prybuzka_s1,4,27,311,0,189,117,nE_nC:26 nN_nC:33 nS_nC:33 nW_nC:25,0.564,1
+IDQN-wait,scenario S1,3,prybuzka_s1,5,23,318,0,161,118,nE_nC:25 nN_nC:35 nS_nC:32 nW_nC:26,0.568,1
+IDQN-wait,scenario S2,3,prybuzka_s2,1,24,316,0,168,115,nE_nC:25 nN_nC:32 nS_nC:32 nW_nC:26,0.557,1
+IDQN-wait,scenario S2,3,prybuzka_s2,2,25,314,0,175,121,nE_nC:27 nN_nC:34 nS_nC:33 nW_nC:27,0.554,1
+IDQN-wait,scenario S2,3,prybuzka_s2,3,25,314,0,175,116,nE_nC:25 nN_nC:32 nS_nC:32 nW_nC:27,0.552,1
+IDQN-wait,scenario S2,3,prybuzka_s2,4,20,323,0,140,119,nE_nC:27 nN_nC:31 nS_nC:34 nW_nC:27,0.546,1
+IDQN-wait,scenario S2,3,prybuzka_s2,5,16,331,0,112,120,nE_nC:27 nN_nC:31 nS_nC:34 nW_nC:28,0.542,1
+IDQN-wait,scenario S3,3,prybuzka_s3,1,28,309,0,196,119,nE_nC:28 nN_nC:33 nS_nC:31 nW_nC:27,0.538,1
+IDQN-wait,scenario S3,3,prybuzka_s3,2,25,314,0,175,120,nE_nC:26 nN_nC:34 nS_nC:32 nW_nC:28,0.55,1
+IDQN-wait,scenario S3,3,prybuzka_s3,3,18,327,0,126,117,nE_nC:26 nN_nC:31 nS_nC:33 nW_nC:27,0.547,1
+IDQN-wait,scenario S3,3,prybuzka_s3,4,23,318,0,161,116,nE_nC:24 nN_nC:32 nS_nC:32 nW_nC:28,0.552,1
+IDQN-wait,scenario S3,3,prybuzka_s3,5,28,309,0,196,123,nE_nC:30 nN_nC:35 nS_nC:34 nW_nC:24,0.561,1
+IDQN-wait,scenario S4,3,prybuzka_s4,1,15,332,0,105,122,nE_nC:27 nN_nC:34 nS_nC:34 nW_nC:27,0.557,1
+IDQN-wait,scenario S4,3,prybuzka_s4,2,17,329,0,119,124,nE_nC:27 nN_nC:36 nS_nC:37 nW_nC:24,0.589,1
+IDQN-wait,scenario S4,3,prybuzka_s4,3,27,311,0,189,108,nE_nC:22 nN_nC:32 nS_nC:28 nW_nC:26,0.556,1
+IDQN-wait,scenario S4,3,prybuzka_s4,4,20,323,0,140,117,nE_nC:26 nN_nC:30 nS_nC:33 nW_nC:28,0.538,1
+IDQN-wait,scenario S4,3,prybuzka_s4,5,18,327,0,126,123,nE_nC:28 nN_nC:32 nS_nC:35 nW_nC:28,0.545,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,1,19,325,0,133,113,nE_nC:25 nN_nC:30 nS_nC:31 nW_nC:27,0.54,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,2,24,316,0,168,114,nE_nC:26 nN_nC:32 nS_nC:30 nW_nC:26,0.544,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,3,25,314,0,175,111,nE_nC:27 nN_nC:33 nS_nC:30 nW_nC:21,0.568,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,4,16,331,0,112,119,nE_nC:26 nN_nC:32 nS_nC:34 nW_nC:27,0.555,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,5,20,323,0,140,117,nE_nC:28 nN_nC:30 nS_nC:32 nW_nC:27,0.53,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,6,24,316,0,168,115,nE_nC:27 nN_nC:33 nS_nC:29 nW_nC:26,0.539,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,7,25,314,0,175,119,nE_nC:27 nN_nC:31 nS_nC:33 nW_nC:28,0.538,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,8,19,325,0,133,114,nE_nC:27 nN_nC:29 nS_nC:30 nW_nC:28,0.518,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,9,28,309,0,196,121,nE_nC:28 nN_nC:31 nS_nC:35 nW_nC:27,0.545,1
+IDQN-wait,transfer x1.2,3,prybuzka_ho12,10,17,329,0,119,118,nE_nC:27 nN_nC:32 nS_nC:32 nW_nC:27,0.542,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,1,10,341,0,70,116,nE_nC:28 nN_nC:29 nS_nC:32 nW_nC:27,0.526,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,2,16,331,0,112,104,nE_nC:16 nN_nC:30 nS_nC:30 nW_nC:28,0.577,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,3,12,338,0,84,118,nE_nC:27 nN_nC:31 nS_nC:32 nW_nC:28,0.534,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,4,15,332,0,105,115,nE_nC:26 nN_nC:30 nS_nC:33 nW_nC:26,0.548,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,5,24,316,0,168,116,nE_nC:27 nN_nC:32 nS_nC:32 nW_nC:25,0.552,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,6,19,325,0,133,113,nE_nC:25 nN_nC:29 nS_nC:31 nW_nC:28,0.531,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,7,20,323,0,140,115,nE_nC:27 nN_nC:30 nS_nC:32 nW_nC:26,0.539,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,8,20,323,0,140,115,nE_nC:27 nN_nC:30 nS_nC:31 nW_nC:27,0.53,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,9,23,318,0,161,118,nE_nC:27 nN_nC:32 nS_nC:32 nW_nC:27,0.542,1
+IDQN-wait,transfer x1.5,3,prybuzka_ho15,10,17,329,0,119,112,nE_nC:25 nN_nC:30 nS_nC:31 nW_nC:26,0.545,1
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,1,42,284,0,294,130,nE_nC:39 nN_nC:26 nS_nC:27 nW_nC:38,0.592,0
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,2,51,268,0,357,76,nE_nC:8 nN_nC:27 nS_nC:27 nW_nC:14,0.711,0
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,3,25,314,0,175,115,nE_nC:30 nN_nC:27 nS_nC:27 nW_nC:31,0.53,1
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,4,59,253,0,413,89,nE_nC:15 nN_nC:29 nS_nC:30 nW_nC:15,0.663,0
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,5,26,313,0,182,105,nE_nC:23 nN_nC:28 nS_nC:27 nW_nC:27,0.524,1
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,6,48,273,0,336,98,nE_nC:17 nN_nC:29 nS_nC:30 nW_nC:22,0.602,0
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,7,36,295,0,252,121,nE_nC:37 nN_nC:27 nS_nC:27 nW_nC:30,0.554,1
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,8,31,304,0,217,101,nE_nC:25 nN_nC:26 nS_nC:27 nW_nC:23,0.525,1
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,9,54,262,0,378,92,nE_nC:15 nN_nC:27 nS_nC:28 nW_nC:22,0.598,0
+IDQN-wait,held-out x1.0,4,prybuzka_ho10,10,24,316,0,168,115,nE_nC:34 nN_nC:27 nS_nC:26 nW_nC:28,0.539,1
+IDQN-wait,scenario S1,4,prybuzka_s1,1,48,273,0,336,83,nE_nC:11 nN_nC:27 nS_nC:30 nW_nC:15,0.687,0
+IDQN-wait,scenario S1,4,prybuzka_s1,2,20,323,0,140,104,nE_nC:26 nN_nC:27 nS_nC:27 nW_nC:24,0.519,1
+IDQN-wait,scenario S1,4,prybuzka_s1,3,34,298,0,238,103,nE_nC:21 nN_nC:27 nS_nC:29 nW_nC:26,0.544,1
+IDQN-wait,scenario S1,4,prybuzka_s1,4,52,266,0,364,80,nE_nC:9 nN_nC:27 nS_nC:27 nW_nC:17,0.675,0
+IDQN-wait,scenario S1,4,prybuzka_s1,5,26,313,0,182,108,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:27,0.5,1
+IDQN-wait,scenario S2,4,prybuzka_s2,1,34,298,0,238,107,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:26,0.505,1
+IDQN-wait,scenario S2,4,prybuzka_s2,2,42,284,0,294,59,nN_nC:28 nS_nC:27 nW_nC:4,0.932,0
+IDQN-wait,scenario S2,4,prybuzka_s2,3,21,322,0,147,116,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:29,0.534,1
+IDQN-wait,scenario S2,4,prybuzka_s2,4,30,305,0,210,102,nE_nC:23 nN_nC:27 nS_nC:27 nW_nC:25,0.529,1
+IDQN-wait,scenario S2,4,prybuzka_s2,5,42,284,0,294,134,nE_nC:39 nN_nC:28 nS_nC:27 nW_nC:40,0.59,0
+IDQN-wait,scenario S3,4,prybuzka_s3,1,29,307,0,203,125,nE_nC:37 nN_nC:27 nS_nC:28 nW_nC:33,0.56,1
+IDQN-wait,scenario S3,4,prybuzka_s3,2,46,277,0,322,98,nE_nC:21 nN_nC:27 nS_nC:26 nW_nC:24,0.541,1
+IDQN-wait,scenario S3,4,prybuzka_s3,3,51,268,0,357,107,nE_nC:26 nN_nC:27 nS_nC:27 nW_nC:27,0.505,1
+IDQN-wait,scenario S3,4,prybuzka_s3,4,49,271,0,343,102,nE_nC:25 nN_nC:28 nS_nC:27 nW_nC:22,0.539,1
+IDQN-wait,scenario S3,4,prybuzka_s3,5,49,271,0,343,106,nE_nC:26 nN_nC:30 nS_nC:26 nW_nC:24,0.528,1
+IDQN-wait,scenario S4,4,prybuzka_s4,1,36,295,0,252,104,nE_nC:26 nN_nC:27 nS_nC:26 nW_nC:25,0.51,1
+IDQN-wait,scenario S4,4,prybuzka_s4,2,65,242,0,455,94,nE_nC:40 nN_nC:10 nS_nC:14 nW_nC:30,0.745,1
+IDQN-wait,scenario S4,4,prybuzka_s4,3,10,341,0,70,110,nE_nC:14 nN_nC:35 nS_nC:34 nW_nC:27,0.627,1
+IDQN-wait,scenario S4,4,prybuzka_s4,4,50,269,0,350,123,nE_nC:31 nN_nC:27 nS_nC:27 nW_nC:38,0.561,0
+IDQN-wait,scenario S4,4,prybuzka_s4,5,37,293,0,259,93,nE_nC:19 nN_nC:28 nS_nC:25 nW_nC:21,0.57,1
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,1,25,314,0,175,101,nE_nC:24 nN_nC:26 nS_nC:27 nW_nC:24,0.525,1
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,2,32,302,0,224,130,nE_nC:37 nN_nC:27 nS_nC:27 nW_nC:39,0.585,0
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,3,24,316,0,168,106,nE_nC:26 nN_nC:26 nS_nC:27 nW_nC:27,0.509,1
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,4,47,275,0,329,125,nE_nC:38 nN_nC:28 nS_nC:24 nW_nC:35,0.584,0
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,5,37,293,0,259,132,nE_nC:39 nN_nC:27 nS_nC:26 nW_nC:40,0.598,0
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,6,59,253,0,413,116,nE_nC:30 nN_nC:27 nS_nC:27 nW_nC:32,0.534,1
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,7,31,304,0,217,112,nE_nC:29 nN_nC:27 nS_nC:25 nW_nC:31,0.536,1
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,8,34,298,0,238,129,nE_nC:34 nN_nC:28 nS_nC:27 nW_nC:40,0.574,1
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,9,39,289,0,273,132,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:39,0.591,0
+IDQN-wait,transfer x1.2,4,prybuzka_ho12,10,44,280,0,308,104,nE_nC:24 nN_nC:28 nS_nC:27 nW_nC:25,0.529,1
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,1,45,279,0,315,131,nE_nC:38 nN_nC:27 nS_nC:27 nW_nC:39,0.588,0
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,2,45,278,0,315,117,nE_nC:30 nN_nC:27 nS_nC:26 nW_nC:34,0.547,0
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,3,45,279,0,315,135,nE_nC:41 nN_nC:27 nS_nC:28 nW_nC:39,0.593,1
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,4,32,302,0,224,133,nE_nC:40 nN_nC:27 nS_nC:26 nW_nC:40,0.602,1
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,5,27,311,0,189,103,nE_nC:23 nN_nC:27 nS_nC:29 nW_nC:24,0.544,1
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,6,45,278,0,315,131,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:38,0.588,1
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,7,14,334,0,98,103,nE_nC:26 nN_nC:27 nS_nC:26 nW_nC:24,0.515,1
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,8,58,255,0,406,115,nE_nC:31 nN_nC:27 nS_nC:27 nW_nC:30,0.53,0
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,9,18,327,0,126,109,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:28,0.505,1
+IDQN-wait,transfer x1.5,4,prybuzka_ho15,10,36,295,0,252,127,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:34,0.575,0
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,1,70,233,0,490,113,nE_nC:32 nN_nC:27 nS_nC:27 nW_nC:27,0.522,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,2,44,280,0,308,126,nE_nC:41 nN_nC:27 nS_nC:27 nW_nC:31,0.571,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,3,41,286,0,287,129,nE_nC:37 nN_nC:27 nS_nC:26 nW_nC:39,0.589,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,4,14,334,0,98,125,nE_nC:37 nN_nC:26 nS_nC:26 nW_nC:36,0.584,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,5,18,327,0,126,119,nE_nC:34 nN_nC:27 nS_nC:27 nW_nC:31,0.546,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,6,61,250,0,427,130,nE_nC:38 nN_nC:27 nS_nC:27 nW_nC:38,0.585,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,7,20,323,0,140,127,nE_nC:40 nN_nC:27 nS_nC:27 nW_nC:33,0.575,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,8,64,244,0,448,133,nE_nC:40 nN_nC:27 nS_nC:26 nW_nC:40,0.602,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,9,27,311,0,189,133,nE_nC:41 nN_nC:27 nS_nC:27 nW_nC:38,0.594,1
+IDQN-wait,held-out x1.0,5,prybuzka_ho10,10,20,323,0,140,134,nE_nC:40 nN_nC:26 nS_nC:27 nW_nC:41,0.604,1
+IDQN-wait,scenario S1,5,prybuzka_s1,1,17,329,0,119,128,nE_nC:37 nN_nC:26 nS_nC:26 nW_nC:39,0.594,1
+IDQN-wait,scenario S1,5,prybuzka_s1,2,39,289,0,273,130,nE_nC:39 nN_nC:27 nS_nC:25 nW_nC:39,0.6,1
+IDQN-wait,scenario S1,5,prybuzka_s1,3,49,271,0,343,103,nE_nC:25 nN_nC:27 nS_nC:27 nW_nC:24,0.524,1
+IDQN-wait,scenario S1,5,prybuzka_s1,4,26,313,0,182,134,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:41,0.597,1
+IDQN-wait,scenario S1,5,prybuzka_s1,5,21,322,0,147,136,nE_nC:42 nN_nC:27 nS_nC:27 nW_nC:40,0.603,1
+IDQN-wait,scenario S2,5,prybuzka_s2,1,22,320,0,154,126,nE_nC:33 nN_nC:27 nS_nC:28 nW_nC:38,0.563,1
+IDQN-wait,scenario S2,5,prybuzka_s2,2,27,311,0,189,132,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:39,0.591,1
+IDQN-wait,scenario S2,5,prybuzka_s2,3,40,287,0,280,106,nE_nC:27 nN_nC:27 nS_nC:26 nW_nC:26,0.509,1
+IDQN-wait,scenario S2,5,prybuzka_s2,4,30,305,0,210,130,nE_nC:40 nN_nC:26 nS_nC:27 nW_nC:37,0.592,1
+IDQN-wait,scenario S2,5,prybuzka_s2,5,45,278,0,315,101,nE_nC:21 nN_nC:27 nS_nC:26 nW_nC:27,0.535,1
+IDQN-wait,scenario S3,5,prybuzka_s3,1,47,275,0,329,123,nE_nC:35 nN_nC:27 nS_nC:27 nW_nC:34,0.561,1
+IDQN-wait,scenario S3,5,prybuzka_s3,2,56,259,0,392,112,nE_nC:30 nN_nC:27 nS_nC:25 nW_nC:30,0.536,1
+IDQN-wait,scenario S3,5,prybuzka_s3,3,43,282,0,301,115,nE_nC:31 nN_nC:27 nS_nC:26 nW_nC:31,0.539,1
+IDQN-wait,scenario S3,5,prybuzka_s3,4,59,253,0,413,128,nE_nC:35 nN_nC:27 nS_nC:27 nW_nC:39,0.578,1
+IDQN-wait,scenario S3,5,prybuzka_s3,5,55,260,0,385,130,nE_nC:38 nN_nC:27 nS_nC:26 nW_nC:39,0.592,1
+IDQN-wait,scenario S4,5,prybuzka_s4,1,22,320,0,154,132,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:39,0.591,1
+IDQN-wait,scenario S4,5,prybuzka_s4,2,22,320,0,154,131,nE_nC:39 nN_nC:26 nS_nC:27 nW_nC:39,0.595,1
+IDQN-wait,scenario S4,5,prybuzka_s4,3,23,318,0,161,128,nE_nC:38 nN_nC:27 nS_nC:26 nW_nC:37,0.586,1
+IDQN-wait,scenario S4,5,prybuzka_s4,4,19,325,0,133,127,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:34,0.575,1
+IDQN-wait,scenario S4,5,prybuzka_s4,5,21,322,0,147,131,nE_nC:39 nN_nC:27 nS_nC:26 nW_nC:39,0.595,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,1,15,332,0,105,126,nE_nC:35 nN_nC:27 nS_nC:24 nW_nC:40,0.595,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,2,14,334,0,98,134,nE_nC:40 nN_nC:27 nS_nC:27 nW_nC:40,0.597,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,3,17,329,0,119,133,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:40,0.594,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,4,50,269,0,350,96,nE_nC:18 nN_nC:27 nS_nC:25 nW_nC:26,0.552,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,5,49,271,0,343,106,nE_nC:27 nN_nC:27 nS_nC:25 nW_nC:27,0.509,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,6,45,278,0,315,103,nE_nC:22 nN_nC:27 nS_nC:27 nW_nC:27,0.524,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,7,18,327,0,126,131,nE_nC:39 nN_nC:27 nS_nC:26 nW_nC:39,0.595,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,8,45,278,0,315,99,nE_nC:19 nN_nC:27 nS_nC:27 nW_nC:26,0.545,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,9,42,284,0,294,107,nE_nC:26 nN_nC:27 nS_nC:27 nW_nC:27,0.505,1
+IDQN-wait,transfer x1.2,5,prybuzka_ho12,10,17,329,0,119,131,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:38,0.588,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,1,24,316,0,168,132,nE_nC:39 nN_nC:26 nS_nC:28 nW_nC:39,0.591,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,2,15,332,0,105,132,nE_nC:41 nN_nC:27 nS_nC:25 nW_nC:39,0.606,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,3,12,338,0,84,129,nE_nC:36 nN_nC:27 nS_nC:27 nW_nC:39,0.581,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,4,20,323,0,140,130,nE_nC:39 nN_nC:27 nS_nC:26 nW_nC:38,0.592,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,5,16,331,0,112,133,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:40,0.594,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,6,28,309,0,196,131,nE_nC:38 nN_nC:27 nS_nC:27 nW_nC:39,0.588,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,7,14,334,0,98,131,nE_nC:39 nN_nC:26 nS_nC:27 nW_nC:39,0.595,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,8,43,282,0,301,107,nE_nC:27 nN_nC:27 nS_nC:27 nW_nC:26,0.505,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,9,15,332,0,105,133,nE_nC:39 nN_nC:27 nS_nC:27 nW_nC:40,0.594,1
+IDQN-wait,transfer x1.5,5,prybuzka_ho15,10,16,331,0,112,124,nE_nC:40 nN_nC:26 nS_nC:25 nW_nC:33,0.589,1
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,1,91,196,0,637,82,nN_nC:38 nS_nC:34 nW_nC:10,0.878,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,2,66,241,0,462,79,nE_nC:7 nN_nC:35 nS_nC:27 nW_nC:10,0.785,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,3,71,232,0,497,92,nE_nC:12 nN_nC:36 nS_nC:26 nW_nC:18,0.674,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,4,71,232,0,497,87,nE_nC:10 nN_nC:35 nS_nC:29 nW_nC:13,0.736,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,5,84,208,0,588,86,nE_nC:8 nN_nC:35 nS_nC:29 nW_nC:14,0.744,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,6,82,212,0,574,81,nE_nC:3 nN_nC:38 nS_nC:30 nW_nC:10,0.84,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,7,77,221,0,539,94,nE_nC:10 nN_nC:36 nS_nC:29 nW_nC:19,0.691,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,8,81,214,0,567,85,nE_nC:9 nN_nC:34 nS_nC:29 nW_nC:13,0.741,0
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,9,50,269,0,350,130,nE_nC:33 nN_nC:36 nS_nC:29 nW_nC:32,0.531,1
+IDQN-wait,held-out x1.2,1,prybuzka_ho12,10,85,207,0,595,83,nE_nC:11 nN_nC:35 nS_nC:29 nW_nC:8,0.771,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,1,69,235,0,483,42,nN_nC:11 nS_nC:14 nW_nC:17,0.738,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,2,67,239,0,469,70,nE_nC:8 nN_nC:25 nS_nC:12 nW_nC:25,0.714,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,3,56,259,0,392,52,nN_nC:18 nS_nC:10 nW_nC:24,0.808,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,4,65,242,0,455,24,nN_nC:11 nS_nC:13,1.0,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,5,50,269,0,350,64,nN_nC:21 nS_nC:18 nW_nC:25,0.719,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,6,71,232,0,497,53,nN_nC:16 nS_nC:18 nW_nC:19,0.698,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,7,66,241,0,462,44,nN_nC:18 nS_nC:20 nW_nC:6,0.864,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,8,64,244,0,448,45,nN_nC:14 nS_nC:13 nW_nC:18,0.711,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,9,62,248,0,434,78,nN_nC:34 nS_nC:27 nW_nC:17,0.782,0
+IDQN-wait,held-out x1.2,2,prybuzka_ho12,10,52,266,0,364,79,nN_nC:35 nS_nC:38 nW_nC:6,0.924,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,1,72,230,0,504,113,nE_nC:33 nN_nC:28 nS_nC:26 nW_nC:26,0.54,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,2,83,211,0,581,73,nE_nC:4 nN_nC:35 nS_nC:32 nW_nC:2,0.918,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,3,85,206,0,595,80,nE_nC:2 nN_nC:39 nS_nC:34 nW_nC:5,0.912,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,4,89,200,0,623,110,nE_nC:22 nN_nC:34 nS_nC:27 nW_nC:27,0.555,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,5,85,206,0,595,80,nN_nC:37 nS_nC:37 nW_nC:6,0.925,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,6,77,221,0,539,109,nE_nC:27 nN_nC:31 nS_nC:29 nW_nC:22,0.55,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,7,86,205,0,602,64,nN_nC:30 nS_nC:33 nW_nC:1,0.984,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,8,83,210,0,581,72,nN_nC:36 nS_nC:33 nW_nC:3,0.958,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,9,78,219,0,546,120,nE_nC:27 nN_nC:33 nS_nC:31 nW_nC:29,0.533,0
+IDQN-wait,held-out x1.2,3,prybuzka_ho12,10,30,305,0,210,114,nE_nC:22 nN_nC:34 nS_nC:32 nW_nC:26,0.579,1
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,1,60,251,0,420,112,nE_nC:18 nN_nC:32 nS_nC:35 nW_nC:27,0.598,1
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,2,82,212,0,574,61,nE_nC:27 nN_nC:6 nS_nC:1 nW_nC:27,0.885,0
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,3,96,187,0,672,105,nE_nC:19 nN_nC:30 nS_nC:30 nW_nC:26,0.571,1
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,4,76,223,0,532,64,nE_nC:27 nN_nC:11 nW_nC:26,0.828,0
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,5,86,205,0,602,58,nE_nC:27 nN_nC:5 nW_nC:26,0.914,0
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,6,39,289,0,273,113,nE_nC:18 nN_nC:33 nS_nC:37 nW_nC:25,0.619,1
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,7,53,264,0,371,116,nE_nC:18 nN_nC:36 nS_nC:35 nW_nC:27,0.612,1
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,8,89,199,0,623,107,nE_nC:19 nN_nC:32 nS_nC:30 nW_nC:26,0.579,1
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,9,89,199,0,623,59,nE_nC:27 nN_nC:5 nS_nC:1 nW_nC:26,0.898,0
+IDQN-wait,held-out x1.2,4,prybuzka_ho12,10,87,203,0,609,96,nE_nC:19 nN_nC:34 nS_nC:16 nW_nC:27,0.635,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,1,10,341,0,70,125,nE_nC:29 nN_nC:28 nS_nC:28 nW_nC:40,0.552,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,2,5,350,0,35,112,nE_nC:24 nN_nC:27 nS_nC:27 nW_nC:34,0.545,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,3,18,327,0,126,115,nE_nC:27 nN_nC:28 nS_nC:26 nW_nC:34,0.539,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,4,12,338,0,84,121,nE_nC:30 nN_nC:27 nS_nC:27 nW_nC:37,0.554,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,5,46,277,0,322,120,nE_nC:35 nN_nC:27 nS_nC:27 nW_nC:31,0.55,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,6,10,341,0,70,118,nE_nC:24 nN_nC:27 nS_nC:28 nW_nC:39,0.568,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,7,8,345,0,56,115,nE_nC:25 nN_nC:27 nS_nC:26 nW_nC:37,0.557,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,8,11,340,0,77,119,nE_nC:27 nN_nC:26 nS_nC:28 nW_nC:38,0.555,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,9,4,352,0,28,105,nE_nC:20 nN_nC:27 nS_nC:27 nW_nC:31,0.552,1
+IDQN-wait,held-out x1.2,5,prybuzka_ho12,10,12,338,0,84,112,nE_nC:24 nN_nC:27 nS_nC:28 nW_nC:33,0.545,1
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,1,40,287,0,280,108,nE_nC:2 nN_nC:41 nS_nC:39 nW_nC:26,0.741,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,2,50,269,0,350,115,nE_nC:16 nN_nC:41 nS_nC:38 nW_nC:20,0.687,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,3,43,282,0,301,135,nE_nC:27 nN_nC:41 nS_nC:40 nW_nC:27,0.6,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,4,46,277,0,322,105,nE_nC:6 nN_nC:40 nS_nC:33 nW_nC:26,0.695,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,5,46,277,0,322,131,nE_nC:24 nN_nC:40 nS_nC:39 nW_nC:28,0.603,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,6,40,287,0,280,127,nE_nC:22 nN_nC:39 nS_nC:38 nW_nC:28,0.606,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,7,44,280,0,308,135,nE_nC:28 nN_nC:40 nS_nC:40 nW_nC:27,0.593,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,8,43,282,0,301,121,nE_nC:25 nN_nC:35 nS_nC:34 nW_nC:27,0.57,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,9,40,287,0,280,129,nE_nC:23 nN_nC:40 nS_nC:39 nW_nC:27,0.612,0
+IDQN-wait,held-out x1.5,1,prybuzka_ho15,10,44,280,0,308,112,nE_nC:9 nN_nC:40 nS_nC:36 nW_nC:27,0.679,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,1,135,116,0,945,107,nE_nC:40 nN_nC:27 nW_nC:40,0.748,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,2,112,158,0,784,99,nE_nC:35 nN_nC:28 nW_nC:36,0.717,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,3,142,104,0,994,118,nE_nC:42 nN_nC:19 nS_nC:16 nW_nC:41,0.703,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,4,145,98,0,1015,111,nE_nC:42 nN_nC:12 nS_nC:17 nW_nC:40,0.739,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,5,130,125,0,910,108,nE_nC:39 nN_nC:27 nW_nC:42,0.75,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,6,137,114,0,959,116,nE_nC:42 nN_nC:14 nS_nC:20 nW_nC:40,0.707,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,7,149,91,0,1043,127,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:40,0.575,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,8,126,133,0,882,104,nE_nC:40 nN_nC:24 nW_nC:40,0.769,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,9,132,123,0,924,99,nE_nC:40 nN_nC:11 nS_nC:11 nW_nC:37,0.778,0
+IDQN-wait,held-out x1.5,2,prybuzka_ho15,10,86,205,0,602,124,nE_nC:30 nN_nC:32 nS_nC:30 nW_nC:32,0.516,0
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,1,35,296,0,245,142,nE_nC:32 nN_nC:38 nS_nC:39 nW_nC:33,0.542,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,2,35,296,0,245,133,nE_nC:32 nN_nC:31 nS_nC:38 nW_nC:32,0.526,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,3,47,275,0,329,134,nE_nC:30 nN_nC:32 nS_nC:41 nW_nC:31,0.545,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,4,33,300,0,231,149,nE_nC:33 nN_nC:41 nS_nC:41 nW_nC:34,0.55,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,5,59,253,0,413,135,nE_nC:32 nN_nC:34 nS_nC:39 nW_nC:30,0.541,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,6,39,289,0,273,125,nE_nC:33 nN_nC:33 nS_nC:29 nW_nC:30,0.528,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,7,41,286,0,287,133,nE_nC:32 nN_nC:36 nS_nC:38 nW_nC:27,0.556,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,8,41,286,0,287,127,nE_nC:30 nN_nC:33 nS_nC:32 nW_nC:32,0.512,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,9,23,318,0,161,143,nE_nC:33 nN_nC:40 nS_nC:39 nW_nC:31,0.552,1
+IDQN-wait,held-out x1.5,3,prybuzka_ho15,10,55,260,0,385,127,nE_nC:31 nN_nC:33 nS_nC:32 nW_nC:31,0.512,1
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,1,144,100,0,1008,137,nE_nC:31 nN_nC:40 nS_nC:39 nW_nC:27,0.577,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,2,145,98,0,1015,127,nE_nC:27 nN_nC:40 nS_nC:34 nW_nC:26,0.583,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,3,127,132,0,889,120,nE_nC:26 nN_nC:31 nS_nC:36 nW_nC:27,0.558,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,4,120,143,0,840,120,nE_nC:27 nN_nC:31 nS_nC:34 nW_nC:28,0.542,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,5,133,120,0,931,129,nE_nC:29 nN_nC:30 nS_nC:41 nW_nC:29,0.55,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,6,124,136,0,868,112,nE_nC:41 nN_nC:20 nS_nC:21 nW_nC:30,0.634,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,7,118,148,0,826,117,nE_nC:26 nN_nC:29 nS_nC:35 nW_nC:27,0.547,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,8,133,121,0,931,119,nE_nC:31 nN_nC:31 nS_nC:40 nW_nC:17,0.597,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,9,123,138,0,861,126,nE_nC:26 nN_nC:37 nS_nC:37 nW_nC:26,0.587,0
+IDQN-wait,held-out x1.5,4,prybuzka_ho15,10,119,145,0,833,124,nE_nC:28 nN_nC:37 nS_nC:33 nW_nC:26,0.565,0
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,1,41,286,0,287,112,nE_nC:28 nN_nC:32 nS_nC:28 nW_nC:24,0.536,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,2,18,327,0,126,119,nE_nC:33 nN_nC:27 nS_nC:27 nW_nC:32,0.546,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,3,50,269,0,350,117,nE_nC:25 nN_nC:34 nS_nC:32 nW_nC:26,0.564,0
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,4,47,275,0,329,114,nE_nC:25 nN_nC:30 nS_nC:34 nW_nC:25,0.561,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,5,61,250,0,427,134,nE_nC:33 nN_nC:37 nS_nC:38 nW_nC:26,0.56,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,6,36,295,0,252,119,nE_nC:27 nN_nC:34 nS_nC:31 nW_nC:27,0.546,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,7,45,278,0,315,115,nE_nC:26 nN_nC:31 nS_nC:30 nW_nC:28,0.53,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,8,42,284,0,294,129,nE_nC:33 nN_nC:34 nS_nC:34 nW_nC:28,0.527,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,9,38,291,0,266,119,nE_nC:32 nN_nC:29 nS_nC:31 nW_nC:27,0.529,1
+IDQN-wait,held-out x1.5,5,prybuzka_ho15,10,47,275,0,329,107,nE_nC:25 nN_nC:28 nS_nC:33 nW_nC:21,0.57,1
+MPLight,held-out x1.0,1,prybuzka_ho10,1,132,121,0,924,46,nE_nC:19 nW_nC:27,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,2,128,128,0,896,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,3,132,121,0,924,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,4,132,121,0,924,52,nE_nC:26 nW_nC:26,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,5,128,128,0,896,52,nE_nC:26 nW_nC:26,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,6,125,134,0,875,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,7,133,119,0,931,52,nE_nC:26 nW_nC:26,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,8,130,125,0,910,48,nE_nC:21 nW_nC:27,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,9,138,110,0,966,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.0,1,prybuzka_ho10,10,134,117,0,938,45,nE_nC:19 nW_nC:26,1.0,0
+MPLight,scenario S1,1,prybuzka_s1,1,128,128,0,896,48,nE_nC:21 nW_nC:27,1.0,0
+MPLight,scenario S1,1,prybuzka_s1,2,131,123,0,917,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,scenario S1,1,prybuzka_s1,3,125,134,0,875,47,nE_nC:20 nW_nC:27,1.0,0
+MPLight,scenario S1,1,prybuzka_s1,4,132,121,0,924,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S1,1,prybuzka_s1,5,131,123,0,917,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S2,1,prybuzka_s2,1,133,119,0,931,55,nE_nC:27 nN_nC:1 nW_nC:27,0.982,0
+MPLight,scenario S2,1,prybuzka_s2,2,129,126,0,903,53,nE_nC:26 nW_nC:27,1.0,0
+MPLight,scenario S2,1,prybuzka_s2,3,123,137,0,861,54,nN_nC:26 nS_nC:28,1.0,0
+MPLight,scenario S2,1,prybuzka_s2,4,131,123,0,917,54,nE_nC:27 nW_nC:27,1.0,0
+MPLight,scenario S2,1,prybuzka_s2,5,128,128,0,896,54,nE_nC:27 nW_nC:27,1.0,0
+MPLight,scenario S3,1,prybuzka_s3,1,134,117,0,938,54,nE_nC:27 nW_nC:27,1.0,0
+MPLight,scenario S3,1,prybuzka_s3,2,135,116,0,945,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S3,1,prybuzka_s3,3,134,117,0,938,52,nE_nC:26 nW_nC:26,1.0,0
+MPLight,scenario S3,1,prybuzka_s3,4,133,119,0,931,50,nE_nC:23 nW_nC:27,1.0,0
+MPLight,scenario S3,1,prybuzka_s3,5,134,117,0,938,52,nE_nC:26 nW_nC:26,1.0,0
+MPLight,scenario S4,1,prybuzka_s4,1,134,117,0,938,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,scenario S4,1,prybuzka_s4,2,127,130,0,889,45,nE_nC:17 nS_nC:1 nW_nC:27,0.978,0
+MPLight,scenario S4,1,prybuzka_s4,3,133,119,0,931,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S4,1,prybuzka_s4,4,138,110,0,966,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,scenario S4,1,prybuzka_s4,5,133,119,0,931,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,1,127,130,0,889,54,nE_nC:26 nN_nC:1 nW_nC:27,0.981,0
+MPLight,transfer x1.2,1,prybuzka_ho12,2,130,125,0,910,54,nE_nC:27 nW_nC:27,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,3,126,132,0,882,46,nE_nC:20 nN_nC:1 nW_nC:25,0.978,0
+MPLight,transfer x1.2,1,prybuzka_ho12,4,128,128,0,896,47,nE_nC:20 nW_nC:27,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,5,125,134,0,875,54,nN_nC:28 nS_nC:26,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,6,126,132,0,882,49,nE_nC:23 nW_nC:26,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,7,127,130,0,889,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,8,119,144,0,833,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,9,129,126,0,903,54,nE_nC:27 nW_nC:27,1.0,0
+MPLight,transfer x1.2,1,prybuzka_ho12,10,137,112,0,959,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,transfer x1.5,1,prybuzka_ho15,1,127,130,0,889,51,nN_nC:27 nS_nC:24,1.0,0
+MPLight,transfer x1.5,1,prybuzka_ho15,2,124,135,0,868,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,transfer x1.5,1,prybuzka_ho15,3,138,110,0,966,46,nE_nC:20 nN_nC:2 nW_nC:24,0.957,0
+MPLight,transfer x1.5,1,prybuzka_ho15,4,135,116,0,945,58,nE_nC:19 nN_nC:13 nW_nC:26,0.776,0
+MPLight,transfer x1.5,1,prybuzka_ho15,5,142,104,0,994,63,nE_nC:21 nN_nC:15 nW_nC:27,0.762,0
+MPLight,transfer x1.5,1,prybuzka_ho15,6,140,107,0,980,65,nE_nC:20 nN_nC:18 nW_nC:27,0.723,0
+MPLight,transfer x1.5,1,prybuzka_ho15,7,138,111,0,966,50,nE_nC:20 nN_nC:3 nW_nC:27,0.94,0
+MPLight,transfer x1.5,1,prybuzka_ho15,8,138,110,0,966,48,nE_nC:19 nN_nC:2 nW_nC:27,0.958,0
+MPLight,transfer x1.5,1,prybuzka_ho15,9,128,128,0,896,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,transfer x1.5,1,prybuzka_ho15,10,128,128,0,896,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.0,2,prybuzka_ho10,1,0,359,0,0,136,nE_nC:30 nN_nC:34 nS_nC:32 nW_nC:40,0.544,1
+MPLight,held-out x1.0,2,prybuzka_ho10,2,0,359,0,0,132,nE_nC:25 nN_nC:33 nS_nC:34 nW_nC:40,0.561,1
+MPLight,held-out x1.0,2,prybuzka_ho10,3,0,359,0,0,132,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:36,0.523,1
+MPLight,held-out x1.0,2,prybuzka_ho10,4,0,359,0,0,127,nE_nC:24 nN_nC:34 nS_nC:33 nW_nC:36,0.551,1
+MPLight,held-out x1.0,2,prybuzka_ho10,5,0,359,0,0,149,nE_nC:41 nN_nC:35 nS_nC:33 nW_nC:40,0.544,1
+MPLight,held-out x1.0,2,prybuzka_ho10,6,0,359,0,0,146,nE_nC:39 nN_nC:34 nS_nC:34 nW_nC:39,0.534,1
+MPLight,held-out x1.0,2,prybuzka_ho10,7,0,359,0,0,146,nE_nC:41 nN_nC:33 nS_nC:33 nW_nC:39,0.548,1
+MPLight,held-out x1.0,2,prybuzka_ho10,8,0,359,0,0,127,nE_nC:26 nN_nC:31 nS_nC:33 nW_nC:37,0.551,1
+MPLight,held-out x1.0,2,prybuzka_ho10,9,0,359,0,0,132,nE_nC:28 nN_nC:33 nS_nC:34 nW_nC:37,0.538,1
+MPLight,held-out x1.0,2,prybuzka_ho10,10,0,359,0,0,146,nE_nC:42 nN_nC:33 nS_nC:32 nW_nC:39,0.555,1
+MPLight,scenario S1,2,prybuzka_s1,1,0,359,0,0,146,nE_nC:40 nN_nC:32 nS_nC:34 nW_nC:40,0.548,1
+MPLight,scenario S1,2,prybuzka_s1,2,0,359,0,0,133,nE_nC:34 nN_nC:33 nS_nC:33 nW_nC:33,0.504,1
+MPLight,scenario S1,2,prybuzka_s1,3,0,359,0,0,144,nE_nC:40 nN_nC:33 nS_nC:34 nW_nC:37,0.535,1
+MPLight,scenario S1,2,prybuzka_s1,4,0,359,0,0,146,nE_nC:41 nN_nC:33 nS_nC:33 nW_nC:39,0.548,1
+MPLight,scenario S1,2,prybuzka_s1,5,0,359,0,0,133,nE_nC:27 nN_nC:33 nS_nC:34 nW_nC:39,0.549,1
+MPLight,scenario S2,2,prybuzka_s2,1,0,359,0,0,142,nE_nC:41 nN_nC:33 nS_nC:33 nW_nC:35,0.535,1
+MPLight,scenario S2,2,prybuzka_s2,2,0,359,0,0,130,nE_nC:28 nN_nC:33 nS_nC:33 nW_nC:36,0.531,1
+MPLight,scenario S2,2,prybuzka_s2,3,0,359,0,0,133,nE_nC:28 nN_nC:35 nS_nC:32 nW_nC:38,0.549,1
+MPLight,scenario S2,2,prybuzka_s2,4,0,359,0,0,132,nE_nC:29 nN_nC:33 nS_nC:33 nW_nC:37,0.53,1
+MPLight,scenario S2,2,prybuzka_s2,5,0,359,0,0,135,nE_nC:30 nN_nC:33 nS_nC:34 nW_nC:38,0.533,1
+MPLight,scenario S3,2,prybuzka_s3,1,0,359,0,0,129,nE_nC:28 nN_nC:33 nS_nC:32 nW_nC:36,0.535,1
+MPLight,scenario S3,2,prybuzka_s3,2,0,359,0,0,138,nE_nC:33 nN_nC:35 nS_nC:33 nW_nC:37,0.522,1
+MPLight,scenario S3,2,prybuzka_s3,3,0,359,0,0,132,nE_nC:30 nN_nC:33 nS_nC:34 nW_nC:35,0.523,1
+MPLight,scenario S3,2,prybuzka_s3,4,0,359,0,0,148,nE_nC:42 nN_nC:34 nS_nC:35 nW_nC:37,0.534,1
+MPLight,scenario S3,2,prybuzka_s3,5,0,359,0,0,132,nE_nC:33 nN_nC:33 nS_nC:33 nW_nC:33,0.5,1
+MPLight,scenario S4,2,prybuzka_s4,1,0,359,0,0,146,nE_nC:40 nN_nC:34 nS_nC:33 nW_nC:39,0.541,1
+MPLight,scenario S4,2,prybuzka_s4,2,0,359,0,0,143,nE_nC:36 nN_nC:33 nS_nC:33 nW_nC:41,0.538,1
+MPLight,scenario S4,2,prybuzka_s4,3,0,359,0,0,145,nE_nC:42 nN_nC:33 nS_nC:33 nW_nC:37,0.545,1
+MPLight,scenario S4,2,prybuzka_s4,4,0,359,0,0,132,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:39,0.545,1
+MPLight,scenario S4,2,prybuzka_s4,5,0,359,0,0,144,nE_nC:38 nN_nC:33 nS_nC:33 nW_nC:40,0.542,1
+MPLight,transfer x1.2,2,prybuzka_ho12,1,0,359,0,0,141,nE_nC:34 nN_nC:34 nS_nC:33 nW_nC:40,0.525,1
+MPLight,transfer x1.2,2,prybuzka_ho12,2,0,359,0,0,131,nE_nC:30 nN_nC:33 nS_nC:34 nW_nC:34,0.519,1
+MPLight,transfer x1.2,2,prybuzka_ho12,3,0,359,0,0,137,nE_nC:32 nN_nC:33 nS_nC:33 nW_nC:39,0.526,1
+MPLight,transfer x1.2,2,prybuzka_ho12,4,0,359,0,0,137,nE_nC:30 nN_nC:33 nS_nC:34 nW_nC:40,0.54,1
+MPLight,transfer x1.2,2,prybuzka_ho12,5,0,359,0,0,129,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:36,0.535,1
+MPLight,transfer x1.2,2,prybuzka_ho12,6,0,359,0,0,136,nE_nC:28 nN_nC:35 nS_nC:34 nW_nC:39,0.544,1
+MPLight,transfer x1.2,2,prybuzka_ho12,7,0,359,0,0,136,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:40,0.537,1
+MPLight,transfer x1.2,2,prybuzka_ho12,8,0,359,0,0,147,nE_nC:42 nN_nC:33 nS_nC:33 nW_nC:39,0.551,1
+MPLight,transfer x1.2,2,prybuzka_ho12,9,0,359,0,0,123,nE_nC:23 nN_nC:34 nS_nC:32 nW_nC:34,0.553,1
+MPLight,transfer x1.2,2,prybuzka_ho12,10,0,359,0,0,128,nE_nC:26 nN_nC:33 nS_nC:33 nW_nC:36,0.539,1
+MPLight,transfer x1.5,2,prybuzka_ho15,1,0,359,0,0,130,nE_nC:34 nN_nC:33 nS_nC:34 nW_nC:29,0.523,1
+MPLight,transfer x1.5,2,prybuzka_ho15,2,0,359,0,0,147,nE_nC:42 nN_nC:34 nS_nC:34 nW_nC:37,0.537,1
+MPLight,transfer x1.5,2,prybuzka_ho15,3,0,359,0,0,146,nE_nC:42 nN_nC:33 nS_nC:33 nW_nC:38,0.548,1
+MPLight,transfer x1.5,2,prybuzka_ho15,4,0,359,0,0,148,nE_nC:42 nN_nC:33 nS_nC:34 nW_nC:39,0.547,1
+MPLight,transfer x1.5,2,prybuzka_ho15,5,0,359,0,0,140,nE_nC:40 nN_nC:34 nS_nC:33 nW_nC:33,0.529,1
+MPLight,transfer x1.5,2,prybuzka_ho15,6,0,359,0,0,143,nE_nC:32 nN_nC:36 nS_nC:33 nW_nC:42,0.545,1
+MPLight,transfer x1.5,2,prybuzka_ho15,7,0,359,0,0,143,nE_nC:37 nN_nC:34 nS_nC:33 nW_nC:39,0.531,1
+MPLight,transfer x1.5,2,prybuzka_ho15,8,0,359,0,0,143,nE_nC:41 nN_nC:33 nS_nC:33 nW_nC:36,0.538,1
+MPLight,transfer x1.5,2,prybuzka_ho15,9,0,359,0,0,132,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:39,0.545,1
+MPLight,transfer x1.5,2,prybuzka_ho15,10,0,359,0,0,116,nE_nC:20 nN_nC:32 nS_nC:33 nW_nC:31,0.56,1
+MPLight,held-out x1.0,3,prybuzka_ho10,1,130,125,0,910,46,nE_nC:18 nN_nC:1 nW_nC:27,0.978,0
+MPLight,held-out x1.0,3,prybuzka_ho10,2,124,135,0,868,58,nN_nC:28 nS_nC:30,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,3,135,116,0,945,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,4,120,143,0,840,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,5,124,135,0,868,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,6,134,117,0,938,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,7,130,125,0,910,56,nN_nC:27 nS_nC:29,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,8,123,137,0,861,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,9,129,126,0,903,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,held-out x1.0,3,prybuzka_ho10,10,133,119,0,931,54,nN_nC:28 nS_nC:26,1.0,0
+MPLight,scenario S1,3,prybuzka_s1,1,131,123,0,917,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,scenario S1,3,prybuzka_s1,2,129,126,0,903,58,nN_nC:29 nS_nC:29,1.0,0
+MPLight,scenario S1,3,prybuzka_s1,3,126,132,0,882,57,nN_nC:29 nS_nC:28,1.0,0
+MPLight,scenario S1,3,prybuzka_s1,4,128,128,0,896,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S1,3,prybuzka_s1,5,131,123,0,917,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S2,3,prybuzka_s2,1,133,119,0,931,54,nE_nC:26 nN_nC:1 nW_nC:27,0.981,0
+MPLight,scenario S2,3,prybuzka_s2,2,114,153,0,798,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,scenario S2,3,prybuzka_s2,3,118,146,0,826,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,scenario S2,3,prybuzka_s2,4,122,139,0,854,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,scenario S2,3,prybuzka_s2,5,127,130,0,889,50,nE_nC:23 nN_nC:1 nW_nC:26,0.98,0
+MPLight,scenario S3,3,prybuzka_s3,1,140,107,0,980,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,scenario S3,3,prybuzka_s3,2,129,126,0,903,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,scenario S3,3,prybuzka_s3,3,133,119,0,931,55,nE_nC:26 nN_nC:2 nW_nC:27,0.964,0
+MPLight,scenario S3,3,prybuzka_s3,4,131,123,0,917,52,nE_nC:23 nN_nC:2 nW_nC:27,0.962,0
+MPLight,scenario S3,3,prybuzka_s3,5,131,123,0,917,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,scenario S4,3,prybuzka_s4,1,138,110,0,966,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,scenario S4,3,prybuzka_s4,2,148,92,0,1036,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,scenario S4,3,prybuzka_s4,3,135,116,0,945,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,scenario S4,3,prybuzka_s4,4,143,101,0,1001,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,scenario S4,3,prybuzka_s4,5,136,114,0,952,57,nN_nC:28 nS_nC:29,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,1,124,135,0,868,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,2,132,121,0,924,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,3,127,130,0,889,56,nN_nC:30 nS_nC:26,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,4,127,130,0,889,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,5,134,117,0,938,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,6,130,125,0,910,56,nN_nC:29 nS_nC:27,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,7,126,132,0,882,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,8,129,126,0,903,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,9,133,119,0,931,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,transfer x1.2,3,prybuzka_ho12,10,137,112,0,959,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,1,125,134,0,875,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,2,126,132,0,882,57,nN_nC:28 nS_nC:29,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,3,129,126,0,903,57,nN_nC:28 nS_nC:29,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,4,125,134,0,875,56,nN_nC:27 nS_nC:29,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,5,45,278,0,315,100,nE_nC:20 nN_nC:27 nS_nC:27 nW_nC:26,0.54,1
+MPLight,transfer x1.5,3,prybuzka_ho15,6,130,125,0,910,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,7,44,279,0,308,101,nE_nC:18 nN_nC:28 nS_nC:29 nW_nC:26,0.564,1
+MPLight,transfer x1.5,3,prybuzka_ho15,8,129,126,0,903,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,9,127,130,0,889,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,transfer x1.5,3,prybuzka_ho15,10,125,134,0,875,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,1,134,117,0,938,48,nE_nC:19 nN_nC:2 nW_nC:27,0.958,0
+MPLight,held-out x1.0,4,prybuzka_ho10,2,124,135,0,868,58,nN_nC:28 nS_nC:30,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,3,133,119,0,931,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,4,125,134,0,875,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,5,117,148,0,819,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,6,132,121,0,924,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,7,124,135,0,868,58,nN_nC:27 nS_nC:31,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,8,129,126,0,903,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,9,129,126,0,903,58,nN_nC:30 nS_nC:28,1.0,0
+MPLight,held-out x1.0,4,prybuzka_ho10,10,26,312,0,182,104,nE_nC:19 nN_nC:27 nS_nC:31 nW_nC:27,0.558,1
+MPLight,scenario S1,4,prybuzka_s1,1,139,108,0,973,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,scenario S1,4,prybuzka_s1,2,133,119,0,931,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,scenario S1,4,prybuzka_s1,3,121,141,0,847,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S1,4,prybuzka_s1,4,122,139,0,854,58,nN_nC:29 nS_nC:29,1.0,0
+MPLight,scenario S1,4,prybuzka_s1,5,131,123,0,917,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,scenario S2,4,prybuzka_s2,1,129,126,0,903,54,nE_nC:25 nN_nC:2 nW_nC:27,0.963,0
+MPLight,scenario S2,4,prybuzka_s2,2,130,125,0,910,52,nE_nC:24 nN_nC:1 nW_nC:27,0.981,0
+MPLight,scenario S2,4,prybuzka_s2,3,116,150,0,812,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,scenario S2,4,prybuzka_s2,4,116,150,0,812,57,nN_nC:28 nS_nC:29,1.0,0
+MPLight,scenario S2,4,prybuzka_s2,5,127,130,0,889,50,nE_nC:23 nN_nC:1 nW_nC:26,0.98,0
+MPLight,scenario S3,4,prybuzka_s3,1,128,128,0,896,53,nE_nC:26 nW_nC:27,1.0,0
+MPLight,scenario S3,4,prybuzka_s3,2,131,123,0,917,58,nN_nC:30 nS_nC:28,1.0,0
+MPLight,scenario S3,4,prybuzka_s3,3,131,123,0,917,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,scenario S3,4,prybuzka_s3,4,136,114,0,952,50,nE_nC:23 nW_nC:27,1.0,0
+MPLight,scenario S3,4,prybuzka_s3,5,135,116,0,945,56,nN_nC:29 nS_nC:27,1.0,0
+MPLight,scenario S4,4,prybuzka_s4,1,140,107,0,980,52,nN_nC:27 nS_nC:25,1.0,0
+MPLight,scenario S4,4,prybuzka_s4,2,135,116,0,945,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,scenario S4,4,prybuzka_s4,3,124,135,0,868,58,nN_nC:29 nS_nC:29,1.0,0
+MPLight,scenario S4,4,prybuzka_s4,4,137,112,0,959,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,scenario S4,4,prybuzka_s4,5,135,116,0,945,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,1,122,139,0,854,55,nN_nC:26 nS_nC:29,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,2,127,130,0,889,56,nN_nC:28 nS_nC:28,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,3,128,128,0,896,56,nN_nC:29 nS_nC:27,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,4,130,125,0,910,56,nN_nC:27 nS_nC:29,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,5,131,123,0,917,58,nN_nC:28 nS_nC:30,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,6,122,139,0,854,56,nN_nC:29 nS_nC:27,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,7,121,141,0,847,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,8,122,139,0,854,57,nN_nC:29 nS_nC:28,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,9,133,119,0,931,56,nN_nC:27 nS_nC:29,1.0,0
+MPLight,transfer x1.2,4,prybuzka_ho12,10,127,130,0,889,48,nE_nC:19 nN_nC:2 nW_nC:27,0.958,0
+MPLight,transfer x1.5,4,prybuzka_ho15,1,15,332,0,105,99,nE_nC:16 nN_nC:27 nS_nC:29 nW_nC:27,0.566,1
+MPLight,transfer x1.5,4,prybuzka_ho15,2,49,270,0,343,101,nE_nC:20 nN_nC:27 nS_nC:27 nW_nC:27,0.535,1
+MPLight,transfer x1.5,4,prybuzka_ho15,3,18,326,0,126,101,nE_nC:19 nN_nC:27 nS_nC:31 nW_nC:24,0.574,1
+MPLight,transfer x1.5,4,prybuzka_ho15,4,18,326,0,126,101,nE_nC:20 nN_nC:27 nS_nC:29 nW_nC:25,0.554,1
+MPLight,transfer x1.5,4,prybuzka_ho15,5,19,324,0,133,101,nE_nC:20 nN_nC:27 nS_nC:27 nW_nC:27,0.535,1
+MPLight,transfer x1.5,4,prybuzka_ho15,6,128,128,0,896,58,nN_nC:30 nS_nC:28,1.0,0
+MPLight,transfer x1.5,4,prybuzka_ho15,7,124,135,0,868,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,transfer x1.5,4,prybuzka_ho15,8,124,135,0,868,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,transfer x1.5,4,prybuzka_ho15,9,129,126,0,903,56,nN_nC:27 nS_nC:29,1.0,0
+MPLight,transfer x1.5,4,prybuzka_ho15,10,125,134,0,875,52,nN_nC:27 nS_nC:25,1.0,0
+MPLight,held-out x1.0,5,prybuzka_ho10,1,0,359,0,0,136,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:40,0.537,1
+MPLight,held-out x1.0,5,prybuzka_ho10,2,0,359,0,0,131,nE_nC:25 nN_nC:33 nS_nC:33 nW_nC:40,0.557,1
+MPLight,held-out x1.0,5,prybuzka_ho10,3,0,359,0,0,132,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:36,0.523,1
+MPLight,held-out x1.0,5,prybuzka_ho10,4,0,359,0,0,128,nE_nC:24 nN_nC:34 nS_nC:34 nW_nC:36,0.547,1
+MPLight,held-out x1.0,5,prybuzka_ho10,5,0,359,0,0,150,nE_nC:40 nN_nC:35 nS_nC:35 nW_nC:40,0.533,1
+MPLight,held-out x1.0,5,prybuzka_ho10,6,0,359,0,0,146,nE_nC:39 nN_nC:34 nS_nC:34 nW_nC:39,0.534,1
+MPLight,held-out x1.0,5,prybuzka_ho10,7,0,359,0,0,127,nE_nC:22 nN_nC:33 nS_nC:33 nW_nC:39,0.567,1
+MPLight,held-out x1.0,5,prybuzka_ho10,8,0,359,0,0,130,nE_nC:26 nN_nC:33 nS_nC:34 nW_nC:37,0.546,1
+MPLight,held-out x1.0,5,prybuzka_ho10,9,0,359,0,0,132,nE_nC:28 nN_nC:34 nS_nC:33 nW_nC:37,0.538,1
+MPLight,held-out x1.0,5,prybuzka_ho10,10,0,359,0,0,149,nE_nC:41 nN_nC:34 nS_nC:35 nW_nC:39,0.537,1
+MPLight,scenario S1,5,prybuzka_s1,1,0,359,0,0,149,nE_nC:42 nN_nC:34 nS_nC:33 nW_nC:40,0.55,1
+MPLight,scenario S1,5,prybuzka_s1,2,0,359,0,0,133,nE_nC:34 nN_nC:33 nS_nC:33 nW_nC:33,0.504,1
+MPLight,scenario S1,5,prybuzka_s1,3,0,359,0,0,144,nE_nC:41 nN_nC:33 nS_nC:33 nW_nC:37,0.542,1
+MPLight,scenario S1,5,prybuzka_s1,4,0,359,0,0,146,nE_nC:42 nN_nC:33 nS_nC:32 nW_nC:39,0.555,1
+MPLight,scenario S1,5,prybuzka_s1,5,0,359,0,0,133,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:40,0.549,1
+MPLight,scenario S2,5,prybuzka_s2,1,0,359,0,0,143,nE_nC:41 nN_nC:34 nS_nC:33 nW_nC:35,0.531,1
+MPLight,scenario S2,5,prybuzka_s2,2,0,359,0,0,131,nE_nC:28 nN_nC:33 nS_nC:34 nW_nC:36,0.534,1
+MPLight,scenario S2,5,prybuzka_s2,3,0,359,0,0,134,nE_nC:28 nN_nC:34 nS_nC:34 nW_nC:38,0.537,1
+MPLight,scenario S2,5,prybuzka_s2,4,0,359,0,0,132,nE_nC:29 nN_nC:33 nS_nC:33 nW_nC:37,0.53,1
+MPLight,scenario S2,5,prybuzka_s2,5,0,359,0,0,134,nE_nC:30 nN_nC:32 nS_nC:34 nW_nC:38,0.537,1
+MPLight,scenario S3,5,prybuzka_s3,1,0,359,0,0,129,nE_nC:28 nN_nC:32 nS_nC:33 nW_nC:36,0.535,1
+MPLight,scenario S3,5,prybuzka_s3,2,0,359,0,0,137,nE_nC:33 nN_nC:33 nS_nC:34 nW_nC:37,0.518,1
+MPLight,scenario S3,5,prybuzka_s3,3,0,359,0,0,133,nE_nC:30 nN_nC:34 nS_nC:34 nW_nC:35,0.519,1
+MPLight,scenario S3,5,prybuzka_s3,4,0,359,0,0,145,nE_nC:42 nN_nC:32 nS_nC:34 nW_nC:37,0.545,1
+MPLight,scenario S3,5,prybuzka_s3,5,0,359,0,0,132,nE_nC:33 nN_nC:33 nS_nC:33 nW_nC:33,0.5,1
+MPLight,scenario S4,5,prybuzka_s4,1,0,359,0,0,145,nE_nC:41 nN_nC:32 nS_nC:33 nW_nC:39,0.552,1
+MPLight,scenario S4,5,prybuzka_s4,2,0,359,0,0,143,nE_nC:34 nN_nC:33 nS_nC:34 nW_nC:42,0.531,1
+MPLight,scenario S4,5,prybuzka_s4,3,0,359,0,0,128,nE_nC:23 nN_nC:35 nS_nC:33 nW_nC:37,0.562,1
+MPLight,scenario S4,5,prybuzka_s4,4,0,359,0,0,133,nE_nC:27 nN_nC:33 nS_nC:34 nW_nC:39,0.549,1
+MPLight,scenario S4,5,prybuzka_s4,5,0,359,0,0,138,nE_nC:32 nN_nC:33 nS_nC:33 nW_nC:40,0.529,1
+MPLight,transfer x1.2,5,prybuzka_ho12,1,0,359,0,0,139,nE_nC:34 nN_nC:31 nS_nC:34 nW_nC:40,0.532,1
+MPLight,transfer x1.2,5,prybuzka_ho12,2,0,359,0,0,132,nE_nC:30 nN_nC:35 nS_nC:33 nW_nC:34,0.523,1
+MPLight,transfer x1.2,5,prybuzka_ho12,3,0,359,0,0,138,nE_nC:32 nN_nC:33 nS_nC:34 nW_nC:39,0.529,1
+MPLight,transfer x1.2,5,prybuzka_ho12,4,0,359,0,0,137,nE_nC:30 nN_nC:34 nS_nC:33 nW_nC:40,0.54,1
+MPLight,transfer x1.2,5,prybuzka_ho12,5,0,359,0,0,130,nE_nC:27 nN_nC:34 nS_nC:33 nW_nC:36,0.538,1
+MPLight,transfer x1.2,5,prybuzka_ho12,6,0,359,0,0,134,nE_nC:28 nN_nC:33 nS_nC:34 nW_nC:39,0.545,1
+MPLight,transfer x1.2,5,prybuzka_ho12,7,0,359,0,0,136,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:40,0.537,1
+MPLight,transfer x1.2,5,prybuzka_ho12,8,0,359,0,0,147,nE_nC:42 nN_nC:33 nS_nC:33 nW_nC:39,0.551,1
+MPLight,transfer x1.2,5,prybuzka_ho12,9,0,359,0,0,123,nE_nC:23 nN_nC:33 nS_nC:33 nW_nC:34,0.545,1
+MPLight,transfer x1.2,5,prybuzka_ho12,10,0,359,0,0,129,nE_nC:26 nN_nC:33 nS_nC:34 nW_nC:36,0.543,1
+MPLight,transfer x1.5,5,prybuzka_ho15,1,0,359,0,0,129,nE_nC:34 nN_nC:33 nS_nC:33 nW_nC:29,0.519,1
+MPLight,transfer x1.5,5,prybuzka_ho15,2,0,359,0,0,148,nE_nC:42 nN_nC:35 nS_nC:34 nW_nC:37,0.534,1
+MPLight,transfer x1.5,5,prybuzka_ho15,3,0,359,0,0,140,nE_nC:36 nN_nC:33 nS_nC:33 nW_nC:38,0.529,1
+MPLight,transfer x1.5,5,prybuzka_ho15,4,0,359,0,0,147,nE_nC:42 nN_nC:33 nS_nC:33 nW_nC:39,0.551,1
+MPLight,transfer x1.5,5,prybuzka_ho15,5,0,359,0,0,140,nE_nC:41 nN_nC:33 nS_nC:33 nW_nC:33,0.529,1
+MPLight,transfer x1.5,5,prybuzka_ho15,6,0,359,0,0,140,nE_nC:32 nN_nC:33 nS_nC:33 nW_nC:42,0.536,1
+MPLight,transfer x1.5,5,prybuzka_ho15,7,0,359,0,0,142,nE_nC:37 nN_nC:34 nS_nC:33 nW_nC:38,0.528,1
+MPLight,transfer x1.5,5,prybuzka_ho15,8,0,359,0,0,142,nE_nC:40 nN_nC:33 nS_nC:33 nW_nC:36,0.535,1
+MPLight,transfer x1.5,5,prybuzka_ho15,9,0,359,0,0,135,nE_nC:27 nN_nC:35 nS_nC:34 nW_nC:39,0.548,1
+MPLight,transfer x1.5,5,prybuzka_ho15,10,0,359,0,0,116,nE_nC:20 nN_nC:33 nS_nC:32 nW_nC:31,0.56,1
+MPLight,held-out x1.2,1,prybuzka_ho12,1,134,118,0,938,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,2,138,111,0,966,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,3,127,131,0,889,46,nE_nC:20 nW_nC:26,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,4,134,118,0,938,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,5,118,147,0,826,54,nE_nC:27 nW_nC:27,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,6,128,129,0,896,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,7,129,127,0,903,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,8,121,142,0,847,53,nE_nC:26 nW_nC:27,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,9,130,125,0,910,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.2,1,prybuzka_ho12,10,139,109,0,973,53,nN_nC:26 nS_nC:27,1.0,0
+MPLight,held-out x1.2,2,prybuzka_ho12,1,0,359,0,0,141,nE_nC:34 nN_nC:34 nS_nC:33 nW_nC:40,0.525,1
+MPLight,held-out x1.2,2,prybuzka_ho12,2,0,359,0,0,131,nE_nC:30 nN_nC:33 nS_nC:34 nW_nC:34,0.519,1
+MPLight,held-out x1.2,2,prybuzka_ho12,3,0,359,0,0,137,nE_nC:32 nN_nC:33 nS_nC:33 nW_nC:39,0.526,1
+MPLight,held-out x1.2,2,prybuzka_ho12,4,0,359,0,0,137,nE_nC:30 nN_nC:33 nS_nC:34 nW_nC:40,0.54,1
+MPLight,held-out x1.2,2,prybuzka_ho12,5,0,359,0,0,129,nE_nC:27 nN_nC:33 nS_nC:33 nW_nC:36,0.535,1
+MPLight,held-out x1.2,2,prybuzka_ho12,6,0,359,0,0,136,nE_nC:28 nN_nC:35 nS_nC:34 nW_nC:39,0.544,1
+MPLight,held-out x1.2,2,prybuzka_ho12,7,0,359,0,0,136,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:40,0.537,1
+MPLight,held-out x1.2,2,prybuzka_ho12,8,0,359,0,0,147,nE_nC:42 nN_nC:33 nS_nC:33 nW_nC:39,0.551,1
+MPLight,held-out x1.2,2,prybuzka_ho12,9,0,359,0,0,123,nE_nC:23 nN_nC:34 nS_nC:32 nW_nC:34,0.553,1
+MPLight,held-out x1.2,2,prybuzka_ho12,10,0,359,0,0,128,nE_nC:26 nN_nC:33 nS_nC:33 nW_nC:36,0.539,1
+MPLight,held-out x1.2,3,prybuzka_ho12,1,149,90,0,1043,37,nN_nC:18 nS_nC:19,1.0,0
+MPLight,held-out x1.2,3,prybuzka_ho12,2,142,103,0,994,60,nE_nC:5 nN_nC:23 nS_nC:23 nW_nC:9,0.767,0
+MPLight,held-out x1.2,3,prybuzka_ho12,3,149,90,0,1043,53,nE_nC:4 nN_nC:23 nS_nC:21 nW_nC:5,0.83,0
+MPLight,held-out x1.2,3,prybuzka_ho12,4,145,98,0,1015,38,nN_nC:19 nS_nC:18 nW_nC:1,0.974,0
+MPLight,held-out x1.2,3,prybuzka_ho12,5,151,87,0,1057,37,nE_nC:1 nN_nC:19 nS_nC:17,0.973,0
+MPLight,held-out x1.2,3,prybuzka_ho12,6,144,100,0,1008,41,nN_nC:20 nS_nC:19 nW_nC:2,0.951,0
+MPLight,held-out x1.2,3,prybuzka_ho12,7,145,98,0,1015,29,nN_nC:16 nS_nC:13,1.0,0
+MPLight,held-out x1.2,3,prybuzka_ho12,8,144,100,0,1008,41,nN_nC:19 nS_nC:21 nW_nC:1,0.976,0
+MPLight,held-out x1.2,3,prybuzka_ho12,9,141,105,0,987,61,nE_nC:30 nN_nC:3 nW_nC:28,0.951,0
+MPLight,held-out x1.2,3,prybuzka_ho12,10,147,94,0,1029,36,nN_nC:16 nS_nC:19 nW_nC:1,0.972,0
+MPLight,held-out x1.2,4,prybuzka_ho12,1,140,107,0,980,54,nN_nC:28 nS_nC:26,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,2,139,108,0,973,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,3,137,112,0,959,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,4,140,107,0,980,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,5,141,105,0,987,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,6,135,116,0,945,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,7,139,108,0,973,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,8,137,112,0,959,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,9,144,99,0,1008,53,nN_nC:26 nS_nC:27,1.0,0
+MPLight,held-out x1.2,4,prybuzka_ho12,10,142,103,0,994,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.2,5,prybuzka_ho12,1,0,359,0,0,139,nE_nC:34 nN_nC:31 nS_nC:34 nW_nC:40,0.532,1
+MPLight,held-out x1.2,5,prybuzka_ho12,2,0,359,0,0,132,nE_nC:30 nN_nC:35 nS_nC:33 nW_nC:34,0.523,1
+MPLight,held-out x1.2,5,prybuzka_ho12,3,0,359,0,0,138,nE_nC:32 nN_nC:33 nS_nC:34 nW_nC:39,0.529,1
+MPLight,held-out x1.2,5,prybuzka_ho12,4,0,359,0,0,137,nE_nC:30 nN_nC:34 nS_nC:33 nW_nC:40,0.54,1
+MPLight,held-out x1.2,5,prybuzka_ho12,5,0,359,0,0,130,nE_nC:27 nN_nC:34 nS_nC:33 nW_nC:36,0.538,1
+MPLight,held-out x1.2,5,prybuzka_ho12,6,0,359,0,0,134,nE_nC:28 nN_nC:33 nS_nC:34 nW_nC:39,0.545,1
+MPLight,held-out x1.2,5,prybuzka_ho12,7,0,359,0,0,136,nE_nC:30 nN_nC:33 nS_nC:33 nW_nC:40,0.537,1
+MPLight,held-out x1.2,5,prybuzka_ho12,8,0,359,0,0,147,nE_nC:42 nN_nC:33 nS_nC:33 nW_nC:39,0.551,1
+MPLight,held-out x1.2,5,prybuzka_ho12,9,0,359,0,0,123,nE_nC:23 nN_nC:33 nS_nC:33 nW_nC:34,0.545,1
+MPLight,held-out x1.2,5,prybuzka_ho12,10,0,359,0,0,129,nE_nC:26 nN_nC:33 nS_nC:34 nW_nC:36,0.543,1
+MPLight,held-out x1.5,1,prybuzka_ho15,1,112,158,0,784,90,nE_nC:40 nN_nC:22 nS_nC:1 nW_nC:27,0.744,0
+MPLight,held-out x1.5,1,prybuzka_ho15,2,117,150,0,819,72,nE_nC:24 nN_nC:21 nW_nC:27,0.708,0
+MPLight,held-out x1.5,1,prybuzka_ho15,3,128,129,0,896,82,nE_nC:31 nN_nC:26 nS_nC:1 nW_nC:24,0.695,0
+MPLight,held-out x1.5,1,prybuzka_ho15,4,133,120,0,931,64,nE_nC:29 nN_nC:8 nW_nC:27,0.875,0
+MPLight,held-out x1.5,1,prybuzka_ho15,5,127,131,0,889,62,nE_nC:21 nN_nC:14 nW_nC:27,0.774,0
+MPLight,held-out x1.5,1,prybuzka_ho15,6,150,90,0,1050,63,nN_nC:14 nS_nC:18 nW_nC:31,0.778,0
+MPLight,held-out x1.5,1,prybuzka_ho15,7,142,104,0,994,64,nE_nC:17 nN_nC:20 nW_nC:27,0.734,0
+MPLight,held-out x1.5,1,prybuzka_ho15,8,119,145,0,833,64,nE_nC:29 nN_nC:8 nW_nC:27,0.875,0
+MPLight,held-out x1.5,1,prybuzka_ho15,9,124,136,0,868,83,nE_nC:31 nN_nC:25 nW_nC:27,0.699,0
+MPLight,held-out x1.5,1,prybuzka_ho15,10,117,149,0,819,84,nE_nC:36 nN_nC:23 nW_nC:25,0.726,0
+MPLight,held-out x1.5,2,prybuzka_ho15,1,136,115,0,952,59,nE_nC:27 nN_nC:5 nW_nC:27,0.915,0
+MPLight,held-out x1.5,2,prybuzka_ho15,2,123,137,0,861,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,3,127,130,0,889,56,nN_nC:27 nS_nC:29,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,4,127,130,0,889,57,nN_nC:27 nS_nC:30,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,5,122,139,0,854,56,nN_nC:29 nS_nC:27,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,6,127,130,0,889,53,nN_nC:27 nS_nC:26,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,7,122,139,0,854,54,nN_nC:28 nS_nC:26,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,8,132,121,0,924,58,nN_nC:29 nS_nC:29,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,9,130,125,0,910,57,nN_nC:28 nS_nC:29,1.0,0
+MPLight,held-out x1.5,2,prybuzka_ho15,10,131,123,0,917,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,held-out x1.5,3,prybuzka_ho15,1,142,103,0,994,29,nN_nC:17 nS_nC:12,1.0,0
+MPLight,held-out x1.5,3,prybuzka_ho15,2,138,111,0,966,41,nN_nC:21 nS_nC:19 nW_nC:1,0.976,0
+MPLight,held-out x1.5,3,prybuzka_ho15,3,151,87,0,1057,28,nN_nC:14 nS_nC:13 nW_nC:1,0.964,0
+MPLight,held-out x1.5,3,prybuzka_ho15,4,141,105,0,987,29,nN_nC:16 nS_nC:13,1.0,0
+MPLight,held-out x1.5,3,prybuzka_ho15,5,136,114,0,952,70,nE_nC:1 nN_nC:29 nS_nC:27 nW_nC:13,0.8,0
+MPLight,held-out x1.5,3,prybuzka_ho15,6,147,95,0,1029,28,nN_nC:15 nS_nC:12 nW_nC:1,0.964,0
+MPLight,held-out x1.5,3,prybuzka_ho15,7,146,97,0,1022,30,nN_nC:15 nS_nC:14 nW_nC:1,0.967,0
+MPLight,held-out x1.5,3,prybuzka_ho15,8,150,89,0,1050,29,nN_nC:14 nS_nC:15,1.0,0
+MPLight,held-out x1.5,3,prybuzka_ho15,9,149,91,0,1043,34,nN_nC:15 nS_nC:19,1.0,0
+MPLight,held-out x1.5,3,prybuzka_ho15,10,138,111,0,966,69,nN_nC:29 nS_nC:28 nW_nC:12,0.826,0
+MPLight,held-out x1.5,4,prybuzka_ho15,1,127,130,0,889,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,2,131,123,0,917,56,nN_nC:27 nS_nC:29,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,3,132,121,0,924,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,4,131,123,0,917,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,5,131,123,0,917,55,nN_nC:27 nS_nC:28,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,6,127,130,0,889,55,nN_nC:28 nS_nC:27,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,7,132,121,0,924,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,8,140,107,0,980,53,nN_nC:26 nS_nC:27,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,9,133,119,0,931,54,nN_nC:26 nS_nC:28,1.0,0
+MPLight,held-out x1.5,4,prybuzka_ho15,10,137,112,0,959,54,nN_nC:27 nS_nC:27,1.0,0
+MPLight,held-out x1.5,5,prybuzka_ho15,1,44,280,0,308,134,nE_nC:40 nN_nC:33 nS_nC:33 nW_nC:28,0.545,1
+MPLight,held-out x1.5,5,prybuzka_ho15,2,44,280,0,308,119,nE_nC:26 nN_nC:33 nS_nC:34 nW_nC:26,0.563,1
+MPLight,held-out x1.5,5,prybuzka_ho15,3,41,286,0,287,114,nE_nC:21 nN_nC:33 nS_nC:33 nW_nC:27,0.579,1
+MPLight,held-out x1.5,5,prybuzka_ho15,4,47,275,0,329,115,nE_nC:21 nN_nC:33 nS_nC:32 nW_nC:29,0.565,1
+MPLight,held-out x1.5,5,prybuzka_ho15,5,43,282,0,301,121,nE_nC:27 nN_nC:35 nS_nC:32 nW_nC:27,0.554,1
+MPLight,held-out x1.5,5,prybuzka_ho15,6,46,277,0,322,120,nE_nC:23 nN_nC:33 nS_nC:34 nW_nC:30,0.558,1
+MPLight,held-out x1.5,5,prybuzka_ho15,7,43,282,0,301,115,nE_nC:22 nN_nC:33 nS_nC:33 nW_nC:27,0.574,1
+MPLight,held-out x1.5,5,prybuzka_ho15,8,44,280,0,308,113,nE_nC:21 nN_nC:33 nS_nC:33 nW_nC:26,0.584,1
+MPLight,held-out x1.5,5,prybuzka_ho15,9,45,278,0,315,117,nE_nC:18 nN_nC:33 nS_nC:34 nW_nC:32,0.573,1
+MPLight,held-out x1.5,5,prybuzka_ho15,10,40,287,0,280,125,nE_nC:34 nN_nC:33 nS_nC:33 nW_nC:25,0.536,1

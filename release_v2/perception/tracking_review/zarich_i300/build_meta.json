@@ -1,0 +1,32 @@
+{
+ "created": "2026-11-03T23:30:02",
+ "seed": 20261101,
+ "manual_final": true,
+ "counted_in_clip": 148,
+ "relevant_tracks": 738,
+ "window_tracks": 1013,
+ "constants": {
+  "BREAK_MAX_GAP": 12,
+  "BREAK_MIN_D": 40.0,
+  "BREAK_DIAG": 0.6,
+  "AREA": [
+   0.4,
+   2.5
+  ],
+  "NEAR_GATE": 250.0,
+  "JUMP": [
+   25.0,
+   1.6
+  ],
+  "START": [
+   200.0,
+   150.0
+  ],
+  "MATCH": [
+   -2.0,
+   6.0
+  ],
+  "N_CONTROL": 10,
+  "N_SAMPLE": 8
+ }
+}

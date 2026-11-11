@@ -1,0 +1,1442 @@
+{
+ "revision/demand/e13/mix/perturbed/mix_S1_s6031.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6031_base.xml",
+  "base_load": 1.2471,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6031_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6031.rou.xml --seed 6031",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6031_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6031_S1.xml",
+  "created_utc": "2026-10-29T16:44:32Z",
+  "expected_total": 2025,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 867,
+   "affected_raw_total": "1209.2049",
+   "affected_target": 1209,
+   "bumped_cells": 11
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.3947,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.2471",
+  "seeds": [
+   6031
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S1_s6035.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6035_base.xml",
+  "base_load": 1.0012,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6035_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6035.rou.xml --seed 6035",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6035_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6035_S1.xml",
+  "created_utc": "2026-10-29T16:41:59Z",
+  "expected_total": 1493,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 695,
+   "affected_raw_total": "833.2355",
+   "affected_target": 833,
+   "bumped_cells": 10
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.1989,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.0012",
+  "seeds": [
+   6035
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S1_s6039.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6039_base.xml",
+  "base_load": 1.0588,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6039_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6039.rou.xml --seed 6039",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6039_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6039_S1.xml",
+  "created_utc": "2026-10-29T16:42:03Z",
+  "expected_total": 1563,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 736,
+   "affected_raw_total": "863.8432",
+   "affected_target": 864,
+   "bumped_cells": 9
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.1737,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.0588",
+  "seeds": [
+   6039
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S1_s6043.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6043_base.xml",
+  "base_load": 1.219,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6043_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6043.rou.xml --seed 6043",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6043_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6043_S1.xml",
+  "created_utc": "2026-10-29T16:42:07Z",
+  "expected_total": 1784,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 851,
+   "affected_raw_total": "977.4586",
+   "affected_target": 977,
+   "bumped_cells": 9
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.1486,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.219",
+  "seeds": [
+   6043
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S1_s6047.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6047_base.xml",
+  "base_load": 1.0425,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6047_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6047.rou.xml --seed 6047",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6047_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6047_S1.xml",
+  "created_utc": "2026-10-29T16:42:11Z",
+  "expected_total": 1495,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 724,
+   "affected_raw_total": "801.9024",
+   "affected_target": 802,
+   "bumped_cells": 11
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.1076,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.0425",
+  "seeds": [
+   6047
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S1_s6051.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6051_base.xml",
+  "base_load": 1.369,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6051_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6051.rou.xml --seed 6051",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6051_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6051_S1.xml",
+  "created_utc": "2026-10-29T16:42:15Z",
+  "expected_total": 2013,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 953,
+   "affected_raw_total": "1112.4369",
+   "affected_target": 1112,
+   "bumped_cells": 11
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.1673,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.369",
+  "seeds": [
+   6051
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S1_s6055.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6055_base.xml",
+  "base_load": 1.2156,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6055_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6055.rou.xml --seed 6055",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6055_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6055_S1.xml",
+  "created_utc": "2026-10-29T16:42:20Z",
+  "expected_total": 1881,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 848,
+   "affected_raw_total": "1074.5856",
+   "affected_target": 1075,
+   "bumped_cells": 10
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.2672,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.2156",
+  "seeds": [
+   6055
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S1_s6059.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6059_base.xml",
+  "base_load": 1.3211,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6059_S1.xml -o revision/demand/e13/mix/perturbed/mix_S1_s6059.rou.xml --seed 6059",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6059_S1.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6059_S1.xml",
+  "created_utc": "2026-10-29T16:42:24Z",
+  "expected_total": 2059,
+  "group": "mix_S1",
+  "info": {
+   "affected_base_total": 917,
+   "affected_raw_total": "1189.5324",
+   "affected_target": 1190,
+   "bumped_cells": 11
+  },
+  "load_or_scenario": "S1",
+  "params": {
+   "approaches": [
+    "nN_nC",
+    "nS_nC"
+   ],
+   "factor": 1.2972,
+   "movements": [
+    "through",
+    "left"
+   ],
+   "name": "directional imbalance",
+   "rounding": "largest remainder over all (interval, relation) cells; scenario total = round_half_up(factor x affected total) + unaffected total; ties go to the earlier cell in file order"
+  },
+  "purpose": "E13 L4 training mix, perturbed S1 (directional imbalance) on base load x1.3211",
+  "seeds": [
+   6059
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6032.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6032_base.xml",
+  "base_load": 1.1915,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6032_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6032.rou.xml --seed 6032 --prefix sv_ --depart-distribution \"1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6032_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56032.rou.xml --seed 56032 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1,1,1,1,1,1,0.604,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.568,1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6032_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6032_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6032_base.xml",
+  "created_utc": "2026-10-29T16:44:33Z",
+  "expected_total": 1612,
+  "expected_window_share": 0.8071135430916553,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 52.4,
+   "offset_shift": -7.6,
+   "offset_svobody": 112.4,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 35.4
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.1915",
+  "seeds": [
+   6032,
+   56032
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.7549627791563276,
+   "in_window": 1217,
+   "n": 1612,
+   "prybuzka": 0.7410179640718563,
+   "svobody": 0.7648305084745762
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6036.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6036_base.xml",
+  "base_load": 1.0342,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6036_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6036.rou.xml --seed 6036 --prefix sv_ --depart-distribution \"1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6036_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56036.rou.xml --seed 56036 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1,1,1,1,1,0.622,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.73,1,1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6036_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6036_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6036_base.xml",
+  "created_utc": "2026-10-29T16:42:01Z",
+  "expected_total": 1397,
+  "expected_window_share": 0.8132260947274352,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 46.5,
+   "offset_shift": -13.5,
+   "offset_svobody": 106.5,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 36.4
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.0342",
+  "seeds": [
+   6036,
+   56036
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.7666428060128847,
+   "in_window": 1071,
+   "n": 1397,
+   "prybuzka": 0.754325259515571,
+   "svobody": 0.7753357753357754
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6040.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6040_base.xml",
+  "base_load": 1.3408,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6040_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6040.rou.xml --seed 6040 --prefix sv_ --depart-distribution \"0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6040_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56040.rou.xml --seed 56040 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.118,1,1,1,1,1,1,1,1,0.766,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6040_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6040_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6040_base.xml",
+  "created_utc": "2026-10-29T16:42:05Z",
+  "expected_total": 1811,
+  "expected_window_share": 0.851808634772462,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 64.9,
+   "offset_shift": 4.9,
+   "offset_svobody": 4.9,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 43.8
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.3408",
+  "seeds": [
+   6040,
+   56040
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8210933186085035,
+   "in_window": 1487,
+   "n": 1811,
+   "prybuzka": 0.8,
+   "svobody": 0.8360037700282752
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6044.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6044_base.xml",
+  "base_load": 1.0492,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6044_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6044.rou.xml --seed 6044 --prefix sv_ --depart-distribution \"0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6044_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56044.rou.xml --seed 56044 --prefix pr_ --depart-distribution \"0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.838,1,1,1,1,1,1,1,1,0.442,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6044_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6044_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6044_base.xml",
+  "created_utc": "2026-10-29T16:42:09Z",
+  "expected_total": 1421,
+  "expected_window_share": 0.8614232209737828,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 75.9,
+   "offset_shift": 15.9,
+   "offset_svobody": 15.9,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 46.0
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.0492",
+  "seeds": [
+   6044,
+   56044
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8416608022519353,
+   "in_window": 1196,
+   "n": 1421,
+   "prybuzka": 0.8322033898305085,
+   "svobody": 0.8483754512635379
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6048.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6048_base.xml",
+  "base_load": 1.2297,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6048_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6048.rou.xml --seed 6048 --prefix sv_ --depart-distribution \"1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6048_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56048.rou.xml --seed 56048 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1,1,1,1,1,1,0.46,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.352,1,1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6048_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6048_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6048_base.xml",
+  "created_utc": "2026-10-29T16:42:13Z",
+  "expected_total": 1666,
+  "expected_window_share": 0.8247422680412371,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 48.6,
+   "offset_shift": -11.4,
+   "offset_svobody": 108.6,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 38.4
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.2297",
+  "seeds": [
+   6048,
+   56048
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.7737094837935174,
+   "in_window": 1289,
+   "n": 1666,
+   "prybuzka": 0.7663280116110305,
+   "svobody": 0.7789150460593655
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6052.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6052_base.xml",
+  "base_load": 1.3183,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6052_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6052.rou.xml --seed 6052 --prefix sv_ --depart-distribution \"0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6052_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56052.rou.xml --seed 56052 --prefix pr_ --depart-distribution \"0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.604,1,1,1,1,1,1,1,0.568,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6052_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6052_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6052_base.xml",
+  "created_utc": "2026-10-29T16:42:17Z",
+  "expected_total": 1783,
+  "expected_window_share": 0.8354011579818031,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 77.2,
+   "offset_shift": 17.2,
+   "offset_svobody": 17.2,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 40.4
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.3183",
+  "seeds": [
+   6052,
+   56052
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.7896803140773977,
+   "in_window": 1408,
+   "n": 1783,
+   "prybuzka": 0.7598371777476255,
+   "svobody": 0.8107074569789675
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6056.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6056_base.xml",
+  "base_load": 1.2684,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6056_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6056.rou.xml --seed 6056 --prefix sv_ --depart-distribution \"0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6056_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56056.rou.xml --seed 56056 --prefix pr_ --depart-distribution \"1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.154,1,1,1,1,1,1,1,1,1,0.244,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6056_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6056_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6056_base.xml",
+  "created_utc": "2026-10-29T16:42:21Z",
+  "expected_total": 1717,
+  "expected_window_share": 0.8618433352028416,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 79.7,
+   "offset_shift": 19.7,
+   "offset_svobody": 19.7,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 46.1
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.2684",
+  "seeds": [
+   6056,
+   56056
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8375072801397787,
+   "in_window": 1438,
+   "n": 1717,
+   "prybuzka": 0.8160112359550562,
+   "svobody": 0.8527363184079602
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S2_s6060.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6060_base.xml",
+  "base_load": 1.1977,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6060_S2_svobody.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_sv_s6060.rou.xml --seed 6060 --prefix sv_ --depart-distribution \"0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1\" && python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6060_S2_prybuzka.xml -o revision/demand/e13/work/mix_S2_parts/mix_S2_pr_s56060.rou.xml --seed 56060 --prefix pr_ --depart-distribution \"0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.442,1,1,1,1,1,1,1,1,1,0.586,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1\" && merge (sort by depart)",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6060_S2_svobody.xml; revision/demand/e13/mix/perturbed/counts/turn_counts_s6060_S2_prybuzka.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6060_base.xml",
+  "created_utc": "2026-10-29T16:42:25Z",
+  "expected_total": 1624,
+  "expected_window_share": 0.8757062146892656,
+  "group": "mix_S2",
+  "load_or_scenario": "S2",
+  "params": {
+   "background": 0.1,
+   "begin": 0,
+   "bin": 5,
+   "cycle": 120,
+   "end": 1500,
+   "name": "platooned arrivals",
+   "offset_prybuzka": 73.1,
+   "offset_shift": 13.1,
+   "offset_svobody": 13.1,
+   "prefix_prybuzka": "pr_",
+   "prefix_svobody": "sv_",
+   "prybuzka_seed_offset": 50000,
+   "window": 49.6
+  },
+  "purpose": "E13 L4 training mix, perturbed S2 (platooned arrivals) on base load x1.1977",
+  "seeds": [
+   6060,
+   56060
+  ],
+  "sumo_version": "1.26.0",
+  "window_share": {
+   "all": 0.8423645320197044,
+   "in_window": 1368,
+   "n": 1624,
+   "prybuzka": 0.8311111111111111,
+   "svobody": 0.8503688092729189
+  }
+ },
+ "revision/demand/e13/mix/perturbed/mix_S3_s6033.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6033_base.xml",
+  "base_load": 1.1242,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6033_S3.xml -o revision/demand/e13/mix/perturbed/mix_S3_s6033.rou.xml --seed 6033",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6033_S3.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6033_S3.xml",
+  "created_utc": "2026-10-29T16:41:57Z",
+  "expected_total": 1524,
+  "group": "mix_S3",
+  "info": {
+   "base_peak_share": "0.413386",
+   "base_peak_total": 630,
+   "new_peak_share": "0.542651",
+   "new_peak_total": 827,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "params": {
+   "name": "peak formation",
+   "peak_begin": 600,
+   "peak_end": 1200,
+   "peak_share": 0.5443,
+   "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S3 (peak formation) on base load x1.1242",
+  "seeds": [
+   6033
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S3_s6037.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6037_base.xml",
+  "base_load": 1.0693,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6037_S3.xml -o revision/demand/e13/mix/perturbed/mix_S3_s6037.rou.xml --seed 6037",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6037_S3.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6037_S3.xml",
+  "created_utc": "2026-10-29T16:42:01Z",
+  "expected_total": 1450,
+  "group": "mix_S3",
+  "info": {
+   "base_peak_share": "0.413103",
+   "base_peak_total": 599,
+   "new_peak_share": "0.526207",
+   "new_peak_total": 763,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "params": {
+   "name": "peak formation",
+   "peak_begin": 600,
+   "peak_end": 1200,
+   "peak_share": 0.5278,
+   "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S3 (peak formation) on base load x1.0693",
+  "seeds": [
+   6037
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S3_s6041.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6041_base.xml",
+  "base_load": 1.3612,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6041_S3.xml -o revision/demand/e13/mix/perturbed/mix_S3_s6041.rou.xml --seed 6041",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6041_S3.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6041_S3.xml",
+  "created_utc": "2026-10-29T16:42:05Z",
+  "expected_total": 1846,
+  "group": "mix_S3",
+  "info": {
+   "base_peak_share": "0.412243",
+   "base_peak_total": 761,
+   "new_peak_share": "0.447996",
+   "new_peak_total": 827,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "params": {
+   "name": "peak formation",
+   "peak_begin": 600,
+   "peak_end": 1200,
+   "peak_share": 0.4476,
+   "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S3 (peak formation) on base load x1.3612",
+  "seeds": [
+   6041
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S3_s6045.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6045_base.xml",
+  "base_load": 1.0169,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6045_S3.xml -o revision/demand/e13/mix/perturbed/mix_S3_s6045.rou.xml --seed 6045",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6045_S3.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6045_S3.xml",
+  "created_utc": "2026-10-29T16:42:09Z",
+  "expected_total": 1368,
+  "group": "mix_S3",
+  "info": {
+   "base_peak_share": "0.412281",
+   "base_peak_total": 564,
+   "new_peak_share": "0.418129",
+   "new_peak_total": 572,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "params": {
+   "name": "peak formation",
+   "peak_begin": 600,
+   "peak_end": 1200,
+   "peak_share": 0.4181,
+   "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S3 (peak formation) on base load x1.0169",
+  "seeds": [
+   6045
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S3_s6049.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6049_base.xml",
+  "base_load": 1.0389,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6049_S3.xml -o revision/demand/e13/mix/perturbed/mix_S3_s6049.rou.xml --seed 6049",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6049_S3.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6049_S3.xml",
+  "created_utc": "2026-10-29T16:42:13Z",
+  "expected_total": 1409,
+  "group": "mix_S3",
+  "info": {
+   "base_peak_share": "0.414478",
+   "base_peak_total": 584,
+   "new_peak_share": "0.508872",
+   "new_peak_total": 717,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "params": {
+   "name": "peak formation",
+   "peak_begin": 600,
+   "peak_end": 1200,
+   "peak_share": 0.5082,
+   "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S3 (peak formation) on base load x1.0389",
+  "seeds": [
+   6049
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S3_s6053.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6053_base.xml",
+  "base_load": 1.0747,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6053_S3.xml -o revision/demand/e13/mix/perturbed/mix_S3_s6053.rou.xml --seed 6053",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6053_S3.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6053_S3.xml",
+  "created_utc": "2026-10-29T16:42:18Z",
+  "expected_total": 1461,
+  "group": "mix_S3",
+  "info": {
+   "base_peak_share": "0.412047",
+   "base_peak_total": 602,
+   "new_peak_share": "0.487337",
+   "new_peak_total": 712,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "params": {
+   "name": "peak formation",
+   "peak_begin": 600,
+   "peak_end": 1200,
+   "peak_share": 0.489,
+   "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S3 (peak formation) on base load x1.0747",
+  "seeds": [
+   6053
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S3_s6057.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6057_base.xml",
+  "base_load": 1.1793,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6057_S3.xml -o revision/demand/e13/mix/perturbed/mix_S3_s6057.rou.xml --seed 6057",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6057_S3.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6057_S3.xml",
+  "created_utc": "2026-10-29T16:42:22Z",
+  "expected_total": 1596,
+  "group": "mix_S3",
+  "info": {
+   "base_peak_share": "0.413534",
+   "base_peak_total": 660,
+   "new_peak_share": "0.49812",
+   "new_peak_total": 795,
+   "peak_intervals": [
+    "i600",
+    "i900"
+   ],
+   "profile_fallbacks": 0
+  },
+  "load_or_scenario": "S3",
+  "params": {
+   "name": "peak formation",
+   "peak_begin": 600,
+   "peak_end": 1200,
+   "peak_share": 0.4989,
+   "rounding": "per relation: peak_share x relation total spread over the peak intervals and the rest over the other intervals, each in proportion to the relation's observed counts; largest remainder per relation (relation total kept)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S3 (peak formation) on base load x1.1793",
+  "seeds": [
+   6057
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S4_s6034.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6034_base.xml",
+  "base_load": 1.1419,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6034_S4.xml -o revision/demand/e13/mix/perturbed/mix_S4_s6034.rou.xml --seed 6034",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6034_S4.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6034_S4.xml",
+  "created_utc": "2026-10-29T16:41:58Z",
+  "expected_total": 1548,
+  "group": "mix_S4",
+  "info": {
+   "left_base_total": 264,
+   "left_new_total": 392,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "params": {
+   "left_factor": 1.4748,
+   "name": "turning-proportion shift",
+   "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S4 (turning-proportion shift) on base load x1.1419",
+  "seeds": [
+   6034
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S4_s6038.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6038_base.xml",
+  "base_load": 1.0649,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6038_S4.xml -o revision/demand/e13/mix/perturbed/mix_S4_s6038.rou.xml --seed 6038",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6038_S4.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6038_S4.xml",
+  "created_utc": "2026-10-29T16:42:02Z",
+  "expected_total": 1440,
+  "group": "mix_S4",
+  "info": {
+   "left_base_total": 247,
+   "left_new_total": 327,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "params": {
+   "left_factor": 1.3292,
+   "name": "turning-proportion shift",
+   "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S4 (turning-proportion shift) on base load x1.0649",
+  "seeds": [
+   6038
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S4_s6042.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6042_base.xml",
+  "base_load": 1.1574,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6042_S4.xml -o revision/demand/e13/mix/perturbed/mix_S4_s6042.rou.xml --seed 6042",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6042_S4.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6042_S4.xml",
+  "created_utc": "2026-10-29T16:42:06Z",
+  "expected_total": 1569,
+  "group": "mix_S4",
+  "info": {
+   "left_base_total": 267,
+   "left_new_total": 368,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "params": {
+   "left_factor": 1.3833,
+   "name": "turning-proportion shift",
+   "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S4 (turning-proportion shift) on base load x1.1574",
+  "seeds": [
+   6042
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S4_s6046.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6046_base.xml",
+  "base_load": 1.0341,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6046_S4.xml -o revision/demand/e13/mix/perturbed/mix_S4_s6046.rou.xml --seed 6046",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6046_S4.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6046_S4.xml",
+  "created_utc": "2026-10-29T16:42:10Z",
+  "expected_total": 1397,
+  "group": "mix_S4",
+  "info": {
+   "left_base_total": 235,
+   "left_new_total": 282,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "params": {
+   "left_factor": 1.2072,
+   "name": "turning-proportion shift",
+   "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S4 (turning-proportion shift) on base load x1.0341",
+  "seeds": [
+   6046
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S4_s6050.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6050_base.xml",
+  "base_load": 1.1789,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6050_S4.xml -o revision/demand/e13/mix/perturbed/mix_S4_s6050.rou.xml --seed 6050",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6050_S4.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6050_S4.xml",
+  "created_utc": "2026-10-29T16:42:14Z",
+  "expected_total": 1596,
+  "group": "mix_S4",
+  "info": {
+   "left_base_total": 271,
+   "left_new_total": 394,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "params": {
+   "left_factor": 1.4493,
+   "name": "turning-proportion shift",
+   "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S4 (turning-proportion shift) on base load x1.1789",
+  "seeds": [
+   6050
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S4_s6054.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6054_base.xml",
+  "base_load": 1.2274,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6054_S4.xml -o revision/demand/e13/mix/perturbed/mix_S4_s6054.rou.xml --seed 6054",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6054_S4.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6054_S4.xml",
+  "created_utc": "2026-10-29T16:42:19Z",
+  "expected_total": 1664,
+  "group": "mix_S4",
+  "info": {
+   "left_base_total": 286,
+   "left_new_total": 351,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "params": {
+   "left_factor": 1.2282,
+   "name": "turning-proportion shift",
+   "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S4 (turning-proportion shift) on base load x1.2274",
+  "seeds": [
+   6054
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/perturbed/mix_S4_s6058.rou.xml": {
+  "base_counts": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6058_base.xml",
+  "base_load": 1.2835,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/perturbed/counts/turn_counts_s6058_S4.xml -o revision/demand/e13/mix/perturbed/mix_S4_s6058.rou.xml --seed 6058",
+  "counts_file": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6058_S4.xml",
+  "counts_ref": "revision/demand/e13/mix/perturbed/counts/turn_counts_s6058_S4.xml",
+  "created_utc": "2026-10-29T16:42:23Z",
+  "expected_total": 1740,
+  "group": "mix_S4",
+  "info": {
+   "left_base_total": 296,
+   "left_new_total": 451,
+   "through_shortfalls": 0
+  },
+  "load_or_scenario": "S4",
+  "params": {
+   "left_factor": 1.5143,
+   "name": "turning-proportion shift",
+   "rounding": "new left = round_half_up(left_factor x left) per interval and approach; through reduced by the same number; shortfall taken from right (logged)"
+  },
+  "purpose": "E13 L4 training mix, perturbed S4 (turning-proportion shift) on base load x1.2835",
+  "seeds": [
+   6058
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x08/mix_x08_s6001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x08.xml -o revision/demand/e13/mix/x08/mix_x08_s6001.rou.xml --seed 6001",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "created_utc": "2026-10-29T16:41:28Z",
+  "expected_total": 1084,
+  "group": "mix_x08",
+  "load_or_scenario": "x08",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x08/mix_x08_s6002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x08.xml -o revision/demand/e13/mix/x08/mix_x08_s6002.rou.xml --seed 6002",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "created_utc": "2026-10-29T16:41:29Z",
+  "expected_total": 1084,
+  "group": "mix_x08",
+  "load_or_scenario": "x08",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x08/mix_x08_s6003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x08.xml -o revision/demand/e13/mix/x08/mix_x08_s6003.rou.xml --seed 6003",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "created_utc": "2026-10-29T16:41:29Z",
+  "expected_total": 1084,
+  "group": "mix_x08",
+  "load_or_scenario": "x08",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x08/mix_x08_s6004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x08.xml -o revision/demand/e13/mix/x08/mix_x08_s6004.rou.xml --seed 6004",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "created_utc": "2026-10-29T16:41:30Z",
+  "expected_total": 1084,
+  "group": "mix_x08",
+  "load_or_scenario": "x08",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x08/mix_x08_s6005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x08.xml -o revision/demand/e13/mix/x08/mix_x08_s6005.rou.xml --seed 6005",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "created_utc": "2026-10-29T16:41:31Z",
+  "expected_total": 1084,
+  "group": "mix_x08",
+  "load_or_scenario": "x08",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x08/mix_x08_s6006.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x08.xml -o revision/demand/e13/mix/x08/mix_x08_s6006.rou.xml --seed 6006",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x08.xml",
+  "created_utc": "2026-10-29T16:41:32Z",
+  "expected_total": 1084,
+  "group": "mix_x08",
+  "load_or_scenario": "x08",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6006
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x10/mix_x10_s6007.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/e13/mix/x10/mix_x10_s6007.rou.xml --seed 6007",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:41:33Z",
+  "expected_total": 1355,
+  "group": "mix_x10",
+  "load_or_scenario": "x10",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6007
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x10/mix_x10_s6008.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/e13/mix/x10/mix_x10_s6008.rou.xml --seed 6008",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:41:34Z",
+  "expected_total": 1355,
+  "group": "mix_x10",
+  "load_or_scenario": "x10",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6008
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x10/mix_x10_s6009.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/e13/mix/x10/mix_x10_s6009.rou.xml --seed 6009",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:41:35Z",
+  "expected_total": 1355,
+  "group": "mix_x10",
+  "load_or_scenario": "x10",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6009
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x10/mix_x10_s6010.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/e13/mix/x10/mix_x10_s6010.rou.xml --seed 6010",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:41:35Z",
+  "expected_total": 1355,
+  "group": "mix_x10",
+  "load_or_scenario": "x10",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6010
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x10/mix_x10_s6011.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/e13/mix/x10/mix_x10_s6011.rou.xml --seed 6011",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:41:36Z",
+  "expected_total": 1355,
+  "group": "mix_x10",
+  "load_or_scenario": "x10",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6011
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x10/mix_x10_s6012.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/demand/e13/mix/x10/mix_x10_s6012.rou.xml --seed 6012",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T16:41:37Z",
+  "expected_total": 1355,
+  "group": "mix_x10",
+  "load_or_scenario": "x10",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6012
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x12/mix_x12_s6013.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/e13/mix/x12/mix_x12_s6013.rou.xml --seed 6013",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T16:41:38Z",
+  "expected_total": 1626,
+  "group": "mix_x12",
+  "load_or_scenario": "x12",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6013
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x12/mix_x12_s6014.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/e13/mix/x12/mix_x12_s6014.rou.xml --seed 6014",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T16:41:39Z",
+  "expected_total": 1626,
+  "group": "mix_x12",
+  "load_or_scenario": "x12",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6014
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x12/mix_x12_s6015.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/e13/mix/x12/mix_x12_s6015.rou.xml --seed 6015",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T16:41:40Z",
+  "expected_total": 1626,
+  "group": "mix_x12",
+  "load_or_scenario": "x12",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6015
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x12/mix_x12_s6016.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/e13/mix/x12/mix_x12_s6016.rou.xml --seed 6016",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T16:41:41Z",
+  "expected_total": 1626,
+  "group": "mix_x12",
+  "load_or_scenario": "x12",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6016
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x12/mix_x12_s6017.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/e13/mix/x12/mix_x12_s6017.rou.xml --seed 6017",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T16:41:42Z",
+  "expected_total": 1626,
+  "group": "mix_x12",
+  "load_or_scenario": "x12",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6017
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x12/mix_x12_s6018.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/demand/e13/mix/x12/mix_x12_s6018.rou.xml --seed 6018",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T16:41:42Z",
+  "expected_total": 1626,
+  "group": "mix_x12",
+  "load_or_scenario": "x12",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6018
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x14/mix_x14_s6019.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x14.xml -o revision/demand/e13/mix/x14/mix_x14_s6019.rou.xml --seed 6019",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "created_utc": "2026-10-29T16:41:44Z",
+  "expected_total": 1900,
+  "group": "mix_x14",
+  "load_or_scenario": "x14",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6019
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x14/mix_x14_s6020.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x14.xml -o revision/demand/e13/mix/x14/mix_x14_s6020.rou.xml --seed 6020",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "created_utc": "2026-10-29T16:41:45Z",
+  "expected_total": 1900,
+  "group": "mix_x14",
+  "load_or_scenario": "x14",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6020
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x14/mix_x14_s6021.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x14.xml -o revision/demand/e13/mix/x14/mix_x14_s6021.rou.xml --seed 6021",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "created_utc": "2026-10-29T16:41:45Z",
+  "expected_total": 1900,
+  "group": "mix_x14",
+  "load_or_scenario": "x14",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6021
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x14/mix_x14_s6022.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x14.xml -o revision/demand/e13/mix/x14/mix_x14_s6022.rou.xml --seed 6022",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "created_utc": "2026-10-29T16:41:46Z",
+  "expected_total": 1900,
+  "group": "mix_x14",
+  "load_or_scenario": "x14",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6022
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x14/mix_x14_s6023.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x14.xml -o revision/demand/e13/mix/x14/mix_x14_s6023.rou.xml --seed 6023",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "created_utc": "2026-10-29T16:41:47Z",
+  "expected_total": 1900,
+  "group": "mix_x14",
+  "load_or_scenario": "x14",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6023
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x14/mix_x14_s6024.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x14.xml -o revision/demand/e13/mix/x14/mix_x14_s6024.rou.xml --seed 6024",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x14.xml",
+  "created_utc": "2026-10-29T16:41:48Z",
+  "expected_total": 1900,
+  "group": "mix_x14",
+  "load_or_scenario": "x14",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6024
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x16/mix_x16_s6025.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x16.xml -o revision/demand/e13/mix/x16/mix_x16_s6025.rou.xml --seed 6025",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "created_utc": "2026-10-29T16:41:49Z",
+  "expected_total": 2165,
+  "group": "mix_x16",
+  "load_or_scenario": "x16",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6025
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x16/mix_x16_s6026.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x16.xml -o revision/demand/e13/mix/x16/mix_x16_s6026.rou.xml --seed 6026",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "created_utc": "2026-10-29T16:41:50Z",
+  "expected_total": 2165,
+  "group": "mix_x16",
+  "load_or_scenario": "x16",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6026
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x16/mix_x16_s6027.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x16.xml -o revision/demand/e13/mix/x16/mix_x16_s6027.rou.xml --seed 6027",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "created_utc": "2026-10-29T16:41:51Z",
+  "expected_total": 2165,
+  "group": "mix_x16",
+  "load_or_scenario": "x16",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6027
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x16/mix_x16_s6028.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x16.xml -o revision/demand/e13/mix/x16/mix_x16_s6028.rou.xml --seed 6028",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "created_utc": "2026-10-29T16:41:52Z",
+  "expected_total": 2165,
+  "group": "mix_x16",
+  "load_or_scenario": "x16",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6028
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x16/mix_x16_s6029.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x16.xml -o revision/demand/e13/mix/x16/mix_x16_s6029.rou.xml --seed 6029",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "created_utc": "2026-10-29T16:41:52Z",
+  "expected_total": 2165,
+  "group": "mix_x16",
+  "load_or_scenario": "x16",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6029
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/demand/e13/mix/x16/mix_x16_s6030.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/demand/e13/mix/counts/turn_counts_x16.xml -o revision/demand/e13/mix/x16/mix_x16_s6030.rou.xml --seed 6030",
+  "counts_file": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "counts_ref": "revision/demand/e13/mix/counts/turn_counts_x16.xml",
+  "created_utc": "2026-10-29T16:41:53Z",
+  "expected_total": 2165,
+  "group": "mix_x16",
+  "load_or_scenario": "x16",
+  "purpose": "E13 L4 training mix, proportional load (prereg section 3)",
+  "seeds": [
+   6030
+  ],
+  "sumo_version": "1.26.0"
+ }
+}

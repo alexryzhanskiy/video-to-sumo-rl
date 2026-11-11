@@ -1,0 +1,33 @@
+figure,panel,quantity,unit,approach,source,estimate_type,estimate,interval_type,lo,hi,n,n_unit
+SI_twin_validation,a,end-of-red queue (visible cap),veh,SVB_N,observed,mean,22.455,95% t interval of the mean,21.099,23.81,11,cycles
+SI_twin_validation,a,end-of-red queue (visible cap),veh,SVB_N,simulated_default,mean,19.606,95% t interval of the mean,19.235,19.977,15,run means
+SI_twin_validation,a,end-of-red queue (visible cap),veh,SVB_S,observed,mean,12.182,95% t interval of the mean,10.914,13.45,11,cycles
+SI_twin_validation,a,end-of-red queue (visible cap),veh,SVB_S,simulated_default,mean,12.097,95% t interval of the mean,11.802,12.392,15,run means
+SI_twin_validation,a,end-of-red queue (visible cap),veh,PRB_E,observed,mean,10.182,95% t interval of the mean,8.655,11.708,11,cycles
+SI_twin_validation,a,end-of-red queue (visible cap),veh,PRB_E,simulated_default,mean,12.824,95% t interval of the mean,12.189,13.46,15,run means
+SI_twin_validation,a,end-of-red queue (visible cap),veh,PRB_W,observed,mean,12.545,95% t interval of the mean,11.447,13.644,11,cycles
+SI_twin_validation,a,end-of-red queue (visible cap),veh,PRB_W,simulated_default,mean,18.933,95% t interval of the mean,18.293,19.574,15,run means
+SI_twin_validation,b,discharged queue,veh,SVB_N,observed,mean,29.182,95% t interval of the mean,24.872,33.492,11,cycles
+SI_twin_validation,b,discharged queue,veh,SVB_N,simulated_default,mean,27.182,95% t interval of the mean,26.981,27.382,15,run means
+SI_twin_validation,b,discharged queue,veh,SVB_S,observed,mean,27.182,95% t interval of the mean,24.287,30.076,11,cycles
+SI_twin_validation,b,discharged queue,veh,SVB_S,simulated_default,mean,25.297,95% t interval of the mean,24.909,25.685,15,run means
+SI_twin_validation,b,discharged queue,veh,PRB_E,observed,mean,10.727,95% t interval of the mean,7.721,13.733,11,cycles
+SI_twin_validation,b,discharged queue,veh,PRB_E,simulated_default,mean,12.448,95% t interval of the mean,11.941,12.956,15,run means
+SI_twin_validation,b,discharged queue,veh,PRB_W,observed,mean,16.909,95% t interval of the mean,13.127,20.691,11,cycles
+SI_twin_validation,b,discharged queue,veh,PRB_W,simulated_default,mean,19.376,95% t interval of the mean,19.04,19.711,15,run means
+SI_twin_validation,c,saturated headway,s,SVB_N,observed,median,1.38,interquartile range,0.72,1.92,288,headways
+SI_twin_validation,c,saturated headway,s,SVB_N,simulated_default,median,1.309,interquartile range,0.519,1.961,3990,headways
+SI_twin_validation,c,saturated headway,s,SVB_S,observed,median,1.44,interquartile range,0.84,2.04,266,headways
+SI_twin_validation,c,saturated headway,s,SVB_S,simulated_default,median,1.333,interquartile range,0.559,2.026,3679,headways
+SI_twin_validation,c,saturated headway,s,PRB_E,observed,median,2.04,interquartile range,1.68,2.76,85,headways
+SI_twin_validation,c,saturated headway,s,PRB_E,simulated_default,median,1.706,interquartile range,0.585,2.447,1561,headways
+SI_twin_validation,c,saturated headway,s,PRB_W,observed,median,1.56,interquartile range,1.08,2.16,153,headways
+SI_twin_validation,c,saturated headway,s,PRB_W,simulated_default,median,1.387,interquartile range,0.59,2.093,2702,headways
+SI_twin_validation,d,start-up time to first crossing,s,SVB_N,observed,median,2.68,interquartile range,2.38,3.7,11,cycles
+SI_twin_validation,d,start-up time to first crossing,s,SVB_N,simulated_default,median,0.44,interquartile range,0.41,0.485,165,cycles
+SI_twin_validation,d,start-up time to first crossing,s,SVB_S,observed,median,3.12,interquartile range,2.32,3.5,11,cycles
+SI_twin_validation,d,start-up time to first crossing,s,SVB_S,simulated_default,median,0.44,interquartile range,0.407,0.478,165,cycles
+SI_twin_validation,d,start-up time to first crossing,s,PRB_E,observed,median,2.2,interquartile range,1.6,2.72,11,cycles
+SI_twin_validation,d,start-up time to first crossing,s,PRB_E,simulated_default,median,0.436,interquartile range,0.405,0.476,165,cycles
+SI_twin_validation,d,start-up time to first crossing,s,PRB_W,observed,median,2.88,interquartile range,2.5,3.16,11,cycles
+SI_twin_validation,d,start-up time to first crossing,s,PRB_W,simulated_default,median,0.436,interquartile range,0.406,0.472,165,cycles

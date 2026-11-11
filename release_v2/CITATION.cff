@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below, together with the article."
+type: dataset
+title: 'Code and data for "From Urban Video to Adaptive Traffic Signals: Digital Twin and Deep Reinforcement Learning under Real-World Demand"'
+version: "1.0.0"
+date-released: "2026-11-12"
+doi: "10.5281/zenodo.24030604"
+repository-code: "https://github.com/alexryzhanskiy/video-to-sumo-rl"
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - given-names: Oleksander
+    family-names: Ryzhanskyi
+    orcid: "https://orcid.org/0009-0000-4664-5195"
+    affiliation: "Department of Computer Science, Khmelnytskyi National University, Khmelnytskyi, Ukraine"
+  - given-names: Oleksander
+    family-names: Barmak
+    orcid: "https://orcid.org/0000-0003-0739-9678"
+    affiliation: "Department of Computer Science, Khmelnytskyi National University, Khmelnytskyi, Ukraine"
+  - given-names: Eduard
+    family-names: Manziuk
+    orcid: "https://orcid.org/0000-0002-7310-2126"
+    affiliation: "Department of Computer Science, Khmelnytskyi National University, Khmelnytskyi, Ukraine"
+  - given-names: Pavlo
+    family-names: Radiuk
+    orcid: "https://orcid.org/0000-0003-3609-112X"
+    affiliation: "Department of Computer Science, Khmelnytskyi National University, Khmelnytskyi, Ukraine"
+  - given-names: Iurii
+    family-names: Krak
+    orcid: "https://orcid.org/0000-0002-8043-0785"
+    affiliation: "Taras Shevchenko National University of Kyiv; V.M. Glushkov Institute of Cybernetics, Kyiv, Ukraine"
+keywords:
+  - adaptive traffic signal control
+  - computer vision
+  - deep reinforcement learning
+  - digital twin
+  - SUMO
+  - reward design
+  - reproducibility
+abstract: >-
+  SUMO network and signal plan of the Prybuzka-Svobody intersection (Khmelnytskyi, Ukraine), 5-min
+  turning-movement counts from urban video, all demand route files with SHA-256 lists (training, held-out,
+  validation, pre-registered locked test, scenarios, perception-error variants, a second real window), the code
+  of the demand generation, deep reinforcement learning runs, baselines and analyses, the RESCO modifications as
+  patches, the trained models, episode-level results, the pre-registration with its deviation log, and the
+  pseudonymised event log of the first annotator's blind hand counts and the tracking review. SUMO 1.26.0.

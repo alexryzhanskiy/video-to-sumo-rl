@@ -1,0 +1,405 @@
+{
+  "written": "2026-10-30 04:36:47",
+  "twin": "default",
+  "rule": "pre-registration 5.2 (3): best 5.1 ranking over L1-L4",
+  "final": {
+    "rung": "L2",
+    "policy": "MPLight",
+    "score": 0.2134,
+    "deadlock": 0,
+    "delay": 60.77
+  },
+  "base_rung": "L2",
+  "base_mode": "field",
+  "rewards": [
+    "MPLight",
+    "IDQN-queue"
+  ],
+  "warnings": [],
+  "ranking": [
+    {
+      "rung": "L2",
+      "policy": "MPLight",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1355,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": 0.0,
+          "deadlocks": 0,
+          "mean_delay_s": 44.83
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1624.96,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": 0.4268,
+          "deadlocks": 0,
+          "mean_delay_s": 76.72
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": 0.2134,
+      "deadlock": 0,
+      "delay": 60.77,
+      "rank": 1
+    },
+    {
+      "rung": "L3",
+      "policy": "MPLight",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1355,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": 0.0,
+          "deadlocks": 0,
+          "mean_delay_s": 45.06
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1611.14,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -0.4231,
+          "deadlocks": 0,
+          "mean_delay_s": 98.78
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -0.2115,
+      "deadlock": 0,
+      "delay": 71.92,
+      "rank": 2
+    },
+    {
+      "rung": "L2",
+      "policy": "IDQN-queue",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1347.44,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -0.5579,
+          "deadlocks": 0,
+          "mean_delay_s": 69.1
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1572.76,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -2.7835,
+          "deadlocks": 0,
+          "mean_delay_s": 134.33
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -1.6707,
+      "deadlock": 0,
+      "delay": 101.72,
+      "rank": 3
+    },
+    {
+      "rung": "L2",
+      "policy": "IDQN-pressure",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1339.6,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -1.1365,
+          "deadlocks": 0,
+          "mean_delay_s": 71.95
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1522,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -5.9053,
+          "deadlocks": 0,
+          "mean_delay_s": 170.83
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -3.5209,
+      "deadlock": 0,
+      "delay": 121.39,
+      "rank": 4
+    },
+    {
+      "rung": "L4",
+      "policy": "MPLight",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1348.58,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -0.4738,
+          "deadlocks": 0,
+          "mean_delay_s": 62.01
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1482.84,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -8.3137,
+          "deadlocks": 0,
+          "mean_delay_s": 181.37
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -4.3938,
+      "deadlock": 0,
+      "delay": 121.69,
+      "rank": 5
+    },
+    {
+      "rung": "L1",
+      "policy": "IDQN-pressure",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1339.42,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -1.1498,
+          "deadlocks": 0,
+          "mean_delay_s": 47.19
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1449.58,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -10.3592,
+          "deadlocks": 0,
+          "mean_delay_s": 211.85
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -5.7545,
+      "deadlock": 0,
+      "delay": 129.52,
+      "rank": 6
+    },
+    {
+      "rung": "L3",
+      "policy": "IDQN-queue",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1327.8,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -2.0074,
+          "deadlocks": 0,
+          "mean_delay_s": 102.96
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1449.7,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -10.3518,
+          "deadlocks": 0,
+          "mean_delay_s": 211.3
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -6.1796,
+      "deadlock": 0,
+      "delay": 157.13,
+      "rank": 7
+    },
+    {
+      "rung": "L2",
+      "policy": "IDQN-wait",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1350.46,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -0.3351,
+          "deadlocks": 0,
+          "mean_delay_s": 52.33
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1369.3,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -15.2964,
+          "deadlocks": 0,
+          "mean_delay_s": 274.29
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -7.8158,
+      "deadlock": 0,
+      "delay": 163.31,
+      "rank": 8
+    },
+    {
+      "rung": "L4",
+      "policy": "IDQN-queue",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1256.12,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -7.2974,
+          "deadlocks": 0,
+          "mean_delay_s": 155.52
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1421.88,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -12.0627,
+          "deadlocks": 0,
+          "mean_delay_s": 235.83
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -9.68,
+      "deadlock": 0,
+      "delay": 195.68,
+      "rank": 9
+    },
+    {
+      "rung": "L1",
+      "policy": "MPLight",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1355,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": 0.0,
+          "deadlocks": 0,
+          "mean_delay_s": 38.89
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1347.66,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -16.6273,
+          "deadlocks": 2,
+          "mean_delay_s": 288.77
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -8.3137,
+      "deadlock": 1,
+      "delay": 163.83,
+      "rank": 10
+    },
+    {
+      "rung": "L1",
+      "policy": "IDQN-queue",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1345.12,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -0.7292,
+          "deadlocks": 0,
+          "mean_delay_s": 48.27
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1055.06,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -34.6224,
+          "deadlocks": 11,
+          "mean_delay_s": 377.35
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -17.6758,
+      "deadlock": 1,
+      "delay": 212.81,
+      "rank": 11
+    },
+    {
+      "rung": "L1",
+      "policy": "IDQN-wait",
+      "loads": {
+        "x1.0": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 1334.14,
+          "fixed_arrived_1800": 1355,
+          "demand": 1355,
+          "score": -1.5395,
+          "deadlocks": 0,
+          "mean_delay_s": 64.96
+        },
+        "x1.2": {
+          "episodes": 50,
+          "expected": 50,
+          "arrived_1800": 879.76,
+          "fixed_arrived_1800": 1618.02,
+          "demand": 1626,
+          "score": -45.4034,
+          "deadlocks": 10,
+          "mean_delay_s": 534.03
+        }
+      },
+      "scored": true,
+      "complete": true,
+      "score": -23.4714,
+      "deadlock": 1,
+      "delay": 299.5,
+      "rank": 12
+    }
+  ]
+}

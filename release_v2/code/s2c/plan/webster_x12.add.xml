@@ -1,0 +1,15 @@
+<additional>
+  <!-- Webster plan x1.2 (pre-registration 6.3), s2c.py plan, 2026-10-29 23:37:28 -->
+  <tlLogic id="nC" type="static" programID="webster_x12" offset="0">
+    <phase duration="56" state="GGGrsrrrGGGrsrrr"/>
+    <phase duration="3" state="GyyrsrrrGyyrsrrr"/>
+    <phase duration="15" state="srrGsrrrsrrGsrrr"/>
+    <phase duration="3" state="srrysrrrsrrysrrr"/>
+    <phase duration="4" state="srrrsrrrsrrrsrrr"/>
+    <phase duration="42" state="srrrGGGrsrrrGGGr"/>
+    <phase duration="3" state="srrrGyyrsrrrGyyr"/>
+    <phase duration="17" state="srrrsrrGsrrrsrrG"/>
+    <phase duration="3" state="srrrsrrysrrrsrry"/>
+    <phase duration="4" state="srrrsrrrsrrrsrrr"/>
+  </tlLogic>
+</additional>

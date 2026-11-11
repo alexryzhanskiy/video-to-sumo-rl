@@ -1,0 +1,111 @@
+{
+ "set": "locked",
+ "final_design": {
+  "rung": "L2",
+  "policy": "MPLight",
+  "score": 0.2134,
+  "deadlock": 0,
+  "delay": 60.77
+ },
+ "alpha_one_sided": 0.025,
+ "loads": {
+  "x1.0": {
+   "map": "prybuzka_lt10",
+   "runs": 5,
+   "files_per_run": 10,
+   "d_k": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "mean_d": 0.0,
+   "sd_d": 0.0,
+   "mean_demand": 1355.0,
+   "margin": 13.55,
+   "t": Infinity,
+   "df": 4,
+   "p_one_sided": 0.0,
+   "ci95_mean_d": [
+    0.0,
+    0.0
+   ],
+   "sd_zero": true,
+   "d_z": null,
+   "d_z_vs_margin": null,
+   "sign_count_above_minus_m": 5,
+   "deadlocks_final_design": 0,
+   "episodes": 50,
+   "delay_diff_vh": {
+    "d_k": [
+     -3.83,
+     -3.74,
+     -2.92,
+     -3.95,
+     -3.69
+    ],
+    "mean": -3.62684,
+    "ci95": [
+     -4.132443701712867,
+     -3.121236298287134
+    ],
+    "lower_delay_claim": true
+   },
+   "holm_threshold": 0.0125,
+   "holm_reject": true,
+   "holm_adjusted_p": 0.0
+  },
+  "x1.2": {
+   "map": "prybuzka_lt12",
+   "runs": 5,
+   "files_per_run": 10,
+   "d_k": [
+    -12.3,
+    8.8,
+    9.7,
+    5.8,
+    5.7
+   ],
+   "mean_d": 3.54,
+   "sd_d": 9.031777233745306,
+   "mean_demand": 1626.0,
+   "margin": 16.26,
+   "t": 4.902041404329035,
+   "df": 4,
+   "p_one_sided": 0.004016101539102254,
+   "ci95_mean_d": [
+    -7.674432630937928,
+    14.754432630937927
+   ],
+   "sd_zero": false,
+   "d_z": 0.39194943679230115,
+   "d_z_vs_margin": 2.1922595617196503,
+   "sign_count_above_minus_m": 5,
+   "deadlocks_final_design": 0,
+   "episodes": 50,
+   "delay_diff_vh": {
+    "d_k": [
+     4.53,
+     -11.47,
+     -13.28,
+     -10.65,
+     -12.71
+    ],
+    "mean": -8.71518,
+    "ci95": [
+     -17.999315519025764,
+     0.5689555190257654
+    ],
+    "lower_delay_claim": false
+   },
+   "holm_threshold": 0.025,
+   "holm_reject": true,
+   "holm_adjusted_p": 0.004016101539102254
+  }
+ },
+ "criterion_1_holm_both": true,
+ "criterion_2_no_deadlock": true,
+ "problems": [],
+ "success": true
+}

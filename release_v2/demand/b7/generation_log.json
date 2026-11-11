@@ -1,0 +1,1262 @@
+{
+ "revision/twin/B7/demand/x10/base/b7_base_x10_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/twin/B7/demand/x10/base/b7_base_x10_s7001.rou.xml --seed 7001",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_base_x10",
+  "load_or_scenario": "x10_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/base/b7_base_x10_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/twin/B7/demand/x10/base/b7_base_x10_s7002.rou.xml --seed 7002",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_base_x10",
+  "load_or_scenario": "x10_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/base/b7_base_x10_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/twin/B7/demand/x10/base/b7_base_x10_s7003.rou.xml --seed 7003",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_base_x10",
+  "load_or_scenario": "x10_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/base/b7_base_x10_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/twin/B7/demand/x10/base/b7_base_x10_s7004.rou.xml --seed 7004",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_base_x10",
+  "load_or_scenario": "x10_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/base/b7_base_x10_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_edges.xml -o revision/twin/B7/demand/x10/base/b7_base_x10_s7005.rou.xml --seed 7005",
+  "counts_file": "sumo/turn_counts_edges.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_base_x10",
+  "load_or_scenario": "x10_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml -o revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1482,
+  "group": "b7_ce_bias_x10",
+  "load_or_scenario": "x10_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml -o revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1482,
+  "group": "b7_ce_bias_x10",
+  "load_or_scenario": "x10_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml -o revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1482,
+  "group": "b7_ce_bias_x10",
+  "load_or_scenario": "x10_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml -o revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1482,
+  "group": "b7_ce_bias_x10",
+  "load_or_scenario": "x10_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml -o revision/twin/B7/demand/x10/ce_bias/b7_ce_bias_x10_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1482,
+  "group": "b7_ce_bias_x10",
+  "load_or_scenario": "x10_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7101.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d01_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7101.rou.xml --seed 7101",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d01_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1557,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 1; prereg section 9)",
+  "seeds": [
+   7101
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7102.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d02_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7102.rou.xml --seed 7102",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d02_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1290,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 2; prereg section 9)",
+  "seeds": [
+   7102
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7103.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d03_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7103.rou.xml --seed 7103",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d03_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1467,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 3; prereg section 9)",
+  "seeds": [
+   7103
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7104.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d04_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7104.rou.xml --seed 7104",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d04_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1368,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 4; prereg section 9)",
+  "seeds": [
+   7104
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7105.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d05_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7105.rou.xml --seed 7105",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d05_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1386,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 5; prereg section 9)",
+  "seeds": [
+   7105
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7106.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d06_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7106.rou.xml --seed 7106",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d06_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1516,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 6; prereg section 9)",
+  "seeds": [
+   7106
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7107.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d07_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7107.rou.xml --seed 7107",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d07_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1555,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 7; prereg section 9)",
+  "seeds": [
+   7107
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7108.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d08_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7108.rou.xml --seed 7108",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d08_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1544,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 8; prereg section 9)",
+  "seeds": [
+   7108
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7109.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d09_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7109.rou.xml --seed 7109",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d09_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1482,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 9; prereg section 9)",
+  "seeds": [
+   7109
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7110.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d10_x10.xml -o revision/twin/B7/demand/x10/ce_rand/b7_ce_rand_x10_s7110.rou.xml --seed 7110",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1552,
+  "group": "b7_ce_rand_x10",
+  "load_or_scenario": "x10_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 10; prereg section 9)",
+  "seeds": [
+   7110
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml -o revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1355,
+  "group": "b7_fov_meas_x10",
+  "load_or_scenario": "x10_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml -o revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1355,
+  "group": "b7_fov_meas_x10",
+  "load_or_scenario": "x10_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml -o revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1355,
+  "group": "b7_fov_meas_x10",
+  "load_or_scenario": "x10_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml -o revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1355,
+  "group": "b7_fov_meas_x10",
+  "load_or_scenario": "x10_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml -o revision/twin/B7/demand/x10/fov_meas/b7_fov_meas_x10_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1355,
+  "group": "b7_fov_meas_x10",
+  "load_or_scenario": "x10_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml -o revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm10_x10",
+  "load_or_scenario": "x10_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml -o revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm10_x10",
+  "load_or_scenario": "x10_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml -o revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm10_x10",
+  "load_or_scenario": "x10_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml -o revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm10_x10",
+  "load_or_scenario": "x10_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml -o revision/twin/B7/demand/x10/fovm10/b7_fovm10_x10_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm10_x10",
+  "load_or_scenario": "x10_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml -o revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm20_x10",
+  "load_or_scenario": "x10_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml -o revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm20_x10",
+  "load_or_scenario": "x10_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml -o revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm20_x10",
+  "load_or_scenario": "x10_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml -o revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm20_x10",
+  "load_or_scenario": "x10_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml -o revision/twin/B7/demand/x10/fovm20/b7_fovm20_x10_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovm20_x10",
+  "load_or_scenario": "x10_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml -o revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_fovp10_x10",
+  "load_or_scenario": "x10_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml -o revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_fovp10_x10",
+  "load_or_scenario": "x10_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml -o revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_fovp10_x10",
+  "load_or_scenario": "x10_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml -o revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:53Z",
+  "expected_total": 1355,
+  "group": "b7_fovp10_x10",
+  "load_or_scenario": "x10_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml -o revision/twin/B7/demand/x10/fovp10/b7_fovp10_x10_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovp10_x10",
+  "load_or_scenario": "x10_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml -o revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovp20_x10",
+  "load_or_scenario": "x10_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml -o revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovp20_x10",
+  "load_or_scenario": "x10_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml -o revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovp20_x10",
+  "load_or_scenario": "x10_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml -o revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovp20_x10",
+  "load_or_scenario": "x10_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml -o revision/twin/B7/demand/x10/fovp20/b7_fovp20_x10_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x10.xml",
+  "counts_ref": "sumo/turn_counts_edges.xml",
+  "created_utc": "2026-10-29T17:33:54Z",
+  "expected_total": 1355,
+  "group": "b7_fovp20_x10",
+  "load_or_scenario": "x10_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/base/b7_base_x12_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/twin/B7/demand/x12/base/b7_base_x12_s7001.rou.xml --seed 7001",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_base_x12",
+  "load_or_scenario": "x12_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/base/b7_base_x12_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/twin/B7/demand/x12/base/b7_base_x12_s7002.rou.xml --seed 7002",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_base_x12",
+  "load_or_scenario": "x12_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/base/b7_base_x12_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/twin/B7/demand/x12/base/b7_base_x12_s7003.rou.xml --seed 7003",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_base_x12",
+  "load_or_scenario": "x12_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/base/b7_base_x12_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/twin/B7/demand/x12/base/b7_base_x12_s7004.rou.xml --seed 7004",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_base_x12",
+  "load_or_scenario": "x12_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/base/b7_base_x12_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t sumo/turn_counts_12.xml -o revision/twin/B7/demand/x12/base/b7_base_x12_s7005.rou.xml --seed 7005",
+  "counts_file": "sumo/turn_counts_12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_base_x12",
+  "load_or_scenario": "x12_base",
+  "purpose": "B7/E10 perturbed demand (base; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml -o revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1777,
+  "group": "b7_ce_bias_x12",
+  "load_or_scenario": "x12_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml -o revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1777,
+  "group": "b7_ce_bias_x12",
+  "load_or_scenario": "x12_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml -o revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1777,
+  "group": "b7_ce_bias_x12",
+  "load_or_scenario": "x12_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml -o revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1777,
+  "group": "b7_ce_bias_x12",
+  "load_or_scenario": "x12_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml -o revision/twin/B7/demand/x12/ce_bias/b7_ce_bias_x12_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_bias_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1777,
+  "group": "b7_ce_bias_x12",
+  "load_or_scenario": "x12_ce_bias",
+  "purpose": "B7 counting-error demand (ce_bias; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7101.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d01_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7101.rou.xml --seed 7101",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d01_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1865,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 1; prereg section 9)",
+  "seeds": [
+   7101
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7102.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d02_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7102.rou.xml --seed 7102",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d02_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1554,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 2; prereg section 9)",
+  "seeds": [
+   7102
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7103.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d03_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7103.rou.xml --seed 7103",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d03_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:45Z",
+  "expected_total": 1758,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 3; prereg section 9)",
+  "seeds": [
+   7103
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7104.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d04_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7104.rou.xml --seed 7104",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d04_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:46Z",
+  "expected_total": 1644,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 4; prereg section 9)",
+  "seeds": [
+   7104
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7105.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d05_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7105.rou.xml --seed 7105",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d05_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:46Z",
+  "expected_total": 1668,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 5; prereg section 9)",
+  "seeds": [
+   7105
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7106.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d06_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7106.rou.xml --seed 7106",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d06_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:46Z",
+  "expected_total": 1817,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 6; prereg section 9)",
+  "seeds": [
+   7106
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7107.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d07_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7107.rou.xml --seed 7107",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d07_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:46Z",
+  "expected_total": 1862,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 7; prereg section 9)",
+  "seeds": [
+   7107
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7108.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d08_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7108.rou.xml --seed 7108",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d08_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:46Z",
+  "expected_total": 1855,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 8; prereg section 9)",
+  "seeds": [
+   7108
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7109.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d09_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7109.rou.xml --seed 7109",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d09_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:46Z",
+  "expected_total": 1776,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 9; prereg section 9)",
+  "seeds": [
+   7109
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7110.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_ce_rand_d10_x12.xml -o revision/twin/B7/demand/x12/ce_rand/b7_ce_rand_x12_s7110.rou.xml --seed 7110",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_ce_rand_d10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:46Z",
+  "expected_total": 1863,
+  "group": "b7_ce_rand_x12",
+  "load_or_scenario": "x12_ce_rand",
+  "purpose": "B7 counting-error demand (ce_rand draw 10; prereg section 9)",
+  "seeds": [
+   7110
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml -o revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1626,
+  "group": "b7_fov_meas_x12",
+  "load_or_scenario": "x12_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml -o revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1626,
+  "group": "b7_fov_meas_x12",
+  "load_or_scenario": "x12_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml -o revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1626,
+  "group": "b7_fov_meas_x12",
+  "load_or_scenario": "x12_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml -o revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1626,
+  "group": "b7_fov_meas_x12",
+  "load_or_scenario": "x12_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml -o revision/twin/B7/demand/x12/fov_meas/b7_fov_meas_x12_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fov_meas_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-11-03T22:22:50Z",
+  "expected_total": 1626,
+  "group": "b7_fov_meas_x12",
+  "load_or_scenario": "x12_fov_meas",
+  "purpose": "B7/E10 measured heading-exit confusion (fov_meas; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml -o revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm10_x12",
+  "load_or_scenario": "x12_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml -o revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm10_x12",
+  "load_or_scenario": "x12_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml -o revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm10_x12",
+  "load_or_scenario": "x12_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml -o revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm10_x12",
+  "load_or_scenario": "x12_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml -o revision/twin/B7/demand/x12/fovm10/b7_fovm10_x12_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm10_x12",
+  "load_or_scenario": "x12_fovm10",
+  "purpose": "B7/E10 perturbed demand (fovm10; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml -o revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm20_x12",
+  "load_or_scenario": "x12_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml -o revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm20_x12",
+  "load_or_scenario": "x12_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml -o revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm20_x12",
+  "load_or_scenario": "x12_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml -o revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm20_x12",
+  "load_or_scenario": "x12_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml -o revision/twin/B7/demand/x12/fovm20/b7_fovm20_x12_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovm20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovm20_x12",
+  "load_or_scenario": "x12_fovm20",
+  "purpose": "B7/E10 perturbed demand (fovm20; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml -o revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp10_x12",
+  "load_or_scenario": "x12_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml -o revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp10_x12",
+  "load_or_scenario": "x12_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml -o revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp10_x12",
+  "load_or_scenario": "x12_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml -o revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp10_x12",
+  "load_or_scenario": "x12_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml -o revision/twin/B7/demand/x12/fovp10/b7_fovp10_x12_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp10_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp10_x12",
+  "load_or_scenario": "x12_fovp10",
+  "purpose": "B7/E10 perturbed demand (fovp10; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7001.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml -o revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7001.rou.xml --seed 7001",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp20_x12",
+  "load_or_scenario": "x12_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7001
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7002.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml -o revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7002.rou.xml --seed 7002",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp20_x12",
+  "load_or_scenario": "x12_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7002
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7003.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml -o revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7003.rou.xml --seed 7003",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:55Z",
+  "expected_total": 1626,
+  "group": "b7_fovp20_x12",
+  "load_or_scenario": "x12_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7003
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7004.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml -o revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7004.rou.xml --seed 7004",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovp20_x12",
+  "load_or_scenario": "x12_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7004
+  ],
+  "sumo_version": "1.26.0"
+ },
+ "revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7005.rou.xml": {
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml -o revision/twin/B7/demand/x12/fovp20/b7_fovp20_x12_s7005.rou.xml --seed 7005",
+  "counts_file": "revision/twin/B7/demand/counts/turn_counts_fovp20_x12.xml",
+  "counts_ref": "sumo/turn_counts_12.xml",
+  "created_utc": "2026-10-29T17:33:56Z",
+  "expected_total": 1626,
+  "group": "b7_fovp20_x12",
+  "load_or_scenario": "x12_fovp20",
+  "purpose": "B7/E10 perturbed demand (fovp20; prereg section 9)",
+  "seeds": [
+   7005
+  ],
+  "sumo_version": "1.26.0"
+ }
+}

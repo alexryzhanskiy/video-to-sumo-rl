@@ -1,0 +1,86 @@
+# Comment 1.3 perception metrics
+
+Generated 2026-11-04T13:09:11 by `revision/tools/perception_metrics.py`. Pipeline counts: the movement files of 28 Oct (owned approaches, t_common window of each clip). Hand counts: `perception_count.py`, as frozen by FINAL.json.
+
+## A. Counting (hand counts against the pipeline)
+
+Blind phase closed 2026-11-03T23:01:06 for center_i300, zarich_i300; hand counts from the frozen export.
+
+2 clips, 273 hand-counted vehicles, 263 pipeline counts, 24.0 min in the app. Without U-turns (the demand excludes them): total error -24 (-8.8%), mean absolute error 2.17 vehicles per 5-min cell (12 cells), weighted absolute percentage error 9.5%.
+
+| Movement | Hand | Pipeline | Error | Error % | Mean abs. error per cell | Weighted abs. % error |
+|---|---|---|---|---|---|---|
+| L | 50 | 46 | -4 | -8.0 | 1.0 | 8.0 |
+| T | 161 | 150 | -11 | -6.83 | 2.75 | 6.83 |
+| R | 62 | 53 | -9 | -14.52 | 2.75 | 17.74 |
+| U | 0 | 14 | +14 | – | 3.5 | – |
+
+| Approach (no U-turns) | Hand | Pipeline | Error | Error % | Weighted abs. % error |
+|---|---|---|---|---|---|
+| PRB_E | 53 | 52 | -1 | -1.89 | 1.89 |
+| PRB_W | 81 | 66 | -15 | -18.52 | 18.52 |
+| SVB_N | 64 | 58 | -6 | -9.38 | 12.5 |
+| SVB_S | 75 | 73 | -2 | -2.67 | 2.67 |
+
+Event matching: 253 matched; hand-only 7.33 and pipeline-only 3.66 per 100 hand-counted vehicles (candidates; the tracking review resolves them). Movement agreement on matched pairs: gate exits 87.3% (n = 189), heading exits 73.4% (n = 64).
+
+## B. Second counter
+
+Blind count by A2, closed 2026-11-04T13:03:03 for center_i300, zarich_i300.
+
+### B1. Against the pipeline (the second counter's clips)
+
+center_i300 (SVB_N PRB_E; 14.4 min in the app): second counter 115, pipeline 115; 107 matched, second-counter-only 8, pipeline-only 8.
+zarich_i300 (SVB_S PRB_W; 32.7 min in the app): second counter 158, pipeline 148; 142 matched, second-counter-only 16, pipeline-only 6.
+
+Cells without U-turns: total error -23 (-8.5%), mean absolute error 2.58 vehicles per 5-min cell (12 cells), weighted absolute percentage error 11.4%. Movement agreement on matched pairs: gate exits 86.6% (n = 186), heading exits 74.6% (n = 63).
+
+### B2. Against A1's hand counts (same clip and approach)
+
+center_i300 (SVB_N, PRB_E): A1 117, second counter 115 vehicles; 112 matched within ±3 s, same movement in 103 (92.0%); only A1 5, only the second counter 3.
+zarich_i300 (SVB_S, PRB_W): A1 156, second counter 158 vehicles; 151 matched within ±3 s, same movement in 141 (93.4%); only A1 5, only the second counter 7.
+
+Cells without U-turns: total difference -1 (-0.4%), mean absolute difference 1.08 vehicles per cell, weighted absolute percentage difference 4.8%.
+
+## C. Tracking review
+
+center_i300: 115 pipeline-counted vehicles (83 unflagged); answered 100 of 100 candidates. Confirmed ID switches and fragments 9 (break 8, break_double 1, jump 0; cannot tell or unanswered 4); double counts same camera 2 (break_double 1, pipeline-only 1), other camera 0; false counts 0; pipeline misses, two sources that may describe the same vehicle: unmatched hand count 1, uncounted track 5; vehicle sample: ID changed 0, counted twice 0 of 8 answered (cannot tell 0, unanswered 0).
+zarich_i300: 148 pipeline-counted vehicles (105 unflagged); answered 153 of 153 candidates. Confirmed ID switches and fragments 15 (break 15, break_double 0, jump 0; cannot tell or unanswered 11); double counts same camera 2 (break_double 0, pipeline-only 2), other camera 0; false counts 1; pipeline misses, two sources that may describe the same vehicle: unmatched hand count 10, uncounted track 13; vehicle sample: ID changed 1, counted twice 0 of 8 answered (cannot tell 0, unanswered 0).
+
+Pooled over center_i300, zarich_i300: 263 pipeline-counted vehicles, 188 unflagged, 16 sampled and answered. ID switches and fragments: 24 confirmed + 1/16 in the sample → 13.59 per 100 counted vehicles (95% CI 5.96–40.89; census alone 9.13). Double counts (same and other camera): 4 confirmed + 0/16 in the sample → 1.52 per 100 counted vehicles (95% CI 0.41–19.37; census alone 1.52). The CI adds exact bounds (conservative); `tracking_rates.json`.
+
+| Exit method | Approach | Answered | Correct | Accuracy % | Cannot tell |
+|---|---|---|---|---|---|
+| heading | all | 64 | 50 | 78.1 | 5 |
+| heading | PRB_E | 2 | 2 | 100.0 | 0 |
+| heading | PRB_W | 37 | 33 | 89.2 | 3 |
+| heading | SVB_N | 22 | 14 | 63.6 | 1 |
+| heading | SVB_S | 3 | 1 | 33.3 | 1 |
+| gate | all | 20 | 20 | 100.0 | 0 |
+| gate | PRB_E | 7 | 7 | 100.0 | 0 |
+| gate | PRB_W | 2 | 2 | 100.0 | 0 |
+| gate | SVB_N | 3 | 3 | 100.0 | 0 |
+| gate | SVB_S | 8 | 8 | 100.0 | 0 |
+
+## D. Queue recount (Ryzhanskyi's end-of-red queue minus A1's recount)
+
+Both counted the visible standing vehicles on the same frame. Where either marked the queue as continuing beyond the view, both numbers are visible counts and only lower bounds of the queue length.
+
+- Visible-count agreement, all frames: 12 frames: mean difference -4.33 vehicles, mean absolute difference 4.50, max 11; PRB_E -0.7; PRB_W -4.3; SVB_N -5.3; SVB_S -7.0.
+- Complete queues (neither beyond the view): 6 frames: mean difference -2.50 vehicles, mean absolute difference 2.83, max 11.
+- Lower bounds (beyond the view): 6 frames: mean difference -6.17 vehicles, mean absolute difference 6.17, max 11; SVB_N c4 ≥29, SVB_N c5 ≥23, SVB_N c9 ≥31, SVB_S c4 ≥16, SVB_S c9 ≥23, SVB_S c10 ≥15.
+- Recount time: not reported. The `seconds` field of queue_recount.csv is the time the session was open, not the annotation time (acceptance record of 3 Nov).
+
+## E. Set-up redo
+
+A1, center: 6 lines in 1.4 min active time (finished: 2026-11-03T23:18:42); comparison: revision/perception/setup_redo/center_compare.md.
+  Movements counted: original 670, with the redo gates 682 (+12, +1.8%).
+  Original movements counted again with the same entry and exit: 649 of 670 (96.9%); lost 7; new 19.
+  Heading-fallback exits: original 181, redo 184.
+  Demand cells (5-min interval x approach x movement, U-turns excluded, 0-1500 s): 30; mean absolute difference 0.57 vehicles; cells changed 9.
+second person, center: 6 lines in 2.3 min active time (finished: no, quit with Esc); comparison: revision/perception/counter2/setup_redo/center_compare.md.
+  Movements counted: original 670, with the redo gates 664 (-6, -0.9%).
+  Original movements counted again with the same entry and exit: 643 of 670 (96.0%); lost 21; new 15.
+  Heading-fallback exits: original 181, redo 420.
+  Demand cells (5-min interval x approach x movement, U-turns excluded, 0-1500 s): 30; mean absolute difference 0.80 vehicles; cells changed 10.
+

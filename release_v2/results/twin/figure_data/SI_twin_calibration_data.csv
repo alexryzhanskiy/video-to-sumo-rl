@@ -1,0 +1,37 @@
+figure,panel,quantity,unit,approach,source,estimate_type,estimate,interval_type,lo,hi,n,n_unit
+SI_twin_calibration,a,start-up time to first crossing,s,SVB_N,observed,median,2.68,interquartile range,2.38,3.7,11,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,SVB_N,simulated_default,median,0.437,interquartile range,0.406,0.474,165,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,SVB_N,simulated_theta_star_A,median,2.106,interquartile range,2.089,2.125,165,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,SVB_S,observed,median,3.12,interquartile range,2.32,3.5,11,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,SVB_S,simulated_default,median,0.441,interquartile range,0.408,0.47,165,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,SVB_S,simulated_theta_star_A,median,2.105,interquartile range,2.088,2.127,165,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,PRB_E,observed,median,2.2,interquartile range,1.6,2.72,11,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,PRB_E,simulated_default,median,0.44,interquartile range,0.41,0.475,165,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,PRB_E,simulated_theta_star_A,median,2.107,interquartile range,2.085,2.129,165,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,PRB_W,observed,median,2.88,interquartile range,2.5,3.16,11,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,PRB_W,simulated_default,median,0.437,interquartile range,0.404,0.478,165,cycles
+SI_twin_calibration,a,start-up time to first crossing,s,PRB_W,simulated_theta_star_A,median,2.108,interquartile range,2.082,2.13,165,cycles
+SI_twin_calibration,b,saturated headway,s,SVB_N,observed,median,1.38,interquartile range,0.72,1.92,288,headways
+SI_twin_calibration,b,saturated headway,s,SVB_N,simulated_default,median,1.329,interquartile range,0.519,1.979,3970,headways
+SI_twin_calibration,b,saturated headway,s,SVB_N,simulated_theta_star_A,median,1.94,interquartile range,0.455,2.521,3635,headways
+SI_twin_calibration,b,saturated headway,s,SVB_S,observed,median,1.44,interquartile range,0.84,2.04,266,headways
+SI_twin_calibration,b,saturated headway,s,SVB_S,simulated_default,median,1.364,interquartile range,0.548,2.044,3660,headways
+SI_twin_calibration,b,saturated headway,s,SVB_S,simulated_theta_star_A,median,1.616,interquartile range,0.465,2.406,3755,headways
+SI_twin_calibration,b,saturated headway,s,PRB_E,observed,median,2.04,interquartile range,1.68,2.76,85,headways
+SI_twin_calibration,b,saturated headway,s,PRB_E,simulated_default,median,1.692,interquartile range,0.568,2.463,1557,headways
+SI_twin_calibration,b,saturated headway,s,PRB_E,simulated_theta_star_A,median,2.146,interquartile range,0.593,2.788,1579,headways
+SI_twin_calibration,b,saturated headway,s,PRB_W,observed,median,1.56,interquartile range,1.08,2.16,153,headways
+SI_twin_calibration,b,saturated headway,s,PRB_W,simulated_default,median,1.378,interquartile range,0.577,2.046,2702,headways
+SI_twin_calibration,b,saturated headway,s,PRB_W,simulated_theta_star_A,median,1.747,interquartile range,0.559,2.517,2430,headways
+SI_twin_calibration,c,discharged queue,veh,SVB_N,observed,mean,29.182,95% t interval of the mean,24.872,33.492,11,cycles
+SI_twin_calibration,c,discharged queue,veh,SVB_N,simulated_default,mean,27.061,95% t interval of the mean,26.711,27.41,15,run means
+SI_twin_calibration,c,discharged queue,veh,SVB_N,simulated_theta_star_A,mean,25.03,95% t interval of the mean,24.551,25.51,15,run means
+SI_twin_calibration,c,discharged queue,veh,SVB_S,observed,mean,27.182,95% t interval of the mean,24.287,30.076,11,cycles
+SI_twin_calibration,c,discharged queue,veh,SVB_S,simulated_default,mean,25.182,95% t interval of the mean,24.746,25.618,15,run means
+SI_twin_calibration,c,discharged queue,veh,SVB_S,simulated_theta_star_A,mean,25.758,95% t interval of the mean,25.476,26.039,15,run means
+SI_twin_calibration,c,discharged queue,veh,PRB_E,observed,mean,10.727,95% t interval of the mean,7.721,13.733,11,cycles
+SI_twin_calibration,c,discharged queue,veh,PRB_E,simulated_default,mean,12.424,95% t interval of the mean,12.161,12.687,15,run means
+SI_twin_calibration,c,discharged queue,veh,PRB_E,simulated_theta_star_A,mean,12.558,95% t interval of the mean,12.286,12.829,15,run means
+SI_twin_calibration,c,discharged queue,veh,PRB_W,observed,mean,16.909,95% t interval of the mean,13.127,20.691,11,cycles
+SI_twin_calibration,c,discharged queue,veh,PRB_W,simulated_default,mean,19.376,95% t interval of the mean,18.941,19.811,15,run means
+SI_twin_calibration,c,discharged queue,veh,PRB_W,simulated_theta_star_A,mean,17.727,95% t interval of the mean,17.37,18.084,15,run means

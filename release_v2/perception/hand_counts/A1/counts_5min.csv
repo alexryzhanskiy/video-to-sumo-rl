@@ -1,0 +1,17 @@
+annotator,camera,interval_start_video_s,interval_end_video_s,approach,movement,manual_count,unsure,watched_pct
+A1,center,300.0,600.0,SVB_N,L,19,0,99.0
+A1,center,300.0,600.0,SVB_N,T,42,0,99.0
+A1,center,300.0,600.0,SVB_N,R,3,0,99.0
+A1,center,300.0,600.0,SVB_N,U,0,0,99.0
+A1,center,300.0,600.0,PRB_E,L,10,0,100.0
+A1,center,300.0,600.0,PRB_E,T,29,0,100.0
+A1,center,300.0,600.0,PRB_E,R,14,0,100.0
+A1,center,300.0,600.0,PRB_E,U,0,0,100.0
+A1,zarich,300.0,600.0,SVB_S,L,13,0,100.0
+A1,zarich,300.0,600.0,SVB_S,T,49,0,100.0
+A1,zarich,300.0,600.0,SVB_S,R,13,0,100.0
+A1,zarich,300.0,600.0,SVB_S,U,0,0,100.0
+A1,zarich,300.0,600.0,PRB_W,L,8,0,100.0
+A1,zarich,300.0,600.0,PRB_W,T,41,0,100.0
+A1,zarich,300.0,600.0,PRB_W,R,32,0,100.0
+A1,zarich,300.0,600.0,PRB_W,U,0,0,100.0

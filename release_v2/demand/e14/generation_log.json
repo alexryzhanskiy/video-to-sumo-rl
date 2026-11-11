@@ -1,0 +1,142 @@
+{
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1401.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1401.rou.xml --seed 1401",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1401
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1402.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1402.rou.xml --seed 1402",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1402
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1403.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1403.rou.xml --seed 1403",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1403
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1404.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1404.rou.xml --seed 1404",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1404
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1405.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1405.rou.xml --seed 1405",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1405
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1406.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1406.rou.xml --seed 1406",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1406
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1407.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1407.rou.xml --seed 1407",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1407
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1408.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1408.rou.xml --seed 1408",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1408
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1409.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1409.rou.xml --seed 1409",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1409
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ },
+ "revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1410.rou.xml": {
+  "cells_differing": 0,
+  "command": "python %SUMO_HOME%/tools/routeSampler.py -r sumo/candidate.rou.xml -t revision/twin/E14/counts_0938_shifted.xml -o revision/twin/E14/demand/x10/real0938/e14_real0938_x10_s1410.rou.xml --seed 1410",
+  "counts_file": "revision/twin/E14/counts_0938_shifted.xml",
+  "counts_source": "revision/incoming/2026-11-02/answers_20261101/1_turn_counts_edges_0938.xml",
+  "created_utc": "2026-11-02T12:23:46Z",
+  "expected_total": 923,
+  "purpose": "E14 exploratory test, second real window (09:38)",
+  "seeds": [
+   1410
+  ],
+  "sumo_version": "1.26.0",
+  "vehicles": 923
+ }
+}

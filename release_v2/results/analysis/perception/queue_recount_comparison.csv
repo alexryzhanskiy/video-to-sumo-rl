@@ -1,0 +1,13 @@
+approach,cycle,recount,ryzhanskyi,difference,recount_beyond_view,ryzhanskyi_beyond_view,queue_length
+SVB_N,4,29,24,-5,y,y,lower bound (visible part)
+SVB_N,5,23,21,-2,y,y,lower bound (visible part)
+SVB_N,9,31,22,-9,y,y,lower bound (visible part)
+SVB_S,4,16,11,-5,y,y,lower bound (visible part)
+SVB_S,9,23,12,-11,y,y,lower bound (visible part)
+SVB_S,10,15,10,-5,n,y,lower bound (visible part)
+PRB_E,4,15,12,-3,n,n,complete
+PRB_E,8,9,10,1,n,n,complete
+PRB_E,10,8,8,0,n,n,complete
+PRB_W,3,22,11,-11,n,n,complete
+PRB_W,4,13,11,-2,n,n,complete
+PRB_W,10,13,13,0,n,n,complete

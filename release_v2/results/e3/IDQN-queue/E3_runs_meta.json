@@ -1,0 +1,15 @@
+{
+  "written": "2026-10-28 12:45:29",
+  "sumo_version": "Eclipse SUMO sumo 1.26.0",
+  "python": "3.13.15",
+  "resco": "revision\\resco_eval\\resco",
+  "checkpoints_csv": "revision\\runs\\e3_repro\\checkpoints_local.csv",
+  "sets": [
+    "heldout"
+  ],
+  "allred": 0,
+  "trial_offset": 1000,
+  "max_eps": "all route files",
+  "episodes_planned": 20,
+  "episodes_done": 10
+}

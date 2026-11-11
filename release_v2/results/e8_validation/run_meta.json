@@ -1,0 +1,135 @@
+{
+ "sumo_home": "revision/.venv/Lib/site-packages/sumo",
+ "sumo_version": "Eclipse SUMO sumo 1.26.0",
+ "tls_offset": 16,
+ "svoboda_green_sim": [
+  16.0,
+  136.0
+ ],
+ "prybuzka_green_sim": [
+  84.0,
+  204.0
+ ],
+ "cycles": [
+  2,
+  12
+ ],
+ "window": {
+  "SVB": 49.0,
+  "PRB": 33.0
+ },
+ "rules": {
+  "lead": 1.0,
+  "sat_from": 4,
+  "gap_split": 8.0,
+  "first_max": 8.0,
+  "halting_speed": 0.1
+ },
+ "runs": [
+  {
+   "run": "original:demand.rou:seed1",
+   "route": "sumo/demand.rou.xml",
+   "sha256": "7739e1d069beb970e0e7bd8a94cbf60dd403899cbe849274d7b8b22b48ef4929",
+   "seed": 1,
+   "crossings": 1298
+  },
+  {
+   "run": "original:demand.rou:seed2",
+   "route": "sumo/demand.rou.xml",
+   "sha256": "7739e1d069beb970e0e7bd8a94cbf60dd403899cbe849274d7b8b22b48ef4929",
+   "seed": 2,
+   "crossings": 1298
+  },
+  {
+   "run": "original:demand.rou:seed3",
+   "route": "sumo/demand.rou.xml",
+   "sha256": "7739e1d069beb970e0e7bd8a94cbf60dd403899cbe849274d7b8b22b48ef4929",
+   "seed": 3,
+   "crossings": 1301
+  },
+  {
+   "run": "original:demand.rou:seed4",
+   "route": "sumo/demand.rou.xml",
+   "sha256": "7739e1d069beb970e0e7bd8a94cbf60dd403899cbe849274d7b8b22b48ef4929",
+   "seed": 4,
+   "crossings": 1298
+  },
+  {
+   "run": "original:demand.rou:seed5",
+   "route": "sumo/demand.rou.xml",
+   "sha256": "7739e1d069beb970e0e7bd8a94cbf60dd403899cbe849274d7b8b22b48ef4929",
+   "seed": 5,
+   "crossings": 1298
+  },
+  {
+   "run": "heldout:heldout_x10_s1001.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1001.rou.xml",
+   "sha256": "47f57aba1e022bc7da706a13f1c3b1d886a69606a65d4078552c189c37f828d6",
+   "seed": 1,
+   "crossings": 1311
+  },
+  {
+   "run": "heldout:heldout_x10_s1002.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1002.rou.xml",
+   "sha256": "4dd3c4001ce6bd4c966e0bdfd495c04bdcc60320ba9bf53d4228ec80309c3920",
+   "seed": 1,
+   "crossings": 1310
+  },
+  {
+   "run": "heldout:heldout_x10_s1003.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1003.rou.xml",
+   "sha256": "1b2bdc139847a021b06ccd35d791dd888eff4b2829d8c9cb2ddf62a0dab6e1bc",
+   "seed": 1,
+   "crossings": 1314
+  },
+  {
+   "run": "heldout:heldout_x10_s1004.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1004.rou.xml",
+   "sha256": "b6047fbeae74720608b03b91204f1ddc0b33a0178e226a26238b5d277f2a548b",
+   "seed": 1,
+   "crossings": 1306
+  },
+  {
+   "run": "heldout:heldout_x10_s1005.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1005.rou.xml",
+   "sha256": "3eee30061fc05c939786fe0fe15365462ddf6711df1603a4ab0130310e341048",
+   "seed": 1,
+   "crossings": 1308
+  },
+  {
+   "run": "heldout:heldout_x10_s1006.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1006.rou.xml",
+   "sha256": "d543e2ab7336325dc1055f97c4ebb85e20bf7ceb456272129b69c99ece518ec3",
+   "seed": 1,
+   "crossings": 1309
+  },
+  {
+   "run": "heldout:heldout_x10_s1007.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1007.rou.xml",
+   "sha256": "f466f3dcbaf887c5529dbb3ccc370e90d88e6fe1920527fc746cec5fac3322fe",
+   "seed": 1,
+   "crossings": 1313
+  },
+  {
+   "run": "heldout:heldout_x10_s1008.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1008.rou.xml",
+   "sha256": "7fc5842d1ecf94ed950a68c70c045e97f4b3b8aff898b2b464ed22c9cb110b53",
+   "seed": 1,
+   "crossings": 1305
+  },
+  {
+   "run": "heldout:heldout_x10_s1009.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1009.rou.xml",
+   "sha256": "251e0c567bcb50cc611e49a0d0ff51fbc6851db54d3cbef03df470b7888a531c",
+   "seed": 1,
+   "crossings": 1306
+  },
+  {
+   "run": "heldout:heldout_x10_s1010.rou:seed1",
+   "route": "revision/demand/heldout/x10/heldout_x10_s1010.rou.xml",
+   "sha256": "dc4d1dfbbbe937678aa05838bfd8e903e751d2771fb5fab6f59d0e6f307368a6",
+   "seed": 1,
+   "crossings": 1293
+  }
+ ]
+}

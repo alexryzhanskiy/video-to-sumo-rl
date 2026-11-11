@@ -1,0 +1,14 @@
+<routes>
+  <route id="m0" edges="nE_nC nC_nN"/>
+  <route id="m1" edges="nE_nC nC_nS"/>
+  <route id="m2" edges="nE_nC nC_nW"/>
+  <route id="m3" edges="nN_nC nC_nE"/>
+  <route id="m4" edges="nN_nC nC_nS"/>
+  <route id="m5" edges="nN_nC nC_nW"/>
+  <route id="m6" edges="nS_nC nC_nE"/>
+  <route id="m7" edges="nS_nC nC_nN"/>
+  <route id="m8" edges="nS_nC nC_nW"/>
+  <route id="m9" edges="nW_nC nC_nE"/>
+  <route id="m10" edges="nW_nC nC_nN"/>
+  <route id="m11" edges="nW_nC nC_nS"/>
+</routes>

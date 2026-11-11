@@ -1,0 +1,40 @@
+{
+  "written": "2026-10-28 17:43:44",
+  "results": [
+    {
+      "processes": 1,
+      "seconds": 36.6,
+      "episodes_per_s": 0.082,
+      "ok": true
+    },
+    {
+      "processes": 8,
+      "seconds": 53.2,
+      "episodes_per_s": 0.451,
+      "ok": true
+    },
+    {
+      "processes": 15,
+      "seconds": 79.9,
+      "episodes_per_s": 0.563,
+      "ok": true
+    }
+  ],
+  "suggested_workers": 15,
+  "estimated_hours_all": 5.4,
+  "versions": {
+    "python": "3.13.15",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD",
+    "logical_cpus": 16,
+    "host": "MyPC",
+    "eclipse-sumo": "1.26.0",
+    "libsumo": "1.26.0",
+    "sumo-data": "1.26.0",
+    "torch": "2.14.1",
+    "pfrl": "0.4.0",
+    "gym": "0.22.0",
+    "numpy": "2.5.4"
+  }
+}
